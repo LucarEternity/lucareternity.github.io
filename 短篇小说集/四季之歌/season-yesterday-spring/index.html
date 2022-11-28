@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/patient.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ma Shan Zheng:300,300italic,400,400italic,700,700italic|ZCOOL KuaiLe:300,300italic,400,400italic,700,700italic|Zhi Mang Xing:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"violeteternal.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+  <style>details.note,details.success,details.failure,details.warning,details.info,details.question,details.example,details.quote,details.code{display:block!important;padding-top:0!important;box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.2)!important;position:relative!important;margin:1.5625em 0!important;padding:0 1em!important;border-left:.2em solid!important;border-radius:.1em!important;font-size:.9em!important;overflow:auto!important;}details.note:not([open]),details.success:not([open]),details.failure:not([open]),details.warning:not([open]),details.info:not([open]),details.question:not([open]),details.example:not([open]),details.quote:not([open]),details.code:not([open]){padding-bottom:0!important;}details.note{border-left-color:#448aff!important;}details.success{border-left-color:#00c853!important;}details.failure{border-left-color:#ff5252!important;}details.warning{border-left-color:#ff9100!important;}details.info{border-left-color:#00b8d4!important;}details.question{border-left-color:#64dd17!important;}details.example{border-left-color:#651fff!important;}details.quote{border-left-color:#9e9e9e!important;}details.code{border-left-color:#A0A0A0!important;}details.note>summary,details.success>summary,details.failure>summary,details.warning>summary,details.info>summary,details.question>summary,details.example>summary,details.quote>summary,details.code>summary{margin:0 -1em 1em -1em;padding:.4em .6em .4em .6em;border-bottom:.05em solid;font-weight:700;display:block;outline:none;cursor:pointer;}details.note>summary{border-bottom-color:rgba(68,138,255,.1);background-color:rgba(68,138,255,.1);}details.success>summary{border-bottom-color:rgba(0,200,83,.1);background-color:rgba(0,200,83,.1);}details.failure>summary{border-bottom-color:rgba(255,82,82,.1);background-color:rgba(255,82,82,.1);}details.warning>summary{border-bottom-color:rgba(255,145,0,.1);background-color:rgba(255,145,0,.1);}details.info>summary{border-bottom-color:rgba(0,184,212,.1);background-color:rgba(0,184,212,.1);}details.question>summary{border-bottom-color:rgba(100,221,23,.1);background-color:rgba(100,221,23,.1);}details.example>summary{border-bottom-color:rgba(101,31,255,.1);background-color:rgba(101,31,255,.1);}details.quote>summary{border-bottom-color:rgba(158,158,158,.1);background-color:rgba(158,158,158,.1);}details.code>summary{border-bottom-color:rgba(160,160,160,.1);background-color:rgba(160,160,160,.1);}details.note:not([open])>summary,details.success:not([open])>summary,details.failure:not([open])>summary,details.warning:not([open])>summary,details.info:not([open])>summary,details.question:not([open])>summary,details.example:not([open])>summary,details.quote:not([open])>summary,details.code:not([open])>summary{border-bottom:0;margin-bottom:0;}details.note>summary>div.box-open-button,details.success>summary>div.box-open-button,details.failure>summary>div.box-open-button,details.warning>summary>div.box-open-button,details.info>summary>div.box-open-button,details.question>summary>div.box-open-button,details.example>summary>div.box-open-button,details.quote>summary>div.box-open-button,details.code>summary>div.box-open-button{float:right;}details.note>summary>i,details.success>summary>i,details.failure>summary>i,details.warning>summary>i,details.info>summary>i,details.question>summary>i,details.example>summary>i,details.quote>summary>i,details.code>summary>i,details.note>summary>div.box-open-button>i,details.success>summary>div.box-open-button>i,details.failure>summary>div.box-open-button>i,details.warning>summary>div.box-open-button>i,details.info>summary>div.box-open-button>i,details.question>summary>div.box-open-button>i,details.example>summary>div.box-open-button>i,details.quote>summary>div.box-open-button>i,details.code>summary>div.box-open-button>i{margin:0 .6125em 0 .6125em;}details.note>summary>i{color:#448aff;}details.success>summary>i{color:#00c853;}details.failure>summary>i{color:#ff5252;}details.warning>summary>i{color:#ff9100;}details.info>summary>i{color:#00b8d4;}details.question>summary>i{color:#64dd17;}details.example>summary>i{color:#651fff;}details.quote>summary>i{color:#9e9e9e;}details.code>summary>i{color:#A0A0A0;}details.note>summary>div.box-open-button>i,details.success>summary>div.box-open-button>i,details.failure>summary>div.box-open-button>i,details.warning>summary>div.box-open-button>i,details.info>summary>div.box-open-button>i,details.question>summary>div.box-open-button>i,details.example>summary>div.box-open-button>i,details.quote>summary>div.box-open-button>i,details.code>summary>div.box-open-button>i{color:rgba(0,0,0,.26);}details[open].note>summary>div.box-open-button>i,details[open].success>summary>div.box-open-button>i,details[open].failure>summary>div.box-open-button>i,details[open].warning>summary>div.box-open-button>i,details[open].info>summary>div.box-open-button>i,details[open].question>summary>div.box-open-button>i,details[open].example>summary>div.box-open-button>i,details[open].quote>summary>div.box-open-button>i,details[open].code>summary>div.box-open-button>i{transform:rotate(180deg);}</style>
+  <meta name="description" content="这是，关于「我」，关于「他」，关于「她」的故事。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="昔春之辞">
+<meta property="og:url" content="http://violeteternal.github.io/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4%E9%9B%86/%E5%9B%9B%E5%AD%A3%E4%B9%8B%E6%AD%8C/season-yesterday-spring/index.html">
+<meta property="og:site_name" content="After Endgame">
+<meta property="og:description" content="这是，关于「我」，关于「他」，关于「她」的故事。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-06-12T08:30:00.000Z">
+<meta property="article:modified_time" content="2022-11-25T13:49:07.804Z">
+<meta property="article:author" content="Fallen Shadow">
+<meta property="article:tag" content="回忆">
+<meta property="article:tag" content="轻小说">
+<meta property="article:tag" content="校园">
+<meta property="article:tag" content="恋爱">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://violeteternal.github.io/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4%E9%9B%86/%E5%9B%9B%E5%AD%A3%E4%B9%8B%E6%AD%8C/season-yesterday-spring/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>昔春之辞 | After Endgame</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">After Endgame</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">正因为梦易碎，才格外美好。</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-road">
+
+    <a href="/road/" rel="section"><i class="fa fa-road fa-fw"></i>归程</a>
+
+  </li>
+        <li class="menu-item menu-item-past">
+
+    <a href="https://violeteternal.github.io/" rel="section"><i class="fab fa-house-chimney-crack fa-fw"></i>旧日残垣</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4%E9%9B%86/%E5%9B%9B%E5%AD%A3%E4%B9%8B%E6%AD%8C/season-yesterday-spring/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Fallen Shadow">
+      <meta itemprop="description" content="誰も悪くないから、辛いだな。<br>自卑的人，往往只剩下温柔了啊……">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="After Endgame">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          昔春之辞
+        </h1>
+
+        <div class="post-meta">
+
+          
+            <i class="fa fa-thumbtack"></i>
+            <font color=7D26CD>置顶</font>
+            <span class="post-meta-divider">|</span>
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-06-12 16:30:00" itemprop="dateCreated datePublished" datetime="2022-06-12T16:30:00+08:00">2022-06-12</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-11-25 21:49:07" itemprop="dateModified" datetime="2022-11-25T21:49:07+08:00">2022-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4%E9%9B%86/" itemprop="url" rel="index"><span itemprop="name">短篇小说集</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4%E9%9B%86/%E5%9B%9B%E5%AD%A3%E4%B9%8B%E6%AD%8C/" itemprop="url" rel="index"><span itemprop="name">四季之歌</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>24k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>22 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>这是，关于「我」，关于「他」，关于「她」的故事。</p>
+<span id="more"></span>
+<hr>
+<p>“南方的冬天也不会冷成这样吧。”亍余缓缓地吐气，随身前的水蒸气液化而飘散在空中，“开始变冷了呢。”</p>
+<h2 id="黯灰的时针"><a href="#黯灰的时针" class="headerlink" title="黯灰的时针"></a>黯灰的时针</h2><p>作为班级乃至全校的佼佼者，亍余当之无愧受众人倾慕，虽不能称作为极品，但也算是长相端正了。也正因如此，他能注意到一些难以琢磨的目光，虽说不会太过在意。但他也不禁感到惋惜。</p>
+<p>——如果一心学习也有错的话，那也就天理不容了。</p>
+<p>亍余就是这样一个人，将除了学习之外的东西抛掷脑后的读书人。只不过，他也会在不久之后为这句话而后悔就是了。</p>
+<p>在这间教室里，有着一个与亍余截然相反的人。</p>
+<p>谈起汀枫，亍余似乎对他没有任何印象。汀枫就像是一个影子一样，不知道他和谁玩的好，不知道他的爱好，没有见过他发言，也不曾听过他谈笑。老师也很少提及过他。虽然成绩也不差。估计也正是因为他忽上忽下的成绩，让老师不好去说他吧。唯有一头自然卷的卷发能让他成为周围人记起的存在。</p>
+<hr>
+<h3 id="初识之章"><a href="#初识之章" class="headerlink" title="初识之章"></a>初识之章</h3><p>我与这间教室格格不入。</p>
+<p>并不意味着我有多么优秀，这间教室里的人都不配与我同屋；也不是说我极差透顶，没有人愿意接触我，我就是一个毒瘤。只是说，作为一个资深的社交恐惧症，我并不是很愿意把我想说的话，告诉那些不熟悉的人。</p>
+<p>在那时的我，并没有多少的朋友。</p>
+<p>“汀枫。”我转向声音的来处，然后看到一张惊讶的脸。“你……怎么了，遇到什么不高兴的事了吗。”他担心得看着我，这也难怪，我很少微笑，不仅仅是因为我笑得丑，更主要的是，没有什么值得我去笑的地方，也没有人陪着我一起笑，所以，久而久之，就被冠上了“装高冷”的标签。</p>
+<p>如果硬要给我贴一个什么标签的话，其实节能还是不错的。（注 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.507ex" role="img" focusable="false" viewBox="0 -666 500 666"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g></g></svg></mjx-container>）</p>
+<p>“没什么，怎么了？”我只好装作一副很轻松的表情，把事情从它不应该的朝向扳回来。他也松了一口气，然后蹲在了我桌子的旁边，仰望着我。</p>
+<p>“今天晚上要换座位了呢。”他说着，“你有想好去找哪一个组长了吗。”</p>
+<p>“这次的机制是什么？”</p>
+<p>“好像是，指定组长，然后组长来选组员。”</p>
+<p>“怎么选？”</p>
+<p>“大概也是分组吧，不太清楚。”</p>
+<p>急躁的铃声响起，他这才发现老师早就站在讲台上盯着他了。他便来不及告别，低着头从老师背后绕回了自己的座位。</p>
+<p>如果是我的话，早就把魂丢得没影了吧。</p>
+<p>“换座位吗……”老师的抛物线已经飞到我无法目及的地方了，所以我也不打算去思考这消耗脑细胞的压轴题了，还不如想想刚刚的话题。</p>
+<p>仔细一想，我还并没有谁想一起坐的。有一个想法在脑中闪过，但瞬间就被我 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="4.588ex" height="1.595ex" role="img" focusable="false" viewBox="0 -694 2028 705"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="68" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 124T102 167T103 217T103 272T103 329Q103 366 103 407T103 482T102 542T102 586T102 603Q99 622 88 628T43 637H25V660Q25 683 27 683L37 684Q47 685 66 686T103 688Q120 689 140 690T170 693T181 694H184V367Q244 442 328 442Q451 442 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"></path><path data-c="61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z" transform="translate(556,0)"></path><path data-c="63" d="M370 305T349 305T313 320T297 358Q297 381 312 396Q317 401 317 402T307 404Q281 408 258 408Q209 408 178 376Q131 329 131 219Q131 137 162 90Q203 29 272 29Q313 29 338 55T374 117Q376 125 379 127T395 129H409Q415 123 415 120Q415 116 411 104T395 71T366 33T318 2T249 -11Q163 -11 99 53T34 214Q34 318 99 383T250 448T370 421T404 357Q404 334 387 320Z" transform="translate(1056,0)"></path><path data-c="6B" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T97 124T98 167T98 217T98 272T98 329Q98 366 98 407T98 482T98 542T97 586T97 603Q94 622 83 628T38 637H20V660Q20 683 22 683L32 684Q42 685 61 686T98 688Q115 689 135 690T165 693T176 694H179V463L180 233L240 287Q300 341 304 347Q310 356 310 364Q310 383 289 385H284V431H293Q308 428 412 428Q475 428 484 431H489V385H476Q407 380 360 341Q286 278 286 274Q286 273 349 181T420 79Q434 60 451 53T500 46H511V0H505Q496 3 418 3Q322 3 307 0H299V46H306Q330 48 330 65Q330 72 326 79Q323 84 276 153T228 222L176 176V120V84Q176 65 178 59T189 49Q210 46 238 46H254V0H246Q231 3 137 3T28 0H20V46H36Z" transform="translate(1500,0)"></path></g></g></g></svg></mjx-container> 掉了。（注 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.507ex" role="img" focusable="false" viewBox="0 -666 500 666"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g></g></svg></mjx-container>）虽说最近确实看了不少描述青春校园恋爱的动漫，但怎么想也不可能发生在我身上吧，这个证明过于严谨以至于没有谁能够解开。所以说，不要说什么青春恋爱喜剧了，同桌是女生这件事都已经能够让我高兴好一阵子了。</p>
+<p>不过，避免遇到一些离离谱谱的神仙，下课之后，我还是拜托了一位《比较》熟悉的同学选我。好在我成绩也不差，所以我还是能够被接受的。</p>
+<p>总之，无论我的同桌会是怎么样的，都不过是首先礼貌性地打个招呼，然后对话到此结束。</p>
+<hr>
+<h3 id="黄昏之章"><a href="#黄昏之章" class="headerlink" title="黄昏之章"></a>黄昏之章</h3><p>晚饭之后，我一个人从食堂走出，时不时会有两三个人并肩绕过慢慢踱步的我，说说笑笑地回教室。</p>
+<p>炽黄的暮色点燃了西边的半块天空，仅此的青蓝沿着巨树之下的小道延申而出，流淌在太阳曾经待过的地方。此时的火球已经失去了正午的高光，即使直射在脸上也不会感到烦躁。</p>
+<p>正值秋末的时节，并不是很冷，披上一件稍适的外套，走到哪里都是这副打扮。而在学校里，反正只是着装校服，所以也就这样了。</p>
+<p>回到教室的时候，刚好是计算的时间，人不算多，不用在嘈杂的声音中穿梭回到自己的座位；人也不算少，不会在后来人回教室时成为第一个被盯的对象。这个时候，一般老师也不回来，可以做一些自己愿意做的事情。</p>
+<p>如果这个时候有人坐在我的座位上和他的好朋友聊天的话，也许我还能去说上两句，也不至于从现在开始的三十分钟都在一个人沉浸于无法挣扎的问题里。</p>
+<p>我死死盯着桌子上的书本，余光不时瞟到有人从身边经过。</p>
+<p>耳朵从嘈杂的背景声中捕捉到一些能够辨识的信息，多半都是和今晚上即将发生的事情有关，似乎所有人都在考虑这个问题，其实我也想这么做，不过到头来，就会成为一个精神病的自言自语了，所以我还是打消了这个念头。</p>
+<p>然后，上课，下课，上课，下课。直到倒数第二节课上课之前，班主任来了一次教室，然后把上次月考前十名的人叫到了教室，出去的人当然不止二十个，所有人都围在狭窄的走廊上，似乎一个不注意就会从六楼上摔下去。隔壁班的人经过也只好绕道了。</p>
+<p>我还是没有兴趣参加这些群体活动。</p>
+<p>再次申明，我不是一个傲娇，也不是什么所谓的高冷男神，只是一个社恐加上内向加上死宅加上各种负面因子的丑男罢了——字面意思。</p>
+<p>然后，在预备铃打响之后，一窝蜂的人又涌回了教室，一分多钟之后，那十个组长也走进了教室。我没有注意到谁的目光，也是，可能会存在的对话不过是：“啊，怎么这么一组只剩下汀枫了啊，那我能不能先把下一组的选了啊。”“不行”“那我就勉为其难接受喽。”</p>
+<p>不过，我总是会跟着这十个之一的。</p>
+<p>下课铃打响之后，不出所料，大多数同学都围在了那十个人左右，显然地，我无法参与进去，也就只能等着人群散去，走到那个我拜托的人身边。</p>
+<p>“喂，你应该选了我的，对吧。”我小心地询问，因为如果不是的话，就寄掉了。</p>
+<p>他先是没从人群的氛围中回来，然后作出一副思考的样子。</p>
+<p>果然，他肯定没选我，因为如果选了的话，肯定一下子就能记起来，于是我换了一个问法。</p>
+<p>“谁选了我。”</p>
+<p>“哦对了，”他似乎想起来了，“到时候你就知道了。”</p>
+<p>“哈？”我很震惊他的回答，“什么意思？”</p>
+<p>“哎呀，反正不坏就是了。”然后转过身去，和他的同桌一起讨论起题来。</p>
+<p>这下什么也问不出来了，“反正不坏”？是个什么意思啊。</p>
+<p>我那一组的话，他应该是第三个选的，如果他答应了我的话，应该没有谁会优先考虑我这个废物的啊。</p>
+<p>算了，等到时候再说吧。</p>
+<p>天已经晚了，屋外一片漆黑。</p>
+<hr>
+<h3 id="遇见之章"><a href="#遇见之章" class="headerlink" title="遇见之章"></a>遇见之章</h3><p>很平静的几天，所有人都把这件事抛掷脑后了，毕竟似乎除了我之外都知道了分组情况。不过，我在无意提到这件事的时候，都没有得到想要的结果，要么就是不知道，要么就是不愿意告诉我。占第一种情况的当然是大多数，因为没有谁去关心一个透明人的去处。</p>
+<p>终于，在一次久违的活动课，迎来了换座位的时候。</p>
+<p>一个表格在学校老旧的电脑上转动，然后跳出了教室的新座位表。</p>
+<p>我并没有戴眼镜，所以也看不太清楚，只能隐约看见我的名字，在最后一排。</p>
+<p>果然吗，最边缘的边缘。</p>
+<p>划水圣地。</p>
+<p>老实说，还不错。</p>
+<p>我挑了一部分书，然后穿过狭窄的走廊和拥挤的人群，走到最后一排，然后开始打量这个新的座位。忽然，视野中，从座位的另一端，同样走过来一个人。</p>
+<p>我对眼前这个人并没有太多的印象，说实话，当时的我对班上大多数人都没有印象。我只记得这是一个文科极好的女生，总是在语文课上大表言辞，然后说一大堆我听不懂的东西。唔……这并不是讽刺之类的，是真的听不懂。</p>
+<p>我抬起头，看着她，她正好也放下书，抬起头，目光相撞。</p>
+<p>如果这个时候恋爱之神插手的话，那就大错特错了。无论怎样，我都对我们班上那群女生没有任何好感，当时的我，已经全身心投入二次元了。</p>
+<p>她长得端正，稍微有一些矮，但也很瘦，一副圆框眼镜架在不大的鼻梁上。短小的单马尾梳在头后，随着行动左右轻轻摇晃。她抬起头盯着我，我能够透过那澄澈的眼睛看到反射而出的我那浑浊的眼睛，从她的神情就能看出，她是一个富有正能量的人，与我恰恰相反。</p>
+<p>我在脑中搜索着眼前这个女生的名字，不过未响应了一会儿，回过神来的时候，那个女生脸颊泛起微红地轻声询问，虽然教室极度嘈杂，我却听得一清二楚。“有……什么事吗。”</p>
+<p>我也才意识到似乎自己看过头了，只是赶忙回了一句“没什么事”就转回头去再搬自己的东西去了。</p>
+<p>我记得，这个女生叫延偌。</p>
+<hr>
+<h2 id="初染霞红"><a href="#初染霞红" class="headerlink" title="初染霞红"></a>初染霞红</h2><h3 id="交织之章"><a href="#交织之章" class="headerlink" title="交织之章"></a>交织之章</h3><p>虽然，从本质来讲，坐在最后一排还是一个不错的事，毕竟动漫里面的男主都是后排靠窗的标准座位。可惜我的视力从小学毕业之前一段时间就开始下降了，然后又一直没有换眼镜，所以说呢，即使是戴了眼镜也无法清晰地从最后一排看到黑板。也就至于，哪怕有一瞬间，我想要认真学习，也无济于事了。因为这已经是客观因素了。</p>
+<p>所以我一般都会用余光去浏览同桌的笔记以了解老师现在正在讲的内容。我转动眼珠，然后用尽全力去盯着她的书本，一个字一个字辨认着她的笔记。她的书写有一种独特的美感，一看就知道是练过书写的，每一笔都洋溢着顿挫之风，很有韧劲，不像是女生能够写出的那种柔和之美，而是大书法家挥笔四溅的豪迈作品。我依然在认真地盯着这近在眼前的伟大作品，我想老师即使看见了也不会说些什么，更何况没有几个人会注意到我。不过还是突然地，眼前的一个一个黑体字突然全部被挡住了，一只纤细的手摊开五指，挡在了我的视线前。</p>
+<p>“你……在看什么呢。”延偌小声地问道，眼睛斜着盯着我。我才反应过来自己似乎看入迷了，这样做好像很不礼貌，但如果不回答的话又会引发更多不必要的麻烦。</p>
+<p>“哦，我在看笔记，你的笔记做得很好。”我用手指着她挡住的那部分，然后同样小声地说。</p>
+<p>“那，你为什么不打算自己也写一下笔记呢。”她的视线回到我的课本上，只有一些用黑笔草草了事的勾画而已，有些甚至都勾到文字里面去了。</p>
+<p>“这……”我要会写我当然写了啊，“因为看不太清楚黑板，所以只能看同桌的笔记了。”</p>
+<p>“啊？哦。”她稍加思索，然后突然意识到自己似乎已经走神了几十秒了，于是瞬间把这件事忘在脑后，回到了认真听课的状态。手也慢慢散开，把挡住的本子再次露了出来。</p>
+<p>然后，我也就死盯着黑板，面对着一团模糊任加想象，然后结合老师混杂不清的声音和眼下的课本来摸索讲的内容。回过神的话，四十分钟也就过去了。</p>
+<p>我开始思考下一节的科目，看到一个精巧的本子被推在我的桌子上。封面很清净，应该是经过严谨保护了的，侧边用一条白线串起来，是那种文具店常见的款式。边角没有什么褶皱，和软质的地方，能够看出主人应该是一个爱干净的人。</p>
+<p>“嗯？”我刚开始不太能理解这样做的用意，然后回想起了自己上课时的社死操作，就又必须把这件事给圆回去，“哦哦，真是太感谢了。”我用双手捧过，小心翼翼地翻着。</p>
+<p>“你不是说要看嘛，我现在不用，就给你看啦。”她虽是这样说着，但眼睛完全没有向这里偏过来的样子。“好吧。”我也并不在意太多，开始认真看着每一页都经过用心处理的笔记，非常细致，如果是我的话，根本都不知道老师曾经讲过这些东西。</p>
+<p>果然啊，这就是优生吗，一看就是我一辈子都不可能达到的高度了。不仅仅是课堂上提到的内容，更多的是扩展与自己的理解。每一行都有浅显易懂的注释，即使是接触不深的差生也能有一个大概的理解吧。要是当初老师们都是按照这个笔记的内容来讲的话，我现在也不会堕落成这个样子。</p>
+<p>还是被深深地吸引住了，不仅仅是这如同印刷般的字体，更是对这份对学习的热爱的敬意。所以，在上课铃即将打响的时候，我才念念不舍地把笔记本还给她。她接过之后，也没有说什么，就默默地塞进了抽屉里。</p>
+<p>似乎就养成了一个习惯，每一节下课之后，我都会借着她的笔记本然后欣赏一番，就如同阅读那种小说，或者一些杂志的感觉一样，以至于曾经不太爱看书的我也能够沉静下来阅读。然后也会找到一些不太能理解的问题，然后去询问她，并得到相应的答案。久而久之，也不会像原来那样厌恶学习了，遇到有意思的题目，还是愿意去钻研一下的。而和延偌，也逐渐开始有了话题。</p>
+<h3 id="邂逅之章"><a href="#邂逅之章" class="headerlink" title="邂逅之章"></a>邂逅之章</h3><p>“喂，我打算给我们组立一个新规矩，”我刚从教室外面回来，她就摆出一副组长的样子，装作威严地告诉我。“我可不叫‘喂’。”我不太能搞明白这句话的用意，所以就打算敷衍几句，坐在座位上，打算继续回忆上次听的一首歌，然后渐渐地就哼唱了起来。</p>
+<p>“以后不能在教室里哼歌了。”她坚定地说着，然后把一张纸糊在我的脸上，上面写着她立下的新的组内规矩。</p>
+<p>“哈？”</p>
+<p>“嗯嗯。”她自顾自的点了点头，双手叉在胸前，“很合理吧。”</p>
+<p>合理才有鬼了啊喂，怎么可能啊，我下意识感觉到这条规矩明显是针对我立下的。回忆起来，我似乎在上课或者下课的时候会时不时地哼一些歌。不过毕竟以前学过一些乐理，所以我还不至于唱歌会跑调，虽然有时候记不住歌词可能会糊弄过去，但是，我对我自己的声音还是有些把握的。</p>
+<p>“等等，”我冷静思考了一下，还是打算以理服人，“上课不能哼歌这点我能理解，不过下课了之后总可以的吧。”我觉得很合理。</p>
+<p>“不行，还是会影响我的学习。”她闭着眼，把头歪向一边，露出一副不高兴的表情。</p>
+<p>这完全是在针对我了吧，本质都暴露了啊喂。</p>
+<p>“不会吧，听着歌学习不应该更有效率才对吧。”我吐槽道，这人也正经过头了吧，脑子里全部装的都是学习吗。</p>
+<p>然后，她又摇了摇头，摆出一副十分认真的表情：“那是因为你唱的太难听啦。”</p>
+<p>“哈？”我甚至开始怀疑自己的耳朵是不是接收频率调错了，但在下一秒我意识到这不可能是非现实之后，就开始了超负荷运转的大脑，“怎么，唱歌唱的难听就不能唱了啊，又没有人规定学习好的人才能学习，又没有人规定要做饭做得好的人才能吃饭，唱的难听照样要唱，只要唱的开心就好了啊。”</p>
+<p>我根本没有给她以回答的机会，直接输出了大半分钟。这么一说之后，她的气势一下子就下去了，一副小慌张的样子，想要把身子往后缩，远离我这个变态一样。</p>
+<p>“那……就删掉了哦。”她小声地说，眼睛仰视着我，露出一种像是被欺负了的感觉。</p>
+<p>完了，罪恶感一下子就上来了。</p>
+<p>“啊不不，”这下子轮到我慌张起来了，“哎呀，我以后上课不会哼歌了的，但下课的话您老还是通融点吧。”我做出祈祷的样子，让出了半步。她抬起头，像是很委屈的神情，眼睛直直地盯着我，慢慢才挤出一句：“真的？”</p>
+<p>我琢磨着嘴唇，微微地点了点头。</p>
+<p>一下子，她又摆出了那种威严组长的样子，然后把手叉在腰上：“嘿嘿，果然还是我更有威慑力吧。”</p>
+<p>……得亏这是个女生啊，要是男的我估计就一拳上去了。</p>
+<p>我只是叹了口气，无奈地摇了摇头，转手准备下一节课的用具。她轻轻地用手指戳了戳我的手臂，我转过头，她还是那副有些害羞的样子。</p>
+<p>“喂，你不会讨厌我吧。”她小声地问，但并没有表露出任何的表情。</p>
+<p>“啊？”我并没有意识到这个问题的可问性，只是一句话就带过了，“怎么可能啊，你想多了吧。”然后继续在抽屉里翻找着我的书本。</p>
+<p>“这样啊，”延偌拿食指顶着自己的下巴，看着天花板上倒挂着的风扇，“那就好。”</p>
+<p>她似乎松了一口气？可能是我听错了吧，最近神经衰弱，经常出现一些幻想的东西。</p>
+<h3 id="梦始之章"><a href="#梦始之章" class="headerlink" title="梦始之章"></a>梦始之章</h3><p>他有发觉吗。我总是不禁这样想，总感觉他对我一直没有一股热情。</p>
+<p>不知从什么时候开始，我就开始盼望着有一天能够和他成为朋友，能够开心过着日常的生活。真的是很幸运的事情，他就在我首选的一组里面，所以我就拥有了优先权。</p>
+<p>虽然有人问过我为什么要选他，我都回以的是像是这个人不会惹麻烦，很安静之类的回答。不过啊，这应该是我个人的愿望吧。</p>
+<p>我希望他能够在无事的时候能够多看我一眼，能够以一种轻松的语气开启一些平淡的话题，能够说出一些有趣的话语让我开心。其实呢，能够和他坐在一起，就算是一种开心了。</p>
+<p>但最近，总感觉好像都是我在尽力地寻找话题，然后邀请他加入进来，和他一同欢笑。但他似乎总是想要尽力缩短话题，然后结束对话。</p>
+<p>他真的是太冷漠了。</p>
+<p>似乎这是他本来就有的样子，也不像是刻意对我做出来的态度。我也希望是这样，不过，我还是希望对我的态度能有所不同啦。唔……听着真的好任性啊，不行，我也不能这样下去，我也必须要做出改变！</p>
+<p>我会让他正面看着我，然后说出那句我想要听的话。</p>
+<h2 id="澈橙与月"><a href="#澈橙与月" class="headerlink" title="澈橙与月"></a>澈橙与月</h2><h3 id="风之章"><a href="#风之章" class="headerlink" title="风之章"></a>风之章</h3><p>冬春交际的时候，太阳升起的很晚，以至于汀枫这种起得很晚人在出寝室的时候，天也是搅糊了一般的漆黑，说明不明，说暗不暗，就是现在的天气。</p>
+<p>汀枫在食堂随手抓了一个白馒头，就一边含着一边往教室走了。一边上楼，一边动着牙齿和骨骼咀嚼着嘴里的馒头，导致呼吸有一些没有规律而紊乱。总算是到了六楼，开始往教室的方向走。</p>
+<p>忽然间，在走廊另一端的拐角楼道中，钻出了一个人影，也在快步跑向他前往的目的地。看起来似乎很慌乱的样子。走路的时候没有戴眼镜，所以汀枫也认不出这是谁。不过这是理性下的思考，要说真的有一个结果的话，汀枫早就知道这是谁了。</p>
+<p>“来的可真早啊，大小姐。”汀枫一边嚼着馒头，一边说着。</p>
+<p>“还好意思说我，也不看看嘴里叼的什么。”延偌放慢了脚步，抬头瞪了汀枫一眼，早他一步进了教室，就径直走向了自己的座位。汀枫则慢晃慢晃地随其步伐。</p>
+<p>“已普遍理性而论，当我进入教室的时候，你已经开始早自习至少五分钟了吧。”汀枫拉开椅子，把书包放在了身旁。然后把书本一件件抽出来。</p>
+<p>“那还不是，”一看就是跑过来的，说句话连气都喘不过，“闹钟设晚了啊，才起这么晚，居然和你这种懒虫一起到。”她摇了摇头，做出一种面对无可救药的混蛋的样子，“今天的我也真是够失败的了啊。”</p>
+<p>“是啊是啊，”这种类型的吐槽汀枫已经见怪不怪了，只是一脸懒散地给予谢幕，“成为你一天坏心情的开始，真是我的荣幸啊。”</p>
+<p>延偌没再说什么，两个人就各自拿起了自己的书，加入了周围的早读。</p>
+<p>距离毕业时的焦急考试状态还有一年之多，所以似乎在老师没有来之前，这里的氛围并不是很紧张，可能是都没有睡醒，所以一半多的人都是疲惫的状态。</p>
+<p>虽然原因不同，可这两个人都没有被计算在内。</p>
+<p>汀枫是名副其实的睡虫，无论一天睡多少个小时，起来之后不到十多分钟就会开始打哈欠，直到再一次睡觉。有时候并不是因为困，更多的是因为汀枫不愿意运转自己的躯体，所以大脑误判为应该是休眠状态，所以提醒身体应该进行休眠。</p>
+<p>而延偌则是名副其实的好学生，每天的作息都准时得可怕，且她的精神也很好，一般都不会疲倦，偶尔会困也是可以迅速调整，然后让大脑进入全身心投入模式，然后就会忘记睡觉。然后模式一旦关闭，则会倒头就睡，瞬间休眠。</p>
+<p>因为刚起床不久，所以汀枫这个时候并没有多么的困，一如既往地趁着杂乱的早读声哼着歌。</p>
+<p>“唱得好难听哦，可不可以不要唱了呢。”汀枫听见声旁传来了戏谑的声音。</p>
+<p>“要你管了啊。”他斜着眼看过去，延偌依然摆着不在乎的样子。</p>
+<p>真是麻烦啊。汀枫想着，阅读着语文书上需要背诵的诗歌。一个一个用宋体刻印下来的汉字让汀枫感到头疼，他的语言文学从小就不太灵光，小学里面也就语文极其不擅长，屡次被他的小学班主任兼语文老师请去喝茶，到了初中过后，虽然有在努力，但是依然没有什么成效的样子。眼前的课本就如同性磁铁的另一端，无法让汀枫能够集中下去，他只好抬起头，观察四周的同学。</p>
+<p>果不其然，大多数人都是双眼无神地盯着课本，嘴中如念经一般小声说着不属于这个世界的语言，心思也没有在课本上。</p>
+<p>而延偌则津津有味地朗读着其中的诗词，右手握着的中性笔停留在半空中，像是在自言自语，时而露出一副恍然大悟的感觉，落下中性笔，然后在纸页上写着什么，无论何时，都是如同印刷一般的美丽字体。</p>
+<p>“话说起来，你的文科真的很好呢。”汀枫现在完全无法集中，就只能靠聊聊天度过时间了。</p>
+<p>“嗯嗯，”延偌依然自顾自地点了点头，“那当然啦。”</p>
+<p>一点都没有谦逊呢。</p>
+<p>“究竟是怎么样对语文提起兴趣的啊。”汀枫只是很不解，虽说自己也比较喜欢写一些类似于小说的东西，但他对语文的热爱也仅限于读小说和写小说两件事了吧。</p>
+<p>“怎么不会！”延偌义正言辞地反驳，一脸正经地转过头来，直直地盯着汀枫，“汉语言文化所以博大精深，不仅仅是从表面看来一个一个方正字中蕴藏的层层深意，从古至今，汉字的组合方式比二十六个字母的组合方式多得多得多。公正的古诗句，以及现在错落有致的现代诗歌，或者是那些长篇短篇的优美的小说，每一个字都有独特的含义，每一个字都有存在的意义。”</p>
+<p>她滔滔不绝地说着，伴随着一系列动作：“虽然说啊，很多人都说汉字意思太多了，理解不了，但实际上，只要带进去一读，就会立马明白里面的意思，无论是现代小说还是古代诗歌也好，各有各的优点和美感。在心情好的时候读一读，就会发现许许多多未曾发现的细节；心情糟糕的时候读一读，沉浸进去，马上就会把烦恼一扫而空。”</p>
+<p>“还有呢，还有呢，说起我最喜欢的诗歌的话……”汀枫感觉到了延偌应该会继续无止境地说下去，他只好把手在延偌眼前晃了晃，延偌一脸迷惑地转过来，突然意识到自己刚刚似乎有些说过头了，赶忙放下了举在半空中的手，然后缩在了背后。</p>
+<p>“啊！对不起……”她的脸颊微微泛起红晕，可能是初升的太阳透过窗户照进了教室的缘故。延偌将身体转回去，强迫自己盯着桌面上的课本，她用双手拍了拍自己的脸颊，让自己打起精神来，短小的马尾随之悦动。</p>
+<p>这样子还真的有些可爱呢。汀枫这么想着，但绝对不会产生什么念头，他心里清楚，自己绝无可能会有这样的机会，如此漂亮的女孩子怎么会愿意和一个这样的人谈恋爱呢。</p>
+<p>“没有啊，”汀枫维持着镇静的状态，用左手撑着脑袋，歪过去看着延偌，“我很乐意听你讲讲这些的。”他微微地笑了，虽然他知道自己笑得并不好看。</p>
+<p>“哦，是吗，谢谢。”</p>
+<p>“不不，应该谢谢的是你，”汀枫继续说着，“或许啊，我又会对语文提起一点点兴趣了呢。”</p>
+<hr>
+<p>下午的第二节课，是久违的体育课。</p>
+<p>汀枫对运动本身就没有太大的兴趣，更何况因为很多的原因，他从小的体质就很差，就像是一直生着病一样。他还记得，小学的时候，有一次只是简简单单地跑了一个四百米，到终点的时候，他就止不住地咳嗽，甚至还咳出了一口血痰。</p>
+<p>所以，体育课这种东西，一般而言，汀枫都只会坐在一边观望。</p>
+<p>“你呢，你打算去干什么？”延偌一边收拾东西，一边询问汀枫。</p>
+<p>“我吗？”汀枫一直是一副懒散的模样，“坐在台阶上看他们打篮球，或者围着操场散散步之类的？”</p>
+<p>不出所料，延偌对这个回答有些震惊：“你都不去打打球之类的？”汀枫知道，延偌虽然看着身材像那种小巧玲珑的女生，一碰就碎的类型，但实际上，正因如此，她才可以在球场上任意穿梭，跨防许多高达的男生。</p>
+<p>不过，如此热爱运动，身体却依然水嫩，也真是一大奇迹呢，汀枫如此想道。</p>
+<p>“不了，不感兴趣。”汀枫甚至连外套都不想脱，就跨出了教室。延偌放好外套，拿了瓶水，从后面追上了汀枫。“那你这么高的个子不去打篮球真的可惜了啊。”延偌像是在惋惜，或者在调侃。</p>
+<p>“那倒不，毕竟长得高的人很多，又不是每一个人都会去从事运动。”在这件事上，汀枫还是挺有看法的。</p>
+<p>“这么说？你擅长的是其他领域喽。”延偌露出笑容，虽然不像是怀了好意的笑容。</p>
+<p>“保密。”汀枫并不想出人头地，所以也不会太多透露自己的个人信息。</p>
+<p>“那就是没有了嘛。”</p>
+<p>“对对，您说的都对。”汀枫也并不是很想反驳。</p>
+<p>“嗯嗯，果然你在什么方面都比不上我呢。”延偌再次笑了，是那种发自真心的笑。</p>
+<p>汀枫也跟着笑了，只是幅度稍微小了一点。</p>
+<p>“喂，你在笑什么啊。”延偌感觉到了一点不对劲，逼问着汀枫。</p>
+<p>汀枫戏谑地摇了摇头：“没什么。”</p>
+<p>“喂！不要耍我啊！”</p>
+<p>“没有耍你的啦。”</p>
+<hr>
+<p>果然，因为距离体育考试还有一段时间，所以现在的体育课都是自由活动。</p>
+<p>无论男生或者是女生，在老师喊完解散之后，就两两三三一起走了，等着人散完了，原地里留下了两个人。</p>
+<p>亍余斜眼望去，看见汀枫慢悠慢悠地往教室走。</p>
+<p>“喂，体育课不能够早退的。”声音很平淡，不夹杂一丝情感。</p>
+<p>“我是有名字的啊……”汀枫小声吐槽着，停下脚步，转过身来，面对着亍余，“然后呢。”</p>
+<p>“我怎么知道，你不去和他们一起打球吗？”亍余问着，尽着自己学习委员的职责。</p>
+<p>“你还不是？”汀枫小声地笑着，看着这个与自己并不太多交集，现在却同样处境的人，“那，你就陪我去散散步吧。”</p>
+<p>亍余似懂非懂，跟在汀枫后面。</p>
+<p>“你，应该是叫亍余对吧。”汀枫问着，并没有把头转过来。</p>
+<p>“同学一年多了，你连名字都记不全的吗。”亍余冷漠地回答。在平时，他走在路上，都会有自己不认识的人小声念出自己的名字，而眼前这个十分熟悉的人，居然连自己的名字都不知道。</p>
+<p>“啊，那真是抱歉。”汀枫和亍余一样摆出了一副不在乎的神态，继续着话题。</p>
+<p>“作为全校的佼佼者，受万千少男少女的爱戴，老师们对你关照有加，却在体育课上找不到一个一起玩耍的同伴？”汀枫一字一顿地陈述着这个事实。</p>
+<p>“可能，正因如此，才会这样。但是，我也比废柴的你要强很多。”亍余说话很直，根本不留情面。</p>
+<p>“是啊，”汀枫意识到这样的话，对话可能会陷入尴尬的局面，他正在思考另一个对策。</p>
+<p>“并不是全无道理，与披星戴月的你比起来，我真的不知逊色多少呢。”</p>
+<p>“知道就好。”</p>
+<p>“……”汀枫已经明白了对话不可能继续了。</p>
+<p>只能祈祷谁来圆一下场了。</p>
+<p>不知不觉之间，两个人从操场一端走到了篮球场的边界，一排一排的篮球架有序地陈列着，因为许许多多的班级同时在上体育课，所以来回穿梭的人汀枫并不一定认识。</p>
+<p>“汀枫？”汀枫望去，模糊的视野中似乎出现了一个有些熟悉的身影，但无论如何，他的耳朵应该不会出问题。</p>
+<p>“怎么了？”汀枫盯着眼前的延偌，没有任何多余的表情。</p>
+<p>“没，没什么？”她转过头去，看见了身旁的亍余，刚想张开口说什么，然后又闭上了。</p>
+<p>“你好啊。”结果是亍余率先打了这个招呼。</p>
+<p>“你，你好。”看起来延偌平时应该也没有和亍余有过什么交集。亍余就像是神话里面的人物一样，可能是难以靠近的类型。</p>
+<p>“你们，是在？”延偌似乎好奇着汀枫他们的活动。</p>
+<p>“啊？我不是跟你说过了嘛，散步啊。”汀枫似乎懊恼地说着，他并不是很喜欢重复两遍这个习惯。</p>
+<p>“啊啊对，对不起。”</p>
+<p>“唉……”汀枫用手扶着脑袋，叹气地摇了摇头，“你能不能稍微分一点精力在我这里啊。”</p>
+<p>延偌被这一句话下了一跳，随后小声嘀咕：“明明已经分了很多的啦。”</p>
+<p>“什么？”汀枫听到了延偌似乎在说话，但是并没有听清楚，“你刚刚说啥？”</p>
+<p>“啊！”延偌倒是被汀枫下了一跳，“没！没什么！”</p>
+<p>“哦。”</p>
+<p>“你们？”亍余的语气依然不像是有什么情感，“是在谈恋爱吗？”</p>
+<p>“啥？”“哈？”</p>
+<p>两个人都被这句话吓到了，空气中就像是突然凝固了一团水蒸气液化而成的白雾。</p>
+<p>“你……刚刚，说了一句很危险的话，你知道吗？”汀枫小心翼翼地询问。</p>
+<p>“啊？”没想到居然被亍余反问了，“这个问题有什么问题吗？”</p>
+<p>“不，不，”汀枫觉得完全没有什么继续聊下去的必要了，“没什么问题……我觉得有问题的应该是我才对。”</p>
+<p>他并不想回答这个问题，任何一个回答都可能使空气再次凝固。</p>
+<p>汀枫把头转向了延偌，他想等她来否决。</p>
+<p>然而延偌此时已经停止思考了，根本没有注意到两个人之后对话以及现在汀枫看着她的惊讶表情。“什么？什么？什么啊？”大脑在断断续续地运转，没有任何介入的余地，仿佛置身于只有自己的世界里，旁人的所有言语都被自动过滤了过去，“我的行为这么明显的吗，所有人都知道了吗，只有我一个人还在演戏吗，不会吧不会吧不会吧不会吧不会吧不会吧不会吧……”</p>
+<p>“延偌？”这种程度的心理汀枫当然还是能够接受，但他明显能感觉到延偌内心的动摇。</p>
+<p>“嗯！在！”沉浸在自我内心中的延偌自然就被吓了一跳。</p>
+<p>她回想起自己身处的环境，然后对亍余露出了和善（伪装）的微笑，“当然不可能的啦，这么糟蹋的男生恐怕没有人会喜欢的吧。”</p>
+<p>“喂，你说谁糟蹋呢。”汀枫对这个答案并不是很满意。</p>
+<p>“听不见。”延偌和亍余打了一声招呼之后，就又跑回了篮球场。</p>
+<p>“作为学习委员，关心同学的早恋问题，你也真是够伟大的啊。”汀枫摊开手，吐槽着。</p>
+<p>亍余没有回答，也没有做出什么表情。</p>
+<p>一阵偏寒的风刮过操场，并不是那种能拔根而起的飓风，如细流般流淌，从人们外套的缝隙中穿梭，对于一些现在正挥洒汗水的人而言，是一次享受；而另一些人，则会感觉到一丝寒冷。之后呢，待到这阵风散去，估计没有人会记得吧。</p>
+<p>所以呢，就像风一样，汀枫很快也就把这件事给忘记了。</p>
+<hr>
+<h3 id="雨之章"><a href="#雨之章" class="headerlink" title="雨之章"></a>雨之章</h3><p>春冬时节的交际，天气也会变得飘忽不定。</p>
+<p>“总算是暖和了啊。”汀枫再也不用每天起床就在被窝里先套上四层衣服再下床，也不用像个胖子一样臃肿地走路，虽说还是穿了三件，但至少不会影响正常活动了。</p>
+<p>汀枫望向窗外，天空中并没有漂游着悠白的鲸鱼，只有几朵孤独的云在视野里缓缓地移动，云层的中央似乎累计了一团黑灰色的厚积。</p>
+<p>“你在看什么呢。”延偌从背后问道。</p>
+<p>“没什么，无聊而已。”汀枫转过头，看见延偌也专注地望着刚刚自己望着的地方，那个地方除了一片很厚的云之外，只是偏蓝偏灰的天空。</p>
+<p>此时，延偌正好也把目光收回来，两个人正好目光相对。这个时候，汀枫才发觉，延偌的眼睛是那种褐墨色的澄澈，虽然近视，但并不妨碍眼睛的美感。</p>
+<p>不对，好像这个时候的重点放错位置了。汀枫看到了延偌的眼睛开始变得模糊，他把视线稍往下移，发现延偌正在抿着嘴唇，脸颊再一次有些泛红，做出一副害羞的样子。</p>
+<p>“啊！”汀枫意识到了自己的失礼，“对不起！”他立刻把头转向一边，也感觉到一股发烫。</p>
+<p>汀枫等待着审判的降临，也许是一顿劈头盖脸的臭骂，也可能是卷成棍子的后书对着自己的脑袋一顿输出，或者是用什么尖尖的类似于圆规的东西猛戳自己的后背。</p>
+<p>时间就如同这样子流淌，什么也没有发生。</p>
+<p>嗯？汀枫不禁感到疑惑，他缓缓地转过头，并没有想象的什么重击，就如同什么都没有发生一样，延偌正在低头写作业，似乎并没有在意什么。</p>
+<p>我的错觉吗？</p>
+<p>并不是，现在的延偌只是在故作镇静罢了，虽然用传统艺能靠干其他事情来分散注意力，却完全没有成功。她刚刚也是，虽然专注地盯着汀枫，但一回想起，就为自己失礼的举动感到羞耻，又因为汀枫也在看着自己而害羞。所以她才会不觉之间脸颊泛红而发烫。</p>
+<p>而当汀枫道歉转过去之后，她强制让自己冷静下来，但发现根本冷静不下来，就只好打算不让汀枫察觉，就选择了低头做作业这一个行为。</p>
+<p>诶算了。汀枫觉得还是是因为自己的普信而想多了，所以他也并不想在乎这件事了，也开始干自己的事情了。</p>
+<p>汀枫的预想并没有太大的偏差，下午早时，原本碧蓝的天空在人们不经意间被大团大团的云朵笼罩，然后传出就像是夏天里老旧风扇转动的声音。一阵湿润的气息传来，汀枫细微地捕捉到了这一点变化。</p>
+<p>汀枫并不像其他人看天势，因为他根本就看不来天势。也不会背什么“燕子低飞蛇过道”这种谚语。他从小就有一个独特的判断雨天的方法。在下雨的前期，汀枫能够捕捉到沾有雨水的空气，那种味道是与干燥空气不同的清香，虽说描述不出来，但只要一闻，汀枫马上就能判断出不同。（注 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.554ex" role="img" focusable="false" viewBox="0 -665 500 687"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></g></g></g></svg></mjx-container>）</p>
+<p>“下雨了啊。”汀枫自言自语着。比起晴天，汀枫更喜欢下雨天一些。不仅仅因为空气清新，而且更适合睡觉，下雨天能够带来一种更为舒适的美感。即使容易被淋感冒，汀枫依然喜欢在雨中漫步，那是一种浪漫，独属于一个人的浪漫。但这样仅限于细小而轻柔的雨。</p>
+<p>汀枫再一次望向窗外，密集的雨点结成一道幕布，之后的景色完全不在视野里，击打在地面上迸溅出的水花击碎了即将落下来的雨点，化作空中的雨花随之落下。于此重复，迎成沁洗喧闹城市的瀑布。</p>
+<p>汀枫把心思收回来，无意间看向了延偌。却发现她作出一副慌张的表情。</p>
+<p>“你怎么了啊。”</p>
+<p>“我，我忘记带伞了……伞放在家里了。”延偌不太好意思地说着。</p>
+<p>“哦……”汀枫想着，“那去找一个朋友和你一起回去啊。”</p>
+<p>延偌轻轻地点了点头，没有再说什么。</p>
+<p>不久，就是放学时间了。汀枫一般都会等着第一批人在校门口挤完之后才会出去，况且现在还在下雨，人肯定更多，所以大概十多分钟之后，汀枫才慢慢走出教室。</p>
+<p>他走到教学楼的门口，看到了一个熟悉的身影。</p>
+<p>延偌一个人站在那里，望着眼前的雨幕，两只手扣在身前，扳弄着手指。</p>
+<p>“喂，你怎么还没走啊。”虽然汀枫已经猜到了结果，但还是礼貌性地问了一句。</p>
+<p>“因为……因为和她们不同路，所以也不会麻烦别人。”延偌还是小声地说着，并没有把头转过来。</p>
+<p>“那我送你吧。”</p>
+<p>“啊？”延偌转过头，用手扶了扶自己的眼睛，睁大了眼睛，“真的吗？”</p>
+<p>汀枫点了点头。</p>
+<p>“这样，这样真的好吗。”延偌有些害羞地问道。</p>
+<p>“没事的，顺路而已。”延偌并没有察觉汀枫撒了一个谎，说着，汀枫撑开了自己那把宽大的黑色雨伞，之所以如此宽大，不仅是因为汀枫幻想着有一天能够为自己喜欢的人撑伞，更重要的是，这把伞打着一个人不会把包淋湿。</p>
+<p>汀枫撑起伞，看向延偌。延偌先是颤抖了一下，随后小步小步地走向汀枫，靠在了一起。两个人迈着同样节奏的步伐，进入了雨幕。</p>
+<p>“是这条路没错吧。”</p>
+<p>“嗯，嗯。”延偌点了点头，小声地说着。</p>
+<p>两个人并没有太多的话语，甚至之间还有一段肉眼可见的距离。虽然说这把伞确实很宽大，但是是仅限于一个人，现在是两个人，在加上中间还有一段距离，当然是不够的。汀枫只好稍稍向延偌把伞偏过去，然后让自己的左肩暴露在雨点中。虽然说，延偌并没有注意到。</p>
+<p>现在，延偌依然处于停止思考阶段，或者说，自我世界阶段，所以对外界的什么都没有察觉。</p>
+<p>不知不觉间，延偌看见前面有一栋熟悉的建筑。</p>
+<p>“那里，”延偌举起右手，指向那栋建筑，“我家就在那里。”</p>
+<p>“哦，是吗……”不知道是因为左肩冰冷的原因，汀枫不觉地向延偌稍稍靠近了一点，两个人的肩膀靠在了一起。</p>
+<p>“啊！对不起。”延偌下意识地往后退了几步，一下子钻出了伞下，一脚踩起一团水花，身体不禁间向后倾去。她感觉到了自己似乎快要摔倒在满是雨水的路上，忽然间，一只有力的手紧握住了她向前停滞的手。</p>
+<p>“喂，小心点啊。”汀枫伸出右手抓住了延偌的左手，因为汀枫喜欢单肩挎包，所以现在汀枫的书包吊在了他的右手肘上。“不要淋感冒了啊。”汀枫把手用力往回拉，但延偌本来也不重，而且现在失去了重心，一下子又变成往前倒去，一下子撞在了汀枫的怀里。</p>
+<p>延偌把脸埋在了汀枫的胸口，不敢拿出来，两个人就以这种尴尬的动作持续着，就像是时间停止着，互相的呼吸清晰可以听见。</p>
+<p>“真的，唔……很抱歉。”汀枫小声地说着，但并不知道应该做什么样的动作才能让这无谓的闹剧停止，也就只好僵持下去。</p>
+<p>“我知道。”延偌用同样小的声音回答着，两个人就像是在说悄悄话一样。</p>
+<p>“那，那你打算回去了吗。”汀枫鼓起勇气问着，因为他已经快承受不了这样子的冲击了。</p>
+<p>他感觉到自己胸口衣服摆动了一下，应该是延偌点了头。他低下头去，延偌也慢慢地把脸伸出来，抬头望着汀枫。并没有把视线移开，两个人都看着对方的眼睛。</p>
+<p>“谢谢你。”延偌放开了紧抓着汀枫衣襟的手，稍稍往后退了一步，走到了躲雨的台阶上，回过头来。</p>
+<p>“这，算是发好人卡了吗。”汀枫想缓解一下这个压抑的气氛，半开玩笑地说着。</p>
+<p>“不会的，”延偌用一种似乎很认真的语气回答，“绝对不算。”延偌也笑了，发自纯心的笑容。</p>
+<p>“那……我就走了哦，”汀枫挥了挥手，往来时的路回走。这个时候，延偌才发觉了一点异常。</p>
+<p>“喂，你不是顺路吗。”隔着一段距离的雨，延偌稍微加大声音喊去。</p>
+<p>汀枫回过头，再一次笑了。</p>
+<p>“从出了校门开始，就没有顺路了啊。”然后再一次挥了挥手，消失在了雨幕之中。</p>
+<p>延偌望着，直到影子完全被淹没，才转身上了楼梯。</p>
+<hr>
+<h3 id="流云之章"><a href="#流云之章" class="headerlink" title="流云之章"></a>流云之章</h3><p>我并不是很喜欢运动，即使是在天气大好的假日里，我也会选择在家里呆上一整天，仅此而已。但这不代表我的体育就很差，因为是会算入分数的东西，我就会拼尽全力去得到，这就是我的目标，作为站在主峰上的人应该想的东西。而不是平常人追求的平日的享乐。</p>
+<p>书桌正对着的是窗户，抬起头，似乎就能看见这个城市，这并不是我曾经所在的城市，现在的我只是在这里读书，或许啊，一两年之后，我就会离开这个地方，然后，很久，很久，都不会回来了吧。所以，我并不能在这里留下太多遗憾，以及回忆。</p>
+<p>所以，对于很多很多不必要的情感，必须割舍。</p>
+<p>但，总是，为什么忘不掉呢……</p>
+<hr>
+<p>大约在入学不久之后的第二学期，一次随机的换座位，让亍余和延偌成为了同桌。亍余并不是很想和其他人沾上不该沾上的关系，所以并不爱开启话题，如果有聊天的话，也不过是聆听者，因此，所谓的小组作业，实际上都是亍余自己一个人完成的。</p>
+<p>在刚开始的时候，延偌就像十万个为什么一样，总是会问亍余各种问题，亍余每一次都会用最简短的语句回答，从来都没有对自己成绩之外的事情上过心。</p>
+<p>“哇！你怎么这么厉害啊。”“教教我这道题嘛。”“求求你啦，就一道题。”</p>
+<p>在延偌眼里，当时的亍余在学习方面无所不能，约等于无所不能，因为在学校里能够接触的也就只有学习了。她时时刻刻都崇拜着亍余，亍余也始终都在当时的延偌无法达到的高度，甚至比现在延偌和汀枫之间的高度差还大。</p>
+<p>渐渐地，亍余似乎开始并不那么厌烦与人交流，在给延偌答疑的时候，也愿意更讲得清晰一些，还会叹气地说：“你是猪吗。”然后用笔敲敲延偌的头。</p>
+<p>这一切，亍余都视作了日常，以及必然会发生的事，以及，正轨。</p>
+<p>多亏了亍余的指导，或者其它的一些事。在第一个学年，班上的前两名总是固定的，一个亍余，一个延偌。班主任也似乎很放心，在之后换位置的时候，也并没有把两个人调开。</p>
+<p>到后来，两个人会交换笔记，会一起讨论问题，会互相送小零食，会一起走在路上，去教室去食堂去操场，一起笑着聊天。这些，在亍余看来，似乎都是理所应当。</p>
+<p>直到，偶然间，他听到了一些传闻，关于自己的传闻。班上传出了他正在和延偌交往的绯闻，一些不能忍受的八卦。</p>
+<p>恋爱这种事情，是亍余绝不能允许出现在自己视野里的。这就是他的准则。</p>
+<p>从此，他便开始刻意远离延偌，避免交触，从而产生不必要的麻烦与自己的奇思幻想。延偌似乎并没有察觉这些事情，依然如原来一般友好往来，但久而久之，也就淡了下去，直到下一次调换座位，两个人不再是同桌。</p>
+<p>至此，亍余和延偌的交往再也没有重现过。</p>
+<p>但之后，亍余却总是忘不掉这些事情，甚至于在梦中看见不该看见的身影，然后转瞬即逝。总是无意中转向她的方向，又猛的一下转回来，就如同什么事也没有发生。</p>
+<p>直到很久很久之后，亍余才明白，这就是恋爱的感觉啊。</p>
+<hr>
+<h2 id="赤色晨曦与金色日落"><a href="#赤色晨曦与金色日落" class="headerlink" title="赤色晨曦与金色日落"></a>赤色晨曦与金色日落</h2><h3 id="再见之章-其一"><a href="#再见之章-其一" class="headerlink" title="再见之章 其一"></a>再见之章 其一</h3><p>一个人，打着伞，然后在没有人的街道上散步，这是汀枫再熟悉不过的日常了。无论如何，一股惬意的滋味从心底油然而生。</p>
+<p>虽说汀枫现在依然是如从前那样的面无表情，但刚刚曾发生过的事情，却令他不禁回想。这是汀枫第一次和女生近距离接触，也是汀枫很久很久没有经历过的与女生单独相处的时间，更不用说从来没有送过女生回家。</p>
+<p>果然还是不擅长社交吗……汀枫这样想着，轻轻叹了口气。他回想起一些事情，曾经的自己，在离校的时候，可能就是路过一团团畅聊的人群，一个人撑着伞，聆听雨滴滑落伞骨的声音，走到家里，躺在床上，然后关机到第二天的早上。</p>
+<p>或许，如果我没有遇到过延偌的话，这一切都不会发生吧……</p>
+<p>雨悄然滑落，浸染着灰色城市的泥团污垢，庞大的机械脉搏缓慢地跳动着，发出沉重无言的声响，雨滴如利剑贯穿硝烟的心脏，一分为二，此刻正是暮色重现的时分，在雨未能触及的天之边界，泛着彩虹的金色，照耀着远方的另一片城市。乌色的云与金色的黄昏搅成一团，被透明的雨折射成棱镜般耀眼的图景。</p>
+<p>无论如何，已然如此了，这就是汀枫生活的一部分，无法割舍的一部分。记忆开始接近，从自己原来一个人的生活，逐渐地，落叶刻录出另外一个人的身影，熟悉而模糊，圆框的金属眼睛挂在鼻子上，水灵而小巧的五官均匀分布，并不是很高大的身躯，却有着俱全的美丽，纯真，但不幼稚，发出的声音如同能够贯穿冰流。或许，这一次并不是自我攻略的幻觉，这是汀枫，愿意去追逐的对象。</p>
+<p>记忆与现实开始重叠，然后吐露出的，是从心底发出的声音。</p>
+<p>“我好像，真的开始喜欢你了呢……”</p>
+<hr>
+<p>假期过后，新的一年悄然而至。</p>
+<p>很意外地，汀枫第一次来到教室的时候基本没有什么人，班主任坐在讲台上鼓弄着手机，斜过眼瞟到了汀枫。</p>
+<p>“来了吗，随便找个位置先坐着吧。”</p>
+<p>“哦。”虽然即使班主任没有说话，汀枫大概率也会这么做。他找了一个比较靠边角的座位，然后放下书包，索性拿出几本书放在课桌上，代表这个位置已经有人了，就跑回寝室收拾东西了。</p>
+<p>在去寝室的途中，汀枫的确遇见了几个认识的人，不过都是班上交集不深的人，也只是稍稍眼神交流，并没有开口的必要。倒是，从进入学校开始，就想着某一个人。</p>
+<p>在寝室忙活了有一会儿，抬头看了看表，发现已经快到十点了，大概班上有大多数人都来了吧，汀枫稍微喘了喘气，离开寝室，又一次往教室走。</p>
+<p>此时的班主任不知道跑哪里去划水去了，有一半的人在座位上聊天，话题极其混乱，有几个人带着耳塞在做什么作业之类的，而在他座位的旁边，一个人在面前摆了一本书，挡住了脸。</p>
+<hr>
+<p>我大概七点左右就已经醒了吧……今天是返校的日子吗……时间过的真快啊……</p>
+<p>当我走进教室的时候，大概是九点左右，这个时候教室里也才十多个人，可惜的是，我并没有看见他。或许他一直都来得很晚吧，我只能这样子告诉自己。</p>
+<p>我在心里猜测着如果他来了的话，会去坐哪一个位置，便慢慢地往教室里面走，扫视着这个位置。或许，应该是一个后排靠窗的位置吧，我往后走去，随便找了一个位置坐下来，旁边的座位有一个书包挂在那里，并不知道是谁的，也没有想管那么多，抽出一本书看着，把头埋在书里，不关心身旁发生了什么事。</p>
+<p>当这本书快要接近尾声的时候，我的注意力开始分散，只是一瞬间，我似乎注意到书角之后有一个人影，很高大，但又有些瘦弱，我把脑袋伸出了书中。</p>
+<p>于是，汀枫直挺挺地站在我的面前。</p>
+<p>只是有一瞬间，我看见他的神色里透露出了惊讶，随之转为平静：“看书很认真嘛。”他的嘴角微微动着，露出一个几乎不可见的微笑。</p>
+<p>“啊。”我发出了一个微小而急促的声音，不知道他有没有听到，然后迅速变回了之前那种高高在上的神态，“怎么，你找我有什么事吗。”我的脸上似乎刻录出愉悦的神情，我期待着汀枫的回答。</p>
+<p>“嗯……”他看样子是在沉思，我的计划似乎奏效了。“没有什么回报的话，我可不会帮你的哦<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0.301ex;" xmlns="http://www.w3.org/2000/svg" width="1.76ex" height="0.529ex" role="img" focusable="false" viewBox="0 -367 778 234"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="223C" d="M55 166Q55 241 101 304T222 367Q260 367 296 349T362 304T421 252T484 208T554 189Q616 189 655 236T694 338Q694 350 698 358T708 367Q722 367 722 334Q722 260 677 197T562 134H554Q517 134 481 152T414 196T355 248T292 293T223 311Q179 311 145 286Q109 257 96 218T80 156T69 133Q55 133 55 166Z"></path></g></g></g></svg></mjx-container>”汀枫的样子愈发为难，我的心情也就愈发愉悦。他像是下定了决心，然后小声地说了一声：“好吧。”然后走向了我。</p>
+<p>他伸出手，抱住了轻盈的我，用一只手挽住我的腰，另一只手握住了我的手腕。“！”突然之间，我紧张着无法动弹，只是随着他的动作也动起来，小心地不与他的身体接触，但即使如此，他的体温也通过手掌传到了我的手臂上。我能够感觉到自己现在心情的滚烫，估计脸已经红成一片了吧。“你，你你，你在干吗！”我只敢小声地说，害怕身旁三五成群聊天的同学突然转过身来盯着我，今天就别想过了。虽然强迫着自己保持冷静，说出来的话还是吞吞吐吐。汀枫慢慢地将我拉向他，即使我想要过挣扎，但是往后我的背就会靠向他的另一只手，我也就不得不随着他向前移动。</p>
+<p>“你不是让我自己动手吗……”汀枫装作一副无辜的表情，脸色无奈。这种人太太太太太坏了！</p>
+<p>他就像是没有注意到我的感觉一样，依然我行我素保持自己的行为。我看见他的胸脯就在脸前，脑中混乱地想象着接下来会发生的事，闭上了眼睛。</p>
+<p>时间慢速流逝，我并不清楚过了多久，或许只有几秒，或许几分钟，当我重新连上自己的意识的时候，手上那股温暖已经消散了，当我睁开眼，汀枫已经消失在了眼前，而我站在我的座位旁边。我转过身去，发现他若无其事地坐在我旁边的那个位置上。</p>
+<p>顿然，我也不清楚是愤怒，激动，还是什么心情猛地涌上来，“你！你……”我都不知道该说什么好了。“啊？”他还是那副若无其事的样子，“我怎么了啊。”</p>
+<p>“你刚刚想要干什么？”我坐下来，直视着他，想要给他一点威慑感。他装作一副思考的样子，好像刚刚那件事已经被他淡忘了一般。“做回我的座位啊，你说你不让我，我就只能让你站起来喽。”</p>
+<p>可恶啊！居然是我被耍了。只是无意识地，我随手抓起刚才放下的书，砸向汀枫的脑袋。他的视线并没有看向这里，估计是注意不到。在我的手即将落下的时候，他的手突然伸出，再一次牢牢地扣住了我的手腕，那种温暖的感觉再一次传来。</p>
+<p>“这种动作实属不太礼貌啊，大小姐。”他半开玩笑地说道，看样子就像是陪一个小孩子玩闹一样。“哼！”我收回了手，明知道自己玩不过他，就停下玩闹，干我自己的事情了。</p>
+<p>虽然话是这么说，他却一直坐在我的旁边，让我没有办法静下心来，余光总能够出现他的身影，让我无法适从。</p>
+<p>这个时候的教室还是很吵闹，但我们两个组成的世界里，宁静而澹然。或许，这并不如晨曦一般生机，也并非日落似的壮烈，更非正午时的金色闪耀，夜的奏鸣曲，回荡在心底，荡起一圈，一圈的浮纹，吹到岸边，又赴岸而归。我喜欢这样的生活，在压力重重的社会中，寻得独有一方的恬静。</p>
+<p>想着，我似乎笑了起来，应该看着很可爱吧。</p>
+<p>汀枫转过头来，用带有些鄙夷眼神望着我，眼神中带着一些疑惑，“你在笑什么啊？”我只是摇了摇头，并没有什么回答，“不，告，诉，你。”我一字一顿地指着他的鼻子说道，纤细的手指笔直地对着他的鼻子，贴到几乎要挨在一起了，不知道他有没有心动呢。</p>
+<p>他也并没有说什么，像是发了一会儿神，转过头去，又把头埋进了书里。我很喜欢他这样认真的样子，就像是微风拂过双颊也不为所动，安静的少年，此刻荡漾着我的心扉。</p>
+<p>这真的是属于我的青春吗，属于一个人的暗恋，没有窥见天光，但却在黑暗中充溢着欣悦，或许汀枫只是把我当作一个同学，一个同桌来看，但于我而言，已经是快乐的了。</p>
+<hr>
+<p>当我一走进教室的时候，一眼望见的，就是他和她在同桌欢笑，一种不知为何的心情打破了我初来的新鲜心情。不知为何，我没有必要嫉妒汀枫，也没有必要执着于延偌，于我而言，恋爱是学习路上最大的敌人，毋庸置疑。</p>
+<p>我选择了一个能够安静学习的地方，远离了那些吵吵闹闹的人群。</p>
+<p>坐下来，摊开一本书，带上耳塞，把喧闹都排斥在了耳外，这便是我应该有的时光。虽说并不是零分贝的安静，但那嗡嗡的声音不足以让我分神。忽然间，或许只是无意间，延偌的话语从我的耳边悄然经过，被我捕捉。她的声音似乎很开心，是在和汀枫聊天吗。那是我不曾听到过的语调，她从未这样和我这样开心过，至少在我的印象里，并没有。</p>
+<p>我在期待什么？我又因什么而懊丧？我也不清楚，作为一个高中生，理应不能有恋爱的情感，这是准则，这也是规定。“规定会排斥感情”，这是必然。我所追求的，究竟是凡俗的渴望，还是一人登顶的造极呢，这样的我，是否又有些极端啊……</p>
+<p>晃眼间已经中午了，上午并没能干成太多的事。“一起走嘛，”延偌的声音从不远处传来。“不了，你先走吧。”我看见的汀枫并没有太多表情，就和其他时候一样。延偌不过是把持了一会儿，便一个人出了教室。我收拾完了书本，也往外跨。</p>
+<p>“你能等一下吗。”低沉的声音从背后传来，并不像是在询问，而是要求。我转过身，汀枫直视着我。这个眼神很冷静，足以震慑住很多内心动摇的人，但我却毫无感觉。</p>
+<p>“有事吗。”我没有必要纠缠下去。他用手扶住我的肩膀，把我推动，“有些事情，想咨询一下。”</p>
+<p>“如果是关于如何恋爱的话，还是免了吧。”我想单刀直入，结束无意义的话题。</p>
+<p>汀枫转过头来，似乎疑惑着为什么我会这么认为。“不，我只是想问问你，”他的语气很平静，是那种对陌生人很友好但极具距离感的话，“你喜欢延偌，不是吗。”</p>
+<p>“……”我并不知道应该怎么回答，我没有看他，我也明白此时的他没有在看我，此时周围的声音变得越发吵闹，让人心生厌恶。</p>
+<p>“你怎么认为？”汀枫看见我没有回答，追问着。显然，他已经知道了答案。</p>
+<p>“喜欢又能怎样？我们现在的首要任务是学习，而不是自断其路。”</p>
+<p>他不得不转过身来，疑惑变成了诧异，甚至是一些不理解。</p>
+<p>“为什么？你觉得学习是你人生的全部吗。”汀枫暗暗地问着，“我知道，这是一个好学生的想法，我无法反驳。”他像是放弃了一般，打算结束这个话题。</p>
+<p>“那我换个问题，”他再一次回转，“你甘愿把这份喜欢藏在心底吗……”</p>
+<p>并不，我想要说出来，但并不是时候。“说出来了又怎样呢。”我对他的意图突然感兴趣了起来。“这是现在的你应该考虑的事情吗？”我以学习委员的身份质问他，但他似乎并没有多么退缩，但他那样子，像是对我无语了来着。</p>
+<p>“或许，如果你有了新的想法的话，你会来找我的。”然后就礼貌性地打了声招呼，消失在了人群之外。</p>
+<p>他并没有追求我的回答，他也并不是为了帮我而帮我，而是因为……我也不清楚，我无法探究别人的内心，我甚至连自己都搞不明白。</p>
+<p>但我想，我应该是会去找他的吧。</p>
+<h3 id="再见之章-其二"><a href="#再见之章-其二" class="headerlink" title="再见之章 其二"></a>再见之章 其二</h3><p>转眼间再一次到达了周末，此时此刻，操场上的风和煦。</p>
+<p>亍余孤身一人站在空旷的草地上，整个世界仅有他是静止的。陆续有人经过，那都是忙着回家的，并不对亍余有些许在意。他们只是拖着箱子经过，发出震天撼地的摩擦声，有些或许还手持电话，即使现在的亍余看上去那样的“出众”，也没有几个人注意到了他。</p>
+<p>虽然说，亍余也不确定他是否应该继续站在这里。他应该是要去找汀枫的，但汀枫一下课就不见了，于是他也只好去收拾自己的东西。不知为何，亍余有一种预感，他可以在这里遇到汀枫。所以直觉使他走到了这里，伫立在末冬时节的这里，静默。</p>
+<p>“亍余？”亍余听见背后传出了一个极其熟悉的声音，他转过身，并稍稍低下头。那是延偌。</p>
+<p>“嗯？有什么事吗。”显然，她不是此行亍余的目标，但亍余还是愿意为她分出一点精力。</p>
+<p>“你在等谁吗。”延偌用澄澈的眼神望着亍余，似乎不带一丝虚伪，仿佛这世间所有的积极词汇都是为了形容面前这个女孩子而诞生的。</p>
+<p>“汀枫，”亍余说道，“我有事要找他。”</p>
+<p>“这个周末吗。”</p>
+<p>“不吧……”亍余也不知道自己什么时候能够找到汀枫，“或许只要一会儿。”说完，他似乎察觉到延偌因此松了一口气。然后她抬起头望向了亍余，“那，我就先走了哦。”延偌向前走了两步，然后转过身来，对着亍余挥了挥手，然后就迈着小步跑出了操场。</p>
+<p>亍余望着延偌离开操场，她的身影逐渐变小，脑后短小的马尾不停摇晃着，扫动着懒惰的大气，悦动的身影时时刻刻都彰显着青春女孩的倩影，亍余此时看得有些入迷，因为此刻奔跑的延偌在他的眼中如此动人。</p>
+<p>忽然间，他在操场的边缘处看到了另一个熟悉的身影。</p>
+<p>“想好了吗……”隔了很远，亍余显然听不到汀枫实际上说的什么，但根据汀枫的嘴型，以及自己心中的指引，亍余大概能够明白这个意思，他向汀枫走去。</p>
+<p>“或许你应该说出那句话了，”汀枫很随意地笑着，或许他应该早就在那里了，也似乎什么都看见了。亍余露出了一个之前他也许许久都不会了露出的表情。</p>
+<p>他苦笑着，用澄澈的眼神望着汀枫，少了那份曾经的傲气，就像是一个少年一般。</p>
+<p>“我需要你的帮助，”</p>
+<p>“拜托了。”</p>
+<hr>
+<blockquote>
+<p>你好吗，最近过的怎么样，有好好对待自己吗，有保持自己身体健康吗。</p>
+<p>或许你觉得突然提起这个可能有些奇怪，但似乎，唔……因为我也找不到什么话题了啊，但我却依然想和你一直聊天，你永远陪在我的身边，一直一直。这样或许有些自私，但我真的，真的，真的在 ▇▇▇▇ 啊。</p>
+<p>可惜呢，怯懦的我无法说出口。</p>
+<p>于是，初识或许就在我的失误下变成了再见。</p>
+<p>拜托了拜托了，不要这样。</p>
+<p>愿意时间就这样不流动下去，我们也一直保持这样，绿树常青。</p>
+<p>但是，你曾经告诉过我一句话，我依然记得：</p>
+<p>“我们把这一生过成一场梦就好了吧。”</p>
+<p>那……我就陪着你，直到梦醒。</p>
+</blockquote>
+<hr>
+<p>当这个相对长的周末到来的时候，汀枫很早就醒了。这是破晓尚未的风景，一般而言汀枫是不会见到的，毕竟他都起得很晚。但不知为何，今天的他很早就醒了，没有任何闹钟的提醒或者旁人的吵闹，仅仅或许只是因为自己的大脑认为——应该醒了。</p>
+<p>忽然间，他想到要出去走走，这对于一个死宅而言多多少少是一个奇迹。并不是想要活动活动筋骨或者是强身健体之类的，汀枫从小不是一块运动的料，虽说长得高大，但也瘦弱多病。很少出门，更别说从事体育项目了。</p>
+<p>当他此刻走下楼的时刻，清风已经在过道等候他了，不算太冷的冬天，以及冰雪未化的春天，并非晨曦，也无日落，不过是一个蓝天的下午，街上有不少人，但都在干着自己的事情，也同样没有几个人注意到了汀枫的存在。</p>
+<p>此时的他是闲散的，并没有什么目的可言，只是瞎逛逛，给这无趣的生活找点乐子罢了。汀枫沿着每次上学都会经过的那条路往外走，虽说以前都是乘车经过，但步行的时候，的确有一种不同的感受，不同于困扰于车内死寂的空气，更有的是能够自由穿梭的风，伴随着他的一步一行，</p>
+<p>汀枫的生活很少存在惊喜，平淡得像盏茶一样，浓度相宜，虽然不如饮料那般刺激人，但也叫人一番享受了。但似乎即使出现了意料之外的事情，汀枫也习惯于将其扼杀在摇篮之中。</p>
+<p>周边的一切都是那样的熟悉，却又让他觉得有一丝陌生，毕竟很少来过这里，偶尔也不过像是一个旁观者的角度匆匆从旁边经过。汀枫享受每一次探索新颖未知的感觉，就像是发现了一片新大陆的兴奋。虽说只能和自己分享，但也足够了。</p>
+<p>有时候，汀枫会在无意间去观察路过的行人，去见识这个世界上的百态众生：有些人喜欢一边打电话一边走路，像是在与另一位身处远方的人谈笑风生，或者是因为工作的不顺心而大发雷霆；又或者是带着耳机隔绝街道的杂音，放着自己喜欢的音乐缓缓步行，脸中荡漾着欣悦；又或者是随风而去，四处探望，就像是初来乍到的旅客，对着世间的一切都感到好奇。无论男女，不比老少，都是如此，汀枫一个人坐在街边的长椅上，春天手撰一丝青叶，夏天手抓一瓶凉饮，秋天手捏一片枫叶，冬天手握一杯热茶，无声无息，像是一个阴角（注 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.532ex" role="img" focusable="false" viewBox="0 -677 500 677"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path></g></g></g></svg></mjx-container>），路过的行人甚至都不会看他一眼，而汀枫也习惯了这样，悄悄地栖息在城市的一角，倾听整个世界的心跳。</p>
+<p>手中温热的保温杯中窜出一缕缕若有若无的水汽，模糊了汀枫的眼镜，给这个世界蒙上了一层面纱。汀枫取下了眼镜，掏出一张较为干净的纸巾，低头慢慢地擦拭着，聆听着将雪非雪而无雨季节中冷瑟的风。不经意间，他缓缓哼起了一阵歌谣，调子很模糊，汀枫自然也记不住歌词，但这个东西被他埋葬在他的记忆深处，好像是那种一旦埋下就会被忘记的宝藏，直到很久很久之后才会极其的奇珍异宝。</p>
+<p>汀枫缓缓地哼着，用一种被雨雪掩埋的声音，仅有自己听得见，却似乎，有一种声音与自己共同唱着一样的曲调，引导着他继续唱下去。</p>
+<blockquote>
+<p>当梦想延伸到了无为的远方，低头行路的少年，是否也应该考虑，漫雨归途。<br>当愿望燃烧焚尽虚伪的皮囊，青春嫩稚的少女，或许亦偶然想起，天雨恋情。</p>
+</blockquote>
+<p>“无论如何都会再次相遇吗，就好像命中注定了一般。”此时，下雨了，像是太阳雨，斑驳可见的彩虹散落成碎片飘在空中。汀枫没有带伞，但似乎雨也不是很大，所以实际上他还可以再坐一会儿。</p>
+<p>对于这种轻飘飘的雨落在自己身上的感觉，汀枫也是很享受的，不像是疾风骤雨那样得刺痛，也并非暖阳高照那般怡人舒适。阴云逐渐在大地上刻录下曾经经过的影子，不一会儿，汀枫眼前的水泥地便失去了阳光的关照。</p>
+<p>路上的行人也渐渐少了起来，仅剩下或多或少的车辆来回穿梭在汀枫面前这黑黑白白的马路上，雨刷在玻璃上摩擦，发出难为听的声音。</p>
+<p>“是时候该走了吧。”汀枫这样想着，他最后一次擦拭眼镜。忽然间，似乎雨落在肩上的感觉变淡了，大概是习惯了吧。汀枫并没觉得有什么异常，他戴上眼镜，望着面前已然没有几个人的道路，站起身。</p>
+<p>刚到一半，他感觉到头被什么东西撞了一下。汀枫斜着脑袋往上看去，一把伞挡在自己的头上，为自己挡住了大部分的雨滴。汀枫尝试再一次坐下，然后转过头，看向身后。</p>
+<p>延偌正站在自己的身后，左手把持着这把宽大的黑色雨伞，白色的羽绒服披在身上，暖黄色的毛衣内衬在其中，银色圆框眼镜架在小巧的鼻梁上，看起来有一些反差的可爱。她深褐色的瞳孔中倒映着汀枫，同样的，此时此刻，汀枫也直视着延偌的眼镜。平时他们两个也从来不会这样看着对方。</p>
+<p>这个时候，汀枫才第一次仔细地观察了延偌的眼睛，那是一种常见的深褐色，带有一丝丝的邃黑通透，每一根条纹都清晰可见，像宝石一样闪烁着鲜艳的纹理，在眼角处恰如其分地渐变消失，转移到一副美丽青春的面貌。</p>
+<p>延偌露出一副很温柔的笑容，并没有露出太多的牙齿，但也不显得闭塞，一切都是那样的完美，完美无瑕。就像是天堂走出来的一般，虽然没有光环，即使没有翅膀，经过地狱热泉的洗湝之后依然保持着无罪无悔的纯善之心。像是清泉涌入般，沁人心脾，令人安心。</p>
+<p>“你……从多久开始就站在这里了，”汀枫尝试着换种方法站起身，面对着延偌，伸出手接过了黑色雨伞，平推在胸前，罩住了此时的两人。他和她隔着一架长椅，相对站着，她抬起头望着他，他低下头看着她，雨从两个人的身边不断滑落，滴在路上，滴在树上，滴在伞上。</p>
+<p>“你猜啊，”延偌笑了起来，并不如刚刚那般的温柔，而是一种活泼与开朗，她笑得很开心，也很美丽，仿佛是从内心深处的喜悦传出，绽放在这外表上，“我可是看到彩虹了的哦。”她用纤细的手指对着他，就像是直接指向了那颗正在跳动的心脏。</p>
+<p>延偌绕开长椅，径直走在了汀枫的面前，期间的步伐大方，没有丝毫扭捏作态，喜悦的神情丝毫没有消减，像是发现了多年未曾见过的宝藏一般，爱不释手。</p>
+<p>“你来干什么？”汀枫用平时那种随和冷静的语气问道，不知是否因为雨的缘故，多了些许温柔。</p>
+<p>“来陪着你啊，”延偌与汀枫之间仅有十多厘米的距离，她用整个脸仰视着汀枫，不给他丝毫躲闪的机会。</p>
+<p>汀枫微微地笑着，把伞递给了延偌，两只手插进了自己外套的包里，偶然间发现了洗衣服漏下来的一颗水果糖，他把这个也拿了出来，摊在延偌面前：“吃吗？”延偌没有回答，把嘴巴略微张开，发出“啊”的声音。</p>
+<p>汀枫大概猜到了她的意图，只是无奈地小叹一口气，撕开了糖纸，把水果糖送进了她的口中，她踮起脚，把脑袋稍稍前伸，顺带含住了汀枫的手指。</p>
+<p>汀枫感觉到自己的手指正被夹在两片柔软的唇之间，热气蒸腾的口腔在这寒季之时显得格外温暖，他的手指正与她的舌头勾搭着，一下子就变得湿润了起来。但不仅如此，这是前所未有的柔软感，不管哪一块肉都是这样，像是一倒下去就会凹陷，然后沉醉其中。炽热的口水环绕着他的手指流过，牙齿轻轻地咬住指关节，并没有痛感，反而是一种酥软感。</p>
+<p>当回过神来的时候，两人的脸颊都有些泛红，延偌放开了汀枫的手指，用一只手捧住，然后另外一只手伸进衣服口袋，掏出一张干净的纸来，擦拭着汀枫的手指。整个过程是静默的，虽然两个人的脸此时都在发烫，大脑的运转效率也大幅度减小，两个所谓的优等生就这样在雨中傻傻地站着，一声不吭。</p>
+<p>“你，那个……唔……现在，现在要不我送你回去吧。”汀枫试着率先开启对话，他尝试着去直视延偌的眼睛，用只有两个人听得见的声音说着。“嗯嗯，”延偌虽然像是没有听到具体内容，甚至没有经过脑子，只是呆呆地点了点头。她忽然攥紧汀枫的手，然后用楚楚可怜的眼神望着汀枫：”我……我想你再陪陪我……“然后牵着汀枫，试图拉动他的身躯。</p>
+<p>“你……那……这……我要……”汀枫飞速转动着被雨水沁湿而腐朽的大脑，试图组织出一句完整通顺的话来，但结果还是什么都没说出来，“那好吧，我陪你再走走。”</p>
+<hr>
+<h2 id="少年，与罗兰之紫"><a href="#少年，与罗兰之紫" class="headerlink" title="少年，与罗兰之紫"></a>少年，与罗兰之紫</h2><h3 id="一些解释"><a href="#一些解释" class="headerlink" title="一些解释"></a>一些解释</h3><p>注 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.507ex" role="img" focusable="false" viewBox="0 -666 500 666"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g></g></svg></mjx-container> ：节能型人才出自京都动漫公司的作品《冰菓》，其男主折木奉太郎就是一个不给自己惹麻烦的存在，称呼自己为“节能”。</p>
+<p>注 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.507ex" role="img" focusable="false" viewBox="0 -666 500 666"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g></g></svg></mjx-container> ：假如一位 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="4.468ex" height="1.645ex" role="img" focusable="false" viewBox="0 -705 1975 727"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="4F" d="M56 340Q56 423 86 494T164 610T270 680T388 705Q521 705 621 601T722 341Q722 260 693 191T617 75T510 4T388 -22T267 3T160 74T85 189T56 340ZM467 647Q426 665 388 665Q360 665 331 654T269 620T213 549T179 439Q174 411 174 354Q174 144 277 61Q327 20 385 20H389H391Q474 20 537 99Q603 188 603 354Q603 411 598 439Q577 592 467 647Z"></path><path data-c="49" d="M328 0Q307 3 180 3T32 0H21V46H43Q92 46 106 49T126 60Q128 63 128 342Q128 620 126 623Q122 628 118 630T96 635T43 637H21V683H32Q53 680 180 680T328 683H339V637H317Q268 637 254 634T234 623Q232 620 232 342Q232 63 234 60Q238 55 242 53T264 48T317 46H339V0H328Z" transform="translate(778,0)"></path><path data-c="65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" transform="translate(1139,0)"></path><path data-c="72" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z" transform="translate(1583,0)"></path></g></g></g></svg></mjx-container> 写完了一道题的代码，而且理论上来说是正确的，但是因为他没注意某些特殊情况，结果这位 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="4.468ex" height="1.645ex" role="img" focusable="false" viewBox="0 -705 1975 727"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="4F" d="M56 340Q56 423 86 494T164 610T270 680T388 705Q521 705 621 601T722 341Q722 260 693 191T617 75T510 4T388 -22T267 3T160 74T85 189T56 340ZM467 647Q426 665 388 665Q360 665 331 654T269 620T213 549T179 439Q174 411 174 354Q174 144 277 61Q327 20 385 20H389H391Q474 20 537 99Q603 188 603 354Q603 411 598 439Q577 592 467 647Z"></path><path data-c="49" d="M328 0Q307 3 180 3T32 0H21V46H43Q92 46 106 49T126 60Q128 63 128 342Q128 620 126 623Q122 628 118 630T96 635T43 637H21V683H32Q53 680 180 680T328 683H339V637H317Q268 637 254 634T234 623Q232 620 232 342Q232 63 234 60Q238 55 242 53T264 48T317 46H339V0H328Z" transform="translate(778,0)"></path><path data-c="65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" transform="translate(1139,0)"></path><path data-c="72" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z" transform="translate(1583,0)"></path></g></g></g></svg></mjx-container> 代码被一些具有特殊情况的测试点卡掉了，这种情况就叫做这位 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="4.468ex" height="1.645ex" role="img" focusable="false" viewBox="0 -705 1975 727"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="4F" d="M56 340Q56 423 86 494T164 610T270 680T388 705Q521 705 621 601T722 341Q722 260 693 191T617 75T510 4T388 -22T267 3T160 74T85 189T56 340ZM467 647Q426 665 388 665Q360 665 331 654T269 620T213 549T179 439Q174 411 174 354Q174 144 277 61Q327 20 385 20H389H391Q474 20 537 99Q603 188 603 354Q603 411 598 439Q577 592 467 647Z"></path><path data-c="49" d="M328 0Q307 3 180 3T32 0H21V46H43Q92 46 106 49T126 60Q128 63 128 342Q128 620 126 623Q122 628 118 630T96 635T43 637H21V683H32Q53 680 180 680T328 683H339V637H317Q268 637 254 634T234 623Q232 620 232 342Q232 63 234 60Q238 55 242 53T264 48T317 46H339V0H328Z" transform="translate(778,0)"></path><path data-c="65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" transform="translate(1139,0)"></path><path data-c="72" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z" transform="translate(1583,0)"></path></g></g></g></svg></mjx-container> 的代码被 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="4.588ex" height="1.595ex" role="img" focusable="false" viewBox="0 -694 2028 705"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="68" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 124T102 167T103 217T103 272T103 329Q103 366 103 407T103 482T102 542T102 586T102 603Q99 622 88 628T43 637H25V660Q25 683 27 683L37 684Q47 685 66 686T103 688Q120 689 140 690T170 693T181 694H184V367Q244 442 328 442Q451 442 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"></path><path data-c="61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z" transform="translate(556,0)"></path><path data-c="63" d="M370 305T349 305T313 320T297 358Q297 381 312 396Q317 401 317 402T307 404Q281 408 258 408Q209 408 178 376Q131 329 131 219Q131 137 162 90Q203 29 272 29Q313 29 338 55T374 117Q376 125 379 127T395 129H409Q415 123 415 120Q415 116 411 104T395 71T366 33T318 2T249 -11Q163 -11 99 53T34 214Q34 318 99 383T250 448T370 421T404 357Q404 334 387 320Z" transform="translate(1056,0)"></path><path data-c="6B" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T97 124T98 167T98 217T98 272T98 329Q98 366 98 407T98 482T98 542T97 586T97 603Q94 622 83 628T38 637H20V660Q20 683 22 683L32 684Q42 685 61 686T98 688Q115 689 135 690T165 693T176 694H179V463L180 233L240 287Q300 341 304 347Q310 356 310 364Q310 383 289 385H284V431H293Q308 428 412 428Q475 428 484 431H489V385H476Q407 380 360 341Q286 278 286 274Q286 273 349 181T420 79Q434 60 451 53T500 46H511V0H505Q496 3 418 3Q322 3 307 0H299V46H306Q330 48 330 65Q330 72 326 79Q323 84 276 153T228 222L176 176V120V84Q176 65 178 59T189 49Q210 46 238 46H254V0H246Q231 3 137 3T28 0H20V46H36Z" transform="translate(1500,0)"></path></g></g></g></svg></mjx-container> 了。</p>
+<p>注 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.554ex" role="img" focusable="false" viewBox="0 -665 500 687"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></g></g></g></svg></mjx-container> ：这是真的，在下雨之前，我可以闻出雨水的味道，虽然描述不出来，但真的感觉得到。（或许很多人都可以吧）</p>
+<p>注 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.532ex" role="img" focusable="false" viewBox="0 -677 500 677"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path></g></g></g></svg></mjx-container> ：阴角是指在现实社会中如同隐身透明的一类人，一般不受重视与接待，是社交恐惧症以及内向的社会性表现形式。与阴角相对应的称作阳角，即现实中很受欢迎外向大方的一类人。本文作者就是一位很典型的阴角。</p>
+<hr>
+<h3 id="写在谢幕之前"><a href="#写在谢幕之前" class="headerlink" title="写在谢幕之前"></a>写在谢幕之前</h3><p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="22.824ex" height="2.034ex" role="img" focusable="false" viewBox="0 -705 10088 899"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="75" d="M383 58Q327 -10 256 -10H249Q124 -10 105 89Q104 96 103 226Q102 335 102 348T96 369Q86 385 36 385H25V408Q25 431 27 431L38 432Q48 433 67 434T105 436Q122 437 142 438T172 441T184 442H187V261Q188 77 190 64Q193 49 204 40Q224 26 264 26Q290 26 311 35T343 58T363 90T375 120T379 144Q379 145 379 161T380 201T380 248V315Q380 361 370 372T320 385H302V431Q304 431 378 436T457 442H464V264Q464 84 465 81Q468 61 479 55T524 46H542V0Q540 0 467 -5T390 -11H383V58Z"></path><path data-c="70" d="M36 -148H50Q89 -148 97 -134V-126Q97 -119 97 -107T97 -77T98 -38T98 6T98 55T98 106Q98 140 98 177T98 243T98 296T97 335T97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 61 434T98 436Q115 437 135 438T165 441T176 442H179V416L180 390L188 397Q247 441 326 441Q407 441 464 377T522 216Q522 115 457 52T310 -11Q242 -11 190 33L182 40V-45V-101Q182 -128 184 -134T195 -145Q216 -148 244 -148H260V-194H252L228 -193Q205 -192 178 -192T140 -191Q37 -191 28 -194H20V-148H36ZM424 218Q424 292 390 347T305 402Q234 402 182 337V98Q222 26 294 26Q345 26 384 80T424 218Z" transform="translate(556,0)"></path><path data-c="64" d="M376 495Q376 511 376 535T377 568Q377 613 367 624T316 637H298V660Q298 683 300 683L310 684Q320 685 339 686T376 688Q393 689 413 690T443 693T454 694H457V390Q457 84 458 81Q461 61 472 55T517 46H535V0Q533 0 459 -5T380 -11H373V44L365 37Q307 -11 235 -11Q158 -11 96 50T34 215Q34 315 97 378T244 442Q319 442 376 393V495ZM373 342Q328 405 260 405Q211 405 173 369Q146 341 139 305T131 211Q131 155 138 120T173 59Q203 26 251 26Q322 26 373 103V342Z" transform="translate(1112,0)"></path><path data-c="61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z" transform="translate(1668,0)"></path><path data-c="74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z" transform="translate(2168,0)"></path><path data-c="65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" transform="translate(2557,0)"></path><path data-c="20" d="" transform="translate(3001,0)"></path><path data-c="61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z" transform="translate(3251,0)"></path><path data-c="74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z" transform="translate(3751,0)"></path><path data-c="3A" d="M78 370Q78 394 95 412T138 430Q162 430 180 414T199 371Q199 346 182 328T139 310T96 327T78 370ZM78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z" transform="translate(4140,0)"></path><path data-c="62" d="M307 -11Q234 -11 168 55L158 37Q156 34 153 28T147 17T143 10L138 1L118 0H98V298Q98 599 97 603Q94 622 83 628T38 637H20V660Q20 683 22 683L32 684Q42 685 61 686T98 688Q115 689 135 690T165 693T176 694H179V543Q179 391 180 391L183 394Q186 397 192 401T207 411T228 421T254 431T286 439T323 442Q401 442 461 379T522 216Q522 115 458 52T307 -11ZM182 98Q182 97 187 90T196 79T206 67T218 55T233 44T250 35T271 29T295 26Q330 26 363 46T412 113Q424 148 424 212Q424 287 412 323Q385 405 300 405Q270 405 239 390T188 347L182 339V98Z" transform="translate(4418,0)"></path><path data-c="65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" transform="translate(4974,0)"></path><path data-c="66" d="M273 0Q255 3 146 3Q43 3 34 0H26V46H42Q70 46 91 49Q99 52 103 60Q104 62 104 224V385H33V431H104V497L105 564L107 574Q126 639 171 668T266 704Q267 704 275 704T289 705Q330 702 351 679T372 627Q372 604 358 590T321 576T284 590T270 627Q270 647 288 667H284Q280 668 273 668Q245 668 223 647T189 592Q183 572 182 497V431H293V385H185V225Q185 63 186 61T189 57T194 54T199 51T206 49T213 48T222 47T231 47T241 46T251 46H282V0H273Z" transform="translate(5418,0)"></path><path data-c="6F" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z" transform="translate(5724,0)"></path><path data-c="72" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z" transform="translate(6224,0)"></path><path data-c="65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" transform="translate(6616,0)"></path><path data-c="20" d="" transform="translate(7060,0)"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(7310,0)"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(7810,0)"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(8310,0)"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(8810,0)"></path><path data-c="2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z" transform="translate(9310,0)"></path><path data-c="38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z" transform="translate(9588,0)"></path></g></g></g></svg></mjx-container></p>
+<p>别，千万别把现实带进去，这不仅是我会不会害羞的问题，而是直接换星球生活了啊。</p>
+<p>说白了，写下这些话的我，还是抱有那无谓的幻想的，尽管在旁人面前总还是装作一副无所谓的样子，但还是……唔，<del>我怎么跟个死傲娇一样</del>。多情的人往往被伤害的最深。（但这一切都在 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 2000 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(1000,0)"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(1500,0)"></path></g></g></g></svg></mjx-container> 年的八月掩为泡沫罢了，这件事，以及很多很多，我都不会再在乎了）一群毛都没长齐的小屁孩在这里谈爱情也真是有够蠢的。所以，还请就当一本网文校园恋爱看就好啦，在写的时候，也参考了很多著名的小说的文笔，虽说模仿的不像，语言也十分丑陋，但我真的！真的是用心写了的。所以，能看完的你，我报以最诚挚的感激。</p>
+<p>谢谢你，<del>温暖了四季</del>。</p>
+<p>虽然四季之歌的另外三篇我应该是不会写了，包括流云之歌在内。有些事情对我的打击还是挺大的，我想，我能把这一篇坚持下来就不错了，毕竟这一篇是我现在唯独抱有热情的了。之后可能会继续更新《梦·凌》系列，或者开坑《因·恋》系列，或者继续钻研我的编曲，或者学习一些生活技能，或者就单纯认真学习。</p>
+<p>退役之后，真的有好多好多的打算，弥补回忆中的过失需要很长一段时间，不能再鸽下去了。</p>
+<p>永恒不再，但残影尚未落幕。</p>
+<script type="math/tex; mode=display">
+\begin{gather}
+\nonumber
+\mathcal{written\ by\ }\textcolor{violet}{VioletEternal},
+\\\nonumber
+also\ \textcolor{Lightblue}{\_Eternal\_},
+\\\nonumber
+and\ \textcolor{Purple}{Fallen\ Shadow}.
+\end{gather}</script><p>我们下一篇再见！</p>
+<hr>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="19.172ex" height="2.009ex" role="img" focusable="false" viewBox="0 -694 8474 888"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="75" d="M383 58Q327 -10 256 -10H249Q124 -10 105 89Q104 96 103 226Q102 335 102 348T96 369Q86 385 36 385H25V408Q25 431 27 431L38 432Q48 433 67 434T105 436Q122 437 142 438T172 441T184 442H187V261Q188 77 190 64Q193 49 204 40Q224 26 264 26Q290 26 311 35T343 58T363 90T375 120T379 144Q379 145 379 161T380 201T380 248V315Q380 361 370 372T320 385H302V431Q304 431 378 436T457 442H464V264Q464 84 465 81Q468 61 479 55T524 46H542V0Q540 0 467 -5T390 -11H383V58Z"></path><path data-c="70" d="M36 -148H50Q89 -148 97 -134V-126Q97 -119 97 -107T97 -77T98 -38T98 6T98 55T98 106Q98 140 98 177T98 243T98 296T97 335T97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 61 434T98 436Q115 437 135 438T165 441T176 442H179V416L180 390L188 397Q247 441 326 441Q407 441 464 377T522 216Q522 115 457 52T310 -11Q242 -11 190 33L182 40V-45V-101Q182 -128 184 -134T195 -145Q216 -148 244 -148H260V-194H252L228 -193Q205 -192 178 -192T140 -191Q37 -191 28 -194H20V-148H36ZM424 218Q424 292 390 347T305 402Q234 402 182 337V98Q222 26 294 26Q345 26 384 80T424 218Z" transform="translate(556,0)"></path><path data-c="64" d="M376 495Q376 511 376 535T377 568Q377 613 367 624T316 637H298V660Q298 683 300 683L310 684Q320 685 339 686T376 688Q393 689 413 690T443 693T454 694H457V390Q457 84 458 81Q461 61 472 55T517 46H535V0Q533 0 459 -5T380 -11H373V44L365 37Q307 -11 235 -11Q158 -11 96 50T34 215Q34 315 97 378T244 442Q319 442 376 393V495ZM373 342Q328 405 260 405Q211 405 173 369Q146 341 139 305T131 211Q131 155 138 120T173 59Q203 26 251 26Q322 26 373 103V342Z" transform="translate(1112,0)"></path><path data-c="61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z" transform="translate(1668,0)"></path><path data-c="74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z" transform="translate(2168,0)"></path><path data-c="65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" transform="translate(2557,0)"></path><path data-c="20" d="" transform="translate(3001,0)"></path><path data-c="61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z" transform="translate(3251,0)"></path><path data-c="74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z" transform="translate(3751,0)"></path><path data-c="3A" d="M78 370Q78 394 95 412T138 430Q162 430 180 414T199 371Q199 346 182 328T139 310T96 327T78 370ZM78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z" transform="translate(4140,0)"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(4418,0)"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(4918,0)"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(5418,0)"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(5918,0)"></path><path data-c="2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z" transform="translate(6418,0)"></path><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" transform="translate(6696,0)"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(7196,0)"></path><path data-c="2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z" transform="translate(7696,0)"></path><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" transform="translate(7974,0)"></path></g></g></g></svg></mjx-container></p>
+<p>这次的国庆节，真的又让我成长了很多，帮 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="4.699ex" height="2.034ex" role="img" focusable="false" viewBox="0 -694 2077 899"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D458" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path></g><g data-mml-node="mi" transform="translate(521,0)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mi" transform="translate(1121,0)"><path data-c="1D452" d="M39 168Q39 225 58 272T107 350T174 402T244 433T307 442H310Q355 442 388 420T421 355Q421 265 310 237Q261 224 176 223Q139 223 138 221Q138 219 132 186T125 128Q125 81 146 54T209 26T302 45T394 111Q403 121 406 121Q410 121 419 112T429 98T420 82T390 55T344 24T281 -1T205 -11Q126 -11 83 42T39 168ZM373 353Q367 405 305 405Q272 405 244 391T199 357T170 316T154 280T149 261Q149 260 169 260Q282 260 327 284T373 353Z"></path></g><g data-mml-node="mi" transform="translate(1587,0)"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g></g></g></svg></mjx-container> 搭了博客之后，见识了真正的文学大咖，也明白了所谓少年，梦终究是应该醒着的。本文根据真实事件改编，但真实部分仅占不到 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.127ex;" xmlns="http://www.w3.org/2000/svg" width="4.147ex" height="1.824ex" role="img" focusable="false" viewBox="0 -750 1833 806"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path data-c="35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z" transform="translate(500,0)"></path></g><g data-mml-node="mi" transform="translate(1000,0)"><path data-c="25" d="M465 605Q428 605 394 614T340 632T319 641Q332 608 332 548Q332 458 293 403T202 347Q145 347 101 402T56 548Q56 637 101 693T202 750Q241 750 272 719Q359 642 464 642Q580 642 650 732Q662 748 668 749Q670 750 673 750Q682 750 688 743T693 726Q178 -47 170 -52Q166 -56 160 -56Q147 -56 142 -45Q137 -36 142 -27Q143 -24 363 304Q469 462 525 546T581 630Q528 605 465 605ZM207 385Q235 385 263 427T292 548Q292 617 267 664T200 712Q193 712 186 709T167 698T147 668T134 615Q132 595 132 548V527Q132 436 165 403Q183 385 203 385H207ZM500 146Q500 234 544 290T647 347Q699 347 737 292T776 146T737 0T646 -56Q590 -56 545 0T500 146ZM651 -18Q679 -18 707 24T736 146Q736 215 711 262T644 309Q637 309 630 306T611 295T591 265T578 212Q577 200 577 146V124Q577 -18 647 -18H651Z"></path></g></g></g></svg></mjx-container> ，三位主角，是理想中的我，想象中的「数据已删除」，和梦里的她。如果你想了解这篇文章的灵感来源，或是你已经知道了，那你就仅仅会感叹，现实于小说的极大差异。</p>
+<p>就此别过，而无它念。</p>
+<hr>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="20.303ex" height="2.009ex" role="img" focusable="false" viewBox="0 -694 8974 888"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="75" d="M383 58Q327 -10 256 -10H249Q124 -10 105 89Q104 96 103 226Q102 335 102 348T96 369Q86 385 36 385H25V408Q25 431 27 431L38 432Q48 433 67 434T105 436Q122 437 142 438T172 441T184 442H187V261Q188 77 190 64Q193 49 204 40Q224 26 264 26Q290 26 311 35T343 58T363 90T375 120T379 144Q379 145 379 161T380 201T380 248V315Q380 361 370 372T320 385H302V431Q304 431 378 436T457 442H464V264Q464 84 465 81Q468 61 479 55T524 46H542V0Q540 0 467 -5T390 -11H383V58Z"></path><path data-c="70" d="M36 -148H50Q89 -148 97 -134V-126Q97 -119 97 -107T97 -77T98 -38T98 6T98 55T98 106Q98 140 98 177T98 243T98 296T97 335T97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 61 434T98 436Q115 437 135 438T165 441T176 442H179V416L180 390L188 397Q247 441 326 441Q407 441 464 377T522 216Q522 115 457 52T310 -11Q242 -11 190 33L182 40V-45V-101Q182 -128 184 -134T195 -145Q216 -148 244 -148H260V-194H252L228 -193Q205 -192 178 -192T140 -191Q37 -191 28 -194H20V-148H36ZM424 218Q424 292 390 347T305 402Q234 402 182 337V98Q222 26 294 26Q345 26 384 80T424 218Z" transform="translate(556,0)"></path><path data-c="64" d="M376 495Q376 511 376 535T377 568Q377 613 367 624T316 637H298V660Q298 683 300 683L310 684Q320 685 339 686T376 688Q393 689 413 690T443 693T454 694H457V390Q457 84 458 81Q461 61 472 55T517 46H535V0Q533 0 459 -5T380 -11H373V44L365 37Q307 -11 235 -11Q158 -11 96 50T34 215Q34 315 97 378T244 442Q319 442 376 393V495ZM373 342Q328 405 260 405Q211 405 173 369Q146 341 139 305T131 211Q131 155 138 120T173 59Q203 26 251 26Q322 26 373 103V342Z" transform="translate(1112,0)"></path><path data-c="61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z" transform="translate(1668,0)"></path><path data-c="74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z" transform="translate(2168,0)"></path><path data-c="65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" transform="translate(2557,0)"></path><path data-c="20" d="" transform="translate(3001,0)"></path><path data-c="61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z" transform="translate(3251,0)"></path><path data-c="74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z" transform="translate(3751,0)"></path><path data-c="3A" d="M78 370Q78 394 95 412T138 430Q162 430 180 414T199 371Q199 346 182 328T139 310T96 327T78 370ZM78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z" transform="translate(4140,0)"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(4418,0)"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(4918,0)"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(5418,0)"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(5918,0)"></path><path data-c="2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z" transform="translate(6418,0)"></path><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" transform="translate(6696,0)"></path><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" transform="translate(7196,0)"></path><path data-c="2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z" transform="translate(7696,0)"></path><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" transform="translate(7974,0)"></path><path data-c="36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z" transform="translate(8474,0)"></path></g></g></g></svg></mjx-container></p>
+<p>有些事情真的就淡忘了啊，过去很痛苦，但于现在相比不如毫毛，很多回忆现在想起来就像是不存在一般，但，也正是因为这样，就都可以再次成为朋友啊，或许在别人并不在意的往事上，我会花更多的心思去守护，不过是丑角的独台演出，但也能沉醉其中。</p>
+<p>我愿意去释然，虽然怯懦的我并不敢跨越这一步，但至少，不要再次成为陌生人了。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%9B%9E%E5%BF%86/" rel="tag"># 回忆</a>
+              <a href="/tags/%E8%BD%BB%E5%B0%8F%E8%AF%B4/" rel="tag"># 轻小说</a>
+              <a href="/tags/%E6%A0%A1%E5%9B%AD/" rel="tag"># 校园</a>
+              <a href="/tags/%E6%81%8B%E7%88%B1/" rel="tag"># 恋爱</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/Until-The-End/my-junior-high-school-life/" rel="prev" title="「末世追忆」S.H.A.D.O.W">
+      <i class="fa fa-chevron-left"></i> 「末世追忆」S.H.A.D.O.W
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/Until-The-End/my-OIer-life/" rel="next" title="O.I">
+      O.I <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%BB%AF%E7%81%B0%E7%9A%84%E6%97%B6%E9%92%88"><span class="nav-text">黯灰的时针</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9D%E8%AF%86%E4%B9%8B%E7%AB%A0"><span class="nav-text">初识之章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%BB%84%E6%98%8F%E4%B9%8B%E7%AB%A0"><span class="nav-text">黄昏之章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%81%87%E8%A7%81%E4%B9%8B%E7%AB%A0"><span class="nav-text">遇见之章</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9D%E6%9F%93%E9%9C%9E%E7%BA%A2"><span class="nav-text">初染霞红</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%A4%E7%BB%87%E4%B9%8B%E7%AB%A0"><span class="nav-text">交织之章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%82%82%E9%80%85%E4%B9%8B%E7%AB%A0"><span class="nav-text">邂逅之章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A2%A6%E5%A7%8B%E4%B9%8B%E7%AB%A0"><span class="nav-text">梦始之章</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%BE%88%E6%A9%99%E4%B8%8E%E6%9C%88"><span class="nav-text">澈橙与月</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A3%8E%E4%B9%8B%E7%AB%A0"><span class="nav-text">风之章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9B%A8%E4%B9%8B%E7%AB%A0"><span class="nav-text">雨之章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%81%E4%BA%91%E4%B9%8B%E7%AB%A0"><span class="nav-text">流云之章</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B5%A4%E8%89%B2%E6%99%A8%E6%9B%A6%E4%B8%8E%E9%87%91%E8%89%B2%E6%97%A5%E8%90%BD"><span class="nav-text">赤色晨曦与金色日落</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%8D%E8%A7%81%E4%B9%8B%E7%AB%A0-%E5%85%B6%E4%B8%80"><span class="nav-text">再见之章 其一</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%8D%E8%A7%81%E4%B9%8B%E7%AB%A0-%E5%85%B6%E4%BA%8C"><span class="nav-text">再见之章 其二</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%91%E5%B9%B4%EF%BC%8C%E4%B8%8E%E7%BD%97%E5%85%B0%E4%B9%8B%E7%B4%AB"><span class="nav-text">少年，与罗兰之紫</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E8%A7%A3%E9%87%8A"><span class="nav-text">一些解释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%99%E5%9C%A8%E8%B0%A2%E5%B9%95%E4%B9%8B%E5%89%8D"><span class="nav-text">写在谢幕之前</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Fallen Shadow"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Fallen Shadow</p>
+  <div class="site-description" itemprop="description">誰も悪くないから、辛いだな。<br>自卑的人，往往只剩下温柔了啊……</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">27</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">112</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/LucarEternity" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;LucarEternity" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="skype:live:.cid.7ca038c9215763f1?call|chat" title="Skype → skype:live:.cid.7ca038c9215763f1?call|chat" rel="noopener" target="_blank"><i class="fab fa-skype fa-fw"></i>Skype</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/356159259?spm_id_from=333.1007.0.0" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;356159259?spm_id_from&#x3D;333.1007.0.0" rel="noopener" target="_blank"><i class="fab fa-bilibili fa-fw"></i>Bilibili</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://music.163.com/#/artist?id=52150816" title="CloudMusic → https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;artist?id&#x3D;52150816" rel="noopener" target="_blank"><i class="fab fa-cloudmusic fa-fw"></i>CloudMusic</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.luogu.com.cn/user/444040" title="Luogu → https:&#x2F;&#x2F;www.luogu.com.cn&#x2F;user&#x2F;444040" rel="noopener" target="_blank"><i class="fab fa-luogu fa-fw"></i>Luogu</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/eternity-81-90" title="Zhihu → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;eternity-81-90" rel="noopener" target="_blank"><i class="fab fa-zhihu fa-fw"></i>Zhihu</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://codeforces.com/profile/eEternalF" title="CodeForces → https:&#x2F;&#x2F;codeforces.com&#x2F;profile&#x2F;eEternalF" rel="noopener" target="_blank"><i class="fab fa-codeforces fa-fw"></i>CodeForces</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://loj.ac/u/_Eternal_" title="LibreOj → https:&#x2F;&#x2F;loj.ac&#x2F;u&#x2F;_Eternal_" rel="noopener" target="_blank"><i class="fab fa-libreoj fa-fw"></i>LibreOj</a>
+      </span>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">落幕の残影</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">296k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">4:29</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = 'https://rusunoi.github.io/mathjax/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '5668763013a9ee15351a',
+      clientSecret: '829dedf54a52d013b70ae34590fb8d195486025d',
+      repo        : 'lucareternity.github.io',
+      owner       : 'LucarEternity',
+      admin       : ['LucarEternity'],
+      id          : '63c6270419e1c569014187d69771dcc9',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>

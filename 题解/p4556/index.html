@@ -23,29 +23,30 @@
   <meta name="description" content="「末世追忆」：“炽焰卷天，在本就无望的未来上，灼烧出笼罩黑暗的深洞。”">
 <meta property="og:type" content="article">
 <meta property="og:title" content="P4556 [Vani有约会]雨天的尾巴 &#x2F;【模板】线段树合并">
-<meta property="og:url" content="http://violeteternal.github.io/%E9%A2%98%E8%A7%A3/P4556/index.html">
-<meta property="og:site_name" content="Reincarnation">
+<meta property="og:url" content="http://violeteternal.github.io/%E9%A2%98%E8%A7%A3/p4556/index.html">
+<meta property="og:site_name" content="After Endgame">
 <meta property="og:description" content="「末世追忆」：“炽焰卷天，在本就无望的未来上，灼烧出笼罩黑暗的深洞。”">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-11-19T07:54:39.000Z">
-<meta property="article:modified_time" content="2023-01-07T09:58:55.717Z">
+<meta property="article:modified_time" content="2022-11-19T08:11:11.682Z">
 <meta property="article:author" content="Fallen Shadow">
 <meta property="article:tag" content="线段树">
 <meta property="article:tag" content="数据结构">
 <meta property="article:tag" content="树链剖分">
 <meta property="article:tag" content="并查集">
-<meta property="article:tag" content="启发式算法">
 <meta property="article:tag" content="启发式合并">
+<meta property="article:tag" content="启发式算法">
 <meta property="article:tag" content="倍增">
-<meta property="article:tag" content="LCA，最近公共祖先">
-<meta property="article:tag" content="线段树合并">
-<meta property="article:tag" content="树上差分">
-<meta property="article:tag" content="平衡树">
-<meta property="article:tag" content="Splay">
 <meta property="article:tag" content="树上倍增">
+<meta property="article:tag" content="LCA">
+<meta property="article:tag" content="平衡树">
+<meta property="article:tag" content="线段树合并">
+<meta property="article:tag" content="Splay">
+<meta property="article:tag" content="set">
+<meta property="article:tag" content="树上差分">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://violeteternal.github.io/%E9%A2%98%E8%A7%A3/P4556/">
+<link rel="canonical" href="http://violeteternal.github.io/%E9%A2%98%E8%A7%A3/p4556/">
 
 
 <script id="page-configurations">
@@ -58,7 +59,7 @@
   };
 </script>
 
-  <title>P4556 [Vani有约会]雨天的尾巴 /【模板】线段树合并 | Reincarnation</title>
+  <title>P4556 [Vani有约会]雨天的尾巴 /【模板】线段树合并 | After Endgame</title>
   
 
 
@@ -221,7 +222,7 @@ mjx-container[display="true"] + br {
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Reincarnation</h1>
+      <h1 class="site-title">After Endgame</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
       <p class="site-subtitle" itemprop="description">正因为梦易碎，才格外美好。</p>
@@ -271,12 +272,7 @@ mjx-container[display="true"] + br {
   </li>
         <li class="menu-item menu-item-past">
 
-    <a href="/past/" rel="section"><i class="fab fa-house-chimney-crack fa-fw"></i>旧日残垣</a>
-
-  </li>
-        <li class="menu-item menu-item-friendship">
-
-    <a href="/friendship/" rel="section"><i class="fa fa-users fa-fw"></i>友链</a>
+    <a href="https://violeteternal.github.io/" rel="section"><i class="fab fa-house-chimney-crack fa-fw"></i>旧日残垣</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -330,7 +326,7 @@ mjx-container[display="true"] + br {
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E9%A2%98%E8%A7%A3/P4556/">
+    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E9%A2%98%E8%A7%A3/p4556/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -339,7 +335,7 @@ mjx-container[display="true"] + br {
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Reincarnation">
+      <meta itemprop="name" content="After Endgame">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -354,16 +350,10 @@ mjx-container[display="true"] + br {
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2022-11-19 15:54:39" itemprop="dateCreated datePublished" datetime="2022-11-19T15:54:39+08:00">2022-11-19</time>
+              <time title="创建时间：2022-11-19 15:54:39 / 修改时间：16:11:11" itemprop="dateCreated datePublished" datetime="2022-11-19T15:54:39+08:00">2022-11-19</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-01-07 17:58:55" itemprop="dateModified" datetime="2023-01-07T17:58:55+08:00">2023-01-07</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -419,7 +409,6 @@ mjx-container[display="true"] + br {
 <p>然后建立一棵值域线段树，并维护区间众值。最后按照 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="3.778ex" height="2.059ex" role="img" focusable="false" viewBox="0 -705 1670 910"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path></g><g data-mml-node="mi" transform="translate(520,0)"><path data-c="1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"></path></g><g data-mml-node="mi" transform="translate(1070,0)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g></g></svg></mjx-container> 序统一修改，即可统计差分前缀和，我们需要的答案就是 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="9.624ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 4253.7 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path></g><g data-mml-node="mi" transform="translate(704,0)"><path data-c="1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(1155,0)"><path data-c="5B" d="M118 -250V750H255V710H158V-210H255V-250H118Z"></path></g><g data-mml-node="mn" transform="translate(1433,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g><g data-mml-node="mo" transform="translate(1933,0)"><path data-c="5D" d="M22 710V750H159V-250H22V-210H119V710H22Z"></path></g><g data-mml-node="mo" transform="translate(2211,0)"><path data-c="2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path></g><g data-mml-node="mi" transform="translate(2655.7,0)"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="mi" transform="translate(3184.7,0)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mi" transform="translate(3784.7,0)"><path data-c="1D460" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path></g></g></g></svg></mjx-container> 。</p>
 <details class="code"><summary><i class="fab fa-code fa-fw"></i>AC Code<div class="box-open-button"><i class="fa fa-chevron-down fa-fw"></i></div></summary>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> MAXN=<span class="number">1e5</span>+<span class="number">10</span>;</span><br><span class="line"><span class="type">int</span> N,Q;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">TC</span></span><br><span class="line">{</span><br><span class="line">    <span class="type">int</span> next,to;</span><br><span class="line">}Edge[MAXN&lt;&lt;<span class="number">1</span>];</span><br><span class="line"><span class="type">int</span> Head[MAXN],Total;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">addEdge</span><span class="params">(<span class="type">int</span> u,<span class="type">int</span> v)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    Edge[++Total]=(TC){Head[u],v};Head[u]=Total;</span><br><span class="line">    Edge[++Total]=(TC){Head[v],u};Head[v]=Total;</span><br><span class="line">}</span><br><span class="line"><span class="type">int</span> Fa[MAXN],Siz[MAXN],Dep[MAXN],Son[MAXN];</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">dfsTree</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> last)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    Fa[x]=last,Siz[x]=<span class="number">1</span>,Dep[x]=Dep[last]+<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> e=Head[x],v;e;e=Edge[e].next)</span><br><span class="line">    {</span><br><span class="line">        <span class="keyword">if</span>((v=Edge[e].to)==last) <span class="keyword">continue</span>;</span><br><span class="line">        <span class="built_in">dfsTree</span>(v,x);</span><br><span class="line">        Siz[x]+=Siz[v];</span><br><span class="line">        <span class="keyword">if</span>(!Son[x]||Siz[v]&gt;Siz[Son[x]]) Son[x]=v;</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line"><span class="type">int</span> Top[MAXN],Dfn[MAXN],Bck[MAXN],Cnt;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">dfsChain</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> topf)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    Top[x]=topf,Dfn[x]=++Cnt;</span><br><span class="line">    Bck[Cnt]=x;</span><br><span class="line">    <span class="keyword">if</span>(!Son[x]) <span class="keyword">return</span> ;</span><br><span class="line">    <span class="built_in">dfsChain</span>(Son[x],topf);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> e=Head[x],v;e;e=Edge[e].next)</span><br><span class="line">    {</span><br><span class="line">        <span class="keyword">if</span>((v=Edge[e].to)==Fa[x]||v==Son[x]) <span class="keyword">continue</span>;</span><br><span class="line">        <span class="built_in">dfsChain</span>(v,v);</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ls p&lt;&lt;1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> rs p&lt;&lt;1|1</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">ST</span></span><br><span class="line">{</span><br><span class="line">    <span class="type">int</span> l,r,val,ans;</span><br><span class="line">}Tr[MAXN&lt;&lt;<span class="number">2</span>];</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">pushUp</span><span class="params">(<span class="type">int</span> p)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    Tr[p].val=std::<span class="built_in">max</span>(Tr[ls].val,Tr[rs].val);</span><br><span class="line">    <span class="keyword">if</span>(Tr[p].val==Tr[ls].val) Tr[p].ans=Tr[ls].ans;</span><br><span class="line">    <span class="keyword">else</span> Tr[p].ans=Tr[rs].ans;</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">build</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> l,<span class="type">int</span> r)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    Tr[p]=(ST){l,r,<span class="number">0</span>,<span class="number">0</span>};</span><br><span class="line">    <span class="keyword">if</span>(l==r) <span class="keyword">return</span> ;</span><br><span class="line">    <span class="type">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    <span class="built_in">build</span>(ls,l,mid),<span class="built_in">build</span>(rs,mid+<span class="number">1</span>,r);</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">modifyCol</span><span class="params">(<span class="type">int</span> p,<span class="type">int</span> x,<span class="type">int</span> c)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    <span class="keyword">if</span>(Tr[p].l==Tr[p].r)</span><br><span class="line">    {</span><br><span class="line">        Tr[p].val+=c;</span><br><span class="line">        Tr[p].val?Tr[p].ans=x:Tr[p].ans=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">return</span> ;</span><br><span class="line">    }</span><br><span class="line">    <span class="type">int</span> mid=(Tr[p].l+Tr[p].r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span>(x&lt;=mid) <span class="built_in">modifyCol</span>(ls,x,c);</span><br><span class="line">    <span class="keyword">else</span> <span class="built_in">modifyCol</span>(rs,x,c);</span><br><span class="line">    <span class="built_in">pushUp</span>(p);</span><br><span class="line">}</span><br><span class="line">std::vector&lt;std::pair&lt;<span class="type">int</span>,<span class="type">int</span>&gt;&gt;Modi[MAXN];</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">modifyDiff</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y,<span class="type">int</span> c)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    <span class="keyword">while</span>(Top[x]!=Top[y])</span><br><span class="line">    {</span><br><span class="line">        <span class="keyword">if</span>(Dep[Top[x]]&lt;Dep[Top[y]]) std::<span class="built_in">swap</span>(x,y);</span><br><span class="line">        Modi[Dfn[Top[x]]].<span class="built_in">push_back</span>({c,<span class="number">1</span>});</span><br><span class="line">        Modi[Dfn[x]+<span class="number">1</span>].<span class="built_in">push_back</span>({c,<span class="number">-1</span>});</span><br><span class="line">        x=Fa[Top[x]];</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">if</span>(Dep[x]&gt;Dep[y]) std::<span class="built_in">swap</span>(x,y);</span><br><span class="line">    Modi[Dfn[x]].<span class="built_in">push_back</span>({c,<span class="number">1</span>});</span><br><span class="line">    Modi[Dfn[y]+<span class="number">1</span>].<span class="built_in">push_back</span>({c,<span class="number">-1</span>});</span><br><span class="line">}</span><br><span class="line"><span class="type">int</span> ans[MAXN];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    <span class="comment">// freopen(".in","r",stdin);</span></span><br><span class="line">    <span class="comment">// freopen(".out","w",stdout);</span></span><br><span class="line">    <span class="built_in">read</span>(N,Q);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">2</span>,u,v;i&lt;=N;++i)</span><br><span class="line">    {</span><br><span class="line">        <span class="built_in">read</span>(u,v);<span class="built_in">addEdge</span>(u,v);</span><br><span class="line">    }</span><br><span class="line">    <span class="built_in">dfsTree</span>(<span class="number">1</span>,<span class="number">0</span>),<span class="built_in">dfsChain</span>(<span class="number">1</span>,<span class="number">1</span>);</span><br><span class="line">    <span class="built_in">build</span>(<span class="number">1</span>,<span class="number">1</span>,MAXN<span class="number">-10</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> u,v,c;Q--;)</span><br><span class="line">    {</span><br><span class="line">        <span class="built_in">read</span>(u,v,c);<span class="built_in">modifyDiff</span>(u,v,c);</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=N;++i)</span><br><span class="line">    {</span><br><span class="line">        <span class="type">int</span> sz=Modi[i].<span class="built_in">size</span>();</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;sz;++j) <span class="built_in">modifyCol</span>(<span class="number">1</span>,Modi[i][j].first,Modi[i][j].second);</span><br><span class="line">        ans[Bck[i]]=Tr[<span class="number">1</span>].ans;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=N;++i) <span class="built_in">write</span>(ans[i],<span class="string">'\n'</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">5 3</span></span><br><span class="line"><span class="comment">1 2</span></span><br><span class="line"><span class="comment">3 1</span></span><br><span class="line"><span class="comment">3 4</span></span><br><span class="line"><span class="comment">5 3</span></span><br><span class="line"><span class="comment">2 3 3</span></span><br><span class="line"><span class="comment">1 5 2</span></span><br><span class="line"><span class="comment">3 3 3</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-
 </details>
 <hr>
 <h3 id="线段树合并-x-树上差分"><a href="#线段树合并-x-树上差分" class="headerlink" title="线段树合并 x 树上差分"></a>线段树合并 x 树上差分</h3><p><del>毕竟是模板题</del>。</p>
@@ -427,30 +416,12 @@ mjx-container[display="true"] + br {
 <p>然后你会发现，线段树合并的口胡都非常的轻松，但是用代码实现起来，需要熟练掌握模板，然后稍稍变换一点，其实也没有多么难写。（然后就写挂了，不太能理解 <code>merge</code> 函数明明很短每次都能把要么 <code>p1,p2</code> 搞混要么 <code>lc,rc</code> 搞混，还是需要提高码力啊）</p>
 <details class="code"><summary><i class="fab fa-code fa-fw"></i>AC Code<div class="box-open-button"><i class="fa fa-chevron-down fa-fw"></i></div></summary>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> MAXN=<span class="number">1e5</span>+<span class="number">10</span>;</span><br><span class="line"><span class="type">int</span> N,Q,Idx,MaxCol;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">ST</span></span><br><span class="line">{</span><br><span class="line">    <span class="type">int</span> lc,rc,val,cnt;</span><br><span class="line">}Tr[MAXN*<span class="number">100</span>];</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">extend</span><span class="params">(<span class="type">int</span> p1,<span class="type">int</span> p2)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    Tr[p1].val=Tr[p2].val,Tr[p1].cnt=Tr[p2].cnt;</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">pushUp</span><span class="params">(<span class="type">int</span> p)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    <span class="keyword">if</span>(Tr[Tr[p].lc].cnt&gt;Tr[Tr[p].rc].cnt) <span class="built_in">extend</span>(p,Tr[p].lc);</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(Tr[Tr[p].lc].cnt&lt;Tr[Tr[p].rc].cnt) <span class="built_in">extend</span>(p,Tr[p].rc);</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(Tr[Tr[p].lc].val&lt;Tr[Tr[p].rc].val) <span class="built_in">extend</span>(p,Tr[p].lc);</span><br><span class="line">    <span class="keyword">else</span> <span class="built_in">extend</span>(p,Tr[p].rc);</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">modifyX</span><span class="params">(<span class="type">int</span> &amp;p,<span class="type">int</span> c,<span class="type">int</span> v,<span class="type">int</span> l,<span class="type">int</span> r)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    <span class="keyword">if</span>(!p) p=++Idx;</span><br><span class="line">    <span class="keyword">if</span>(l==r)</span><br><span class="line">    {</span><br><span class="line">        Tr[p].cnt+=v,Tr[p].val=c;</span><br><span class="line">        <span class="keyword">return</span> ;</span><br><span class="line">    }</span><br><span class="line">    <span class="type">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span>(c&lt;=mid) <span class="built_in">modifyX</span>(Tr[p].lc,c,v,l,mid);</span><br><span class="line">    <span class="keyword">else</span> <span class="built_in">modifyX</span>(Tr[p].rc,c,v,mid+<span class="number">1</span>,r);</span><br><span class="line">    <span class="built_in">pushUp</span>(p);</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">merge</span><span class="params">(<span class="type">int</span> p1,<span class="type">int</span> p2,<span class="type">int</span> l,<span class="type">int</span> r)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    <span class="keyword">if</span>(!p1) <span class="keyword">return</span> p2;</span><br><span class="line">    <span class="keyword">if</span>(!p2) <span class="keyword">return</span> p1;</span><br><span class="line">    <span class="keyword">if</span>(l==r)</span><br><span class="line">    {</span><br><span class="line">        Tr[p1].cnt+=Tr[p2].cnt;</span><br><span class="line">        <span class="keyword">return</span> p1;</span><br><span class="line">    }</span><br><span class="line">    <span class="type">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    Tr[p1].lc=<span class="built_in">merge</span>(Tr[p1].lc,Tr[p2].lc,l,mid),</span><br><span class="line">    Tr[p1].rc=<span class="built_in">merge</span>(Tr[p1].rc,Tr[p2].rc,mid+<span class="number">1</span>,r);</span><br><span class="line">    <span class="built_in">pushUp</span>(p1);</span><br><span class="line">    <span class="keyword">return</span> p1;</span><br><span class="line">}</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">G</span></span><br><span class="line">{</span><br><span class="line">    <span class="type">int</span> next,to;</span><br><span class="line">}Edge[MAXN&lt;&lt;<span class="number">1</span>];</span><br><span class="line"><span class="type">int</span> Head[MAXN],Total;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">addEdge</span><span class="params">(<span class="type">int</span> u,<span class="type">int</span> v)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    Edge[++Total]=(G){Head[u],v};Head[u]=Total;</span><br><span class="line">    Edge[++Total]=(G){Head[v],u};Head[v]=Total;</span><br><span class="line">}</span><br><span class="line"><span class="type">int</span> Fa[MAXN],Siz[MAXN],Dep[MAXN],Son[MAXN];</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">dfsTree</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> last)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    Fa[x]=last,Dep[x]=Dep[last]+<span class="number">1</span>,Siz[x]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> e=Head[x],v;e;e=Edge[e].next)</span><br><span class="line">    {</span><br><span class="line">        <span class="keyword">if</span>((v=Edge[e].to)==last) <span class="keyword">continue</span>;</span><br><span class="line">        <span class="built_in">dfsTree</span>(v,x);</span><br><span class="line">        Siz[x]+=Siz[v];</span><br><span class="line">        <span class="keyword">if</span>(!Son[x]||Siz[v]&gt;Siz[Son[x]]) Son[x]=v;</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line"><span class="type">int</span> Top[MAXN],ans[MAXN],Rt[MAXN];</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">dfsChain</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> topf)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    Top[x]=topf;</span><br><span class="line">    <span class="keyword">if</span>(!Son[x]) <span class="keyword">return</span> ;</span><br><span class="line">    <span class="built_in">dfsChain</span>(Son[x],topf);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> e=Head[x],v;e;e=Edge[e].next)</span><br><span class="line">    {</span><br><span class="line">        <span class="keyword">if</span>((v=Edge[e].to)==Fa[x]||v==Son[x]) <span class="keyword">continue</span>;</span><br><span class="line">        <span class="built_in">dfsChain</span>(v,v);</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">getLca</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    <span class="keyword">while</span>(Top[x]!=Top[y])</span><br><span class="line">    {</span><br><span class="line">        <span class="keyword">if</span>(Dep[Top[x]]&lt;Dep[Top[y]]) std::<span class="built_in">swap</span>(x,y);</span><br><span class="line">        x=Fa[Top[x]];</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> Dep[x]&gt;Dep[y]?y:x;</span><br><span class="line">}</span><br><span class="line">std::vector&lt;std::pair&lt;<span class="type">int</span>,<span class="type">int</span>&gt;&gt;Modify[MAXN];</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">reDfs</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> last)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> e=Head[x],v;e;e=Edge[e].next)</span><br><span class="line">    {</span><br><span class="line">        <span class="keyword">if</span>((v=Edge[e].to)==last) <span class="keyword">continue</span>;</span><br><span class="line">        <span class="built_in">reDfs</span>(v,x);</span><br><span class="line">        Rt[x]=<span class="built_in">merge</span>(Rt[x],Rt[v],<span class="number">0</span>,MaxCol);</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">auto</span> i:Modify[x]) <span class="built_in">modifyX</span>(Rt[x],i.first,i.second,<span class="number">0</span>,MaxCol);</span><br><span class="line">    ans[x]=Tr[Rt[x]].val;</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    <span class="comment">// freopen(".in","r",stdin);</span></span><br><span class="line">    <span class="comment">// freopen(".out","w",stdout);</span></span><br><span class="line">    <span class="built_in">read</span>(N,Q);Rt[<span class="number">1</span>]=<span class="number">1</span>,Idx=N;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">2</span>,u,v;i&lt;=N;++i)</span><br><span class="line">    {</span><br><span class="line">        <span class="built_in">read</span>(u,v);<span class="built_in">addEdge</span>(u,v);</span><br><span class="line">        Rt[i]=i;</span><br><span class="line">    }</span><br><span class="line">    <span class="built_in">dfsTree</span>(<span class="number">1</span>,<span class="number">0</span>),<span class="built_in">dfsChain</span>(<span class="number">1</span>,<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> u,v,c;Q--;)</span><br><span class="line">    {</span><br><span class="line">        <span class="built_in">read</span>(u,v,c);<span class="built_in">checkMax</span>(MaxCol,c);</span><br><span class="line">        <span class="type">int</span> o=<span class="built_in">getLca</span>(u,v);</span><br><span class="line">        Modify[u].<span class="built_in">push_back</span>({c,<span class="number">1</span>}),Modify[v].<span class="built_in">push_back</span>({c,<span class="number">1</span>});</span><br><span class="line">        Modify[o].<span class="built_in">push_back</span>({c,<span class="number">-1</span>}),Modify[Fa[o]].<span class="built_in">push_back</span>({c,<span class="number">-1</span>});</span><br><span class="line">    }</span><br><span class="line">    <span class="built_in">reDfs</span>(<span class="number">1</span>,<span class="number">-1</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=N;++i) <span class="built_in">write</span>(ans[i],<span class="string">'\n'</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">5 3</span></span><br><span class="line"><span class="comment">1 2</span></span><br><span class="line"><span class="comment">3 1</span></span><br><span class="line"><span class="comment">3 4</span></span><br><span class="line"><span class="comment">5 3</span></span><br><span class="line"><span class="comment">2 3 3</span></span><br><span class="line"><span class="comment">1 5 2</span></span><br><span class="line"><span class="comment">3 3 3</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-
 </details>
     </div>
 
     
     
     
-      
-
-  <div class="popular-posts-header">相关文章</div>
-  <ul class="related-posts">
-  
-      <li class="related-posts-item"><a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Segment-Tree-Merge-and-Split/">线段树合并 & 线段树分裂</a></li>
-  
-      <li class="related-posts-item"><a href="/%E9%A2%98%E8%A7%A3/P4768/">P4768 [NOI2018] 归程</a></li>
-  
-      <li class="related-posts-item"><a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Mo-Algo/">莫队</a></li>
-  
-      <li class="related-posts-item"><a href="/%E9%A2%98%E8%A7%A3/P8861/">P8861 线段</a></li>
-  
-      <li class="related-posts-item"><a href="/%E9%A2%98%E8%A7%A3/P3792/">P3792 由乃与大母神原型和偶像崇拜</a></li>
-  
-  </ul>
-
 
       <footer class="post-footer">
           <div class="post-tags">
@@ -458,15 +429,16 @@ mjx-container[display="true"] + br {
               <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"># 数据结构</a>
               <a href="/tags/%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/" rel="tag"># 树链剖分</a>
               <a href="/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/" rel="tag"># 并查集</a>
-              <a href="/tags/%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/" rel="tag"># 启发式算法</a>
               <a href="/tags/%E5%90%AF%E5%8F%91%E5%BC%8F%E5%90%88%E5%B9%B6/" rel="tag"># 启发式合并</a>
+              <a href="/tags/%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/" rel="tag"># 启发式算法</a>
               <a href="/tags/%E5%80%8D%E5%A2%9E/" rel="tag"># 倍增</a>
-              <a href="/tags/LCA%EF%BC%8C%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88/" rel="tag"># LCA，最近公共祖先</a>
-              <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%90%88%E5%B9%B6/" rel="tag"># 线段树合并</a>
-              <a href="/tags/%E6%A0%91%E4%B8%8A%E5%B7%AE%E5%88%86/" rel="tag"># 树上差分</a>
-              <a href="/tags/%E5%B9%B3%E8%A1%A1%E6%A0%91/" rel="tag"># 平衡树</a>
-              <a href="/tags/Splay/" rel="tag"># Splay</a>
               <a href="/tags/%E6%A0%91%E4%B8%8A%E5%80%8D%E5%A2%9E/" rel="tag"># 树上倍增</a>
+              <a href="/tags/LCA/" rel="tag"># LCA</a>
+              <a href="/tags/%E5%B9%B3%E8%A1%A1%E6%A0%91/" rel="tag"># 平衡树</a>
+              <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%90%88%E5%B9%B6/" rel="tag"># 线段树合并</a>
+              <a href="/tags/Splay/" rel="tag"># Splay</a>
+              <a href="/tags/set/" rel="tag"># set</a>
+              <a href="/tags/%E6%A0%91%E4%B8%8A%E5%B7%AE%E5%88%86/" rel="tag"># 树上差分</a>
           </div>
 
         
@@ -475,11 +447,11 @@ mjx-container[display="true"] + br {
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Segment-Tree-Merge-and-Split/" rel="prev" title="线段树合并 & 线段树分裂">
+    <a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/segment-tree-merge-and-split/" rel="prev" title="线段树合并 & 线段树分裂">
       <i class="fa fa-chevron-left"></i> 线段树合并 & 线段树分裂
     </a></div>
       <div class="post-nav-item">
-    <a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/Contest20221121/" rel="next" title="2202 SCP模拟赛">
+    <a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/contest20221121/" rel="next" title="2202 SCP模拟赛">
       2202 SCP模拟赛 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
@@ -557,20 +529,20 @@ mjx-container[display="true"] + br {
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">53</span>
+          <span class="site-state-item-count">28</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">190</span>
+        <span class="site-state-item-count">122</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -627,7 +599,7 @@ mjx-container[display="true"] + br {
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2023</span>
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -637,13 +609,13 @@ mjx-container[display="true"] + br {
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">465k</span>
+    <span title="站点总字数">322k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">7:03</span>
+    <span title="站点阅读时长">4:53</span>
 </div>
 
         
@@ -726,6 +698,7 @@ mjx-container[display="true"] + br {
   if (typeof MathJax === 'undefined') {
     window.MathJax = {
       loader: {
+          load: ['[tex]/mhchem'],
         source: {
           '[tex]/amsCd': '[tex]/amscd',
           '[tex]/AMScd': '[tex]/amscd'
@@ -733,6 +706,7 @@ mjx-container[display="true"] + br {
       },
       tex: {
         inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
         tags: 'ams'
       },
       options: {
@@ -787,7 +761,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'lucareternity.github.io',
       owner       : 'LucarEternity',
       admin       : ['LucarEternity'],
-      id          : 'cda8893265c73a0c6f0883b7722eec96',
+      id          : '99edca5857c7882c7012751581b619d8',
         language: 'zh-CN',
       distractionFreeMode: true
     });

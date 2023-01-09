@@ -23,22 +23,22 @@
   <meta name="description" content="总之啊，和“冒泡排序”沾边的题都是毒瘤。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="P8859 冒泡排序">
-<meta property="og:url" content="http://violeteternal.github.io/%E9%A2%98%E8%A7%A3/P8859/index.html">
-<meta property="og:site_name" content="Reincarnation">
+<meta property="og:url" content="http://violeteternal.github.io/%E9%A2%98%E8%A7%A3/p8859/index.html">
+<meta property="og:site_name" content="After Endgame">
 <meta property="og:description" content="总之啊，和“冒泡排序”沾边的题都是毒瘤。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-11-22T07:26:07.000Z">
 <meta property="article:modified_time" content="2022-11-22T10:35:25.789Z">
 <meta property="article:author" content="Fallen Shadow">
-<meta property="article:tag" content="Dp，动态规划">
 <meta property="article:tag" content="贪心">
 <meta property="article:tag" content="组合数学">
-<meta property="article:tag" content="排列与组合">
 <meta property="article:tag" content="Stirling数，斯特林数">
+<meta property="article:tag" content="Dp，动态规划">
+<meta property="article:tag" content="排列与组合">
 <meta property="article:tag" content="单调栈">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://violeteternal.github.io/%E9%A2%98%E8%A7%A3/P8859/">
+<link rel="canonical" href="http://violeteternal.github.io/%E9%A2%98%E8%A7%A3/p8859/">
 
 
 <script id="page-configurations">
@@ -51,7 +51,7 @@
   };
 </script>
 
-  <title>P8859 冒泡排序 | Reincarnation</title>
+  <title>P8859 冒泡排序 | After Endgame</title>
   
 
 
@@ -214,7 +214,7 @@ mjx-container[display="true"] + br {
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Reincarnation</h1>
+      <h1 class="site-title">After Endgame</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
       <p class="site-subtitle" itemprop="description">正因为梦易碎，才格外美好。</p>
@@ -264,12 +264,7 @@ mjx-container[display="true"] + br {
   </li>
         <li class="menu-item menu-item-past">
 
-    <a href="/past/" rel="section"><i class="fab fa-house-chimney-crack fa-fw"></i>旧日残垣</a>
-
-  </li>
-        <li class="menu-item menu-item-friendship">
-
-    <a href="/friendship/" rel="section"><i class="fa fa-users fa-fw"></i>友链</a>
+    <a href="https://violeteternal.github.io/" rel="section"><i class="fab fa-house-chimney-crack fa-fw"></i>旧日残垣</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -323,7 +318,7 @@ mjx-container[display="true"] + br {
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E9%A2%98%E8%A7%A3/P8859/">
+    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E9%A2%98%E8%A7%A3/p8859/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -332,7 +327,7 @@ mjx-container[display="true"] + br {
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Reincarnation">
+      <meta itemprop="name" content="After Endgame">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -408,38 +403,20 @@ dp_{i+1,j+1}\overset{+}{\leftarrow}dp_{i,j}\times i
 <p>然后组合数 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.186ex;" xmlns="http://www.w3.org/2000/svg" width="1.76ex" height="1.505ex" role="img" focusable="false" viewBox="0 -583 778 665"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> 记忆化搜索乱搞，贺 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.991ex" height="1.645ex" role="img" focusable="false" viewBox="0 -716 1322 727"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle" fill="gold" stroke="gold"><g data-mml-node="mi"><path data-c="1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path></g><g data-mml-node="mi" transform="translate(750,0)"><path data-c="1D462" d="M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g></g></g></g></svg></mjx-container> 爷的代码。</p>
 <details class="code"><summary><i class="fab fa-code fa-fw"></i>AC Code<div class="box-open-button"><i class="fa fa-chevron-down fa-fw"></i></div></summary>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ----- Eternally question-----</span></span><br><span class="line"><span class="comment">// Problem: P8859 冒泡排序</span></span><br><span class="line"><span class="comment">// Contest: Luogu</span></span><br><span class="line"><span class="comment">// URL: https://www.luogu.com.cn/problem/P8859</span></span><br><span class="line"><span class="comment">// Memory Limit: 512 MB</span></span><br><span class="line"><span class="comment">// Time Limit: 1000 ms</span></span><br><span class="line"><span class="comment">// Written by: Eternity</span></span><br><span class="line"><span class="comment">// Time: 2022-11-22 15:29:42</span></span><br><span class="line"><span class="comment">// ----- Endless solution-------</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> re register</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">double</span> ld;</span><br><span class="line"><span class="function"><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">read</span><span class="params">(T &amp;x)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">	x=<span class="number">0</span>;</span><br><span class="line">	<span class="type">char</span> ch=<span class="built_in">getchar</span>(),t=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span>(ch&lt;<span class="string">'0'</span>||ch&gt;<span class="string">'9'</span>) t|=ch==<span class="string">'-'</span>,ch=<span class="built_in">getchar</span>();</span><br><span class="line">	<span class="keyword">while</span>(ch&gt;=<span class="string">'0'</span>&amp;&amp;ch&lt;=<span class="string">'9'</span>) x=(x&lt;&lt;<span class="number">3</span>)+(x&lt;&lt;<span class="number">1</span>)+(ch^<span class="number">48</span>),ch=<span class="built_in">getchar</span>();</span><br><span class="line">	<span class="keyword">if</span>(t) x=-x;</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="keyword">template</span>&lt;<span class="keyword">class</span> T,<span class="keyword">class</span> ...T1&gt;</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">read</span><span class="params">(T &amp;x,T1 &amp;...x1)</span></span>{ <span class="built_in">read</span>(x),<span class="built_in">read</span>(x1...); }</span><br><span class="line"><span class="function"><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">write</span><span class="params">(T x)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">	<span class="keyword">if</span>(x&lt;<span class="number">0</span>) <span class="built_in">putchar</span>(<span class="string">'-'</span>),x=-x;</span><br><span class="line">	<span class="keyword">if</span>(x&gt;<span class="number">9</span>) <span class="built_in">write</span>(x/<span class="number">10</span>);</span><br><span class="line">	<span class="built_in">putchar</span>(x%<span class="number">10</span>+<span class="number">48</span>);</span><br><span class="line">}</span><br><span class="line"><span class="keyword">template</span>&lt;&gt;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">write</span><span class="params">(<span class="type">bool</span> x)</span></span>{ <span class="built_in">putchar</span>(x?<span class="string">'1'</span>:<span class="string">'0'</span>); }</span><br><span class="line"><span class="keyword">template</span>&lt;&gt;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">write</span><span class="params">(<span class="type">char</span> c)</span></span>{ <span class="built_in">putchar</span>(c); }</span><br><span class="line"><span class="keyword">template</span>&lt;&gt;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">write</span><span class="params">(<span class="type">char</span> *s)</span></span>{ <span class="keyword">while</span>(*s!=<span class="string">'\0'</span>) <span class="built_in">putchar</span>(*s++); }</span><br><span class="line"><span class="keyword">template</span>&lt;&gt;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">write</span><span class="params">(<span class="type">const</span> <span class="type">char</span> *s)</span></span>{ <span class="keyword">while</span>(*s!=<span class="string">'\0'</span>) <span class="built_in">putchar</span>(*s++); }</span><br><span class="line"><span class="function"><span class="keyword">template</span>&lt;<span class="keyword">class</span> T,<span class="keyword">class</span> ...T1&gt;</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">write</span><span class="params">(T x,T1 ...x1)</span></span>{ <span class="built_in">write</span>(x),<span class="built_in">write</span>(x1...); }</span><br><span class="line"><span class="function"><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">bool</span> <span class="title">checkMax</span><span class="params">(T &amp;x,T y)</span></span>{ <span class="keyword">return</span> x&lt;y?x=y,<span class="number">1</span>:<span class="number">0</span>; }</span><br><span class="line"><span class="function"><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">bool</span> <span class="title">checkMin</span><span class="params">(T &amp;x,T y)</span></span>{ <span class="keyword">return</span> x&gt;y?x=y,<span class="number">1</span>:<span class="number">0</span>; }</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> MAXN=<span class="number">5e2</span>+<span class="number">10</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> Mod=<span class="number">1e9</span>+<span class="number">7</span>;</span><br><span class="line"><span class="type">int</span> N,K,Type;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">add</span><span class="params">(<span class="type">int</span> &amp;a,<span class="type">int</span> b)</span></span>{ <span class="keyword">if</span>((a+=b)&gt;=Mod) a-=Mod; }</span><br><span class="line"><span class="keyword">namespace</span> SolveSeq</span><br><span class="line">{</span><br><span class="line">	<span class="type">int</span> Dp[MAXN][MAXN];</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="type">bool</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function">	</span>{</span><br><span class="line">		Dp[<span class="number">0</span>][<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;N;++i)</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;=i;++j)</span><br><span class="line">				<span class="built_in">add</span>(Dp[i+<span class="number">1</span>][j+<span class="number">1</span>],Dp[i][j]),<span class="built_in">add</span>(Dp[i+<span class="number">1</span>][j],<span class="number">1ll</span>*Dp[i][j]*i%Mod);</span><br><span class="line">		<span class="built_in">write</span>(Dp[N][N-K]);</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	}</span><br><span class="line">};</span><br><span class="line"><span class="keyword">namespace</span> SolveCircle</span><br><span class="line">{</span><br><span class="line">	<span class="type">int</span> C[MAXN][MAXN],Dp[MAXN][MAXN];</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">initC</span><span class="params">()</span></span></span><br><span class="line"><span class="function">	</span>{</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=C[<span class="number">0</span>][<span class="number">0</span>]=<span class="number">1</span>;i&lt;MAXN;++i)</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=C[i][<span class="number">0</span>]=<span class="number">1</span>;j&lt;=i;++j)</span><br><span class="line">				<span class="built_in">add</span>(C[i][j]=C[i<span class="number">-1</span>][j],C[i<span class="number">-1</span>][j<span class="number">-1</span>]);</span><br><span class="line">	}</span><br><span class="line">	<span class="function"><span class="type">int</span> <span class="title">solve</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> k)</span></span></span><br><span class="line"><span class="function">	</span>{</span><br><span class="line">		<span class="keyword">if</span>(n==<span class="number">0</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span>(k&lt;=<span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">if</span>(Dp[n][k]) <span class="keyword">return</span> Dp[n][k];</span><br><span class="line">		<span class="type">int</span> &amp;res=Dp[n][k];</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> mid=<span class="number">1</span>;mid&lt;=n;++mid)</span><br><span class="line">			<span class="built_in">add</span>(res,<span class="number">1ll</span>*C[n<span class="number">-1</span>][mid<span class="number">-1</span>]*<span class="built_in">solve</span>(mid<span class="number">-1</span>,k)%Mod*<span class="built_in">solve</span>(n-mid,k<span class="number">-1</span>)%Mod);</span><br><span class="line">		<span class="keyword">return</span> res;</span><br><span class="line">	}</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="type">bool</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function">	</span>{</span><br><span class="line">		<span class="built_in">initC</span>();</span><br><span class="line">		<span class="type">int</span> res=<span class="built_in">solve</span>(N<span class="number">-1</span>,N-K<span class="number">-1</span>);</span><br><span class="line">		<span class="built_in">add</span>(res,Mod-<span class="built_in">solve</span>(N<span class="number">-1</span>,N-K<span class="number">-2</span>));</span><br><span class="line">		<span class="built_in">write</span>(res);</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	}</span><br><span class="line">};</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">	<span class="comment">// freopen("sort.in","r",stdin);</span></span><br><span class="line">	<span class="comment">// freopen("sort.out","w",stdout);</span></span><br><span class="line">    <span class="built_in">read</span>(N,K,Type);</span><br><span class="line">	<span class="keyword">if</span>(Type==<span class="number">1</span>) <span class="keyword">return</span> SolveSeq::<span class="built_in">main</span>();</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">return</span> SolveCircle::<span class="built_in">main</span>();</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-
 </details>
     </div>
 
     
     
     
-      
-
-  <div class="popular-posts-header">相关文章</div>
-  <ul class="related-posts">
-  
-      <li class="related-posts-item"><a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/Contest20221121/">2202 SCP模拟赛</a></li>
-  
-      <li class="related-posts-item"><a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/CSP-S2022/">CSP-S 2022 题解</a></li>
-  
-      <li class="related-posts-item"><a href="/%E9%A2%98%E8%A7%A3/P3118/">P3118 [USACO15JAN]Moovie Mooving G</a></li>
-  
-      <li class="related-posts-item"><a href="/%E9%A2%98%E8%A7%A3/P4124/">P4124 [CQOI2016]手机号码</a></li>
-  
-      <li class="related-posts-item"><a href="/%E9%A2%98%E8%A7%A3/ZROI2414/">ZROI2022冲刺Day15-B 对赌</a></li>
-  
-  </ul>
-
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Dp%EF%BC%8C%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" rel="tag"># Dp，动态规划</a>
               <a href="/tags/%E8%B4%AA%E5%BF%83/" rel="tag"># 贪心</a>
               <a href="/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" rel="tag"># 组合数学</a>
-              <a href="/tags/%E6%8E%92%E5%88%97%E4%B8%8E%E7%BB%84%E5%90%88/" rel="tag"># 排列与组合</a>
               <a href="/tags/Stirling%E6%95%B0%EF%BC%8C%E6%96%AF%E7%89%B9%E6%9E%97%E6%95%B0/" rel="tag"># Stirling数，斯特林数</a>
+              <a href="/tags/Dp%EF%BC%8C%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" rel="tag"># Dp，动态规划</a>
+              <a href="/tags/%E6%8E%92%E5%88%97%E4%B8%8E%E7%BB%84%E5%90%88/" rel="tag"># 排列与组合</a>
               <a href="/tags/%E5%8D%95%E8%B0%83%E6%A0%88/" rel="tag"># 单调栈</a>
           </div>
 
@@ -449,11 +426,11 @@ dp_{i+1,j+1}\overset{+}{\leftarrow}dp_{i,j}\times i
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/Contest20221121/" rel="prev" title="2202 SCP模拟赛">
+    <a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/contest20221121/" rel="prev" title="2202 SCP模拟赛">
       <i class="fa fa-chevron-left"></i> 2202 SCP模拟赛
     </a></div>
       <div class="post-nav-item">
-    <a href="/%E9%A2%98%E8%A7%A3/P8861/" rel="next" title="P8861 线段">
+    <a href="/%E9%A2%98%E8%A7%A3/p8861/" rel="next" title="P8861 线段">
       P8861 线段 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
@@ -531,20 +508,20 @@ dp_{i+1,j+1}\overset{+}{\leftarrow}dp_{i,j}\times i
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">53</span>
+          <span class="site-state-item-count">28</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">190</span>
+        <span class="site-state-item-count">122</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -601,7 +578,7 @@ dp_{i+1,j+1}\overset{+}{\leftarrow}dp_{i,j}\times i
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2023</span>
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -611,13 +588,13 @@ dp_{i+1,j+1}\overset{+}{\leftarrow}dp_{i,j}\times i
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">465k</span>
+    <span title="站点总字数">322k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">7:03</span>
+    <span title="站点阅读时长">4:53</span>
 </div>
 
         
@@ -700,6 +677,7 @@ dp_{i+1,j+1}\overset{+}{\leftarrow}dp_{i,j}\times i
   if (typeof MathJax === 'undefined') {
     window.MathJax = {
       loader: {
+          load: ['[tex]/mhchem'],
         source: {
           '[tex]/amsCd': '[tex]/amscd',
           '[tex]/AMScd': '[tex]/amscd'
@@ -707,6 +685,7 @@ dp_{i+1,j+1}\overset{+}{\leftarrow}dp_{i,j}\times i
       },
       tex: {
         inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
         tags: 'ams'
       },
       options: {
@@ -761,7 +740,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'lucareternity.github.io',
       owner       : 'LucarEternity',
       admin       : ['LucarEternity'],
-      id          : 'a9e8546ee0ad1f87ec4c40050582f070',
+      id          : 'b58a304638adaa6e9e46b01fa7e41897',
         language: 'zh-CN',
       distractionFreeMode: true
     });

@@ -1193,7 +1193,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #7113af;
+  background: #a44521;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2714,7 +2714,7 @@ mjx-container + br {
   }
 }
 body {
-  background: url("/images/background-12.jpg");
+  background: url("/images/background-4.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
@@ -2755,6 +2755,14 @@ body {
 }
 .fa-codeforces {
   background: url("/images/codeforces.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 75%;
+  height: 0.8rem;
+  width: 0.8rem;
+  opacity: 0.75;
+}
+.fa-atcoder {
+  background: url("/images/atcoder.svg");
   background-repeat: no-repeat;
   background-position: 50% 75%;
   height: 0.8rem;

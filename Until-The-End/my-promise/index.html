@@ -427,11 +427,11 @@ mjx-container[display="true"] + br {
   
       <li class="related-posts-item"><a href="/Until-The-End/My-Junior-High-School-Life/">S.H.A.D.O.W</a></li>
   
+      <li class="related-posts-item"><a href="/%E5%B0%91%E5%B9%B4%E6%B2%89%E5%85%A5%E8%BF%87%E7%9A%84%E6%A2%A6/%E7%BB%9C%E7%BD%91%E4%B8%87%E5%8D%83/Boom/">Warma的爆炸电台</a></li>
+  
       <li class="related-posts-item"><a href="/%E9%9B%A8%E4%B8%AD%EF%BC%8C%E6%A2%A6%E4%B8%80%E5%9C%BA/Soul-of-Loneliness-without-Hindrance/">海灯熄灭之夜</a></li>
   
       <li class="related-posts-item"><a href="/Until-The-End/My-OIer-Life/">O.I</a></li>
-  
-      <li class="related-posts-item"><a href="/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4%E9%9B%86/%E5%9B%9B%E5%AD%A3%E4%B9%8B%E6%AD%8C/Season-Yesterday-Spring/">昔春之辞</a></li>
   
   </ul>
 
@@ -528,20 +528,20 @@ mjx-container[display="true"] + br {
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">65</span>
+          <span class="site-state-item-count">79</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">227</span>
+        <span class="site-state-item-count">248</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -614,14 +614,34 @@ mjx-container[display="true"] + br {
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">601k</span>
+    <span title="站点总字数">698k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">9:07</span>
+    <span title="站点阅读时长">10:34</span>
 </div>
+  <div class="running-time">
+    <span id="timeDate"></span>
+    <span id="times"></span>
+    <script>
+        var now = new Date();
+        function createtime() {
+            var grt= new Date("01/25/2022 13:14:20");
+            now.setTime(now.getTime()+250);
+            days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+            hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+            if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+            mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+            document.getElementById("timeDate").innerHTML = "本站已经安全运行 " + dnum + " 天";
+            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+        }
+    setInterval("createtime()",250);
+    </script>
+  </div>
 
         
 <div class="busuanzi-count">

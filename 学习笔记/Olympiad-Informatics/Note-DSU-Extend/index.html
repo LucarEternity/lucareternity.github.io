@@ -31,12 +31,12 @@
 <meta property="article:modified_time" content="2022-12-05T07:51:37.694Z">
 <meta property="article:author" content="Fallen Shadow">
 <meta property="article:tag" content="数据结构">
+<meta property="article:tag" content="可持久化线段树">
+<meta property="article:tag" content="可持久化数据结构">
 <meta property="article:tag" content="树型结构">
 <meta property="article:tag" content="并查集">
-<meta property="article:tag" content="可持久化数据结构">
 <meta property="article:tag" content="可持久化并查集">
 <meta property="article:tag" content="主席树">
-<meta property="article:tag" content="可持久化线段树">
 <meta property="article:tag" content="可撤销并查集">
 <meta property="article:tag" content="启发式算法">
 <meta property="article:tag" content="启发式合并">
@@ -486,9 +486,9 @@ mjx-container[display="true"] + br {
   
       <li class="related-posts-item"><a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Graph-Building-Optimization/">建图优化</a></li>
   
-      <li class="related-posts-item"><a href="/%E9%A2%98%E8%A7%A3/P4768/">P4768 [NOI2018] 归程</a></li>
-  
       <li class="related-posts-item"><a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Mo-Algo/">莫队</a></li>
+  
+      <li class="related-posts-item"><a href="/%E9%A2%98%E8%A7%A3/P4768/">P4768 [NOI2018] 归程</a></li>
   
   </ul>
 
@@ -496,12 +496,12 @@ mjx-container[display="true"] + br {
       <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"># 数据结构</a>
+              <a href="/tags/%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E7%BA%BF%E6%AE%B5%E6%A0%91/" rel="tag"># 可持久化线段树</a>
+              <a href="/tags/%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"># 可持久化数据结构</a>
               <a href="/tags/%E6%A0%91%E5%9E%8B%E7%BB%93%E6%9E%84/" rel="tag"># 树型结构</a>
               <a href="/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/" rel="tag"># 并查集</a>
-              <a href="/tags/%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"># 可持久化数据结构</a>
               <a href="/tags/%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E5%B9%B6%E6%9F%A5%E9%9B%86/" rel="tag"># 可持久化并查集</a>
               <a href="/tags/%E4%B8%BB%E5%B8%AD%E6%A0%91/" rel="tag"># 主席树</a>
-              <a href="/tags/%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E7%BA%BF%E6%AE%B5%E6%A0%91/" rel="tag"># 可持久化线段树</a>
               <a href="/tags/%E5%8F%AF%E6%92%A4%E9%94%80%E5%B9%B6%E6%9F%A5%E9%9B%86/" rel="tag"># 可撤销并查集</a>
               <a href="/tags/%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/" rel="tag"># 启发式算法</a>
               <a href="/tags/%E5%90%AF%E5%8F%91%E5%BC%8F%E5%90%88%E5%B9%B6/" rel="tag"># 启发式合并</a>
@@ -513,7 +513,7 @@ mjx-container[display="true"] + br {
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/%E6%B6%85%E6%BA%AF%E8%80%8C%E7%94%9F/A-New-Restart/" rel="prev" title="重启人生">
+    <a href="/%E9%9B%A8%E4%B8%AD%EF%BC%8C%E6%A2%A6%E4%B8%80%E5%9C%BA/A-New-Restart/" rel="prev" title="重启人生">
       <i class="fa fa-chevron-left"></i> 重启人生
     </a></div>
       <div class="post-nav-item">
@@ -595,20 +595,20 @@ mjx-container[display="true"] + br {
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">65</span>
+          <span class="site-state-item-count">79</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">227</span>
+        <span class="site-state-item-count">248</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -681,14 +681,34 @@ mjx-container[display="true"] + br {
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">601k</span>
+    <span title="站点总字数">698k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">9:07</span>
+    <span title="站点阅读时长">10:34</span>
 </div>
+  <div class="running-time">
+    <span id="timeDate"></span>
+    <span id="times"></span>
+    <script>
+        var now = new Date();
+        function createtime() {
+            var grt= new Date("01/25/2022 13:14:20");
+            now.setTime(now.getTime()+250);
+            days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+            hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+            if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+            mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+            document.getElementById("timeDate").innerHTML = "本站已经安全运行 " + dnum + " 天";
+            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+        }
+    setInterval("createtime()",250);
+    </script>
+  </div>
 
         
 <div class="busuanzi-count">

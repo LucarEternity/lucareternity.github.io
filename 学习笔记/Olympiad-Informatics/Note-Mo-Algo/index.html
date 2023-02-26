@@ -28,27 +28,30 @@
 <meta property="og:description" content="「末世追忆」：“迷旋交错的尖针，在不同的时间流速之中，下一秒，又会指向何方？”">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-11-19T06:33:29.000Z">
-<meta property="article:modified_time" content="2023-01-10T02:56:59.685Z">
+<meta property="article:modified_time" content="2023-01-27T07:20:05.021Z">
 <meta property="article:author" content="Fallen Shadow">
 <meta property="article:tag" content="Hash，哈希">
 <meta property="article:tag" content="模拟">
 <meta property="article:tag" content="前缀差分">
 <meta property="article:tag" content="stl">
 <meta property="article:tag" content="树论">
-<meta property="article:tag" content="离线算法">
-<meta property="article:tag" content="枚举，暴力">
-<meta property="article:tag" content="搜索">
-<meta property="article:tag" content="RMQ，区间最值问题">
+<meta property="article:tag" content="递推，递归">
 <meta property="article:tag" content="数据结构">
+<meta property="article:tag" content="离线算法">
+<meta property="article:tag" content="可持久化数据结构">
+<meta property="article:tag" content="离散化">
+<meta property="article:tag" content="计数问题">
+<meta property="article:tag" content="块状链表，块状数组，分块">
+<meta property="article:tag" content="枚举，暴力">
+<meta property="article:tag" content="RMQ，区间最值问题">
+<meta property="article:tag" content="搜索">
+<meta property="article:tag" content="Ynoi">
 <meta property="article:tag" content="树链剖分">
 <meta property="article:tag" content="树型结构">
-<meta property="article:tag" content="离散化">
-<meta property="article:tag" content="块状链表，块状数组，分块">
 <meta property="article:tag" content="扫描线">
 <meta property="article:tag" content="树状数组">
-<meta property="article:tag" content="可持久化数据结构">
-<meta property="article:tag" content="倍增">
 <meta property="article:tag" content="容斥问题">
+<meta property="article:tag" content="倍增">
 <meta property="article:tag" content="莫队">
 <meta property="article:tag" content="LCA，最近公共祖先">
 <meta property="article:tag" content="带修莫队">
@@ -57,7 +60,6 @@
 <meta property="article:tag" content="莫队二次离线">
 <meta property="article:tag" content="「十四分块」">
 <meta property="article:tag" content="「大分块系列」">
-<meta property="article:tag" content="Ynoi">
 <meta property="article:tag" content="欧拉序列">
 <meta property="article:tag" content="双指针">
 <meta name="twitter:card" content="summary">
@@ -379,7 +381,7 @@ mjx-container[display="true"] + br {
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-01-10 10:56:59" itemprop="dateModified" datetime="2023-01-10T10:56:59+08:00">2023-01-10</time>
+                <time title="修改时间：2023-01-27 15:20:05" itemprop="dateModified" datetime="2023-01-27T15:20:05+08:00">2023-01-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -700,13 +702,13 @@ f(x,[l,r])=f(x,[1,r])-f(x,[1,l-1])</script><p>这是前缀差分的基本知识�
   
       <li class="related-posts-item"><a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/Contest20230108/">AtCoder Beginner Contest 284 & Dp专项训练</a></li>
   
+      <li class="related-posts-item"><a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Dp-Dynamic/">动态dp（ddp）</a></li>
+  
+      <li class="related-posts-item"><a href="/%E9%A2%98%E8%A7%A3/CF1045G/">CF1045G AI robots</a></li>
+  
       <li class="related-posts-item"><a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/CSP-S2022/">CSP-S 2022 题解</a></li>
   
       <li class="related-posts-item"><a href="/%E9%A2%98%E8%A7%A3/P2617/">P2617 Dynamic Rankings</a></li>
-  
-      <li class="related-posts-item"><a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Dp-Dynamic/">动态dp（ddp）</a></li>
-  
-      <li class="related-posts-item"><a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/Contest20221231/">CodeForces1770 Good Bye 2022: 2023 is NEAR & LGR-127 MdOI Round 5</a></li>
   
   </ul>
 
@@ -718,20 +720,23 @@ f(x,[l,r])=f(x,[1,r])-f(x,[1,l-1])</script><p>这是前缀差分的基本知识�
               <a href="/tags/%E5%89%8D%E7%BC%80%E5%B7%AE%E5%88%86/" rel="tag"># 前缀差分</a>
               <a href="/tags/stl/" rel="tag"># stl</a>
               <a href="/tags/%E6%A0%91%E8%AE%BA/" rel="tag"># 树论</a>
-              <a href="/tags/%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/" rel="tag"># 离线算法</a>
-              <a href="/tags/%E6%9E%9A%E4%B8%BE%EF%BC%8C%E6%9A%B4%E5%8A%9B/" rel="tag"># 枚举，暴力</a>
-              <a href="/tags/%E6%90%9C%E7%B4%A2/" rel="tag"># 搜索</a>
-              <a href="/tags/RMQ%EF%BC%8C%E5%8C%BA%E9%97%B4%E6%9C%80%E5%80%BC%E9%97%AE%E9%A2%98/" rel="tag"># RMQ，区间最值问题</a>
+              <a href="/tags/%E9%80%92%E6%8E%A8%EF%BC%8C%E9%80%92%E5%BD%92/" rel="tag"># 递推，递归</a>
               <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"># 数据结构</a>
+              <a href="/tags/%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/" rel="tag"># 离线算法</a>
+              <a href="/tags/%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"># 可持久化数据结构</a>
+              <a href="/tags/%E7%A6%BB%E6%95%A3%E5%8C%96/" rel="tag"># 离散化</a>
+              <a href="/tags/%E8%AE%A1%E6%95%B0%E9%97%AE%E9%A2%98/" rel="tag"># 计数问题</a>
+              <a href="/tags/%E5%9D%97%E7%8A%B6%E9%93%BE%E8%A1%A8%EF%BC%8C%E5%9D%97%E7%8A%B6%E6%95%B0%E7%BB%84%EF%BC%8C%E5%88%86%E5%9D%97/" rel="tag"># 块状链表，块状数组，分块</a>
+              <a href="/tags/%E6%9E%9A%E4%B8%BE%EF%BC%8C%E6%9A%B4%E5%8A%9B/" rel="tag"># 枚举，暴力</a>
+              <a href="/tags/RMQ%EF%BC%8C%E5%8C%BA%E9%97%B4%E6%9C%80%E5%80%BC%E9%97%AE%E9%A2%98/" rel="tag"># RMQ，区间最值问题</a>
+              <a href="/tags/%E6%90%9C%E7%B4%A2/" rel="tag"># 搜索</a>
+              <a href="/tags/Ynoi/" rel="tag"># Ynoi</a>
               <a href="/tags/%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/" rel="tag"># 树链剖分</a>
               <a href="/tags/%E6%A0%91%E5%9E%8B%E7%BB%93%E6%9E%84/" rel="tag"># 树型结构</a>
-              <a href="/tags/%E7%A6%BB%E6%95%A3%E5%8C%96/" rel="tag"># 离散化</a>
-              <a href="/tags/%E5%9D%97%E7%8A%B6%E9%93%BE%E8%A1%A8%EF%BC%8C%E5%9D%97%E7%8A%B6%E6%95%B0%E7%BB%84%EF%BC%8C%E5%88%86%E5%9D%97/" rel="tag"># 块状链表，块状数组，分块</a>
               <a href="/tags/%E6%89%AB%E6%8F%8F%E7%BA%BF/" rel="tag"># 扫描线</a>
               <a href="/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/" rel="tag"># 树状数组</a>
-              <a href="/tags/%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"># 可持久化数据结构</a>
-              <a href="/tags/%E5%80%8D%E5%A2%9E/" rel="tag"># 倍增</a>
               <a href="/tags/%E5%AE%B9%E6%96%A5%E9%97%AE%E9%A2%98/" rel="tag"># 容斥问题</a>
+              <a href="/tags/%E5%80%8D%E5%A2%9E/" rel="tag"># 倍增</a>
               <a href="/tags/%E8%8E%AB%E9%98%9F/" rel="tag"># 莫队</a>
               <a href="/tags/LCA%EF%BC%8C%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88/" rel="tag"># LCA，最近公共祖先</a>
               <a href="/tags/%E5%B8%A6%E4%BF%AE%E8%8E%AB%E9%98%9F/" rel="tag"># 带修莫队</a>
@@ -740,7 +745,6 @@ f(x,[l,r])=f(x,[1,r])-f(x,[1,l-1])</script><p>这是前缀差分的基本知识�
               <a href="/tags/%E8%8E%AB%E9%98%9F%E4%BA%8C%E6%AC%A1%E7%A6%BB%E7%BA%BF/" rel="tag"># 莫队二次离线</a>
               <a href="/tags/%E3%80%8C%E5%8D%81%E5%9B%9B%E5%88%86%E5%9D%97%E3%80%8D/" rel="tag"># 「十四分块」</a>
               <a href="/tags/%E3%80%8C%E5%A4%A7%E5%88%86%E5%9D%97%E7%B3%BB%E5%88%97%E3%80%8D/" rel="tag"># 「大分块系列」</a>
-              <a href="/tags/Ynoi/" rel="tag"># Ynoi</a>
               <a href="/tags/%E6%AC%A7%E6%8B%89%E5%BA%8F%E5%88%97/" rel="tag"># 欧拉序列</a>
               <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" rel="tag"># 双指针</a>
           </div>
@@ -833,20 +837,20 @@ f(x,[l,r])=f(x,[1,r])-f(x,[1,l-1])</script><p>这是前缀差分的基本知识�
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">65</span>
+          <span class="site-state-item-count">79</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">227</span>
+        <span class="site-state-item-count">248</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -919,14 +923,34 @@ f(x,[l,r])=f(x,[1,r])-f(x,[1,l-1])</script><p>这是前缀差分的基本知识�
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">601k</span>
+    <span title="站点总字数">698k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">9:07</span>
+    <span title="站点阅读时长">10:34</span>
 </div>
+  <div class="running-time">
+    <span id="timeDate"></span>
+    <span id="times"></span>
+    <script>
+        var now = new Date();
+        function createtime() {
+            var grt= new Date("01/25/2022 13:14:20");
+            now.setTime(now.getTime()+250);
+            days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+            hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+            if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+            mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+            document.getElementById("timeDate").innerHTML = "本站已经安全运行 " + dnum + " 天";
+            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+        }
+    setInterval("createtime()",250);
+    </script>
+  </div>
 
         
 <div class="busuanzi-count">

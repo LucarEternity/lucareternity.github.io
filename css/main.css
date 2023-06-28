@@ -177,7 +177,7 @@ body {
 body {
   background: var(--body-bg-color);
   color: var(--text-color);
-  font-family: 'Ma Shan Zheng', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'ZCOOL Xiaowei', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1em;
   line-height: 2;
 }
@@ -193,7 +193,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Zhi Mang Xing', 'Ma Shan Zheng', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Zhi Mang Xing', 'ZCOOL Xiaowei', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 20px 0 15px;
@@ -834,6 +834,11 @@ pre .javascript .function {
 .post-body .note.danger h6 {
   color: #d9534f;
 }
+.pdfobject-container iframe,
+.pdfobject-container embed {
+  height: 500px;
+  width: 100%;
+}
 .pagination .prev,
 .pagination .next,
 .pagination .page-number,
@@ -1010,7 +1015,7 @@ pre .javascript .function {
   color: var(--brand-hover-color);
 }
 .site-title {
-  font-family: 'ZCOOL KuaiLe', 'Ma Shan Zheng', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'ZCOOL KuaiLe', 'ZCOOL Xiaowei', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1.375em;
   font-weight: normal;
   margin: 0;
@@ -1193,7 +1198,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #490ef6;
+  background: #031cff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1521,7 +1526,7 @@ pre .javascript .function {
   opacity: 0.8;
 }
 .post-body {
-  font-family: 'Ma Shan Zheng', 'Ma Shan Zheng', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Ma Shan Zheng', 'ZCOOL Xiaowei', "PingFang SC", "Microsoft YaHei", sans-serif;
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
@@ -1819,7 +1824,7 @@ pre .javascript .function {
 }
 .posts-expand .post-meta {
   color: #999;
-  font-family: 'Ma Shan Zheng', 'Ma Shan Zheng', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Ma Shan Zheng', 'ZCOOL Xiaowei', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 0.75em;
   margin: 3px 0 60px 0;
   text-align: center;
@@ -2792,4 +2797,24 @@ body {
   height: 1rem;
   width: 1rem;
   opacity: 0.75;
+}
+@font-face {
+  font-family: "ZCOOL Xiaowei";
+  src: url("/lib/fonts/ZCOOLXiaoWei-Regular.ttf");
+}
+@font-face {
+  font-family: "Ma Shan Zheng";
+  src: url("/lib/fonts/MaShanZheng-Regular.ttf");
+}
+@font-face {
+  font-family: "ZCOOL KuaiLe";
+  src: url("/lib/fonts/ZCOOLKuaiLe-Regular.ttf");
+}
+@font-face {
+  font-family: "Zhi Mang Xing";
+  src: url("/lib/fonts/ZhiMangXing-Regular.ttf");
+}
+@font-face {
+  font-family: "Fira Code";
+  src: url("FiraCode-Regular.ttf");
 }

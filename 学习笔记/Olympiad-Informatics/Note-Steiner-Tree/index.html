@@ -12,7 +12,7 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ma Shan Zheng:300,300italic,400,400italic,700,700italic|ZCOOL KuaiLe:300,300italic,400,400italic,700,700italic|Zhi Mang Xing:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=ZCOOL Xiaowei:300,300italic,400,400italic,700,700italic|ZCOOL KuaiLe:300,300italic,400,400italic,700,700italic|Zhi Mang Xing:300,300italic,400,400italic,700,700italic|Ma Shan Zheng:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
@@ -37,9 +37,9 @@
 <meta property="article:tag" content="状态压缩">
 <meta property="article:tag" content="状压dp">
 <meta property="article:tag" content="换根dp">
+<meta property="article:tag" content="背包">
 <meta property="article:tag" content="斯坦纳树">
 <meta property="article:tag" content="最小斯坦纳树">
-<meta property="article:tag" content="背包">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://violeteternal.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Steiner-Tree/">
@@ -456,11 +456,11 @@ mjx-container[display="true"] + br {
   
       <li class="related-posts-item"><a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/Contest20230108/">AtCoder Beginner Contest 284 & Dp专项训练</a></li>
   
+      <li class="related-posts-item"><a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Dp-Digit/">数位dp</a></li>
+  
       <li class="related-posts-item"><a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Sum-Over-Subsets-Dynamic-Programming/">高维前缀和与子集求和（SOS-DP）</a></li>
   
-      <li class="related-posts-item"><a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Dp-Dynamic/">动态dp（ddp）</a></li>
-  
-      <li class="related-posts-item"><a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ABC252/">AtCoder Beginner Contest 252 VP</a></li>
+      <li class="related-posts-item"><a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Suffix-Automaton/">后缀自动机</a></li>
   
   </ul>
 
@@ -474,9 +474,9 @@ mjx-container[display="true"] + br {
               <a href="/tags/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9/" rel="tag"># 状态压缩</a>
               <a href="/tags/%E7%8A%B6%E5%8E%8Bdp/" rel="tag"># 状压dp</a>
               <a href="/tags/%E6%8D%A2%E6%A0%B9dp/" rel="tag"># 换根dp</a>
+              <a href="/tags/%E8%83%8C%E5%8C%85/" rel="tag"># 背包</a>
               <a href="/tags/%E6%96%AF%E5%9D%A6%E7%BA%B3%E6%A0%91/" rel="tag"># 斯坦纳树</a>
               <a href="/tags/%E6%9C%80%E5%B0%8F%E6%96%AF%E5%9D%A6%E7%BA%B3%E6%A0%91/" rel="tag"># 最小斯坦纳树</a>
-              <a href="/tags/%E8%83%8C%E5%8C%85/" rel="tag"># 背包</a>
           </div>
 
         
@@ -567,20 +567,20 @@ mjx-container[display="true"] + br {
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">79</span>
+          <span class="site-state-item-count">109</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-count">17</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">248</span>
+        <span class="site-state-item-count">251</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -653,13 +653,13 @@ mjx-container[display="true"] + br {
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">698k</span>
+    <span title="站点总字数">1000k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">10:34</span>
+    <span title="站点阅读时长">15:09</span>
 </div>
   <div class="running-time">
     <span id="timeDate"></span>
@@ -749,6 +749,26 @@ mjx-container[display="true"] + br {
 
 
 
+<script>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
 
 
 
@@ -797,7 +817,7 @@ mjx-container[display="true"] + br {
     };
     (function () {
       var script = document.createElement('script');
-      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.src = 'https://rusunoi.github.io/mathjax/tex-mml-chtml.js';
       script.defer = true;
       document.head.appendChild(script);
     })();

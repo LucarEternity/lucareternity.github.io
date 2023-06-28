@@ -12,7 +12,7 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ma Shan Zheng:300,300italic,400,400italic,700,700italic|ZCOOL KuaiLe:300,300italic,400,400italic,700,700italic|Zhi Mang Xing:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=ZCOOL Xiaowei:300,300italic,400,400italic,700,700italic|ZCOOL KuaiLe:300,300italic,400,400italic,700,700italic|Zhi Mang Xing:300,300italic,400,400italic,700,700italic|Ma Shan Zheng:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
@@ -429,11 +429,11 @@ mjx-container[display="true"] + br {
   
       <li class="related-posts-item"><a href="/%E9%9B%A8%E4%B8%AD%EF%BC%8C%E6%A2%A6%E4%B8%80%E5%9C%BA/Sayounara-2022-and-My-Reincarnation/">再见了，2022</a></li>
   
+      <li class="related-posts-item"><a href="/%E9%9B%A8%E4%B8%AD%EF%BC%8C%E6%A2%A6%E4%B8%80%E5%9C%BA/Stay-Always-Together/">风雨执舟，紫罗兰之梦</a></li>
+  
       <li class="related-posts-item"><a href="/%E9%9B%A8%E4%B8%AD%EF%BC%8C%E6%A2%A6%E4%B8%80%E5%9C%BA/My-16th-For-Youth/">十六岁</a></li>
   
-      <li class="related-posts-item"><a href="/Until-The-End/My-OIer-Life/">O.I</a></li>
-  
-      <li class="related-posts-item"><a href="/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4%E9%9B%86/%E5%9B%9B%E5%AD%A3%E4%B9%8B%E6%AD%8C/Season-Yesterday-Spring/">昔春之辞</a></li>
+      <li class="related-posts-item"><a href="/Until-The-End/My-Senior-High-School-Life/">E.N.D</a></li>
   
   </ul>
 
@@ -532,20 +532,20 @@ mjx-container[display="true"] + br {
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">79</span>
+          <span class="site-state-item-count">109</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-count">17</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">248</span>
+        <span class="site-state-item-count">251</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -618,13 +618,13 @@ mjx-container[display="true"] + br {
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">698k</span>
+    <span title="站点总字数">1000k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">10:34</span>
+    <span title="站点阅读时长">15:09</span>
 </div>
   <div class="running-time">
     <span id="timeDate"></span>
@@ -714,6 +714,26 @@ mjx-container[display="true"] + br {
 
 
 
+<script>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
 
 
 
@@ -762,7 +782,7 @@ mjx-container[display="true"] + br {
     };
     (function () {
       var script = document.createElement('script');
-      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.src = 'https://rusunoi.github.io/mathjax/tex-mml-chtml.js';
       script.defer = true;
       document.head.appendChild(script);
     })();

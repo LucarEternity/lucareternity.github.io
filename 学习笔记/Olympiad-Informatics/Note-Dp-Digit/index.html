@@ -28,7 +28,7 @@
 <meta property="og:description" content="不问来处，不寻去路。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-02-28T04:01:26.000Z">
-<meta property="article:modified_time" content="2023-04-04T14:17:49.550Z">
+<meta property="article:modified_time" content="2023-07-21T06:28:13.829Z">
 <meta property="article:author" content="Fallen Shadow">
 <meta property="article:tag" content="前缀差分">
 <meta property="article:tag" content="Dp，动态规划">
@@ -37,16 +37,16 @@
 <meta property="article:tag" content="数论">
 <meta property="article:tag" content="优化">
 <meta property="article:tag" content="状态压缩">
-<meta property="article:tag" content="枚举，暴力">
+<meta property="article:tag" content="枚举，暴力，扫描线">
 <meta property="article:tag" content="排列与组合">
 <meta property="article:tag" content="Stirling数，斯特林数">
 <meta property="article:tag" content="树型dp">
 <meta property="article:tag" content="状压dp">
-<meta property="article:tag" content="平衡规划">
+<meta property="article:tag" content="平衡规划，根号分治">
 <meta property="article:tag" content="容斥问题">
+<meta property="article:tag" content="记忆化搜索">
 <meta property="article:tag" content="数位dp">
 <meta property="article:tag" content="线性代数">
-<meta property="article:tag" content="记忆化搜索">
 <meta property="article:tag" content="快速数论变换，Fast Number-Theoretic Transform">
 <meta property="article:tag" content="二项式">
 <meta property="article:tag" content="高斯消元">
@@ -370,7 +370,7 @@ mjx-container[display="true"] + br {
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-04-04 22:17:49" itemprop="dateModified" datetime="2023-04-04T22:17:49+08:00">2023-04-04</time>
+                <time title="修改时间：2023-07-21 14:28:13" itemprop="dateModified" datetime="2023-07-21T14:28:13+08:00">2023-07-21</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -729,7 +729,7 @@ f(n)=
 <details class="info" open=""><summary><i class="fa fa-info-circle fa-fw"></i>参考资料<div class="box-open-button"><i class="fa fa-chevron-down fa-fw"></i></div></summary>
 <ul>
 <li>出题人陈于思的官方题解：<a target="_blank" rel="noopener" href="https://qoj.ac/download.php?type=solution&amp;id=4904">https://qoj.ac/download.php?type=solution&amp;id=4904</a></li>
-<li><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.466ex;" xmlns="http://www.w3.org/2000/svg" width="17.548ex" height="2.036ex" role="img" focusable="false" viewBox="0 -694 7756 900"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" transform="translate(500,0)"></path><path data-c="38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z" transform="translate(1000,0)"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(1500,0)"></path><path data-c="35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z" transform="translate(2000,0)"></path><path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" transform="translate(2500,0)"></path><path data-c="33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z" transform="translate(3000,0)"></path><path data-c="37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z" transform="translate(3500,0)"></path><path data-c="33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z" transform="translate(4000,0)"></path><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" transform="translate(4500,0)"></path><path data-c="2019" d="M78 634Q78 659 95 676T138 694Q166 694 189 668T212 579Q212 525 190 476T146 403T118 379Q114 379 105 388T95 401Q95 404 107 417T133 448T161 500T176 572Q176 584 175 584T170 581T157 576T139 573Q114 573 96 590T78 634Z" transform="translate(5000,0)"></path><path data-c="73" d="M295 316Q295 356 268 385T190 414Q154 414 128 401Q98 382 98 349Q97 344 98 336T114 312T157 287Q175 282 201 278T245 269T277 256Q294 248 310 236T342 195T359 133Q359 71 321 31T198 -10H190Q138 -10 94 26L86 19L77 10Q71 4 65 -1L54 -11H46H42Q39 -11 33 -5V74V132Q33 153 35 157T45 162H54Q66 162 70 158T75 146T82 119T101 77Q136 26 198 26Q295 26 295 104Q295 133 277 151Q257 175 194 187T111 210Q75 227 54 256T33 318Q33 357 50 384T93 424T143 442T187 447H198Q238 447 268 432L283 424L292 431Q302 440 314 448H322H326Q329 448 335 442V310L329 304H301Q295 310 295 316Z" transform="translate(5278,0)"></path><path data-c="20" d="" transform="translate(5672,0)"></path><path data-c="62" d="M307 -11Q234 -11 168 55L158 37Q156 34 153 28T147 17T143 10L138 1L118 0H98V298Q98 599 97 603Q94 622 83 628T38 637H20V660Q20 683 22 683L32 684Q42 685 61 686T98 688Q115 689 135 690T165 693T176 694H179V543Q179 391 180 391L183 394Q186 397 192 401T207 411T228 421T254 431T286 439T323 442Q401 442 461 379T522 216Q522 115 458 52T307 -11ZM182 98Q182 97 187 90T196 79T206 67T218 55T233 44T250 35T271 29T295 26Q330 26 363 46T412 113Q424 148 424 212Q424 287 412 323Q385 405 300 405Q270 405 239 390T188 347L182 339V98Z" transform="translate(5922,0)"></path><path data-c="6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z" transform="translate(6478,0)"></path><path data-c="6F" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z" transform="translate(6756,0)"></path><path data-c="67" d="M329 409Q373 453 429 453Q459 453 472 434T485 396Q485 382 476 371T449 360Q416 360 412 390Q410 404 415 411Q415 412 416 414V415Q388 412 363 393Q355 388 355 386Q355 385 359 381T368 369T379 351T388 325T392 292Q392 230 343 187T222 143Q172 143 123 171Q112 153 112 133Q112 98 138 81Q147 75 155 75T227 73Q311 72 335 67Q396 58 431 26Q470 -13 470 -72Q470 -139 392 -175Q332 -206 250 -206Q167 -206 107 -175Q29 -140 29 -75Q29 -39 50 -15T92 18L103 24Q67 55 67 108Q67 155 96 193Q52 237 52 292Q52 355 102 398T223 442Q274 442 318 416L329 409ZM299 343Q294 371 273 387T221 404Q192 404 171 388T145 343Q142 326 142 292Q142 248 149 227T179 192Q196 182 222 182Q244 182 260 189T283 207T294 227T299 242Q302 258 302 292T299 343ZM403 -75Q403 -50 389 -34T348 -11T299 -2T245 0H218Q151 0 138 -6Q118 -15 107 -34T95 -74Q95 -84 101 -97T122 -127T170 -155T250 -167Q319 -167 361 -139T403 -75Z" transform="translate(7256,0)"></path></g></g></g></svg></mjx-container>：<a target="_blank" rel="noopener" href="https://4182543731.github.io/post/LullabyforTiuLii/#d6-t1-11-圆滚滚的算数占卜">https://4182543731.github.io/post/LullabyforTiuLii/#d6-t1-11-圆滚滚的算数占卜</a></li>
+<li><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="47.511ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 21000 950"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="merror" data-mjx-error="Double subscripts: use braces to clarify" title="Double subscripts: use braces to clarify"><rect data-background="true" width="21000" height="950" y="-200"></rect><title>Double subscripts: use braces to clarify</title><g data-mml-node="mtext" style="font-family: serif;"><text data-variant="-explicitFont" transform="scale(1,-1)" font-size="884px">\text{418}_{254}_\text{3731’s blog}</text></g></g></g></g></svg></mjx-container>（张隽恺）：<a target="_blank" rel="noopener" href="https://4182543731.github.io/post/LullabyforTiuLii/#d6-t1-11-圆滚滚的算数占卜">https://4182543731.github.io/post/LullabyforTiuLii/#d6-t1-11-圆滚滚的算数占卜</a></li>
 </ul>
 
 </details>
@@ -746,15 +746,15 @@ f(n)=
   <div class="popular-posts-header">相关文章</div>
   <ul class="related-posts">
   
-      <li class="related-posts-item"><a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Dp-State-with-Connection/">状态压缩 & 基于连通性的状压dp</a></li>
-  
-      <li class="related-posts-item"><a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Sum-Over-Subsets-Dynamic-Programming/">高维前缀和与子集求和（SOS-DP）</a></li>
+      <li class="related-posts-item"><a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Linear-Basis/">线性基</a></li>
   
       <li class="related-posts-item"><a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/Contest20230108/">AtCoder Beginner Contest 284 & Dp专项训练</a></li>
   
-      <li class="related-posts-item"><a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/Contest20230227/">「2023省选冲刺」模拟训练08</a></li>
+      <li class="related-posts-item"><a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/Contest20230629/">Contest20190920 正睿 PM</a></li>
   
-      <li class="related-posts-item"><a href="/%E9%A2%98%E8%A7%A3/CF1034E/">CF1034E Little C Loves 3 III</a></li>
+      <li class="related-posts-item"><a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Dp-State-with-Connection/">状态压缩 & 基于连通性的状压dp</a></li>
+  
+      <li class="related-posts-item"><a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Sum-Over-Subsets-Dynamic-Programming/">高维前缀和与子集求和（SOS-DP）</a></li>
   
   </ul>
 
@@ -768,16 +768,16 @@ f(n)=
               <a href="/tags/%E6%95%B0%E8%AE%BA/" rel="tag"># 数论</a>
               <a href="/tags/%E4%BC%98%E5%8C%96/" rel="tag"># 优化</a>
               <a href="/tags/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9/" rel="tag"># 状态压缩</a>
-              <a href="/tags/%E6%9E%9A%E4%B8%BE%EF%BC%8C%E6%9A%B4%E5%8A%9B/" rel="tag"># 枚举，暴力</a>
+              <a href="/tags/%E6%9E%9A%E4%B8%BE%EF%BC%8C%E6%9A%B4%E5%8A%9B%EF%BC%8C%E6%89%AB%E6%8F%8F%E7%BA%BF/" rel="tag"># 枚举，暴力，扫描线</a>
               <a href="/tags/%E6%8E%92%E5%88%97%E4%B8%8E%E7%BB%84%E5%90%88/" rel="tag"># 排列与组合</a>
               <a href="/tags/Stirling%E6%95%B0%EF%BC%8C%E6%96%AF%E7%89%B9%E6%9E%97%E6%95%B0/" rel="tag"># Stirling数，斯特林数</a>
               <a href="/tags/%E6%A0%91%E5%9E%8Bdp/" rel="tag"># 树型dp</a>
               <a href="/tags/%E7%8A%B6%E5%8E%8Bdp/" rel="tag"># 状压dp</a>
-              <a href="/tags/%E5%B9%B3%E8%A1%A1%E8%A7%84%E5%88%92/" rel="tag"># 平衡规划</a>
+              <a href="/tags/%E5%B9%B3%E8%A1%A1%E8%A7%84%E5%88%92%EF%BC%8C%E6%A0%B9%E5%8F%B7%E5%88%86%E6%B2%BB/" rel="tag"># 平衡规划，根号分治</a>
               <a href="/tags/%E5%AE%B9%E6%96%A5%E9%97%AE%E9%A2%98/" rel="tag"># 容斥问题</a>
+              <a href="/tags/%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2/" rel="tag"># 记忆化搜索</a>
               <a href="/tags/%E6%95%B0%E4%BD%8Ddp/" rel="tag"># 数位dp</a>
               <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" rel="tag"># 线性代数</a>
-              <a href="/tags/%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2/" rel="tag"># 记忆化搜索</a>
               <a href="/tags/%E5%BF%AB%E9%80%9F%E6%95%B0%E8%AE%BA%E5%8F%98%E6%8D%A2%EF%BC%8CFast-Number-Theoretic-Transform/" rel="tag"># 快速数论变换，Fast Number-Theoretic Transform</a>
               <a href="/tags/%E4%BA%8C%E9%A1%B9%E5%BC%8F/" rel="tag"># 二项式</a>
               <a href="/tags/%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/" rel="tag"># 高斯消元</a>
@@ -872,20 +872,20 @@ f(n)=
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">109</span>
+          <span class="site-state-item-count">143</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">17</span>
+        <span class="site-state-item-count">18</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">251</span>
+        <span class="site-state-item-count">269</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -958,13 +958,13 @@ f(n)=
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">1000k</span>
+    <span title="站点总字数">1.4m</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">15:09</span>
+    <span title="站点阅读时长">20:43</span>
 </div>
   <div class="running-time">
     <span id="timeDate"></span>

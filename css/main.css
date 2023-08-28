@@ -1198,7 +1198,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #031cff;
+  background: #6ec8de;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2724,7 +2724,7 @@ body {
   background-attachment: fixed;
   background-position: 50% 50%;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .fa-house-chimney-crack {
   background: url("/images/house-chimney-crack-solid.svg");
@@ -2816,5 +2816,5 @@ body {
 }
 @font-face {
   font-family: "Fira Code";
-  src: url("FiraCode-Regular.ttf");
+  src: url("/lib/fonts/FiraCode-Regular.ttf");
 }

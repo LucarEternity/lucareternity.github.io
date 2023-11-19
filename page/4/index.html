@@ -12,14 +12,311 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=ZCOOL Xiaowei:300,300italic,400,400italic,700,700italic|ZCOOL KuaiLe:300,300italic,400,400italic,700,700italic|Zhi Mang Xing:300,300italic,400,400italic,700,700italic|Ma Shan Zheng:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"violeteternal.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
-  <style>details.note,details.success,details.failure,details.warning,details.info,details.question,details.example,details.quote,details.code{display:block!important;padding-top:0!important;box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.2)!important;position:relative!important;margin:1.5625em 0!important;padding:0 1em!important;border-left:.2em solid!important;border-radius:.1em!important;font-size:.9em!important;overflow:auto!important;}details.note:not([open]),details.success:not([open]),details.failure:not([open]),details.warning:not([open]),details.info:not([open]),details.question:not([open]),details.example:not([open]),details.quote:not([open]),details.code:not([open]){padding-bottom:0!important;}details.note{border-left-color:#448aff!important;}details.success{border-left-color:#00c853!important;}details.failure{border-left-color:#ff5252!important;}details.warning{border-left-color:#ff9100!important;}details.info{border-left-color:#00b8d4!important;}details.question{border-left-color:#64dd17!important;}details.example{border-left-color:#651fff!important;}details.quote{border-left-color:#9e9e9e!important;}details.code{border-left-color:#A0A0A0!important;}details.note>summary,details.success>summary,details.failure>summary,details.warning>summary,details.info>summary,details.question>summary,details.example>summary,details.quote>summary,details.code>summary{margin:0 -1em 1em -1em;padding:.4em .6em .4em .6em;border-bottom:.05em solid;font-weight:700;display:block;outline:none;cursor:pointer;}details.note>summary{border-bottom-color:rgba(68,138,255,.1);background-color:rgba(68,138,255,.1);}details.success>summary{border-bottom-color:rgba(0,200,83,.1);background-color:rgba(0,200,83,.1);}details.failure>summary{border-bottom-color:rgba(255,82,82,.1);background-color:rgba(255,82,82,.1);}details.warning>summary{border-bottom-color:rgba(255,145,0,.1);background-color:rgba(255,145,0,.1);}details.info>summary{border-bottom-color:rgba(0,184,212,.1);background-color:rgba(0,184,212,.1);}details.question>summary{border-bottom-color:rgba(100,221,23,.1);background-color:rgba(100,221,23,.1);}details.example>summary{border-bottom-color:rgba(101,31,255,.1);background-color:rgba(101,31,255,.1);}details.quote>summary{border-bottom-color:rgba(158,158,158,.1);background-color:rgba(158,158,158,.1);}details.code>summary{border-bottom-color:rgba(160,160,160,.1);background-color:rgba(160,160,160,.1);}details.note:not([open])>summary,details.success:not([open])>summary,details.failure:not([open])>summary,details.warning:not([open])>summary,details.info:not([open])>summary,details.question:not([open])>summary,details.example:not([open])>summary,details.quote:not([open])>summary,details.code:not([open])>summary{border-bottom:0;margin-bottom:0;}details.note>summary>div.box-open-button,details.success>summary>div.box-open-button,details.failure>summary>div.box-open-button,details.warning>summary>div.box-open-button,details.info>summary>div.box-open-button,details.question>summary>div.box-open-button,details.example>summary>div.box-open-button,details.quote>summary>div.box-open-button,details.code>summary>div.box-open-button{float:right;}details.note>summary>i,details.success>summary>i,details.failure>summary>i,details.warning>summary>i,details.info>summary>i,details.question>summary>i,details.example>summary>i,details.quote>summary>i,details.code>summary>i,details.note>summary>div.box-open-button>i,details.success>summary>div.box-open-button>i,details.failure>summary>div.box-open-button>i,details.warning>summary>div.box-open-button>i,details.info>summary>div.box-open-button>i,details.question>summary>div.box-open-button>i,details.example>summary>div.box-open-button>i,details.quote>summary>div.box-open-button>i,details.code>summary>div.box-open-button>i{margin:0 .6125em 0 .6125em;}details.note>summary>i{color:#448aff;}details.success>summary>i{color:#00c853;}details.failure>summary>i{color:#ff5252;}details.warning>summary>i{color:#ff9100;}details.info>summary>i{color:#00b8d4;}details.question>summary>i{color:#64dd17;}details.example>summary>i{color:#651fff;}details.quote>summary>i{color:#9e9e9e;}details.code>summary>i{color:#A0A0A0;}details.note>summary>div.box-open-button>i,details.success>summary>div.box-open-button>i,details.failure>summary>div.box-open-button>i,details.warning>summary>div.box-open-button>i,details.info>summary>div.box-open-button>i,details.question>summary>div.box-open-button>i,details.example>summary>div.box-open-button>i,details.quote>summary>div.box-open-button>i,details.code>summary>div.box-open-button>i{color:rgba(0,0,0,.26);}details[open].note>summary>div.box-open-button>i,details[open].success>summary>div.box-open-button>i,details[open].failure>summary>div.box-open-button>i,details[open].warning>summary>div.box-open-button>i,details[open].info>summary>div.box-open-button>i,details[open].question>summary>div.box-open-button>i,details[open].example>summary>div.box-open-button>i,details[open].quote>summary>div.box-open-button>i,details[open].code>summary>div.box-open-button>i{transform:rotate(180deg);}</style>
+  <style type="text/css">
+div.content.block.note, details.content.box.note,div.content.block.abstract, details.content.box.abstract,div.content.block.info, details.content.box.info,div.content.block.tip, details.content.box.tip,div.content.block.success, details.content.box.success,div.content.block.question, details.content.box.question,div.content.block.warning, details.content.box.warning,div.content.block.failure, details.content.box.failure,div.content.block.danger, details.content.box.danger,div.content.block.bug, details.content.box.bug,div.content.block.example, details.content.box.example,div.content.block.quote, details.content.box.quote,div.content.block.code, details.content.box.code {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.content.block.note, details.content.box.note {
+  border-color: #448aff;
+}
+div.content.block.abstract, details.content.box.abstract {
+  border-color: #00b0ff;
+}
+div.content.block.info, details.content.box.info {
+  border-color: #00b8d4;
+}
+div.content.block.tip, details.content.box.tip {
+  border-color: #00bfa5;
+}
+div.content.block.success, details.content.box.success {
+  border-color: #00c853;
+}
+div.content.block.question, details.content.box.question {
+  border-color: #64dd17;
+}
+div.content.block.warning, details.content.box.warning {
+  border-color: #ff9100;
+}
+div.content.block.failure, details.content.box.failure {
+  border-color: #ff5252;
+}
+div.content.block.danger, details.content.box.danger {
+  border-color: #ff1744;
+}
+div.content.block.bug, details.content.box.bug {
+  border-color: #f50057;
+}
+div.content.block.example, details.content.box.example {
+  border-color: #651fff;
+}
+div.content.block.quote, details.content.box.quote {
+  border-color: #9e9e9e;
+}
+div.content.block.code, details.content.box.code {
+  border-color: #A0A0A0;
+}
+div.content.block.note:focus-within, details.content.box.note:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.content.block.abstract:focus-within, details.content.box.abstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.content.block.info:focus-within, details.content.box.info:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.content.block.tip:focus-within, details.content.box.tip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.content.block.success:focus-within, details.content.box.success:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.content.block.question:focus-within, details.content.box.question:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.content.block.warning:focus-within, details.content.box.warning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.content.block.failure:focus-within, details.content.box.failure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.content.block.danger:focus-within, details.content.box.danger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.content.block.bug:focus-within, details.content.box.bug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.content.block.example:focus-within, details.content.box.example:focus-within {
+  box-shadow: 0 0 0 .2rem #651fff1a;
+}
+div.content.block.quote:focus-within, details.content.box.quote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.content.block.code:focus-within, details.content.box.code:focus-within {
+  box-shadow: 0 0 0 .2rem #A0A0A01a;
+}
+div.content.block.note *, details.content.box.note *,div.content.block.abstract *, details.content.box.abstract *,div.content.block.info *, details.content.box.info *,div.content.block.tip *, details.content.box.tip *,div.content.block.success *, details.content.box.success *,div.content.block.question *, details.content.box.question *,div.content.block.warning *, details.content.box.warning *,div.content.block.failure *, details.content.box.failure *,div.content.block.danger *, details.content.box.danger *,div.content.block.bug *, details.content.box.bug *,div.content.block.example *, details.content.box.example *,div.content.block.quote *, details.content.box.quote *,div.content.block.code *, details.content.box.code * {
+  box-sizing: border-box;
+}
+div.content.block.note > p.content.block-title, details.content.box.note > summary,div.content.block.abstract > p.content.block-title, details.content.box.abstract > summary,div.content.block.info > p.content.block-title, details.content.box.info > summary,div.content.block.tip > p.content.block-title, details.content.box.tip > summary,div.content.block.success > p.content.block-title, details.content.box.success > summary,div.content.block.question > p.content.block-title, details.content.box.question > summary,div.content.block.warning > p.content.block-title, details.content.box.warning > summary,div.content.block.failure > p.content.block-title, details.content.box.failure > summary,div.content.block.danger > p.content.block-title, details.content.box.danger > summary,div.content.block.bug > p.content.block-title, details.content.box.bug > summary,div.content.block.example > p.content.block-title, details.content.box.example > summary,div.content.block.quote > p.content.block-title, details.content.box.quote > summary,div.content.block.code > p.content.block-title, details.content.box.code > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.content.box.note > summary,details.content.box.abstract > summary,details.content.box.info > summary,details.content.box.tip > summary,details.content.box.success > summary,details.content.box.question > summary,details.content.box.warning > summary,details.content.box.failure > summary,details.content.box.danger > summary,details.content.box.bug > summary,details.content.box.example > summary,details.content.box.quote > summary,details.content.box.code > summary {
+  cursor: pointer;
+}
+details.content.box.note:not([open]) > summary,details.content.box.abstract:not([open]) > summary,details.content.box.info:not([open]) > summary,details.content.box.tip:not([open]) > summary,details.content.box.success:not([open]) > summary,details.content.box.question:not([open]) > summary,details.content.box.warning:not([open]) > summary,details.content.box.failure:not([open]) > summary,details.content.box.danger:not([open]) > summary,details.content.box.bug:not([open]) > summary,details.content.box.example:not([open]) > summary,details.content.box.quote:not([open]) > summary,details.content.box.code:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.content.block.note > p.content.block-title, details.content.box.note > summary {
+  background-color: #448aff1a;
+}
+div.content.block.abstract > p.content.block-title, details.content.box.abstract > summary {
+  background-color: #00b0ff1a;
+}
+div.content.block.info > p.content.block-title, details.content.box.info > summary {
+  background-color: #00b8d41a;
+}
+div.content.block.tip > p.content.block-title, details.content.box.tip > summary {
+  background-color: #00bfa51a;
+}
+div.content.block.success > p.content.block-title, details.content.box.success > summary {
+  background-color: #00c8531a;
+}
+div.content.block.question > p.content.block-title, details.content.box.question > summary {
+  background-color: #64dd171a;
+}
+div.content.block.warning > p.content.block-title, details.content.box.warning > summary {
+  background-color: #ff91001a;
+}
+div.content.block.failure > p.content.block-title, details.content.box.failure > summary {
+  background-color: #ff52521a;
+}
+div.content.block.danger > p.content.block-title, details.content.box.danger > summary {
+  background-color: #ff17441a;
+}
+div.content.block.bug > p.content.block-title, details.content.box.bug > summary {
+  background-color: #f500571a;
+}
+div.content.block.example > p.content.block-title, details.content.box.example > summary {
+  background-color: #651fff1a;
+}
+div.content.block.quote > p.content.block-title, details.content.box.quote > summary {
+  background-color: #9e9e9e1a;
+}
+div.content.block.code > p.content.block-title, details.content.box.code > summary {
+  background-color: #A0A0A01a;
+}
+div.content.block.note > p.content.block-title > i, details.content.box.note > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.content.block.abstract > p.content.block-title > i, details.content.box.abstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.content.block.info > p.content.block-title > i, details.content.box.info > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.content.block.tip > p.content.block-title > i, details.content.box.tip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.content.block.success > p.content.block-title > i, details.content.box.success > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.content.block.question > p.content.block-title > i, details.content.box.question > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.content.block.warning > p.content.block-title > i, details.content.box.warning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.content.block.failure > p.content.block-title > i, details.content.box.failure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.content.block.danger > p.content.block-title > i, details.content.box.danger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.content.block.bug > p.content.block-title > i, details.content.box.bug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.content.block.example > p.content.block-title > i, details.content.box.example > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #651fff;
+}
+div.content.block.quote > p.content.block-title > i, details.content.box.quote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+div.content.block.code > p.content.block-title > i, details.content.box.code > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #A0A0A0;
+}
+details.content.box.note > summary > div.box-open-button,details.content.box.abstract > summary > div.box-open-button,details.content.box.info > summary > div.box-open-button,details.content.box.tip > summary > div.box-open-button,details.content.box.success > summary > div.box-open-button,details.content.box.question > summary > div.box-open-button,details.content.box.warning > summary > div.box-open-button,details.content.box.failure > summary > div.box-open-button,details.content.box.danger > summary > div.box-open-button,details.content.box.bug > summary > div.box-open-button,details.content.box.example > summary > div.box-open-button,details.content.box.quote > summary > div.box-open-button,details.content.box.code > summary > div.box-open-button {
+  float: right;
+}
+details.content.box.note > summary > div.box-open-button > i,details.content.box.abstract > summary > div.box-open-button > i,details.content.box.info > summary > div.box-open-button > i,details.content.box.tip > summary > div.box-open-button > i,details.content.box.success > summary > div.box-open-button > i,details.content.box.question > summary > div.box-open-button > i,details.content.box.warning > summary > div.box-open-button > i,details.content.box.failure > summary > div.box-open-button > i,details.content.box.danger > summary > div.box-open-button > i,details.content.box.bug > summary > div.box-open-button > i,details.content.box.example > summary > div.box-open-button > i,details.content.box.quote > summary > div.box-open-button > i,details.content.box.code > summary > div.box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.content.box.note:not([open]) > summary > div.box-open-button i,details.content.box.abstract:not([open]) > summary > div.box-open-button i,details.content.box.info:not([open]) > summary > div.box-open-button i,details.content.box.tip:not([open]) > summary > div.box-open-button i,details.content.box.success:not([open]) > summary > div.box-open-button i,details.content.box.question:not([open]) > summary > div.box-open-button i,details.content.box.warning:not([open]) > summary > div.box-open-button i,details.content.box.failure:not([open]) > summary > div.box-open-button i,details.content.box.danger:not([open]) > summary > div.box-open-button i,details.content.box.bug:not([open]) > summary > div.box-open-button i,details.content.box.example:not([open]) > summary > div.box-open-button i,details.content.box.quote:not([open]) > summary > div.box-open-button i,details.content.box.code:not([open]) > summary > div.box-open-button i {
+  transform: rotate(270deg);
+}
+details.content.box.note[open] > summary > div.box-open-button i,details.content.box.abstract[open] > summary > div.box-open-button i,details.content.box.info[open] > summary > div.box-open-button i,details.content.box.tip[open] > summary > div.box-open-button i,details.content.box.success[open] > summary > div.box-open-button i,details.content.box.question[open] > summary > div.box-open-button i,details.content.box.warning[open] > summary > div.box-open-button i,details.content.box.failure[open] > summary > div.box-open-button i,details.content.box.danger[open] > summary > div.box-open-button i,details.content.box.bug[open] > summary > div.box-open-button i,details.content.box.example[open] > summary > div.box-open-button i,details.content.box.quote[open] > summary > div.box-open-button i,details.content.box.code[open] > summary > div.box-open-button i {
+  transform: rotate(180deg);
+}
+details.content.box.note summary div.box-open-button i {
+  color: #448aff;
+}
+details.content.box.abstract summary div.box-open-button i {
+  color: #00b0ff;
+}
+details.content.box.info summary div.box-open-button i {
+  color: #00b8d4;
+}
+details.content.box.tip summary div.box-open-button i {
+  color: #00bfa5;
+}
+details.content.box.success summary div.box-open-button i {
+  color: #00c853;
+}
+details.content.box.question summary div.box-open-button i {
+  color: #64dd17;
+}
+details.content.box.warning summary div.box-open-button i {
+  color: #ff9100;
+}
+details.content.box.failure summary div.box-open-button i {
+  color: #ff5252;
+}
+details.content.box.danger summary div.box-open-button i {
+  color: #ff1744;
+}
+details.content.box.bug summary div.box-open-button i {
+  color: #f50057;
+}
+details.content.box.example summary div.box-open-button i {
+  color: #651fff;
+}
+details.content.box.quote summary div.box-open-button i {
+  color: #9e9e9e;
+}
+details.content.box.code summary div.box-open-button i {
+  color: #A0A0A0;
+}
+div.content.cards * {
+  box-sizing: border-box;
+}
+input.content.cards-input {
+  display: none;
+}
+div.content.cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.content.cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.content.cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.content.cards-label.active, label.content.cards-label:hover {
+  color: var(--cards-color);
+}
+div.content.cards-content {
+  display: none;
+}
+div.content.cards-content.active {
+  display: block;
+}
+</style>
   <meta name="description" content="誰も悪くないから、辛いだな。自卑的人，往往只剩下温柔了啊……">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Reincarnation">
@@ -314,7 +611,7 @@ mjx-container[display="true"] + br {
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E9%A2%98%E8%A7%A3/Note-CWOI-Data-Structure/">
+    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-CSP%E4%B8%83%E8%BF%9E/Contest20231014/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -328,7 +625,7 @@ mjx-container[display="true"] + br {
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/%E9%A2%98%E8%A7%A3/Note-CWOI-Data-Structure/" class="post-title-link" itemprop="url">号家军集训 数据结构选做</a>
+            <a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-CSP%E4%B8%83%E8%BF%9E/Contest20231014/" class="post-title-link" itemprop="url">ZROI - 2023csp七连测day7 - 送你上路</a>
         </h2>
 
         <div class="post-meta">
@@ -339,23 +636,21 @@ mjx-container[display="true"] + br {
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2023-07-09 14:42:21" itemprop="dateCreated datePublished" datetime="2023-07-09T14:42:21+08:00">2023-07-09</time>
+              <time title="创建时间：2023-10-15 19:11:10 / 修改时间：19:50:19" itemprop="dateCreated datePublished" datetime="2023-10-15T19:11:10+08:00">2023-10-15</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-08-13 16:01:57" itemprop="dateModified" datetime="2023-08-13T16:01:57+08:00">2023-08-13</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%A2%98%E8%A7%A3/" itemprop="url" rel="index"><span itemprop="name">题解</span></a>
+                  <a href="/categories/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/" itemprop="url" rel="index"><span itemprop="name">比赛/模拟赛</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-CSP%E4%B8%83%E8%BF%9E/" itemprop="url" rel="index"><span itemprop="name">ZROI2023 - CSP七连</span></a>
                 </span>
             </span>
 
@@ -365,14 +660,14 @@ mjx-container[display="true"] + br {
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>10k</span>
+              <span>8k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>9 分钟</span>
+              <span>7 分钟</span>
             </span>
 
         </div>
@@ -384,10 +679,10 @@ mjx-container[display="true"] + br {
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>讲师：金天</p>
+          <p>打得最爽的一集。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/%E9%A2%98%E8%A7%A3/Note-CWOI-Data-Structure/#more" rel="contents">
+              <a class="btn" href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-CSP%E4%B8%83%E8%BF%9E/Contest20231014/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -411,7 +706,7 @@ mjx-container[display="true"] + br {
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/Contest20230812/">
+    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-20%E8%BF%9E%E6%B5%8B/Contest20231012/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -425,7 +720,7 @@ mjx-container[display="true"] + br {
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/Contest20230812/" class="post-title-link" itemprop="url">「NOIP2023」模拟测试1</a>
+            <a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-20%E8%BF%9E%E6%B5%8B/Contest20231012/" class="post-title-link" itemprop="url">ZROI - 20连测day4</a>
         </h2>
 
         <div class="post-meta">
@@ -437,14 +732,14 @@ mjx-container[display="true"] + br {
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2023-08-12 19:43:04" itemprop="dateCreated datePublished" datetime="2023-08-12T19:43:04+08:00">2023-08-12</time>
+              <time title="创建时间：2023-10-12 16:34:23" itemprop="dateCreated datePublished" datetime="2023-10-12T16:34:23+08:00">2023-10-12</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-08-13 10:47:21" itemprop="dateModified" datetime="2023-08-13T10:47:21+08:00">2023-08-13</time>
+                <time title="修改时间：2023-10-14 11:05:22" itemprop="dateModified" datetime="2023-10-14T11:05:22+08:00">2023-10-14</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -453,6 +748,10 @@ mjx-container[display="true"] + br {
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/" itemprop="url" rel="index"><span itemprop="name">比赛/模拟赛</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-20%E8%BF%9E%E6%B5%8B/" itemprop="url" rel="index"><span itemprop="name">ZROI2023 - 20连测</span></a>
                 </span>
             </span>
 
@@ -481,10 +780,10 @@ mjx-container[display="true"] + br {
     <div class="post-body" itemprop="articleBody">
 
       
-          不会出样例可以不出。
+          <p>遗憾离场。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/Contest20230812/#more" rel="contents">
+              <a class="btn" href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-20%E8%BF%9E%E6%B5%8B/Contest20231012/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -508,7 +807,7 @@ mjx-container[display="true"] + br {
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/CSP-S2022/">
+    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Cryptography/Crypto-Introduction/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -522,7 +821,7 @@ mjx-container[display="true"] + br {
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/CSP-S2022/" class="post-title-link" itemprop="url">CSP-S 2022 题解</a>
+            <a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Cryptography/Crypto-Introduction/" class="post-title-link" itemprop="url">现代密码学初步</a>
         </h2>
 
         <div class="post-meta">
@@ -534,14 +833,216 @@ mjx-container[display="true"] + br {
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2022-11-11 23:59:59" itemprop="dateCreated datePublished" datetime="2022-11-11T23:59:59+08:00">2022-11-11</time>
+              <time title="创建时间：2023-09-21 14:50:25" itemprop="dateCreated datePublished" datetime="2023-09-21T14:50:25+08:00">2023-09-21</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-08-12 19:47:46" itemprop="dateModified" datetime="2023-08-12T19:47:46+08:00">2023-08-12</time>
+                <time title="修改时间：2023-10-11 22:12:36" itemprop="dateModified" datetime="2023-10-11T22:12:36+08:00">2023-10-11</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Cryptography/" itemprop="url" rel="index"><span itemprop="name">Cryptography</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>5.8k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>5 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>硬币掷出之后，正逆的转换从未停止。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Cryptography/Crypto-Introduction/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Chordal-Graph/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Fallen Shadow">
+      <meta itemprop="description" content="誰も悪くないから、辛いだな。<br>自卑的人，往往只剩下温柔了啊……">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Reincarnation">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Chordal-Graph/" class="post-title-link" itemprop="url">弦图 & 完美消除序列</a>
+        </h2>
+
+        <div class="post-meta">
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-09-22 07:42:23" itemprop="dateCreated datePublished" datetime="2023-09-22T07:42:23+08:00">2023-09-22</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-10-11 21:53:06" itemprop="dateModified" datetime="2023-10-11T21:53:06+08:00">2023-10-11</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/" itemprop="url" rel="index"><span itemprop="name">Olympiad Informatics</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>11k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>10 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>引弓而射，贯穿长空。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Chordal-Graph/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/Contest20230921/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Fallen Shadow">
+      <meta itemprop="description" content="誰も悪くないから、辛いだな。<br>自卑的人，往往只剩下温柔了啊……">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Reincarnation">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/Contest20230921/" class="post-title-link" itemprop="url">「2023省选冲刺」模拟训练04</a>
+        </h2>
+
+        <div class="post-meta">
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-09-21 14:37:11" itemprop="dateCreated datePublished" datetime="2023-09-21T14:37:11+08:00">2023-09-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-10-11 21:46:34" itemprop="dateModified" datetime="2023-10-11T21:46:34+08:00">2023-10-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -578,10 +1079,10 @@ mjx-container[display="true"] + br {
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="3.394ex" height="1.532ex" role="img" focusable="false" viewBox="0 -677 1500 677"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="54" d="M36 443Q37 448 46 558T55 671V677H666V671Q667 666 676 556T685 443V437H645V443Q645 445 642 478T631 544T610 593Q593 614 555 625Q534 630 478 630H451H443Q417 630 414 618Q413 616 413 339V63Q420 53 439 50T528 46H558V0H545L361 3Q186 1 177 0H164V46H194Q264 46 283 49T309 63V339V550Q309 620 304 625T271 630H244H224Q154 630 119 601Q101 585 93 554T81 486T76 443V437H36V443Z"></path><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" transform="translate(722,0)"></path><path data-c="3A" d="M78 370Q78 394 95 412T138 430Q162 430 180 414T199 371Q199 346 182 328T139 310T96 327T78 370ZM78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z" transform="translate(1222,0)"></path></g></g></g></svg></mjx-container> 比较有意思的图论<del>签到</del>题，被吊锤。<br><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="3.394ex" height="1.532ex" role="img" focusable="false" viewBox="0 -677 1500 677"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="54" d="M36 443Q37 448 46 558T55 671V677H666V671Q667 666 676 556T685 443V437H645V443Q645 445 642 478T631 544T610 593Q593 614 555 625Q534 630 478 630H451H443Q417 630 414 618Q413 616 413 339V63Q420 53 439 50T528 46H558V0H545L361 3Q186 1 177 0H164V46H194Q264 46 283 49T309 63V339V550Q309 620 304 625T271 630H244H224Q154 630 119 601Q101 585 93 554T81 486T76 443V437H36V443Z"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(722,0)"></path><path data-c="3A" d="M78 370Q78 394 95 412T138 430Q162 430 180 414T199 371Q199 346 182 328T139 310T96 327T78 370ZM78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z" transform="translate(1222,0)"></path></g></g></g></svg></mjx-container> 场上唯一会做的题。<br><br><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="3.394ex" height="1.581ex" role="img" focusable="false" viewBox="0 -677 1500 699"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="54" d="M36 443Q37 448 46 558T55 671V677H666V671Q667 666 676 556T685 443V437H645V443Q645 445 642 478T631 544T610 593Q593 614 555 625Q534 630 478 630H451H443Q417 630 414 618Q413 616 413 339V63Q420 53 439 50T528 46H558V0H545L361 3Q186 1 177 0H164V46H194Q264 46 283 49T309 63V339V550Q309 620 304 625T271 630H244H224Q154 630 119 601Q101 585 93 554T81 486T76 443V437H36V443Z"></path><path data-c="33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z" transform="translate(722,0)"></path><path data-c="3A" d="M78 370Q78 394 95 412T138 430Q162 430 180 414T199 371Q199 346 182 328T139 310T96 327T78 370ZM78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z" transform="translate(1222,0)"></path></g></g></g></svg></mjx-container> “不可以，总司令。”<br><br><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="3.394ex" height="1.532ex" role="img" focusable="false" viewBox="0 -677 1500 677"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="54" d="M36 443Q37 448 46 558T55 671V677H666V671Q667 666 676 556T685 443V437H645V443Q645 445 642 478T631 544T610 593Q593 614 555 625Q534 630 478 630H451H443Q417 630 414 618Q413 616 413 339V63Q420 53 439 50T528 46H558V0H545L361 3Q186 1 177 0H164V46H194Q264 46 283 49T309 63V339V550Q309 620 304 625T271 630H244H224Q154 630 119 601Q101 585 93 554T81 486T76 443V437H36V443Z"></path><path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" transform="translate(722,0)"></path><path data-c="3A" d="M78 370Q78 394 95 412T138 430Q162 430 180 414T199 371Q199 346 182 328T139 310T96 327T78 370ZM78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z" transform="translate(1222,0)"></path></g></g></g></svg></mjx-container> 得分甚至高于 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="2.765ex" height="1.581ex" role="img" focusable="false" viewBox="0 -677 1222 699"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="54" d="M36 443Q37 448 46 558T55 671V677H666V671Q667 666 676 556T685 443V437H645V443Q645 445 642 478T631 544T610 593Q593 614 555 625Q534 630 478 630H451H443Q417 630 414 618Q413 616 413 339V63Q420 53 439 50T528 46H558V0H545L361 3Q186 1 177 0H164V46H194Q264 46 283 49T309 63V339V550Q309 620 304 625T271 630H244H224Q154 630 119 601Q101 585 93 554T81 486T76 443V437H36V443Z"></path><path data-c="33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z" transform="translate(722,0)"></path></g></g></g></svg></mjx-container> 。<br></p>
+          被薄纱场。
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/CSP-S2022/#more" rel="contents">
+              <a class="btn" href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/Contest20230921/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -605,7 +1106,7 @@ mjx-container[display="true"] + br {
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-DAG-Chain-Subdivision-and-Basic-Substring-Structure/">
+    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-CSP%E4%B8%83%E8%BF%9E/Contest20231005/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -619,7 +1120,7 @@ mjx-container[display="true"] + br {
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-DAG-Chain-Subdivision-and-Basic-Substring-Structure/" class="post-title-link" itemprop="url">DAG 链剖分 & 基本子串字典</a>
+            <a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-CSP%E4%B8%83%E8%BF%9E/Contest20231005/" class="post-title-link" itemprop="url">ZROI - 2023csp七连测附加赛day2</a>
         </h2>
 
         <div class="post-meta">
@@ -631,14 +1132,14 @@ mjx-container[display="true"] + br {
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2023-07-16 16:14:29" itemprop="dateCreated datePublished" datetime="2023-07-16T16:14:29+08:00">2023-07-16</time>
+              <time title="创建时间：2023-10-06 21:18:35" itemprop="dateCreated datePublished" datetime="2023-10-06T21:18:35+08:00">2023-10-06</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-07-30 15:01:01" itemprop="dateModified" datetime="2023-07-30T15:01:01+08:00">2023-07-30</time>
+                <time title="修改时间：2023-10-11 21:34:48" itemprop="dateModified" datetime="2023-10-11T21:34:48+08:00">2023-10-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -646,11 +1147,11 @@ mjx-container[display="true"] + br {
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
+                  <a href="/categories/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/" itemprop="url" rel="index"><span itemprop="name">比赛/模拟赛</span></a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/" itemprop="url" rel="index"><span itemprop="name">Olympiad Informatics</span></a>
+                  <a href="/categories/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-CSP%E4%B8%83%E8%BF%9E/" itemprop="url" rel="index"><span itemprop="name">ZROI2023 - CSP七连</span></a>
                 </span>
             </span>
 
@@ -660,14 +1161,14 @@ mjx-container[display="true"] + br {
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>10k</span>
+              <span>4.3k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>9 分钟</span>
+              <span>4 分钟</span>
             </span>
 
         </div>
@@ -679,10 +1180,10 @@ mjx-container[display="true"] + br {
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>“吾身殉道，吾心独行。”</p>
+          <p>居然忘记写这一篇了。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-DAG-Chain-Subdivision-and-Basic-Substring-Structure/#more" rel="contents">
+              <a class="btn" href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-CSP%E4%B8%83%E8%BF%9E/Contest20231005/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -706,7 +1207,7 @@ mjx-container[display="true"] + br {
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E9%A2%98%E8%A7%A3/Note-CWOI-String/">
+    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-20%E8%BF%9E%E6%B5%8B/Contest20231011/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -720,302 +1221,7 @@ mjx-container[display="true"] + br {
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/%E9%A2%98%E8%A7%A3/Note-CWOI-String/" class="post-title-link" itemprop="url">号家军集训 字符串选做</a>
-        </h2>
-
-        <div class="post-meta">
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-07-16 14:41:23" itemprop="dateCreated datePublished" datetime="2023-07-16T14:41:23+08:00">2023-07-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-07-30 09:01:16" itemprop="dateModified" datetime="2023-07-30T09:01:16+08:00">2023-07-30</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%A2%98%E8%A7%A3/" itemprop="url" rel="index"><span itemprop="name">题解</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>21k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>20 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>讲师：冯施源</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/%E9%A2%98%E8%A7%A3/Note-CWOI-String/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E9%A2%98%E8%A7%A3/Note-CWOI-Mathematic-Theory/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Fallen Shadow">
-      <meta itemprop="description" content="誰も悪くないから、辛いだな。<br>自卑的人，往往只剩下温柔了啊……">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Reincarnation">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/%E9%A2%98%E8%A7%A3/Note-CWOI-Mathematic-Theory/" class="post-title-link" itemprop="url">号家军集训 数论选做</a>
-        </h2>
-
-        <div class="post-meta">
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-07-28 15:09:56" itemprop="dateCreated datePublished" datetime="2023-07-28T15:09:56+08:00">2023-07-28</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-07-29 14:45:44" itemprop="dateModified" datetime="2023-07-29T14:45:44+08:00">2023-07-29</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%A2%98%E8%A7%A3/" itemprop="url" rel="index"><span itemprop="name">题解</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>10k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>9 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>讲师：朱富海（南京大学教授）</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/%E9%A2%98%E8%A7%A3/Note-CWOI-Mathematic-Theory/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Border-and-Period/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Fallen Shadow">
-      <meta itemprop="description" content="誰も悪くないから、辛いだな。<br>自卑的人，往往只剩下温柔了啊……">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Reincarnation">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Border-and-Period/" class="post-title-link" itemprop="url">Border & Period</a>
-        </h2>
-
-        <div class="post-meta">
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-07-27 21:27:45" itemprop="dateCreated datePublished" datetime="2023-07-27T21:27:45+08:00">2023-07-27</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-07-28 14:33:59" itemprop="dateModified" datetime="2023-07-28T14:33:59+08:00">2023-07-28</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/" itemprop="url" rel="index"><span itemprop="name">Olympiad Informatics</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>9.8k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>9 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>“雨落云霄，睁眼，便是黎明。”</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Border-and-Period/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/Contest20230727/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Fallen Shadow">
-      <meta itemprop="description" content="誰も悪くないから、辛いだな。<br>自卑的人，往往只剩下温柔了啊……">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Reincarnation">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/Contest20230727/" class="post-title-link" itemprop="url">2022牛客OI赛前集训营-提高组（第六场）</a>
+            <a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-20%E8%BF%9E%E6%B5%8B/Contest20231011/" class="post-title-link" itemprop="url">ZROI - 20连测day3</a>
         </h2>
 
         <div class="post-meta">
@@ -1028,7 +1234,7 @@ mjx-container[display="true"] + br {
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-07-27 14:31:20 / 修改时间：15:53:23" itemprop="dateCreated datePublished" datetime="2023-07-27T14:31:20+08:00">2023-07-27</time>
+              <time title="创建时间：2023-10-11 16:27:03 / 修改时间：21:19:28" itemprop="dateCreated datePublished" datetime="2023-10-11T16:27:03+08:00">2023-10-11</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1038,6 +1244,10 @@ mjx-container[display="true"] + br {
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/" itemprop="url" rel="index"><span itemprop="name">比赛/模拟赛</span></a>
                 </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-20%E8%BF%9E%E6%B5%8B/" itemprop="url" rel="index"><span itemprop="name">ZROI2023 - 20连测</span></a>
+                </span>
             </span>
 
           <br>
@@ -1046,14 +1256,14 @@ mjx-container[display="true"] + br {
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>8.6k</span>
+              <span>25k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>8 分钟</span>
+              <span>23 分钟</span>
             </span>
 
         </div>
@@ -1065,10 +1275,10 @@ mjx-container[display="true"] + br {
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>不会出题可以不出。</p>
+          <p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="10.998ex" height="1.67ex" role="img" focusable="false" viewBox="0 -716 4861 738"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="54" d="M36 443Q37 448 46 558T55 671V677H666V671Q667 666 676 556T685 443V437H645V443Q645 445 642 478T631 544T610 593Q593 614 555 625Q534 630 478 630H451H443Q417 630 414 618Q413 616 413 339V63Q420 53 439 50T528 46H558V0H545L361 3Q186 1 177 0H164V46H194Q264 46 283 49T309 63V339V550Q309 620 304 625T271 630H244H224Q154 630 119 601Q101 585 93 554T81 486T76 443V437H36V443Z"></path><path data-c="48" d="M128 622Q121 629 117 631T101 634T58 637H25V683H36Q57 680 180 680Q315 680 324 683H335V637H302Q262 636 251 634T233 622L232 500V378H517V622Q510 629 506 631T490 634T447 637H414V683H425Q446 680 569 680Q704 680 713 683H724V637H691Q651 636 640 634T622 622V61Q628 51 639 49T691 46H724V0H713Q692 3 569 3Q434 3 425 0H414V46H447Q489 47 498 49T517 61V332H232V197L233 61Q239 51 250 49T302 46H335V0H324Q303 3 180 3Q45 3 36 0H25V46H58Q100 47 109 49T128 61V622Z" transform="translate(722,0)"></path><path data-c="55" d="M128 622Q121 629 117 631T101 634T58 637H25V683H36Q57 680 180 680Q315 680 324 683H335V637H302Q262 636 251 634T233 622L232 418V291Q232 189 240 145T280 67Q325 24 389 24Q454 24 506 64T571 183Q575 206 575 410V598Q569 608 565 613T541 627T489 637H472V683H481Q496 680 598 680T715 683H724V637H707Q634 633 622 598L621 399Q620 194 617 180Q617 179 615 171Q595 83 531 31T389 -22Q304 -22 226 33T130 192Q129 201 128 412V622Z" transform="translate(1472,0)"></path><path data-c="20" d="" transform="translate(2222,0)"></path><path data-c="41" d="M255 0Q240 3 140 3Q48 3 39 0H32V46H47Q119 49 139 88Q140 91 192 245T295 553T348 708Q351 716 366 716H376Q396 715 400 709Q402 707 508 390L617 67Q624 54 636 51T687 46H717V0H708Q699 3 581 3Q458 3 437 0H427V46H440Q510 46 510 64Q510 66 486 138L462 209H229L209 150Q189 91 189 85Q189 72 209 59T259 46H264V0H255ZM447 255L345 557L244 256Q244 255 345 255H447Z" transform="translate(2472,0)"></path><path data-c="43" d="M56 342Q56 428 89 500T174 615T283 681T391 705Q394 705 400 705T408 704Q499 704 569 636L582 624L612 663Q639 700 643 704Q644 704 647 704T653 705H657Q660 705 666 699V419L660 413H626Q620 419 619 430Q610 512 571 572T476 651Q457 658 426 658Q322 658 252 588Q173 509 173 342Q173 221 211 151Q232 111 263 84T328 45T384 29T428 24Q517 24 571 93T626 244Q626 251 632 257H660L666 251V236Q661 133 590 56T403 -21Q262 -21 159 83T56 342Z" transform="translate(3222,0)"></path><path data-c="4D" d="M132 622Q125 629 121 631T105 634T62 637H29V683H135Q221 683 232 682T249 675Q250 674 354 398L458 124L562 398Q666 674 668 675Q671 681 683 682T781 683H887V637H854Q814 636 803 634T785 622V61Q791 51 802 49T854 46H887V0H876Q855 3 736 3Q605 3 596 0H585V46H618Q660 47 669 49T688 61V347Q688 424 688 461T688 546T688 613L687 632Q454 14 450 7Q446 1 430 1T410 7Q409 9 292 316L176 624V606Q175 588 175 543T175 463T175 356L176 86Q187 50 261 46H278V0H269Q254 3 154 3Q52 3 37 0H29V46H46Q78 48 98 56T122 69T132 86V622Z" transform="translate(3944,0)"></path></g></g></g></svg></mjx-container> 在任第一人 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="3.174ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 1403 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="4C" d="M128 622Q121 629 117 631T101 634T58 637H25V683H36Q48 680 182 680Q324 680 348 683H360V637H333Q273 637 258 635T233 622L232 342V129Q232 57 237 52Q243 47 313 47Q384 47 410 53Q470 70 498 110T536 221Q536 226 537 238T540 261T542 272T562 273H582V268Q580 265 568 137T554 5V0H25V46H58Q100 47 109 49T128 61V622Z"></path><path data-c="4B" d="M128 622Q121 629 117 631T101 634T58 637H25V683H36Q57 680 180 680Q315 680 324 683H335V637H313Q235 637 233 620Q232 618 232 462L233 307L379 449Q425 494 479 546Q518 584 524 591T531 607V608Q531 630 503 636Q501 636 498 636T493 637H489V683H499Q517 680 630 680Q704 680 716 683H722V637H708Q633 633 589 597Q584 592 495 506T406 419T515 254T631 80Q644 60 662 54T715 46H736V0H728Q719 3 615 3Q493 3 472 0H461V46H469Q515 46 515 72Q515 78 512 84L336 351Q332 348 278 296L232 251V156Q232 62 235 58Q243 47 302 46H335V0H324Q303 3 180 3Q45 3 36 0H25V46H58Q100 47 109 49T128 61V622Z" transform="translate(625,0)"></path></g></g></g></svg></mjx-container>！</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/Contest20230727/#more" rel="contents">
+              <a class="btn" href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-20%E8%BF%9E%E6%B5%8B/Contest20231011/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1092,7 +1302,7 @@ mjx-container[display="true"] + br {
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Suffix-Automaton/">
+    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-NOIP%E5%8D%81%E8%BF%9E/Contest20230827/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -1106,7 +1316,7 @@ mjx-container[display="true"] + br {
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Suffix-Automaton/" class="post-title-link" itemprop="url">后缀自动机</a>
+            <a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-NOIP%E5%8D%81%E8%BF%9E/Contest20230827/" class="post-title-link" itemprop="url">ZROI - 2023noip十连测day1</a>
         </h2>
 
         <div class="post-meta">
@@ -1118,14 +1328,14 @@ mjx-container[display="true"] + br {
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2023-05-29 16:47:45" itemprop="dateCreated datePublished" datetime="2023-05-29T16:47:45+08:00">2023-05-29</time>
+              <time title="创建时间：2023-08-27 20:39:19" itemprop="dateCreated datePublished" datetime="2023-08-27T20:39:19+08:00">2023-08-27</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-07-26 16:22:35" itemprop="dateModified" datetime="2023-07-26T16:22:35+08:00">2023-07-26</time>
+                <time title="修改时间：2023-10-11 20:35:57" itemprop="dateModified" datetime="2023-10-11T20:35:57+08:00">2023-10-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1133,11 +1343,11 @@ mjx-container[display="true"] + br {
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
+                  <a href="/categories/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/" itemprop="url" rel="index"><span itemprop="name">比赛/模拟赛</span></a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/" itemprop="url" rel="index"><span itemprop="name">Olympiad Informatics</span></a>
+                  <a href="/categories/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-NOIP%E5%8D%81%E8%BF%9E/" itemprop="url" rel="index"><span itemprop="name">ZROI2023 - NOIP十连</span></a>
                 </span>
             </span>
 
@@ -1147,14 +1357,14 @@ mjx-container[display="true"] + br {
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>8.5k</span>
+              <span>398</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>8 分钟</span>
+              <span>1 分钟</span>
             </span>
 
         </div>
@@ -1166,10 +1376,10 @@ mjx-container[display="true"] + br {
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>“辽望猎风焚烧的原野，在一夜之间，化为灰烬。”</p>
+          没爆零，赢！
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Suffix-Automaton/#more" rel="contents">
+              <a class="btn" href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-NOIP%E5%8D%81%E8%BF%9E/Contest20230827/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1193,7 +1403,7 @@ mjx-container[display="true"] + br {
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E9%A2%98%E8%A7%A3/Note-CWOI-Miscellaneous-Test-from-Codeforces/">
+    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-CSP%E4%B8%83%E8%BF%9E/Contest20230902/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -1207,7 +1417,7 @@ mjx-container[display="true"] + br {
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/%E9%A2%98%E8%A7%A3/Note-CWOI-Miscellaneous-Test-from-Codeforces/" class="post-title-link" itemprop="url">号家军集训 杂题选讲（CodeForces近几场）</a>
+            <a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-CSP%E4%B8%83%E8%BF%9E/Contest20230902/" class="post-title-link" itemprop="url">ZROI - 2023csp七连测day1</a>
         </h2>
 
         <div class="post-meta">
@@ -1219,14 +1429,14 @@ mjx-container[display="true"] + br {
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2023-07-18 15:44:52" itemprop="dateCreated datePublished" datetime="2023-07-18T15:44:52+08:00">2023-07-18</time>
+              <time title="创建时间：2023-09-03 21:45:23" itemprop="dateCreated datePublished" datetime="2023-09-03T21:45:23+08:00">2023-09-03</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-07-26 16:19:45" itemprop="dateModified" datetime="2023-07-26T16:19:45+08:00">2023-07-26</time>
+                <time title="修改时间：2023-10-11 20:35:45" itemprop="dateModified" datetime="2023-10-11T20:35:45+08:00">2023-10-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1234,7 +1444,11 @@ mjx-container[display="true"] + br {
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%A2%98%E8%A7%A3/" itemprop="url" rel="index"><span itemprop="name">题解</span></a>
+                  <a href="/categories/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/" itemprop="url" rel="index"><span itemprop="name">比赛/模拟赛</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-CSP%E4%B8%83%E8%BF%9E/" itemprop="url" rel="index"><span itemprop="name">ZROI2023 - CSP七连</span></a>
                 </span>
             </span>
 
@@ -1244,14 +1458,14 @@ mjx-container[display="true"] + br {
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>9k</span>
+              <span>13k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>8 分钟</span>
+              <span>11 分钟</span>
             </span>
 
         </div>
@@ -1263,10 +1477,111 @@ mjx-container[display="true"] + br {
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>讲师：冯施源</p>
+          你好，但是我不想做贪心。
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/%E9%A2%98%E8%A7%A3/Note-CWOI-Miscellaneous-Test-from-Codeforces/#more" rel="contents">
+              <a class="btn" href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-CSP%E4%B8%83%E8%BF%9E/Contest20230902/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-NOIP%E5%8D%81%E8%BF%9E/Contest20230903/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Fallen Shadow">
+      <meta itemprop="description" content="誰も悪くないから、辛いだな。<br>自卑的人，往往只剩下温柔了啊……">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Reincarnation">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-NOIP%E5%8D%81%E8%BF%9E/Contest20230903/" class="post-title-link" itemprop="url">ZROI - 2023noip十连测day2</a>
+        </h2>
+
+        <div class="post-meta">
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-09-03 21:45:27" itemprop="dateCreated datePublished" datetime="2023-09-03T21:45:27+08:00">2023-09-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-10-11 20:35:36" itemprop="dateModified" datetime="2023-10-11T20:35:36+08:00">2023-10-11</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/" itemprop="url" rel="index"><span itemprop="name">比赛/模拟赛</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-NOIP%E5%8D%81%E8%BF%9E/" itemprop="url" rel="index"><span itemprop="name">ZROI2023 - NOIP十连</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>452</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          好好好，这么出题是吧。
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/ZROI2023-NOIP%E5%8D%81%E8%BF%9E/Contest20230903/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1289,7 +1604,7 @@ mjx-container[display="true"] + br {
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/15/">15</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/21/">21</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -1357,20 +1672,20 @@ mjx-container[display="true"] + br {
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">143</span>
+          <span class="site-state-item-count">204</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">18</span>
+        <span class="site-state-item-count">23</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">269</span>
+        <span class="site-state-item-count">294</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -1443,13 +1758,13 @@ mjx-container[display="true"] + br {
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">1.4m</span>
+    <span title="站点总字数">2.1m</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">20:43</span>
+    <span title="站点阅读时长">31:38</span>
 </div>
   <div class="running-time">
     <span id="timeDate"></span>
@@ -1607,7 +1922,7 @@ document.querySelectorAll('.pdfobject-container').forEach(element => {
     };
     (function () {
       var script = document.createElement('script');
-      script.src = 'https://rusunoi.github.io/mathjax/tex-mml-chtml.js';
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
       script.defer = true;
       document.head.appendChild(script);
     })();

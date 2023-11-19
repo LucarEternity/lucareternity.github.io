@@ -12,14 +12,311 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=ZCOOL Xiaowei:300,300italic,400,400italic,700,700italic|ZCOOL KuaiLe:300,300italic,400,400italic,700,700italic|Zhi Mang Xing:300,300italic,400,400italic,700,700italic|Ma Shan Zheng:300,300italic,400,400italic,700,700italic|Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"violeteternal.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
-  <style>details.note,details.success,details.failure,details.warning,details.info,details.question,details.example,details.quote,details.code{display:block!important;padding-top:0!important;box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.2)!important;position:relative!important;margin:1.5625em 0!important;padding:0 1em!important;border-left:.2em solid!important;border-radius:.1em!important;font-size:.9em!important;overflow:auto!important;}details.note:not([open]),details.success:not([open]),details.failure:not([open]),details.warning:not([open]),details.info:not([open]),details.question:not([open]),details.example:not([open]),details.quote:not([open]),details.code:not([open]){padding-bottom:0!important;}details.note{border-left-color:#448aff!important;}details.success{border-left-color:#00c853!important;}details.failure{border-left-color:#ff5252!important;}details.warning{border-left-color:#ff9100!important;}details.info{border-left-color:#00b8d4!important;}details.question{border-left-color:#64dd17!important;}details.example{border-left-color:#651fff!important;}details.quote{border-left-color:#9e9e9e!important;}details.code{border-left-color:#A0A0A0!important;}details.note>summary,details.success>summary,details.failure>summary,details.warning>summary,details.info>summary,details.question>summary,details.example>summary,details.quote>summary,details.code>summary{margin:0 -1em 1em -1em;padding:.4em .6em .4em .6em;border-bottom:.05em solid;font-weight:700;display:block;outline:none;cursor:pointer;}details.note>summary{border-bottom-color:rgba(68,138,255,.1);background-color:rgba(68,138,255,.1);}details.success>summary{border-bottom-color:rgba(0,200,83,.1);background-color:rgba(0,200,83,.1);}details.failure>summary{border-bottom-color:rgba(255,82,82,.1);background-color:rgba(255,82,82,.1);}details.warning>summary{border-bottom-color:rgba(255,145,0,.1);background-color:rgba(255,145,0,.1);}details.info>summary{border-bottom-color:rgba(0,184,212,.1);background-color:rgba(0,184,212,.1);}details.question>summary{border-bottom-color:rgba(100,221,23,.1);background-color:rgba(100,221,23,.1);}details.example>summary{border-bottom-color:rgba(101,31,255,.1);background-color:rgba(101,31,255,.1);}details.quote>summary{border-bottom-color:rgba(158,158,158,.1);background-color:rgba(158,158,158,.1);}details.code>summary{border-bottom-color:rgba(160,160,160,.1);background-color:rgba(160,160,160,.1);}details.note:not([open])>summary,details.success:not([open])>summary,details.failure:not([open])>summary,details.warning:not([open])>summary,details.info:not([open])>summary,details.question:not([open])>summary,details.example:not([open])>summary,details.quote:not([open])>summary,details.code:not([open])>summary{border-bottom:0;margin-bottom:0;}details.note>summary>div.box-open-button,details.success>summary>div.box-open-button,details.failure>summary>div.box-open-button,details.warning>summary>div.box-open-button,details.info>summary>div.box-open-button,details.question>summary>div.box-open-button,details.example>summary>div.box-open-button,details.quote>summary>div.box-open-button,details.code>summary>div.box-open-button{float:right;}details.note>summary>i,details.success>summary>i,details.failure>summary>i,details.warning>summary>i,details.info>summary>i,details.question>summary>i,details.example>summary>i,details.quote>summary>i,details.code>summary>i,details.note>summary>div.box-open-button>i,details.success>summary>div.box-open-button>i,details.failure>summary>div.box-open-button>i,details.warning>summary>div.box-open-button>i,details.info>summary>div.box-open-button>i,details.question>summary>div.box-open-button>i,details.example>summary>div.box-open-button>i,details.quote>summary>div.box-open-button>i,details.code>summary>div.box-open-button>i{margin:0 .6125em 0 .6125em;}details.note>summary>i{color:#448aff;}details.success>summary>i{color:#00c853;}details.failure>summary>i{color:#ff5252;}details.warning>summary>i{color:#ff9100;}details.info>summary>i{color:#00b8d4;}details.question>summary>i{color:#64dd17;}details.example>summary>i{color:#651fff;}details.quote>summary>i{color:#9e9e9e;}details.code>summary>i{color:#A0A0A0;}details.note>summary>div.box-open-button>i,details.success>summary>div.box-open-button>i,details.failure>summary>div.box-open-button>i,details.warning>summary>div.box-open-button>i,details.info>summary>div.box-open-button>i,details.question>summary>div.box-open-button>i,details.example>summary>div.box-open-button>i,details.quote>summary>div.box-open-button>i,details.code>summary>div.box-open-button>i{color:rgba(0,0,0,.26);}details[open].note>summary>div.box-open-button>i,details[open].success>summary>div.box-open-button>i,details[open].failure>summary>div.box-open-button>i,details[open].warning>summary>div.box-open-button>i,details[open].info>summary>div.box-open-button>i,details[open].question>summary>div.box-open-button>i,details[open].example>summary>div.box-open-button>i,details[open].quote>summary>div.box-open-button>i,details[open].code>summary>div.box-open-button>i{transform:rotate(180deg);}</style>
+  <style type="text/css">
+div.content.block.note, details.content.box.note,div.content.block.abstract, details.content.box.abstract,div.content.block.info, details.content.box.info,div.content.block.tip, details.content.box.tip,div.content.block.success, details.content.box.success,div.content.block.question, details.content.box.question,div.content.block.warning, details.content.box.warning,div.content.block.failure, details.content.box.failure,div.content.block.danger, details.content.box.danger,div.content.block.bug, details.content.box.bug,div.content.block.example, details.content.box.example,div.content.block.quote, details.content.box.quote,div.content.block.code, details.content.box.code {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.content.block.note, details.content.box.note {
+  border-color: #448aff;
+}
+div.content.block.abstract, details.content.box.abstract {
+  border-color: #00b0ff;
+}
+div.content.block.info, details.content.box.info {
+  border-color: #00b8d4;
+}
+div.content.block.tip, details.content.box.tip {
+  border-color: #00bfa5;
+}
+div.content.block.success, details.content.box.success {
+  border-color: #00c853;
+}
+div.content.block.question, details.content.box.question {
+  border-color: #64dd17;
+}
+div.content.block.warning, details.content.box.warning {
+  border-color: #ff9100;
+}
+div.content.block.failure, details.content.box.failure {
+  border-color: #ff5252;
+}
+div.content.block.danger, details.content.box.danger {
+  border-color: #ff1744;
+}
+div.content.block.bug, details.content.box.bug {
+  border-color: #f50057;
+}
+div.content.block.example, details.content.box.example {
+  border-color: #651fff;
+}
+div.content.block.quote, details.content.box.quote {
+  border-color: #9e9e9e;
+}
+div.content.block.code, details.content.box.code {
+  border-color: #A0A0A0;
+}
+div.content.block.note:focus-within, details.content.box.note:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.content.block.abstract:focus-within, details.content.box.abstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.content.block.info:focus-within, details.content.box.info:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.content.block.tip:focus-within, details.content.box.tip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.content.block.success:focus-within, details.content.box.success:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.content.block.question:focus-within, details.content.box.question:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.content.block.warning:focus-within, details.content.box.warning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.content.block.failure:focus-within, details.content.box.failure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.content.block.danger:focus-within, details.content.box.danger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.content.block.bug:focus-within, details.content.box.bug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.content.block.example:focus-within, details.content.box.example:focus-within {
+  box-shadow: 0 0 0 .2rem #651fff1a;
+}
+div.content.block.quote:focus-within, details.content.box.quote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.content.block.code:focus-within, details.content.box.code:focus-within {
+  box-shadow: 0 0 0 .2rem #A0A0A01a;
+}
+div.content.block.note *, details.content.box.note *,div.content.block.abstract *, details.content.box.abstract *,div.content.block.info *, details.content.box.info *,div.content.block.tip *, details.content.box.tip *,div.content.block.success *, details.content.box.success *,div.content.block.question *, details.content.box.question *,div.content.block.warning *, details.content.box.warning *,div.content.block.failure *, details.content.box.failure *,div.content.block.danger *, details.content.box.danger *,div.content.block.bug *, details.content.box.bug *,div.content.block.example *, details.content.box.example *,div.content.block.quote *, details.content.box.quote *,div.content.block.code *, details.content.box.code * {
+  box-sizing: border-box;
+}
+div.content.block.note > p.content.block-title, details.content.box.note > summary,div.content.block.abstract > p.content.block-title, details.content.box.abstract > summary,div.content.block.info > p.content.block-title, details.content.box.info > summary,div.content.block.tip > p.content.block-title, details.content.box.tip > summary,div.content.block.success > p.content.block-title, details.content.box.success > summary,div.content.block.question > p.content.block-title, details.content.box.question > summary,div.content.block.warning > p.content.block-title, details.content.box.warning > summary,div.content.block.failure > p.content.block-title, details.content.box.failure > summary,div.content.block.danger > p.content.block-title, details.content.box.danger > summary,div.content.block.bug > p.content.block-title, details.content.box.bug > summary,div.content.block.example > p.content.block-title, details.content.box.example > summary,div.content.block.quote > p.content.block-title, details.content.box.quote > summary,div.content.block.code > p.content.block-title, details.content.box.code > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.content.box.note > summary,details.content.box.abstract > summary,details.content.box.info > summary,details.content.box.tip > summary,details.content.box.success > summary,details.content.box.question > summary,details.content.box.warning > summary,details.content.box.failure > summary,details.content.box.danger > summary,details.content.box.bug > summary,details.content.box.example > summary,details.content.box.quote > summary,details.content.box.code > summary {
+  cursor: pointer;
+}
+details.content.box.note:not([open]) > summary,details.content.box.abstract:not([open]) > summary,details.content.box.info:not([open]) > summary,details.content.box.tip:not([open]) > summary,details.content.box.success:not([open]) > summary,details.content.box.question:not([open]) > summary,details.content.box.warning:not([open]) > summary,details.content.box.failure:not([open]) > summary,details.content.box.danger:not([open]) > summary,details.content.box.bug:not([open]) > summary,details.content.box.example:not([open]) > summary,details.content.box.quote:not([open]) > summary,details.content.box.code:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.content.block.note > p.content.block-title, details.content.box.note > summary {
+  background-color: #448aff1a;
+}
+div.content.block.abstract > p.content.block-title, details.content.box.abstract > summary {
+  background-color: #00b0ff1a;
+}
+div.content.block.info > p.content.block-title, details.content.box.info > summary {
+  background-color: #00b8d41a;
+}
+div.content.block.tip > p.content.block-title, details.content.box.tip > summary {
+  background-color: #00bfa51a;
+}
+div.content.block.success > p.content.block-title, details.content.box.success > summary {
+  background-color: #00c8531a;
+}
+div.content.block.question > p.content.block-title, details.content.box.question > summary {
+  background-color: #64dd171a;
+}
+div.content.block.warning > p.content.block-title, details.content.box.warning > summary {
+  background-color: #ff91001a;
+}
+div.content.block.failure > p.content.block-title, details.content.box.failure > summary {
+  background-color: #ff52521a;
+}
+div.content.block.danger > p.content.block-title, details.content.box.danger > summary {
+  background-color: #ff17441a;
+}
+div.content.block.bug > p.content.block-title, details.content.box.bug > summary {
+  background-color: #f500571a;
+}
+div.content.block.example > p.content.block-title, details.content.box.example > summary {
+  background-color: #651fff1a;
+}
+div.content.block.quote > p.content.block-title, details.content.box.quote > summary {
+  background-color: #9e9e9e1a;
+}
+div.content.block.code > p.content.block-title, details.content.box.code > summary {
+  background-color: #A0A0A01a;
+}
+div.content.block.note > p.content.block-title > i, details.content.box.note > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.content.block.abstract > p.content.block-title > i, details.content.box.abstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.content.block.info > p.content.block-title > i, details.content.box.info > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.content.block.tip > p.content.block-title > i, details.content.box.tip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.content.block.success > p.content.block-title > i, details.content.box.success > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.content.block.question > p.content.block-title > i, details.content.box.question > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.content.block.warning > p.content.block-title > i, details.content.box.warning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.content.block.failure > p.content.block-title > i, details.content.box.failure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.content.block.danger > p.content.block-title > i, details.content.box.danger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.content.block.bug > p.content.block-title > i, details.content.box.bug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.content.block.example > p.content.block-title > i, details.content.box.example > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #651fff;
+}
+div.content.block.quote > p.content.block-title > i, details.content.box.quote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+div.content.block.code > p.content.block-title > i, details.content.box.code > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #A0A0A0;
+}
+details.content.box.note > summary > div.box-open-button,details.content.box.abstract > summary > div.box-open-button,details.content.box.info > summary > div.box-open-button,details.content.box.tip > summary > div.box-open-button,details.content.box.success > summary > div.box-open-button,details.content.box.question > summary > div.box-open-button,details.content.box.warning > summary > div.box-open-button,details.content.box.failure > summary > div.box-open-button,details.content.box.danger > summary > div.box-open-button,details.content.box.bug > summary > div.box-open-button,details.content.box.example > summary > div.box-open-button,details.content.box.quote > summary > div.box-open-button,details.content.box.code > summary > div.box-open-button {
+  float: right;
+}
+details.content.box.note > summary > div.box-open-button > i,details.content.box.abstract > summary > div.box-open-button > i,details.content.box.info > summary > div.box-open-button > i,details.content.box.tip > summary > div.box-open-button > i,details.content.box.success > summary > div.box-open-button > i,details.content.box.question > summary > div.box-open-button > i,details.content.box.warning > summary > div.box-open-button > i,details.content.box.failure > summary > div.box-open-button > i,details.content.box.danger > summary > div.box-open-button > i,details.content.box.bug > summary > div.box-open-button > i,details.content.box.example > summary > div.box-open-button > i,details.content.box.quote > summary > div.box-open-button > i,details.content.box.code > summary > div.box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.content.box.note:not([open]) > summary > div.box-open-button i,details.content.box.abstract:not([open]) > summary > div.box-open-button i,details.content.box.info:not([open]) > summary > div.box-open-button i,details.content.box.tip:not([open]) > summary > div.box-open-button i,details.content.box.success:not([open]) > summary > div.box-open-button i,details.content.box.question:not([open]) > summary > div.box-open-button i,details.content.box.warning:not([open]) > summary > div.box-open-button i,details.content.box.failure:not([open]) > summary > div.box-open-button i,details.content.box.danger:not([open]) > summary > div.box-open-button i,details.content.box.bug:not([open]) > summary > div.box-open-button i,details.content.box.example:not([open]) > summary > div.box-open-button i,details.content.box.quote:not([open]) > summary > div.box-open-button i,details.content.box.code:not([open]) > summary > div.box-open-button i {
+  transform: rotate(270deg);
+}
+details.content.box.note[open] > summary > div.box-open-button i,details.content.box.abstract[open] > summary > div.box-open-button i,details.content.box.info[open] > summary > div.box-open-button i,details.content.box.tip[open] > summary > div.box-open-button i,details.content.box.success[open] > summary > div.box-open-button i,details.content.box.question[open] > summary > div.box-open-button i,details.content.box.warning[open] > summary > div.box-open-button i,details.content.box.failure[open] > summary > div.box-open-button i,details.content.box.danger[open] > summary > div.box-open-button i,details.content.box.bug[open] > summary > div.box-open-button i,details.content.box.example[open] > summary > div.box-open-button i,details.content.box.quote[open] > summary > div.box-open-button i,details.content.box.code[open] > summary > div.box-open-button i {
+  transform: rotate(180deg);
+}
+details.content.box.note summary div.box-open-button i {
+  color: #448aff;
+}
+details.content.box.abstract summary div.box-open-button i {
+  color: #00b0ff;
+}
+details.content.box.info summary div.box-open-button i {
+  color: #00b8d4;
+}
+details.content.box.tip summary div.box-open-button i {
+  color: #00bfa5;
+}
+details.content.box.success summary div.box-open-button i {
+  color: #00c853;
+}
+details.content.box.question summary div.box-open-button i {
+  color: #64dd17;
+}
+details.content.box.warning summary div.box-open-button i {
+  color: #ff9100;
+}
+details.content.box.failure summary div.box-open-button i {
+  color: #ff5252;
+}
+details.content.box.danger summary div.box-open-button i {
+  color: #ff1744;
+}
+details.content.box.bug summary div.box-open-button i {
+  color: #f50057;
+}
+details.content.box.example summary div.box-open-button i {
+  color: #651fff;
+}
+details.content.box.quote summary div.box-open-button i {
+  color: #9e9e9e;
+}
+details.content.box.code summary div.box-open-button i {
+  color: #A0A0A0;
+}
+div.content.cards * {
+  box-sizing: border-box;
+}
+input.content.cards-input {
+  display: none;
+}
+div.content.cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.content.cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.content.cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.content.cards-label.active, label.content.cards-label:hover {
+  color: var(--cards-color);
+}
+div.content.cards-content {
+  display: none;
+}
+div.content.cards-content.active {
+  display: block;
+}
+</style>
   <meta name="description" content="夜深了，击拍着岩石的海浪逐渐退散。宛若水晶的天空透彻几何棱角般光滑净光的月，潮汐翻涌，送走了最后一片赤火燃烧的日落。白日里盘旋的海鸥也不知在哪儿安置了居所，在一圈一圈的树枝之中枕翅而息。 此刻，海正在沉睡。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="少年与时间与风">
@@ -28,7 +325,7 @@
 <meta property="og:description" content="夜深了，击拍着岩石的海浪逐渐退散。宛若水晶的天空透彻几何棱角般光滑净光的月，潮汐翻涌，送走了最后一片赤火燃烧的日落。白日里盘旋的海鸥也不知在哪儿安置了居所，在一圈一圈的树枝之中枕翅而息。 此刻，海正在沉睡。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-12-22T08:07:20.000Z">
-<meta property="article:modified_time" content="2023-08-23T12:43:25.549Z">
+<meta property="article:modified_time" content="2023-09-14T14:11:42.206Z">
 <meta property="article:author" content="Fallen Shadow">
 <meta property="article:tag" content="科幻，玄幻">
 <meta property="article:tag" content="青春">
@@ -357,7 +654,7 @@ mjx-container[display="true"] + br {
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-08-23 20:43:25" itemprop="dateModified" datetime="2023-08-23T20:43:25+08:00">2023-08-23</time>
+                <time title="修改时间：2023-09-14 22:11:42" itemprop="dateModified" datetime="2023-09-14T22:11:42+08:00">2023-09-14</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -386,14 +683,14 @@ mjx-container[display="true"] + br {
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>16k</span>
+              <span>21k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>14 分钟</span>
+              <span>19 分钟</span>
             </span>
 
         </div>
@@ -649,7 +946,7 @@ mjx-container[display="true"] + br {
 <p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 或许枫也不知道他们还有没有机会回到这座岛屿，甚至贾斯特都不知道他们有没有机会活着回到大陆。一旦踏上了旅程，那一切就都会成为未知。</p>
 <hr>
 <p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 洛很少见过不认识的人来这小村，大人物的别墅都建在几里外环境更好的地方，而今天这些西装革履的人她真的一点印象都没有。老人们也比较讨厌这些“阿谀奉承”的年轻人，那些人一般都是来看地的，用所谓的金钱把这些土生土长的老人们“送”到条件更好的地方，然后用他们故乡的一方水土来做年轻人想要做的事情，那些事情一般政府都不会批准，所以他们需要找一些偏僻的地方，一边要保证失误与失败不会对自己产生影响，另一方面也是为了避人耳目。而这群人，如果没有达到想要的效果，就直接拍屁股走人，他们不会处理生态，也不在乎这片土地上的生物是死是活，他们只关心一张用树制成的白纸上写的零零星星的数字。</p>
-<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> “不卖！打死也不会卖！”洛第一次听见婆婆的大嗓门，“这片土地不可能交到任何人手中，天王老子都不行！”“老女士，您先别急，我们并没有任何收购土地的需求，也不会像那些穿着西装的禽兽一样侵略”，婆婆身边的绅士说话很温柔也很小声，就像是时时刻刻都受到监控，稍微一不小心就会丢掉工作或是其它更为重要的东西一样。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> “不卖！打死也不会卖！”洛第一次听见婆婆的大嗓门，“这片土地不可能交到任何人手中，天王老子都不行！”“老女士，您先别急，我们并没有任何收购土地的需求，也不会像那些穿着西装的禽兽一样侵略”，婆婆身边的绅士说着一口标准的东国话，很温柔也很小声，就像是时时刻刻都受到监控，稍微一不小心就会丢掉工作或是其它更为重要的东西一样。</p>
 <p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> “那我们之间就更没有什么共同话题了，别打扰一个农家的晚餐时间，高城中的先生。”婆婆依然没好气的说。“我的名字是维尔，女士，如果您不介意的话，我们想借用您的厨房，我们自带了食材的放心。”维尔的笑从未消失，“然后再晚餐结束后拥有一段愉快的聊天时光。”</p>
 <p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 洛还是第一次和陌生人在家里一起吃饭，虽然维尔的态度很好，也很礼貌，但洛还是担心婆婆从一开始就垮起脸可能对身体不太健康。维尔端了几个菜放在桌子上，亲切地招呼婆婆，“来吧女士，或者按辈分来讲，我应该叫您阿姨？”就像在自己家里一样。</p>
 <p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 因为婆婆的原因，洛还是有点提防维尔，但维尔的手艺真的算是绝妙，不同于她曾经品尝过的婆婆的属于家的味道，这种味道显得更为悠远与神圣，就像是圣堂一样不可侵犯，与味觉有一定的距离感，而不是肌肤相亲的温馨与体贴，这种距离感起到好处。</p>
@@ -657,7 +954,66 @@ mjx-container[display="true"] + br {
 <p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> “谁派你来的？”婆婆略过了维尔的回答。“我吗，我只是一个公司的小职工罢了，”维尔自嘲般的笑了笑，“问题嘛……”他从口袋中掏出一个硬壳的笔记本，“想要问问东国的一些传说。”</p>
 <p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 婆婆突然张口大笑，前仰后合，“你个现代欧洲人跑到一个连乡村都算不上的地方来问民间鬼神！简直不像话。”“不不，婆婆，”维尔连忙解释，“这怎么能算鬼神呢，再怎么讲也是东国上下千年的文化传承啊。”</p>
 <p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> “狗屁！”婆婆笑得有点累了，看着维尔，“那你想问些什么？”</p>
-<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 维尔清了清嗓子，讲述了一个古老的故事：“”</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 维尔清了清嗓子，讲述了一个古老的故事：“古老的东国被天灾侵蚀，国破山河，民不聊生，沙漠中泛滥洪水，皇宫中突现沙暴，这不是人的时代，而是自然的时代。”维尔声情并茂，就像是投影仪，历史像是就在他们的面前，从头到尾地再演了一遍。“人们于是用自然的方法去对抗自然，他们开始信鬼信神，搞一些败坏道德，不敬祖先的神秘宗法。”维尔开始咬牙切齿，语气变得生气，与之前的平和截然不同。如果维尔不是公司职员，他说不定会是一个很好的相声演员。“而最后，古老的东国人找到了与他们共同生活了上千年的，愿意回应他们的自然，而那是的东国人尊称其为，精灵。”维尔的最后几个字说的很重，像是序章即将结束，而故事才刚刚开始。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> “于是，东国再无天灾，大河奔涌，大江流淌，水土肥润，五谷丰收。”维尔张开双手伸向天空，像是在庆祝灾难之后令人赞叹的新时代。“于是人们淡忘了痛苦的回忆，时间也尘封了这段历史。人们开始歌颂祖先的无畏自然与勤恳劳作，他们歌颂人之光辉，向自己的孩子讲述人之弱小也能战胜所向无敌的巨人，他们以勤恳为训，以无畏为锋，一锤一棒敲打出了现在的东国。”维尔的尾音飘出门外，门缝中有几个邻家的小孩子也津津有味地听着这段故事。“于是，做好事不留名的精灵便留在了东国一些偏远的乡村里。”</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> “寻找神话的踪迹固然荒唐，但科学从不因未知止步。”维尔站起身，并未掩饰兴奋激动，“相反，未知会让科学奋力向前。”</p>
+<hr>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 茫茫无尽的大海中，一叶小舟飘荡。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 贾斯特和枫把所有能够带上的东西全部搬到了船上，贾斯特还拆了几块灯塔的木板加固了船，至少在遇到一两只什么大鱼的撞击之后不会直接沉下去。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 少年与老人无语，只有潮涌与呼吸的声音，空气潮湿，像是用洋流汇聚的力量让所有经过的生命吞没，海并非毫无声息，它慢慢地呼吸着，将气流从东到西，从西到东，从北到南，从南到北地输送，过肺的气流有着海的温暖，它们从海底而来，闯过海底无数的峭壁山崖，最后汇聚在一起，迸发出寒冷中一瞬息的热能。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 当灯塔消失在视野中的时候，贾斯特就已经已经意识到了这个极其错误的决定。他们并没有过多的资源，最多在茫茫无尽的海中生活不到十天，就会成为木船上的干尸，而且贾斯特并不知道这座岛屿在这个世界上的具体位置，他甚至不知道自己在哪片海域，来了这么多天甚至连过往船只的影子都没有，枫也说自己不曾见过任何其他人出现在自己的眼中。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 换言之，现在的他们正在极速地消耗资源，却对目标毫无进展。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 海浪聆听着无助者的诉苦，微微动摇了波涛的弧度。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 海浪站在了比原来更高的位置，远处的云忽然聚在了一起，形成一股乌黑挡住了原来的天空。水蒸气也在乌云中汇合，形成晶莹剔透的水珠，随时准备下落，回归大海。而有一团海浪越卷越高，它们围绕着一根无形的通天柱向上攀爬，到了一个极高的高度又化作喷泉垂直下落。就像是在一个满是人群的集市中，突然出现了一个踩着很高很高的高跷的人闯进来，小心翼翼而又快速地穿过人群，在人群中来回走动。这个时候，这个人就能从远处一眼望到。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 此时此刻，那是一场毫无征兆的风暴。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 雨开始下了，因为云层十分低，临近海洋，这种雨是有重量的，甚至快要赶上了冰雹的仗势，落在海中也会溅起不小的水花，而落在木船上则会发出一些响声，但依然会被浩大的环境音所埋没。此时此刻，落入木舟的雨并没有成为这场演出的主角，因为高万丈的飓风就在眼前。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 船身早已开始剧烈摇动，就像是一只蚂蚁偶然闯入了城市，在街边行走的时候又不幸地遇见了洒水车，那比体型还要巨大数百倍的水柱以极快的速度向蚂蚁冲来，甚至没有反应的机会，渺小的它被淹没在水中，周围的空气极速逃逸，留下一片窒息，留下了叹息与恐惧。或许痛苦是一瞬的，因为在面见的时候就已决定的毁灭的事实；而痛苦是漫长的，这像是无法生存的折磨，却又是无法快速死亡的焦急，生不如死，死而后生。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 老人无声地坐在船上，少年则拼命地向船外泼水，即便如此，水也在不断充盈着整支木船。这是一场无用的挣扎。贾斯特却异常冷静，或许命运会让他侥幸逃离一次，但绝不会错给第二次机会。他想着，这样也好，即使没有风暴，他们也会在一个月，或者两个月之后在绝望与饥饿中成为海洋中的干尸，或者称为鱼类的养食。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 渐渐地，船开始下沉了，水没过了贾斯特的鞋，然后是小腿，然后是腰，然后是脖子，最后是整个人。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 呼吸开始消失了，那几个象征着生命的气泡逐渐上浮，在海面上迸裂，氧气窜回了大气里，成为了远处飓风的一部分，大肆嘲笑着妄想逃去一丝生机的人。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 人从不伟大，在自然面前，他们显得如此渺小。</p>
+<hr>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> <em>把这个实验称为博弈是十分可笑的，就像是棋盘上的卒想着要取代执棋的人，最终只有被关在盒子里吃灰，或者在棋盘上摔来摔去的下场，</em></p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> <em>我们已经尝试了过多的方法来寻找「魁修斯」，这已经使这个宇宙千疮百孔，无法再给我们提供更多的资源。现在看来，或许找到「魁修斯」就是唯一的方法。</em></p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> <em>博士已经三天没有出过办公室了，虽然大家都知道他的体质超越常人，但这并不是长久之计。我们都希望还撑得下去，但我们也符出实际行动。</em></p>
+<center>实验日志：■■■■.■■.■■</center>
+
+<hr>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> <em>博士终于打开了办公室的门，这或许是一个好消息。</em></p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> <em>他决定启动跃迁，虽然大家都没有说话，但反驳似乎是无意义的，毕竟没有谁能够提出更好的解决方案。</em></p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> <em>跃迁将在</em> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="2.312ex" height="1.946ex" role="img" focusable="false" viewBox="0 -666 1022 860"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mn"><path data-c="34" d="M448 34Q453 34 463 22T473 5Q473 -2 457 -7Q417 -22 383 -23H366L350 -91Q348 -98 345 -111T340 -130T335 -146T330 -161T325 -172T318 -182T310 -188T299 -193T286 -194Q256 -194 253 -165Q253 -159 271 -83T292 -5Q231 29 169 29Q114 29 91 14Q72 -2 65 1Q46 20 46 28Q46 35 55 43T77 60T96 74Q306 257 396 623Q410 666 444 666Q459 666 468 657T478 634Q478 627 470 595T440 504T387 381T303 239T187 99L164 75H178Q217 75 260 59L304 43Q304 48 325 127Q342 195 346 207T358 228Q372 242 391 242Q403 242 413 235T423 214Q423 205 402 116T378 25Q378 23 387 23Q405 23 418 25T439 31T448 34Z"></path><path data-c="38" d="M209 449Q209 545 278 605T416 666Q482 666 517 631T553 546Q553 513 539 482T504 430T463 394T426 370L410 360L430 343Q471 309 483 278T495 211Q495 141 441 75Q363 -21 253 -21Q182 -21 141 18T99 117Q99 161 119 201T170 268T222 308T259 331L272 338L259 349Q212 389 209 449ZM492 542Q492 586 469 605T415 625Q360 625 320 587T279 505Q279 495 281 487T286 474T295 460T306 449T321 436T337 422Q379 386 380 386Q389 386 420 412T472 471Q492 513 492 542ZM163 118Q163 76 189 49T258 21Q316 21 368 64T420 170Q420 193 412 208T395 233T350 271L302 312Q298 312 284 303T249 276T209 235T177 181T163 118Z" transform="translate(511,0)"></path></g></g></g></g></svg></mjx-container> <em>个工作时后启动，博士给我展示了他的切片，各个年龄的都有，这些切片将代替他前往其它宇宙，虽然他知道其它宇宙也存在着他，但他似乎无法相信自己。</em></p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> <em>希望一切都能平安无事。</em></p>
+<center>跃迁计划开始前 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.581ex" role="img" focusable="false" viewBox="0 -677 1000 699"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path><path data-c="37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z" transform="translate(500,0)"></path></g></g></g></svg></mjx-container> 小时 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.579ex" role="img" focusable="false" viewBox="0 -676 1000 698"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path data-c="37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z" transform="translate(500,0)"></path></g></g></g></svg></mjx-container> 分钟</center>
+
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="抓住仅有的刹那"><a href="#抓住仅有的刹那" class="headerlink" title="抓住仅有的刹那"></a>抓住仅有的刹那</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 政府已被千万电话打爆了，跃迁基地外围的铁栅栏已经围满了群众，有些人慷慨激昂，有些人路过凑热闹，但人数多到政府不得不派遣军方去镇守基底，让周围没有任何缝隙能让不法分子干扰跃迁。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 距离跃迁还有不到 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.507ex" role="img" focusable="false" viewBox="0 -666 500 666"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g></g></svg></mjx-container> 个小时，所有国际科学家都在附近的塔楼等待着这一时刻，<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.507ex" role="img" focusable="false" viewBox="0 -666 500 666"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g></g></svg></mjx-container> 个小时后，象征着这个宇宙的文明将乘坐最先进的星际战舰前往其他宇宙。所谓跃迁，实际上就是穿梭平行宇宙。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> “跃迁装置完好，供电完备，已抗拒周围磁场，参数稳定。”广播正在整颗星球上播放，现在，所有人都在紧张地看着这个基地。“已确认目标，宇宙编号 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.579ex" height="1.532ex" role="img" focusable="false" viewBox="0 -666 1140 677"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D6FC" d="M34 156Q34 270 120 356T309 442Q379 442 421 402T478 304Q484 275 485 237V208Q534 282 560 374Q564 388 566 390T582 393Q603 393 603 385Q603 376 594 346T558 261T497 161L486 147L487 123Q489 67 495 47T514 26Q528 28 540 37T557 60Q559 67 562 68T577 70Q597 70 597 62Q597 56 591 43Q579 19 556 5T512 -10H505Q438 -10 414 62L411 69L400 61Q390 53 370 41T325 18T267 -2T203 -11Q124 -11 79 39T34 156ZM208 26Q257 26 306 47T379 90L403 112Q401 255 396 290Q382 405 304 405Q235 405 183 332Q156 292 139 224T121 120Q121 71 146 49T208 26Z"></path></g><g data-mml-node="mn" transform="translate(640,0)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g></g></svg></mjx-container>，正在寻找重力参数相等的空间。匹配原子参量中，”</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 维尔此时正在控制室中，这是他们实验室的研究结果，所以联合国将这个古今未有的机会交给了他们，而他们当然也会将这个机会交给博士。而博士此时却并没有出现在这里。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> “专车还没到吗？这种时候怎么还出这种茬子，”维尔听到某个政府官员正在十分生气地对着下属骂道，“都这个时候了，每一秒钟都是金子你知不知道！”</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> “专车正在前往博士的住处，大概半个小时到达。”“我需要的是大概吗！要是被记者拍到出现问题，你我这工作都别想做了！”忽然，可能他想起在这种科学家聚集的场合大吼大叫并不是一个礼貌的行为，迈着步伐匆匆离开了控制室走廊。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 维尔从高塔的窗户中向外望去，跃迁平台至少有几个公顷，而几个公顷之外，便是一圈极高极长极厚的铁栅栏，而铁栅栏外便是更大一圈的群众，群众之外便是无穷无尽的高楼森林。现在的他，像是在古代斗兽场中，坐在最高席的皇帝，从最佳的位置观赏这一场科学与神话的戏剧。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 不知道从多少年前开始，便有平行宇宙的概念出现在物理学界，或者各种科幻玄幻电影中，有人幻想在那一个宇宙中自己过着更好或者更坏的生活，有人研究宇宙与宇宙之间是否存在关联或区别。这是一个空想的概念，虽然在很多年前就有先驱物理学家尝试研究，但无一失败，但他们就像是倒在炽热沙漠中的古树，为后来的人创造了越来越多的阴凉。而直到博士建立起这个实验室，那个年轻而满腹才华的少年，带领了这些并不被学术界看好的二流科学家，研究平行宇宙，不知道多少个白天，不知道多少个夜晚，直到现在……他们成功了，而这就是向全世界的宣言。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 现在，跃迁进入了 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 1000 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path></g></g></g></svg></mjx-container> 分钟倒计时，控制室中的钟表每走一圈，所有人的心就又紧一截，他们设想过许多不法分子突然闯入的情景，但他们也惊呼政府与联合国对这件事的重视，他们出动了许多精英国家的尖锐部队，埋伏在跃迁平台各处，形成了一个一线城市大小的包围网，甚至挑选了一个极其偏僻的地方，费了人力物力财力将跃迁计划搬迁到了这里，说实话，维尔都不知道这里是哪儿，所有人在来到这里的时候都被蒙住了眼睛。而周围的所有电子设备均已被屏蔽，没有任何消息能够发送出去，也没有任何消息能够接受进来。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 对于所有的设备，就像是有一个万丈之高的城墙围绕在基底周围，所以妄想跨越城墙的消息都将被拦截。忽然间，如流水的人群突然间从一个位置散开，像是一艘快艇直面驶来，在平静的水面上划开了一道裂痕。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> “那是博士的车吗，”维尔说道，所有人都跑到了窗户旁，看着远处的车驶过平台，正在赶向控制塔。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 从这里看下去，比起一般的车而言，跃迁装置真的算得上是巨大。据估算，跃迁装置的高度与一般的十楼大厦能够当比。而宽度则与一个标准足球场一样，就像是一个立起来的圆环，但是放大了许多倍，用各式各样的技术组装而成。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 所有人注视着的那辆黑色轿车在跃迁装置周围忽然停下，紧接着慢慢地转弯，然后面向了巨大的跃迁装置，此时的轿车甚至够不着跃迁装置的脚底，如果跃迁装置有脚的话。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 然后，轿车加足马力，冲向了跃迁装置。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 甚至没有发出任何声音，却让在场的所有人都安静了。群众凝滞着看着眼前这一幕，而控制室上的人心已吊至喉口。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> “这是怎么回事！”有人率先打破了宁静，“你们就是这么安排的吗！”控制台下，来自各国的士兵则已极快的速度到达了装置周围，轿车已经抛锚了，前面的发动机正在不断冒出黑烟。因为没有任何现代科技加持，武装显得有些缓慢，此时距离预计跃迁的时间也只剩下了 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.581ex" role="img" focusable="false" viewBox="0 -677 1000 699"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path><path data-c="36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z" transform="translate(500,0)"></path></g></g></g></svg></mjx-container> 分钟，星际战舰已经从月球基地出发，所有人都必须以最快的速度解决突发情况。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 轿车中并没有任何人，这是一辆通过老式拉杆控制的自动行驶车，有人用设定的程序解决了磁控问题，这是一辆上世纪的车，却被掩护得与接送博士的车一模一样，这是一场蓄谋已久的计划。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 士兵围绕着这辆轿车，细心地检查者任何一个可能存在威胁的地方。几个士兵正尝试着将轿车拖到距离装置一段距离的位置，此时，一阵急促的鸣笛让人紧张起来。“发动机的味道不对，这个轿车为什么会有两个型号完全不同的发动机。”</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 忽然间，一个球状物品从发动机中弹出，“小心！炸弹！”所有人向后退去，举起了防爆盾。而球型物体抛起后便落在了平台上，并没有任何动作。“是音爆弹！”此时，控制台中听到了一声闷响，像是一粒石子从桌子落到了地面上，但在装置周围，却是能够令人身心皆破的响声。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 而此时，这声音爆就像是一声号令，火光顺着发动机的黑烟向上窜去。在发动机的浓烟中，隐藏着气体炸弹的第一声爆炸。也就是撞上跃迁装置的那一刻，气体炸弹便被引爆了。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 爆炸沿着黑烟攀爬了整个跃迁装置，开始有金属制块从空中坠落，砸在了平台上。“为什么这么明显的陷阱会被放进来，你们安保是吃白饭的吗！”高塔里面的管理现在已经乱作一团，他们并没有什么实力能够下去与恐怖分子对抗，也就只能在高塔里说三道四了。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> “检查跃迁装置的完整性，打开抗磁罩，现在需要全面接敌。”主任开始下达命令，“既然袭击已经发生，那么我们就没有办法坐以待毙，不如全面接敌。”</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="0.036ex" role="img" focusable="false" viewBox="0 0 2000 16"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mstyle"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(1000,0)"><g data-mml-node="mspace"></g></g></g></g></svg></mjx-container> 外层的部队开始疏散群众，而大多数人</p>
 
     </div>
 
@@ -762,7 +1118,7 @@ mjx-container[display="true"] + br {
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9D%A0%E5%85%A5%E6%B5%B7%E4%B8%AD%E7%9A%84%E8%90%BD%E5%8F%B6"><span class="nav-text">坠入海中的落叶</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AE%8B%E5%B1%80%EF%BC%8C%E8%B4%A5%E9%98%B5%EF%BC%8C%E5%BC%83%E5%AD%90"><span class="nav-text">残局，败阵，弃子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8E%E5%A4%A9%E7%A9%BA%E4%B9%8B%E4%B8%8A%E9%81%A8%E6%B8%B8"><span class="nav-text">于天空之上遨游</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E3%80%8C%E6%89%A7%E9%B2%B8%E4%BA%BA%E3%80%8D"><span class="nav-text">「执鲸人」</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%B7%E7%9A%84%E7%AD%94%E6%A1%88"><span class="nav-text">海的答案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%BA%E4%B9%8B%E5%85%89%E8%BE%89"><span class="nav-text">人之光辉</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9D%A0%E5%85%A5%E6%B5%B7%E4%B8%AD%E7%9A%84%E8%90%BD%E5%8F%B6"><span class="nav-text">坠入海中的落叶</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AE%8B%E5%B1%80%EF%BC%8C%E8%B4%A5%E9%98%B5%EF%BC%8C%E5%BC%83%E5%AD%90"><span class="nav-text">残局，败阵，弃子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8E%E5%A4%A9%E7%A9%BA%E4%B9%8B%E4%B8%8A%E9%81%A8%E6%B8%B8"><span class="nav-text">于天空之上遨游</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E3%80%8C%E6%89%A7%E9%B2%B8%E4%BA%BA%E3%80%8D"><span class="nav-text">「执鲸人」</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%B7%E7%9A%84%E7%AD%94%E6%A1%88"><span class="nav-text">海的答案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%BA%E4%B9%8B%E5%85%89%E8%BE%89"><span class="nav-text">人之光辉</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8A%93%E4%BD%8F%E4%BB%85%E6%9C%89%E7%9A%84%E5%88%B9%E9%82%A3"><span class="nav-text">抓住仅有的刹那</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -778,20 +1134,20 @@ mjx-container[display="true"] + br {
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">143</span>
+          <span class="site-state-item-count">204</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">18</span>
+        <span class="site-state-item-count">23</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">269</span>
+        <span class="site-state-item-count">294</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -864,13 +1220,13 @@ mjx-container[display="true"] + br {
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">1.4m</span>
+    <span title="站点总字数">2.1m</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">20:43</span>
+    <span title="站点阅读时长">31:38</span>
 </div>
   <div class="running-time">
     <span id="timeDate"></span>
@@ -1028,7 +1384,7 @@ document.querySelectorAll('.pdfobject-container').forEach(element => {
     };
     (function () {
       var script = document.createElement('script');
-      script.src = 'https://rusunoi.github.io/mathjax/tex-mml-chtml.js';
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
       script.defer = true;
       document.head.appendChild(script);
     })();

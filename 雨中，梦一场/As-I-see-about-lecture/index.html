@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/patient.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"violeteternal.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+  <style type="text/css">
+div.content.block.note, details.content.box.note,div.content.block.abstract, details.content.box.abstract,div.content.block.info, details.content.box.info,div.content.block.tip, details.content.box.tip,div.content.block.success, details.content.box.success,div.content.block.question, details.content.box.question,div.content.block.warning, details.content.box.warning,div.content.block.failure, details.content.box.failure,div.content.block.danger, details.content.box.danger,div.content.block.bug, details.content.box.bug,div.content.block.example, details.content.box.example,div.content.block.quote, details.content.box.quote,div.content.block.code, details.content.box.code {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.content.block.note, details.content.box.note {
+  border-color: #448aff;
+}
+div.content.block.abstract, details.content.box.abstract {
+  border-color: #00b0ff;
+}
+div.content.block.info, details.content.box.info {
+  border-color: #00b8d4;
+}
+div.content.block.tip, details.content.box.tip {
+  border-color: #00bfa5;
+}
+div.content.block.success, details.content.box.success {
+  border-color: #00c853;
+}
+div.content.block.question, details.content.box.question {
+  border-color: #64dd17;
+}
+div.content.block.warning, details.content.box.warning {
+  border-color: #ff9100;
+}
+div.content.block.failure, details.content.box.failure {
+  border-color: #ff5252;
+}
+div.content.block.danger, details.content.box.danger {
+  border-color: #ff1744;
+}
+div.content.block.bug, details.content.box.bug {
+  border-color: #f50057;
+}
+div.content.block.example, details.content.box.example {
+  border-color: #651fff;
+}
+div.content.block.quote, details.content.box.quote {
+  border-color: #9e9e9e;
+}
+div.content.block.code, details.content.box.code {
+  border-color: #A0A0A0;
+}
+div.content.block.note:focus-within, details.content.box.note:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.content.block.abstract:focus-within, details.content.box.abstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.content.block.info:focus-within, details.content.box.info:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.content.block.tip:focus-within, details.content.box.tip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.content.block.success:focus-within, details.content.box.success:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.content.block.question:focus-within, details.content.box.question:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.content.block.warning:focus-within, details.content.box.warning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.content.block.failure:focus-within, details.content.box.failure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.content.block.danger:focus-within, details.content.box.danger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.content.block.bug:focus-within, details.content.box.bug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.content.block.example:focus-within, details.content.box.example:focus-within {
+  box-shadow: 0 0 0 .2rem #651fff1a;
+}
+div.content.block.quote:focus-within, details.content.box.quote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.content.block.code:focus-within, details.content.box.code:focus-within {
+  box-shadow: 0 0 0 .2rem #A0A0A01a;
+}
+div.content.block.note *, details.content.box.note *,div.content.block.abstract *, details.content.box.abstract *,div.content.block.info *, details.content.box.info *,div.content.block.tip *, details.content.box.tip *,div.content.block.success *, details.content.box.success *,div.content.block.question *, details.content.box.question *,div.content.block.warning *, details.content.box.warning *,div.content.block.failure *, details.content.box.failure *,div.content.block.danger *, details.content.box.danger *,div.content.block.bug *, details.content.box.bug *,div.content.block.example *, details.content.box.example *,div.content.block.quote *, details.content.box.quote *,div.content.block.code *, details.content.box.code * {
+  box-sizing: border-box;
+}
+div.content.block.note > p.content.block-title, details.content.box.note > summary,div.content.block.abstract > p.content.block-title, details.content.box.abstract > summary,div.content.block.info > p.content.block-title, details.content.box.info > summary,div.content.block.tip > p.content.block-title, details.content.box.tip > summary,div.content.block.success > p.content.block-title, details.content.box.success > summary,div.content.block.question > p.content.block-title, details.content.box.question > summary,div.content.block.warning > p.content.block-title, details.content.box.warning > summary,div.content.block.failure > p.content.block-title, details.content.box.failure > summary,div.content.block.danger > p.content.block-title, details.content.box.danger > summary,div.content.block.bug > p.content.block-title, details.content.box.bug > summary,div.content.block.example > p.content.block-title, details.content.box.example > summary,div.content.block.quote > p.content.block-title, details.content.box.quote > summary,div.content.block.code > p.content.block-title, details.content.box.code > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.content.box.note > summary,details.content.box.abstract > summary,details.content.box.info > summary,details.content.box.tip > summary,details.content.box.success > summary,details.content.box.question > summary,details.content.box.warning > summary,details.content.box.failure > summary,details.content.box.danger > summary,details.content.box.bug > summary,details.content.box.example > summary,details.content.box.quote > summary,details.content.box.code > summary {
+  cursor: pointer;
+}
+details.content.box.note:not([open]) > summary,details.content.box.abstract:not([open]) > summary,details.content.box.info:not([open]) > summary,details.content.box.tip:not([open]) > summary,details.content.box.success:not([open]) > summary,details.content.box.question:not([open]) > summary,details.content.box.warning:not([open]) > summary,details.content.box.failure:not([open]) > summary,details.content.box.danger:not([open]) > summary,details.content.box.bug:not([open]) > summary,details.content.box.example:not([open]) > summary,details.content.box.quote:not([open]) > summary,details.content.box.code:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.content.block.note > p.content.block-title, details.content.box.note > summary {
+  background-color: #448aff1a;
+}
+div.content.block.abstract > p.content.block-title, details.content.box.abstract > summary {
+  background-color: #00b0ff1a;
+}
+div.content.block.info > p.content.block-title, details.content.box.info > summary {
+  background-color: #00b8d41a;
+}
+div.content.block.tip > p.content.block-title, details.content.box.tip > summary {
+  background-color: #00bfa51a;
+}
+div.content.block.success > p.content.block-title, details.content.box.success > summary {
+  background-color: #00c8531a;
+}
+div.content.block.question > p.content.block-title, details.content.box.question > summary {
+  background-color: #64dd171a;
+}
+div.content.block.warning > p.content.block-title, details.content.box.warning > summary {
+  background-color: #ff91001a;
+}
+div.content.block.failure > p.content.block-title, details.content.box.failure > summary {
+  background-color: #ff52521a;
+}
+div.content.block.danger > p.content.block-title, details.content.box.danger > summary {
+  background-color: #ff17441a;
+}
+div.content.block.bug > p.content.block-title, details.content.box.bug > summary {
+  background-color: #f500571a;
+}
+div.content.block.example > p.content.block-title, details.content.box.example > summary {
+  background-color: #651fff1a;
+}
+div.content.block.quote > p.content.block-title, details.content.box.quote > summary {
+  background-color: #9e9e9e1a;
+}
+div.content.block.code > p.content.block-title, details.content.box.code > summary {
+  background-color: #A0A0A01a;
+}
+div.content.block.note > p.content.block-title > i, details.content.box.note > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.content.block.abstract > p.content.block-title > i, details.content.box.abstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.content.block.info > p.content.block-title > i, details.content.box.info > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.content.block.tip > p.content.block-title > i, details.content.box.tip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.content.block.success > p.content.block-title > i, details.content.box.success > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.content.block.question > p.content.block-title > i, details.content.box.question > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.content.block.warning > p.content.block-title > i, details.content.box.warning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.content.block.failure > p.content.block-title > i, details.content.box.failure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.content.block.danger > p.content.block-title > i, details.content.box.danger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.content.block.bug > p.content.block-title > i, details.content.box.bug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.content.block.example > p.content.block-title > i, details.content.box.example > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #651fff;
+}
+div.content.block.quote > p.content.block-title > i, details.content.box.quote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+div.content.block.code > p.content.block-title > i, details.content.box.code > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #A0A0A0;
+}
+details.content.box.note > summary > div.box-open-button,details.content.box.abstract > summary > div.box-open-button,details.content.box.info > summary > div.box-open-button,details.content.box.tip > summary > div.box-open-button,details.content.box.success > summary > div.box-open-button,details.content.box.question > summary > div.box-open-button,details.content.box.warning > summary > div.box-open-button,details.content.box.failure > summary > div.box-open-button,details.content.box.danger > summary > div.box-open-button,details.content.box.bug > summary > div.box-open-button,details.content.box.example > summary > div.box-open-button,details.content.box.quote > summary > div.box-open-button,details.content.box.code > summary > div.box-open-button {
+  float: right;
+}
+details.content.box.note > summary > div.box-open-button > i,details.content.box.abstract > summary > div.box-open-button > i,details.content.box.info > summary > div.box-open-button > i,details.content.box.tip > summary > div.box-open-button > i,details.content.box.success > summary > div.box-open-button > i,details.content.box.question > summary > div.box-open-button > i,details.content.box.warning > summary > div.box-open-button > i,details.content.box.failure > summary > div.box-open-button > i,details.content.box.danger > summary > div.box-open-button > i,details.content.box.bug > summary > div.box-open-button > i,details.content.box.example > summary > div.box-open-button > i,details.content.box.quote > summary > div.box-open-button > i,details.content.box.code > summary > div.box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.content.box.note:not([open]) > summary > div.box-open-button i,details.content.box.abstract:not([open]) > summary > div.box-open-button i,details.content.box.info:not([open]) > summary > div.box-open-button i,details.content.box.tip:not([open]) > summary > div.box-open-button i,details.content.box.success:not([open]) > summary > div.box-open-button i,details.content.box.question:not([open]) > summary > div.box-open-button i,details.content.box.warning:not([open]) > summary > div.box-open-button i,details.content.box.failure:not([open]) > summary > div.box-open-button i,details.content.box.danger:not([open]) > summary > div.box-open-button i,details.content.box.bug:not([open]) > summary > div.box-open-button i,details.content.box.example:not([open]) > summary > div.box-open-button i,details.content.box.quote:not([open]) > summary > div.box-open-button i,details.content.box.code:not([open]) > summary > div.box-open-button i {
+  transform: rotate(270deg);
+}
+details.content.box.note[open] > summary > div.box-open-button i,details.content.box.abstract[open] > summary > div.box-open-button i,details.content.box.info[open] > summary > div.box-open-button i,details.content.box.tip[open] > summary > div.box-open-button i,details.content.box.success[open] > summary > div.box-open-button i,details.content.box.question[open] > summary > div.box-open-button i,details.content.box.warning[open] > summary > div.box-open-button i,details.content.box.failure[open] > summary > div.box-open-button i,details.content.box.danger[open] > summary > div.box-open-button i,details.content.box.bug[open] > summary > div.box-open-button i,details.content.box.example[open] > summary > div.box-open-button i,details.content.box.quote[open] > summary > div.box-open-button i,details.content.box.code[open] > summary > div.box-open-button i {
+  transform: rotate(180deg);
+}
+details.content.box.note summary div.box-open-button i {
+  color: #448aff;
+}
+details.content.box.abstract summary div.box-open-button i {
+  color: #00b0ff;
+}
+details.content.box.info summary div.box-open-button i {
+  color: #00b8d4;
+}
+details.content.box.tip summary div.box-open-button i {
+  color: #00bfa5;
+}
+details.content.box.success summary div.box-open-button i {
+  color: #00c853;
+}
+details.content.box.question summary div.box-open-button i {
+  color: #64dd17;
+}
+details.content.box.warning summary div.box-open-button i {
+  color: #ff9100;
+}
+details.content.box.failure summary div.box-open-button i {
+  color: #ff5252;
+}
+details.content.box.danger summary div.box-open-button i {
+  color: #ff1744;
+}
+details.content.box.bug summary div.box-open-button i {
+  color: #f50057;
+}
+details.content.box.example summary div.box-open-button i {
+  color: #651fff;
+}
+details.content.box.quote summary div.box-open-button i {
+  color: #9e9e9e;
+}
+details.content.box.code summary div.box-open-button i {
+  color: #A0A0A0;
+}
+div.content.cards * {
+  box-sizing: border-box;
+}
+input.content.cards-input {
+  display: none;
+}
+div.content.cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.content.cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.content.cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.content.cards-label.active, label.content.cards-label:hover {
+  color: var(--cards-color);
+}
+div.content.cards-content {
+  display: none;
+}
+div.content.cards-content.active {
+  display: block;
+}
+</style>
+  <meta name="description" content="当我终于意识到我应该写点什么了，我却无从落笔。人们被科技禁锢了太久，当偶然间向现实投下一瞥，忽然发现，写下的文字太过不堪入目。文明在前进，我却自掘坟墓。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如我所见·浅谈文学">
+<meta property="og:url" content="http://violeteternal.github.io/%E9%9B%A8%E4%B8%AD%EF%BC%8C%E6%A2%A6%E4%B8%80%E5%9C%BA/As-I-see-about-lecture/index.html">
+<meta property="og:site_name" content="Reincarnation">
+<meta property="og:description" content="当我终于意识到我应该写点什么了，我却无从落笔。人们被科技禁锢了太久，当偶然间向现实投下一瞥，忽然发现，写下的文字太过不堪入目。文明在前进，我却自掘坟墓。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-05-31T13:00:00.000Z">
+<meta property="article:modified_time" content="2024-06-26T14:01:11.130Z">
+<meta property="article:author" content="Fallen Shadow">
+<meta property="article:tag" content="随笔">
+<meta property="article:tag" content="回忆">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://violeteternal.github.io/%E9%9B%A8%E4%B8%AD%EF%BC%8C%E6%A2%A6%E4%B8%80%E5%9C%BA/As-I-see-about-lecture/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>如我所见·浅谈文学 | Reincarnation</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Reincarnation</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">正因为梦易碎，才格外美好。</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-road">
+
+    <a href="/road/" rel="section"><i class="fa fa-road fa-fw"></i>归程</a>
+
+  </li>
+        <li class="menu-item menu-item-past">
+
+    <a href="/past/" rel="section"><i class="fab fa-house-chimney-crack fa-fw"></i>旧日残垣</a>
+
+  </li>
+        <li class="menu-item menu-item-friendship">
+
+    <a href="/friendship/" rel="section"><i class="fa fa-users fa-fw"></i>友链</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E9%9B%A8%E4%B8%AD%EF%BC%8C%E6%A2%A6%E4%B8%80%E5%9C%BA/As-I-see-about-lecture/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Fallen Shadow">
+      <meta itemprop="description" content="誰も悪くないから、辛いだな。<br>自卑的人，往往只剩下温柔了啊……">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Reincarnation">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          如我所见·浅谈文学
+        </h1>
+
+        <div class="post-meta">
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2024-05-31 21:00:00" itemprop="dateCreated datePublished" datetime="2024-05-31T21:00:00+08:00">2024-05-31</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2024-06-26 22:01:11" itemprop="dateModified" datetime="2024-06-26T22:01:11+08:00">2024-06-26</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%9B%A8%E4%B8%AD%EF%BC%8C%E6%A2%A6%E4%B8%80%E5%9C%BA/" itemprop="url" rel="index"><span itemprop="name">雨中，梦一场</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>当我终于意识到我应该写点什么了，我却无从落笔。人们被科技禁锢了太久，当偶然间向现实投下一瞥，忽然发现，写下的文字太过不堪入目。文明在前进，我却自掘坟墓。</p>
+<span id="more"></span>
+<p>于是直到一天文泉竭尽，我能做到的不过是拼凑与效仿。当骨架在我的脑海浮现，我却没有这个能力用血肉使其充盈，开篇与谢幕显得过于遥远，任何构想都会被逻辑否决。那我们应如何书写宏伟诗篇？提到诗，这个文体的门槛低，上限高，愚笨如我也略知一二。但如果要将诗歌写得出神入化，练得炉火纯青，我想，狠功夫可能不止十年百年。当我开始执笔，有时手跟不上思维，一闪而过的灵感便来不及捉住；有时思绪落后了动作，就变得呆滞而停步。而敲击键盘呢？虽大多不存在前者的弊端，却杂音太多，若无自律，往往效率不如手写。写作是一个需打磨的过程，需时间沉淀，而这长路不可孤军奋战，这就需要谈到——合适的读者。</p>
+<p>我自以为还算合格，但有些人，这个时代的，稍有浮躁又略显自负，读过几本书便喜好高谈阔论，常常不明所以地轻浮地笑。鄙以为，在给出建议时像答题一样笼统而无意义是对作者的不尊重，我尤其讨厌“我建议你区看看谁谁谁的书”此类回答，转移矛盾是怯懦弱小的表现，这类人大多只敢在熟人面前自诩清高自以为是，而面对陌生人被打都不敢吱声。我们再说说什么才应该是“合适的读者”。这个问题并不简单，至少对我而言，但我以为，做到耐心，安静，首为其一；成人客观不偏激，此评其二；尊重，不执有色，此作其三。我讨厌以面视人的社会，倘若一开始就已经打上分数，后续流程又是做给谁看？所以，找一个长了脑子的笔友或者书友，或许对写作有所帮助。</p>
+<p>往往谈起合格的小说，不，优秀的，应该是什么样。这个问题各执一词，大概一千个读者有一千个哈姆雷特罢了：</p>
+<ul>
+<li>首先，小说应让人读得懂，读得下去。我很惭愧，我认为残雪并不优秀就在于此，它的文字如沼水般“腐臭”，令我作呕。（这并非贬低，《残雪文集》是优秀的，只是并不适众于我，我对过于极端直率的语言有生理上的不适）。而如果剧本也归为小说的话，《明日方舟》开初那些剧情便谜语很多，晦涩难懂（而事实上，这是一个长达多年的伏笔回收，堪称完美，可惜大多数人并没有闲暇阅读数百万字的幻灯片）。</li>
+<li>其次，天衣无缝的情节十分讲究，很多人的失败在于那些自己都觉得好笑的情节上，没有伏笔的回收，没有铺垫的转折，老套的悲剧结尾，令人摸不着头脑的诡异演出，甚者全篇毫无波澜，开篇即结局。我的建议是，当你都不知道自己在写什么的时候，那就不要写了。</li>
+<li>三者，令人震撼的文采，请注意，这并不意味着华丽的辞藻，也不一定是朴实质朴的语言。文采的认可，来自读者发自内心的震撼。就比如当我阅读一段文字，产生了“这绝不是我能写出来的”的想法时，这段文字无疑是优秀的。</li>
+</ul>
+<p>“浅谈文学”，不过连文坛的门都还没跨入，只不过隔了百把米远拍了张照，也算造访文坛了。但实际上是痴人说梦，庸人自扰。登山上的峰峦不过他人的土丘，那更高的山就在前头，我为何不攀？这篇文章断断续续写了有三四天了，今天是五月的最后一天，我想该收尾了。今天“宜开拓”，即便神已死去，仍有无名之人踏残躯而行。“所谓开拓，便是接手前人的意志，义无反顾地前进。”</p>
+<p>《少年与时间与风》已有烂尾倾向，铺陈战线过长会败得一塌涂地，但这并不意味着我会放弃，我应该沉淀一段时间，但这也同样不意味着止步不前。如果每一次遭遇瓶颈的解决方式是重写另一篇，那最终只会剩下一堆残篇烂局。但当能力不足时，闷头直撞是愚蠢的，遇到越不过的墙，应该学会跳跃，而不是挂在墙上面壁思过。于我而言，《远路》并不算成功，《直至冬夜降临》更不是。其一，情节不完整，让人并没有想读的欲望；第二，它并不属于我，《日暮寻路》的部分太多，更多是借鉴与效仿。因此，<font color="red">“献给落幕的赞美诗之一”应是《我始终如一》</font>的小说部分。至于为什么不是《少年与时间与风》，我更希望它成为时间打磨的长篇，与《少女与潮曦与光》一同登上舞台，在此之前，只需等待。而《远路》是一个开始，迈入文坛，甚至更大的文坛的开始。（《我始终如一》是 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="14.176ex" height="1.62ex" role="img" focusable="false" viewBox="0 -694 6266 716"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="55" d="M128 622Q121 629 117 631T101 634T58 637H25V683H36Q57 680 180 680Q315 680 324 683H335V637H302Q262 636 251 634T233 622L232 418V291Q232 189 240 145T280 67Q325 24 389 24Q454 24 506 64T571 183Q575 206 575 410V598Q569 608 565 613T541 627T489 637H472V683H481Q496 680 598 680T715 683H724V637H707Q634 633 622 598L621 399Q620 194 617 180Q617 179 615 171Q595 83 531 31T389 -22Q304 -22 226 33T130 192Q129 201 128 412V622Z"></path><path data-c="6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" transform="translate(750,0)"></path><path data-c="74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z" transform="translate(1306,0)"></path><path data-c="69" d="M69 609Q69 637 87 653T131 669Q154 667 171 652T188 609Q188 579 171 564T129 549Q104 549 87 564T69 609ZM247 0Q232 3 143 3Q132 3 106 3T56 1L34 0H26V46H42Q70 46 91 49Q100 53 102 60T104 102V205V293Q104 345 102 359T88 378Q74 385 41 385H30V408Q30 431 32 431L42 432Q52 433 70 434T106 436Q123 437 142 438T171 441T182 442H185V62Q190 52 197 50T232 46H255V0H247Z" transform="translate(1695,0)"></path><path data-c="6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z" transform="translate(1973,0)"></path><path data-c="20" d="" transform="translate(2251,0)"></path><path data-c="54" d="M36 443Q37 448 46 558T55 671V677H666V671Q667 666 676 556T685 443V437H645V443Q645 445 642 478T631 544T610 593Q593 614 555 625Q534 630 478 630H451H443Q417 630 414 618Q413 616 413 339V63Q420 53 439 50T528 46H558V0H545L361 3Q186 1 177 0H164V46H194Q264 46 283 49T309 63V339V550Q309 620 304 625T271 630H244H224Q154 630 119 601Q101 585 93 554T81 486T76 443V437H36V443Z" transform="translate(2501,0)"></path><path data-c="68" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 124T102 167T103 217T103 272T103 329Q103 366 103 407T103 482T102 542T102 586T102 603Q99 622 88 628T43 637H25V660Q25 683 27 683L37 684Q47 685 66 686T103 688Q120 689 140 690T170 693T181 694H184V367Q244 442 328 442Q451 442 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" transform="translate(3223,0)"></path><path data-c="65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" transform="translate(3779,0)"></path><path data-c="20" d="" transform="translate(4223,0)"></path><path data-c="45" d="M128 619Q121 626 117 628T101 631T58 634H25V680H597V676Q599 670 611 560T625 444V440H585V444Q584 447 582 465Q578 500 570 526T553 571T528 601T498 619T457 629T411 633T353 634Q266 634 251 633T233 622Q233 622 233 621Q232 619 232 497V376H286Q359 378 377 385Q413 401 416 469Q416 471 416 473V493H456V213H416V233Q415 268 408 288T383 317T349 328T297 330Q290 330 286 330H232V196V114Q232 57 237 52Q243 47 289 47H340H391Q428 47 452 50T505 62T552 92T584 146Q594 172 599 200T607 247T612 270V273H652V270Q651 267 632 137T610 3V0H25V46H58Q100 47 109 49T128 61V619Z" transform="translate(4473,0)"></path><path data-c="6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" transform="translate(5154,0)"></path><path data-c="64" d="M376 495Q376 511 376 535T377 568Q377 613 367 624T316 637H298V660Q298 683 300 683L310 684Q320 685 339 686T376 688Q393 689 413 690T443 693T454 694H457V390Q457 84 458 81Q461 61 472 55T517 46H535V0Q533 0 459 -5T380 -11H373V44L365 37Q307 -11 235 -11Q158 -11 96 50T34 215Q34 315 97 378T244 442Q319 442 376 393V495ZM373 342Q328 405 260 405Q211 405 173 369Q146 341 139 305T131 211Q131 155 138 120T173 59Q203 26 251 26Q322 26 373 103V342Z" transform="translate(5710,0)"></path></g></g></g></svg></mjx-container> 中的终章之一，即《<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.244ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 1876 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="4D" d="M132 622Q125 629 121 631T105 634T62 637H29V683H135Q221 683 232 682T249 675Q250 674 354 398L458 124L562 398Q666 674 668 675Q671 681 683 682T781 683H887V637H854Q814 636 803 634T785 622V61Q791 51 802 49T854 46H887V0H876Q855 3 736 3Q605 3 596 0H585V46H618Q660 47 669 49T688 61V347Q688 424 688 461T688 546T688 613L687 632Q454 14 450 7Q446 1 430 1T410 7Q409 9 292 316L176 624V606Q175 588 175 543T175 463T175 356L176 86Q187 50 261 46H278V0H269Q254 3 154 3Q52 3 37 0H29V46H46Q78 48 98 56T122 69T132 86V622Z"></path><path data-c="2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z" transform="translate(917,0)"></path><path data-c="45" d="M128 619Q121 626 117 628T101 631T58 634H25V680H597V676Q599 670 611 560T625 444V440H585V444Q584 447 582 465Q578 500 570 526T553 571T528 601T498 619T457 629T411 633T353 634Q266 634 251 633T233 622Q233 622 233 621Q232 619 232 497V376H286Q359 378 377 385Q413 401 416 469Q416 471 416 473V493H456V213H416V233Q415 268 408 288T383 317T349 328T297 330Q290 330 286 330H232V196V114Q232 57 237 52Q243 47 289 47H340H391Q428 47 452 50T505 62T552 92T584 146Q594 172 599 200T607 247T612 270V273H652V270Q651 267 632 137T610 3V0H25V46H58Q100 47 109 49T128 61V619Z" transform="translate(1195,0)"></path></g></g></g></svg></mjx-container>》，全称《<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.462ex;" xmlns="http://www.w3.org/2000/svg" width="12.109ex" height="2.007ex" role="img" focusable="false" viewBox="0 -683 5352 887"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="4D" d="M132 622Q125 629 121 631T105 634T62 637H29V683H135Q221 683 232 682T249 675Q250 674 354 398L458 124L562 398Q666 674 668 675Q671 681 683 682T781 683H887V637H854Q814 636 803 634T785 622V61Q791 51 802 49T854 46H887V0H876Q855 3 736 3Q605 3 596 0H585V46H618Q660 47 669 49T688 61V347Q688 424 688 461T688 546T688 613L687 632Q454 14 450 7Q446 1 430 1T410 7Q409 9 292 316L176 624V606Q175 588 175 543T175 463T175 356L176 86Q187 50 261 46H278V0H269Q254 3 154 3Q52 3 37 0H29V46H46Q78 48 98 56T122 69T132 86V622Z"></path><path data-c="79" d="M69 -66Q91 -66 104 -80T118 -116Q118 -134 109 -145T91 -160Q84 -163 97 -166Q104 -168 111 -168Q131 -168 148 -159T175 -138T197 -106T213 -75T225 -43L242 0L170 183Q150 233 125 297Q101 358 96 368T80 381Q79 382 78 382Q66 385 34 385H19V431H26L46 430Q65 430 88 429T122 428Q129 428 142 428T171 429T200 430T224 430L233 431H241V385H232Q183 385 185 366L286 112Q286 113 332 227L376 341V350Q376 365 366 373T348 383T334 385H331V431H337H344Q351 431 361 431T382 430T405 429T422 429Q477 429 503 431H508V385H497Q441 380 422 345Q420 343 378 235T289 9T227 -131Q180 -204 113 -204Q69 -204 44 -177T19 -116Q19 -89 35 -78T69 -66Z" transform="translate(917,0)"></path><path data-c="20" d="" transform="translate(1445,0)"></path><path data-c="45" d="M128 619Q121 626 117 628T101 631T58 634H25V680H597V676Q599 670 611 560T625 444V440H585V444Q584 447 582 465Q578 500 570 526T553 571T528 601T498 619T457 629T411 633T353 634Q266 634 251 633T233 622Q233 622 233 621Q232 619 232 497V376H286Q359 378 377 385Q413 401 416 469Q416 471 416 473V493H456V213H416V233Q415 268 408 288T383 317T349 328T297 330Q290 330 286 330H232V196V114Q232 57 237 52Q243 47 289 47H340H391Q428 47 452 50T505 62T552 92T584 146Q594 172 599 200T607 247T612 270V273H652V270Q651 267 632 137T610 3V0H25V46H58Q100 47 109 49T128 61V619Z" transform="translate(1695,0)"></path><path data-c="74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z" transform="translate(2376,0)"></path><path data-c="65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" transform="translate(2765,0)"></path><path data-c="72" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z" transform="translate(3209,0)"></path><path data-c="6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" transform="translate(3601,0)"></path><path data-c="69" d="M69 609Q69 637 87 653T131 669Q154 667 171 652T188 609Q188 579 171 564T129 549Q104 549 87 564T69 609ZM247 0Q232 3 143 3Q132 3 106 3T56 1L34 0H26V46H42Q70 46 91 49Q100 53 102 60T104 102V205V293Q104 345 102 359T88 378Q74 385 41 385H30V408Q30 431 32 431L42 432Q52 433 70 434T106 436Q123 437 142 438T171 441T182 442H185V62Q190 52 197 50T232 46H255V0H247Z" transform="translate(4157,0)"></path><path data-c="74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z" transform="translate(4435,0)"></path><path data-c="79" d="M69 -66Q91 -66 104 -80T118 -116Q118 -134 109 -145T91 -160Q84 -163 97 -166Q104 -168 111 -168Q131 -168 148 -159T175 -138T197 -106T213 -75T225 -43L242 0L170 183Q150 233 125 297Q101 358 96 368T80 381Q79 382 78 382Q66 385 34 385H19V431H26L46 430Q65 430 88 429T122 428Q129 428 142 428T171 429T200 430T224 430L233 431H241V385H232Q183 385 185 366L286 112Q286 113 332 227L376 341V350Q376 365 366 373T348 383T334 385H331V431H337H344Q351 431 361 431T382 430T405 429T422 429Q477 429 503 431H508V385H497Q441 380 422 345Q420 343 378 235T289 9T227 -131Q180 -204 113 -204Q69 -204 44 -177T19 -116Q19 -89 35 -78T69 -66Z" transform="translate(4824,0)"></path></g></g></g></svg></mjx-container>》）</p>
+<p>浅谈文学不过一个幌子，更重要的是复盘我最近在干什么，如果文学指的是我写的字的话，也算合乎情理了。那么，到来吧！炽热的六月，我已做好准备！</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>你在彷徨什么，止步的旅者？——我为将远去者送行。<br>你在迟疑什么，年轻的大梦想家？——我在勾勒渴求的未来。<br>时过境迁，流水向前，而你……——我已搭好云端天梯。<br>烈火将焚烤你的肉体，——那不足以击倒我的灵魂。<br>即使那将是无止黑夜？——即使那将是无止黑夜。<br>你是否保有儿时的信物？——我从未偏离初心的航线。<br>你是否有一刻想过放弃？——尚未到时候。<br>独行？还是陪伴？——当灵魂交织，终会寻得伴侣。<br>少年……——何事。<br>你要如何冷静。——因我始终希望明天。</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+    </div>
+
+    
+    
+    
+      
+
+  <div class="popular-posts-header">相关文章</div>
+  <ul class="related-posts">
+  
+      <li class="related-posts-item"><a href="/%E9%9B%A8%E4%B8%AD%EF%BC%8C%E6%A2%A6%E4%B8%80%E5%9C%BA/A-New-Restart/">重启人生</a></li>
+  
+      <li class="related-posts-item"><a href="/%E9%9B%A8%E4%B8%AD%EF%BC%8C%E6%A2%A6%E4%B8%80%E5%9C%BA/Soul-of-Loneliness-without-Hindrance/">海灯熄灭之夜</a></li>
+  
+      <li class="related-posts-item"><a href="/%E9%9B%A8%E4%B8%AD%EF%BC%8C%E6%A2%A6%E4%B8%80%E5%9C%BA/Sayounara-2022-and-My-Reincarnation/">再见了，2022</a></li>
+  
+      <li class="related-posts-item"><a href="/%E9%9B%A8%E4%B8%AD%EF%BC%8C%E6%A2%A6%E4%B8%80%E5%9C%BA/Stay-Always-Together/">风雨执舟，紫罗兰之梦</a></li>
+  
+      <li class="related-posts-item"><a href="/%E9%9B%A8%E4%B8%AD%EF%BC%8C%E6%A2%A6%E4%B8%80%E5%9C%BA/My-16th-For-Youth/">十六岁</a></li>
+  
+  </ul>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E9%9A%8F%E7%AC%94/" rel="tag"># 随笔</a>
+              <a href="/tags/%E5%9B%9E%E5%BF%86/" rel="tag"># 回忆</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/%E5%B0%91%E5%B9%B4%E6%B2%89%E5%85%A5%E8%BF%87%E7%9A%84%E6%A2%A6/%E8%BF%B7%E9%86%89%E5%8D%83%E6%B8%B8/Arknight-BABEL/" rel="prev" title="巴别塔">
+      <i class="fa fa-chevron-left"></i> 巴别塔
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Fallen Shadow"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Fallen Shadow</p>
+  <div class="site-description" itemprop="description">誰も悪くないから、辛いだな。<br>自卑的人，往往只剩下温柔了啊……</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">207</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">24</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">297</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/LucarEternity" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;LucarEternity" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="skype:live:.cid.7ca038c9215763f1?call|chat" title="Skype → skype:live:.cid.7ca038c9215763f1?call|chat" rel="noopener" target="_blank"><i class="fab fa-skype fa-fw"></i>Skype</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/356159259?spm_id_from=333.1007.0.0" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;356159259?spm_id_from&#x3D;333.1007.0.0" rel="noopener" target="_blank"><i class="fab fa-bilibili fa-fw"></i>Bilibili</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://music.163.com/#/artist?id=52150816" title="CloudMusic → https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;artist?id&#x3D;52150816" rel="noopener" target="_blank"><i class="fab fa-cloudmusic fa-fw"></i>CloudMusic</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.luogu.com.cn/user/444040" title="Luogu → https:&#x2F;&#x2F;www.luogu.com.cn&#x2F;user&#x2F;444040" rel="noopener" target="_blank"><i class="fab fa-luogu fa-fw"></i>Luogu</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/eternity-81-90" title="Zhihu → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;eternity-81-90" rel="noopener" target="_blank"><i class="fab fa-zhihu fa-fw"></i>Zhihu</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://codeforces.com/profile/eEternalF" title="CodeForces → https:&#x2F;&#x2F;codeforces.com&#x2F;profile&#x2F;eEternalF" rel="noopener" target="_blank"><i class="fab fa-codeforces fa-fw"></i>CodeForces</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://loj.ac/u/_Eternal_" title="LibreOj → https:&#x2F;&#x2F;loj.ac&#x2F;u&#x2F;_Eternal_" rel="noopener" target="_blank"><i class="fab fa-libreoj fa-fw"></i>LibreOj</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="http://wpa.qq.com/msgrd?v=3&uin=3579685229&site=qq&menu=yes" title="QQ → http:&#x2F;&#x2F;wpa.qq.com&#x2F;msgrd?v&#x3D;3&amp;uin&#x3D;3579685229&amp;site&#x3D;qq&amp;menu&#x3D;yes" rel="noopener" target="_blank"><i class="fab fa-qq fa-fw"></i>QQ</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://atcoder.jp/users/EternityF" title="AtCoder → https:&#x2F;&#x2F;atcoder.jp&#x2F;users&#x2F;EternityF" rel="noopener" target="_blank"><i class="fab fa-atcoder fa-fw"></i>AtCoder</a>
+      </span>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">落幕の残影</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">2.1m</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">31:49</span>
+</div>
+  <div class="running-time">
+    <span id="timeDate"></span>
+    <span id="times"></span>
+    <script>
+        var now = new Date();
+        function createtime() {
+            var grt= new Date("01/25/2022 13:14:20");
+            now.setTime(now.getTime()+250);
+            days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+            hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+            if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+            mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+            document.getElementById("timeDate").innerHTML = "本站已经安全运行 " + dnum + " 天";
+            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+        }
+    setInterval("createtime()",250);
+    </script>
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+<script>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '5668763013a9ee15351a',
+      clientSecret: '829dedf54a52d013b70ae34590fb8d195486025d',
+      repo        : 'lucareternity.github.io',
+      owner       : 'LucarEternity',
+      admin       : ['LucarEternity'],
+      id          : 'aed4ef503d04bc084f0179e77aa298d0',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>

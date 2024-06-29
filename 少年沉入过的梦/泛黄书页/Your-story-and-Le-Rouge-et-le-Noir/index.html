@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/patient.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"violeteternal.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+  <style type="text/css">
+div.content.block.note, details.content.box.note,div.content.block.abstract, details.content.box.abstract,div.content.block.info, details.content.box.info,div.content.block.tip, details.content.box.tip,div.content.block.success, details.content.box.success,div.content.block.question, details.content.box.question,div.content.block.warning, details.content.box.warning,div.content.block.failure, details.content.box.failure,div.content.block.danger, details.content.box.danger,div.content.block.bug, details.content.box.bug,div.content.block.example, details.content.box.example,div.content.block.quote, details.content.box.quote,div.content.block.code, details.content.box.code {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.content.block.note, details.content.box.note {
+  border-color: #448aff;
+}
+div.content.block.abstract, details.content.box.abstract {
+  border-color: #00b0ff;
+}
+div.content.block.info, details.content.box.info {
+  border-color: #00b8d4;
+}
+div.content.block.tip, details.content.box.tip {
+  border-color: #00bfa5;
+}
+div.content.block.success, details.content.box.success {
+  border-color: #00c853;
+}
+div.content.block.question, details.content.box.question {
+  border-color: #64dd17;
+}
+div.content.block.warning, details.content.box.warning {
+  border-color: #ff9100;
+}
+div.content.block.failure, details.content.box.failure {
+  border-color: #ff5252;
+}
+div.content.block.danger, details.content.box.danger {
+  border-color: #ff1744;
+}
+div.content.block.bug, details.content.box.bug {
+  border-color: #f50057;
+}
+div.content.block.example, details.content.box.example {
+  border-color: #651fff;
+}
+div.content.block.quote, details.content.box.quote {
+  border-color: #9e9e9e;
+}
+div.content.block.code, details.content.box.code {
+  border-color: #A0A0A0;
+}
+div.content.block.note:focus-within, details.content.box.note:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.content.block.abstract:focus-within, details.content.box.abstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.content.block.info:focus-within, details.content.box.info:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.content.block.tip:focus-within, details.content.box.tip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.content.block.success:focus-within, details.content.box.success:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.content.block.question:focus-within, details.content.box.question:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.content.block.warning:focus-within, details.content.box.warning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.content.block.failure:focus-within, details.content.box.failure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.content.block.danger:focus-within, details.content.box.danger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.content.block.bug:focus-within, details.content.box.bug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.content.block.example:focus-within, details.content.box.example:focus-within {
+  box-shadow: 0 0 0 .2rem #651fff1a;
+}
+div.content.block.quote:focus-within, details.content.box.quote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.content.block.code:focus-within, details.content.box.code:focus-within {
+  box-shadow: 0 0 0 .2rem #A0A0A01a;
+}
+div.content.block.note *, details.content.box.note *,div.content.block.abstract *, details.content.box.abstract *,div.content.block.info *, details.content.box.info *,div.content.block.tip *, details.content.box.tip *,div.content.block.success *, details.content.box.success *,div.content.block.question *, details.content.box.question *,div.content.block.warning *, details.content.box.warning *,div.content.block.failure *, details.content.box.failure *,div.content.block.danger *, details.content.box.danger *,div.content.block.bug *, details.content.box.bug *,div.content.block.example *, details.content.box.example *,div.content.block.quote *, details.content.box.quote *,div.content.block.code *, details.content.box.code * {
+  box-sizing: border-box;
+}
+div.content.block.note > p.content.block-title, details.content.box.note > summary,div.content.block.abstract > p.content.block-title, details.content.box.abstract > summary,div.content.block.info > p.content.block-title, details.content.box.info > summary,div.content.block.tip > p.content.block-title, details.content.box.tip > summary,div.content.block.success > p.content.block-title, details.content.box.success > summary,div.content.block.question > p.content.block-title, details.content.box.question > summary,div.content.block.warning > p.content.block-title, details.content.box.warning > summary,div.content.block.failure > p.content.block-title, details.content.box.failure > summary,div.content.block.danger > p.content.block-title, details.content.box.danger > summary,div.content.block.bug > p.content.block-title, details.content.box.bug > summary,div.content.block.example > p.content.block-title, details.content.box.example > summary,div.content.block.quote > p.content.block-title, details.content.box.quote > summary,div.content.block.code > p.content.block-title, details.content.box.code > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.content.box.note > summary,details.content.box.abstract > summary,details.content.box.info > summary,details.content.box.tip > summary,details.content.box.success > summary,details.content.box.question > summary,details.content.box.warning > summary,details.content.box.failure > summary,details.content.box.danger > summary,details.content.box.bug > summary,details.content.box.example > summary,details.content.box.quote > summary,details.content.box.code > summary {
+  cursor: pointer;
+}
+details.content.box.note:not([open]) > summary,details.content.box.abstract:not([open]) > summary,details.content.box.info:not([open]) > summary,details.content.box.tip:not([open]) > summary,details.content.box.success:not([open]) > summary,details.content.box.question:not([open]) > summary,details.content.box.warning:not([open]) > summary,details.content.box.failure:not([open]) > summary,details.content.box.danger:not([open]) > summary,details.content.box.bug:not([open]) > summary,details.content.box.example:not([open]) > summary,details.content.box.quote:not([open]) > summary,details.content.box.code:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.content.block.note > p.content.block-title, details.content.box.note > summary {
+  background-color: #448aff1a;
+}
+div.content.block.abstract > p.content.block-title, details.content.box.abstract > summary {
+  background-color: #00b0ff1a;
+}
+div.content.block.info > p.content.block-title, details.content.box.info > summary {
+  background-color: #00b8d41a;
+}
+div.content.block.tip > p.content.block-title, details.content.box.tip > summary {
+  background-color: #00bfa51a;
+}
+div.content.block.success > p.content.block-title, details.content.box.success > summary {
+  background-color: #00c8531a;
+}
+div.content.block.question > p.content.block-title, details.content.box.question > summary {
+  background-color: #64dd171a;
+}
+div.content.block.warning > p.content.block-title, details.content.box.warning > summary {
+  background-color: #ff91001a;
+}
+div.content.block.failure > p.content.block-title, details.content.box.failure > summary {
+  background-color: #ff52521a;
+}
+div.content.block.danger > p.content.block-title, details.content.box.danger > summary {
+  background-color: #ff17441a;
+}
+div.content.block.bug > p.content.block-title, details.content.box.bug > summary {
+  background-color: #f500571a;
+}
+div.content.block.example > p.content.block-title, details.content.box.example > summary {
+  background-color: #651fff1a;
+}
+div.content.block.quote > p.content.block-title, details.content.box.quote > summary {
+  background-color: #9e9e9e1a;
+}
+div.content.block.code > p.content.block-title, details.content.box.code > summary {
+  background-color: #A0A0A01a;
+}
+div.content.block.note > p.content.block-title > i, details.content.box.note > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.content.block.abstract > p.content.block-title > i, details.content.box.abstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.content.block.info > p.content.block-title > i, details.content.box.info > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.content.block.tip > p.content.block-title > i, details.content.box.tip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.content.block.success > p.content.block-title > i, details.content.box.success > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.content.block.question > p.content.block-title > i, details.content.box.question > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.content.block.warning > p.content.block-title > i, details.content.box.warning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.content.block.failure > p.content.block-title > i, details.content.box.failure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.content.block.danger > p.content.block-title > i, details.content.box.danger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.content.block.bug > p.content.block-title > i, details.content.box.bug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.content.block.example > p.content.block-title > i, details.content.box.example > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #651fff;
+}
+div.content.block.quote > p.content.block-title > i, details.content.box.quote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+div.content.block.code > p.content.block-title > i, details.content.box.code > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #A0A0A0;
+}
+details.content.box.note > summary > div.box-open-button,details.content.box.abstract > summary > div.box-open-button,details.content.box.info > summary > div.box-open-button,details.content.box.tip > summary > div.box-open-button,details.content.box.success > summary > div.box-open-button,details.content.box.question > summary > div.box-open-button,details.content.box.warning > summary > div.box-open-button,details.content.box.failure > summary > div.box-open-button,details.content.box.danger > summary > div.box-open-button,details.content.box.bug > summary > div.box-open-button,details.content.box.example > summary > div.box-open-button,details.content.box.quote > summary > div.box-open-button,details.content.box.code > summary > div.box-open-button {
+  float: right;
+}
+details.content.box.note > summary > div.box-open-button > i,details.content.box.abstract > summary > div.box-open-button > i,details.content.box.info > summary > div.box-open-button > i,details.content.box.tip > summary > div.box-open-button > i,details.content.box.success > summary > div.box-open-button > i,details.content.box.question > summary > div.box-open-button > i,details.content.box.warning > summary > div.box-open-button > i,details.content.box.failure > summary > div.box-open-button > i,details.content.box.danger > summary > div.box-open-button > i,details.content.box.bug > summary > div.box-open-button > i,details.content.box.example > summary > div.box-open-button > i,details.content.box.quote > summary > div.box-open-button > i,details.content.box.code > summary > div.box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.content.box.note:not([open]) > summary > div.box-open-button i,details.content.box.abstract:not([open]) > summary > div.box-open-button i,details.content.box.info:not([open]) > summary > div.box-open-button i,details.content.box.tip:not([open]) > summary > div.box-open-button i,details.content.box.success:not([open]) > summary > div.box-open-button i,details.content.box.question:not([open]) > summary > div.box-open-button i,details.content.box.warning:not([open]) > summary > div.box-open-button i,details.content.box.failure:not([open]) > summary > div.box-open-button i,details.content.box.danger:not([open]) > summary > div.box-open-button i,details.content.box.bug:not([open]) > summary > div.box-open-button i,details.content.box.example:not([open]) > summary > div.box-open-button i,details.content.box.quote:not([open]) > summary > div.box-open-button i,details.content.box.code:not([open]) > summary > div.box-open-button i {
+  transform: rotate(270deg);
+}
+details.content.box.note[open] > summary > div.box-open-button i,details.content.box.abstract[open] > summary > div.box-open-button i,details.content.box.info[open] > summary > div.box-open-button i,details.content.box.tip[open] > summary > div.box-open-button i,details.content.box.success[open] > summary > div.box-open-button i,details.content.box.question[open] > summary > div.box-open-button i,details.content.box.warning[open] > summary > div.box-open-button i,details.content.box.failure[open] > summary > div.box-open-button i,details.content.box.danger[open] > summary > div.box-open-button i,details.content.box.bug[open] > summary > div.box-open-button i,details.content.box.example[open] > summary > div.box-open-button i,details.content.box.quote[open] > summary > div.box-open-button i,details.content.box.code[open] > summary > div.box-open-button i {
+  transform: rotate(180deg);
+}
+details.content.box.note summary div.box-open-button i {
+  color: #448aff;
+}
+details.content.box.abstract summary div.box-open-button i {
+  color: #00b0ff;
+}
+details.content.box.info summary div.box-open-button i {
+  color: #00b8d4;
+}
+details.content.box.tip summary div.box-open-button i {
+  color: #00bfa5;
+}
+details.content.box.success summary div.box-open-button i {
+  color: #00c853;
+}
+details.content.box.question summary div.box-open-button i {
+  color: #64dd17;
+}
+details.content.box.warning summary div.box-open-button i {
+  color: #ff9100;
+}
+details.content.box.failure summary div.box-open-button i {
+  color: #ff5252;
+}
+details.content.box.danger summary div.box-open-button i {
+  color: #ff1744;
+}
+details.content.box.bug summary div.box-open-button i {
+  color: #f50057;
+}
+details.content.box.example summary div.box-open-button i {
+  color: #651fff;
+}
+details.content.box.quote summary div.box-open-button i {
+  color: #9e9e9e;
+}
+details.content.box.code summary div.box-open-button i {
+  color: #A0A0A0;
+}
+div.content.cards * {
+  box-sizing: border-box;
+}
+input.content.cards-input {
+  display: none;
+}
+div.content.cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.content.cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.content.cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.content.cards-label.active, label.content.cards-label:hover {
+  color: var(--cards-color);
+}
+div.content.cards-content {
+  display: none;
+}
+div.content.cards-content.active {
+  display: block;
+}
+</style>
+  <meta name="description" content="「每个人的心底都有一座坟墓，用来埋葬所爱的人。」">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《义忆》&amp;《红与黑》">
+<meta property="og:url" content="http://violeteternal.github.io/%E5%B0%91%E5%B9%B4%E6%B2%89%E5%85%A5%E8%BF%87%E7%9A%84%E6%A2%A6/%E6%B3%9B%E9%BB%84%E4%B9%A6%E9%A1%B5/Your-story-and-Le-Rouge-et-le-Noir/index.html">
+<meta property="og:site_name" content="Reincarnation">
+<meta property="og:description" content="「每个人的心底都有一座坟墓，用来埋葬所爱的人。」">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-02-14T04:17:19.000Z">
+<meta property="article:modified_time" content="2024-02-23T14:45:15.114Z">
+<meta property="article:author" content="Fallen Shadow">
+<meta property="article:tag" content="治愈">
+<meta property="article:tag" content="致郁">
+<meta property="article:tag" content="青春">
+<meta property="article:tag" content="恋爱">
+<meta property="article:tag" content="轻小说">
+<meta property="article:tag" content="三秋缒">
+<meta property="article:tag" content="现实主义">
+<meta property="article:tag" content="文学著作">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://violeteternal.github.io/%E5%B0%91%E5%B9%B4%E6%B2%89%E5%85%A5%E8%BF%87%E7%9A%84%E6%A2%A6/%E6%B3%9B%E9%BB%84%E4%B9%A6%E9%A1%B5/Your-story-and-Le-Rouge-et-le-Noir/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>《义忆》&《红与黑》 | Reincarnation</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Reincarnation</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">正因为梦易碎，才格外美好。</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-road">
+
+    <a href="/road/" rel="section"><i class="fa fa-road fa-fw"></i>归程</a>
+
+  </li>
+        <li class="menu-item menu-item-past">
+
+    <a href="/past/" rel="section"><i class="fab fa-house-chimney-crack fa-fw"></i>旧日残垣</a>
+
+  </li>
+        <li class="menu-item menu-item-friendship">
+
+    <a href="/friendship/" rel="section"><i class="fa fa-users fa-fw"></i>友链</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E5%B0%91%E5%B9%B4%E6%B2%89%E5%85%A5%E8%BF%87%E7%9A%84%E6%A2%A6/%E6%B3%9B%E9%BB%84%E4%B9%A6%E9%A1%B5/Your-story-and-Le-Rouge-et-le-Noir/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Fallen Shadow">
+      <meta itemprop="description" content="誰も悪くないから、辛いだな。<br>自卑的人，往往只剩下温柔了啊……">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Reincarnation">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          《义忆》&《红与黑》
+        </h1>
+
+        <div class="post-meta">
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2024-02-14 12:17:19" itemprop="dateCreated datePublished" datetime="2024-02-14T12:17:19+08:00">2024-02-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2024-02-23 22:45:15" itemprop="dateModified" datetime="2024-02-23T22:45:15+08:00">2024-02-23</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B0%91%E5%B9%B4%E6%B2%89%E5%85%A5%E8%BF%87%E7%9A%84%E6%A2%A6/" itemprop="url" rel="index"><span itemprop="name">少年沉入过的梦</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B0%91%E5%B9%B4%E6%B2%89%E5%85%A5%E8%BF%87%E7%9A%84%E6%A2%A6/%E6%B3%9B%E9%BB%84%E4%B9%A6%E9%A1%B5/" itemprop="url" rel="index"><span itemprop="name">泛黄书页</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>928</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>「每个人的心底都有一座坟墓，用来埋葬所爱的人。」</p>
+<span id="more"></span>
+<p>关于红与黑，或许还有很多东西值得去探讨，可惜我才学不足，浅尝辄止，就此发表鄙人拙见。</p>
+<h2 id="火指引未来，火携带死亡"><a href="#火指引未来，火携带死亡" class="headerlink" title="火指引未来，火携带死亡"></a>火指引未来，火携带死亡</h2><p>在我看来，于连，是一个充满抱负，但不择手段，极端冷血的奋斗者。</p>
+<p>他拥有能够背诵整个《圣经》的惊人记忆力，拥有清秀的外表，能深得富贵女子的内心。他利用，他思索，他的偶像是征战四方的拿破仑，于是他拥有同等的野心。这野心让他登上权贵的高峰，也让他跌至死亡的谷底。</p>
+<p>德瑞纳夫人来看于连，她在法庭上表明谅解于连，玛特儿小姐也没有放弃于连，她在积极营救他。于连在监狱里重燃了对德瑞纳夫人的爱情，他们像一堆还有些许光亮快要熄灭的柴火，在彻底熄灭之前用力的燃烧。“于连的野心在他心里已经死去了，另一种热情在野心的尸灰里冒出芽来。”曾经于连在维利埃尔高山的山洞看到的是法国最富庶的省份，激情和野心使他生存，而现在他只是想在那个山洞得到安息。</p>
+<p>每当于连在爱情和理想之间徘徊时，他总会猛然清醒然后选择后者。他把他的两段感情都当做他实现梦想的奠基石，明明在情海中浮浮沉沉，不得上岸，却始终抱着游过大西洋的想法，最终栽在海里。</p>
+<p>他值得敬佩，他敢做，胜于这个时代畏缩不前的少年；他敢说，强于这个时代隐于幕后的政客；他敢当，于是败于那个时代过度现实的荒野。</p>
+<p>他因为自己的过去而死去，但他死得并不可悲，他是那个时代尝试打破阶级的先驱。</p>
+<hr>
+<h2 id="英雄与「」"><a href="#英雄与「」" class="headerlink" title="英雄与「」"></a>英雄与「」</h2><p>经典的三秋缒式恋爱和 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="3.143ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 1389 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="42" d="M131 622Q124 629 120 631T104 634T61 637H28V683H229H267H346Q423 683 459 678T531 651Q574 627 599 590T624 512Q624 461 583 419T476 360L466 357Q539 348 595 302T651 187Q651 119 600 67T469 3Q456 1 242 0H28V46H61Q103 47 112 49T131 61V622ZM511 513Q511 560 485 594T416 636Q415 636 403 636T371 636T333 637Q266 637 251 636T232 628Q229 624 229 499V374H312L396 375L406 377Q410 378 417 380T442 393T474 417T499 456T511 513ZM537 188Q537 239 509 282T430 336L329 337H229V200V116Q229 57 234 52Q240 47 334 47H383Q425 47 443 53Q486 67 511 104T537 188Z"></path><path data-c="45" d="M128 619Q121 626 117 628T101 631T58 634H25V680H597V676Q599 670 611 560T625 444V440H585V444Q584 447 582 465Q578 500 570 526T553 571T528 601T498 619T457 629T411 633T353 634Q266 634 251 633T233 622Q233 622 233 621Q232 619 232 497V376H286Q359 378 377 385Q413 401 416 469Q416 471 416 473V493H456V213H416V233Q415 268 408 288T383 317T349 328T297 330Q290 330 286 330H232V196V114Q232 57 237 52Q243 47 289 47H340H391Q428 47 452 50T505 62T552 92T584 146Q594 172 599 200T607 247T612 270V273H652V270Q651 267 632 137T610 3V0H25V46H58Q100 47 109 49T128 61V619Z" transform="translate(708,0)"></path></g></g></g></svg></mjx-container>，<del>我怀疑他是江郎才尽了才写不出新书了。</del></p>
+<p>但是依然看的得劲，只是这次看了半本大概整体结构都猜得出来了。这一次的救赎，不同于重启人生的过去与未来寻找人生的答案，不同于三日间的幸福从未来寻找答案，不同于那年夏天从过去寻找答案。</p>
+<p>《义忆》从幻想中，找到破解现实的方法。同样渴望着爱的两人。本就是命中注定，奈何一人厌倦了现实，执着于谎言，一人打心底憎恶着慌言，哪怕现实不尽意。为他们的迟到的相遇感到惋惜，又不得不为他们仅有的相遇感到庆幸。</p>
+<p>那是一种很日常的恋情，在前期，我为千寻的绝情感到痛心，但我没有考虑到他悲惨的童年；我为灯花的自私而鄙夷，但我同样没有经历过如此的过去。现实中的人都缺乏救赎，但更多情况下他们都把那些情感藏于内心了。</p>
+<p>那么，隐于生活的，我的英雄，又在何处？</p>
+
+    </div>
+
+    
+    
+    
+      
+
+  <div class="popular-posts-header">相关文章</div>
+  <ul class="related-posts">
+  
+      <li class="related-posts-item"><a href="/%E5%B0%91%E5%B9%B4%E6%B2%89%E5%85%A5%E8%BF%87%E7%9A%84%E6%A2%A6/%E5%99%AA%E7%99%BD%E5%BD%B1%E5%83%8F/Suzume/">《铃芽之旅》——我是你的明天</a></li>
+  
+      <li class="related-posts-item"><a href="/%E5%B0%91%E5%B9%B4%E6%B2%89%E5%85%A5%E8%BF%87%E7%9A%84%E6%A2%A6/%E7%BB%9C%E7%BD%91%E4%B8%87%E5%8D%83/Boom/">Warma的爆炸电台</a></li>
+  
+      <li class="related-posts-item"><a href="/%E5%B0%91%E5%B9%B4%E6%B2%89%E5%85%A5%E8%BF%87%E7%9A%84%E6%A2%A6/%E8%BF%B7%E9%86%89%E5%8D%83%E6%B8%B8/Heaven-For-Death/">《Heaven For Death》——谎言，或许是必要的。</a></li>
+  
+      <li class="related-posts-item"><a href="/%E5%B0%91%E5%B9%B4%E6%B2%89%E5%85%A5%E8%BF%87%E7%9A%84%E6%A2%A6/%E8%BF%B7%E9%86%89%E5%8D%83%E6%B8%B8/Arknight-BABEL/">巴别塔</a></li>
+  
+      <li class="related-posts-item"><a href="/%E5%B0%91%E5%B9%B4%E6%B2%89%E5%85%A5%E8%BF%87%E7%9A%84%E6%A2%A6/%E8%BF%B7%E9%86%89%E5%8D%83%E6%B8%B8/Arknight-Hortus-Escapismo/">空想花庭</a></li>
+  
+  </ul>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%B2%BB%E6%84%88/" rel="tag"># 治愈</a>
+              <a href="/tags/%E8%87%B4%E9%83%81/" rel="tag"># 致郁</a>
+              <a href="/tags/%E9%9D%92%E6%98%A5/" rel="tag"># 青春</a>
+              <a href="/tags/%E6%81%8B%E7%88%B1/" rel="tag"># 恋爱</a>
+              <a href="/tags/%E8%BD%BB%E5%B0%8F%E8%AF%B4/" rel="tag"># 轻小说</a>
+              <a href="/tags/%E4%B8%89%E7%A7%8B%E7%BC%92/" rel="tag"># 三秋缒</a>
+              <a href="/tags/%E7%8E%B0%E5%AE%9E%E4%B8%BB%E4%B9%89/" rel="tag"># 现实主义</a>
+              <a href="/tags/%E6%96%87%E5%AD%A6%E8%91%97%E4%BD%9C/" rel="tag"># 文学著作</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/%E6%AF%94%E8%B5%9B-%E6%A8%A1%E6%8B%9F%E8%B5%9B/Contest20231116/" rel="prev" title="DCOJ - 长乐一中命题Day2">
+      <i class="fa fa-chevron-left"></i> DCOJ - 长乐一中命题Day2
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/%E5%B0%91%E5%B9%B4%E6%B2%89%E5%85%A5%E8%BF%87%E7%9A%84%E6%A2%A6/%E8%BF%B7%E9%86%89%E5%8D%83%E6%B8%B8/Arknight-BABEL/" rel="next" title="巴别塔">
+      巴别塔 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%81%AB%E6%8C%87%E5%BC%95%E6%9C%AA%E6%9D%A5%EF%BC%8C%E7%81%AB%E6%90%BA%E5%B8%A6%E6%AD%BB%E4%BA%A1"><span class="nav-text">火指引未来，火携带死亡</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%8B%B1%E9%9B%84%E4%B8%8E%E3%80%8C%E3%80%8D"><span class="nav-text">英雄与「」</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Fallen Shadow"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Fallen Shadow</p>
+  <div class="site-description" itemprop="description">誰も悪くないから、辛いだな。<br>自卑的人，往往只剩下温柔了啊……</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">207</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">24</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">297</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/LucarEternity" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;LucarEternity" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="skype:live:.cid.7ca038c9215763f1?call|chat" title="Skype → skype:live:.cid.7ca038c9215763f1?call|chat" rel="noopener" target="_blank"><i class="fab fa-skype fa-fw"></i>Skype</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/356159259?spm_id_from=333.1007.0.0" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;356159259?spm_id_from&#x3D;333.1007.0.0" rel="noopener" target="_blank"><i class="fab fa-bilibili fa-fw"></i>Bilibili</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://music.163.com/#/artist?id=52150816" title="CloudMusic → https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;artist?id&#x3D;52150816" rel="noopener" target="_blank"><i class="fab fa-cloudmusic fa-fw"></i>CloudMusic</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.luogu.com.cn/user/444040" title="Luogu → https:&#x2F;&#x2F;www.luogu.com.cn&#x2F;user&#x2F;444040" rel="noopener" target="_blank"><i class="fab fa-luogu fa-fw"></i>Luogu</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/eternity-81-90" title="Zhihu → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;eternity-81-90" rel="noopener" target="_blank"><i class="fab fa-zhihu fa-fw"></i>Zhihu</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://codeforces.com/profile/eEternalF" title="CodeForces → https:&#x2F;&#x2F;codeforces.com&#x2F;profile&#x2F;eEternalF" rel="noopener" target="_blank"><i class="fab fa-codeforces fa-fw"></i>CodeForces</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://loj.ac/u/_Eternal_" title="LibreOj → https:&#x2F;&#x2F;loj.ac&#x2F;u&#x2F;_Eternal_" rel="noopener" target="_blank"><i class="fab fa-libreoj fa-fw"></i>LibreOj</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="http://wpa.qq.com/msgrd?v=3&uin=3579685229&site=qq&menu=yes" title="QQ → http:&#x2F;&#x2F;wpa.qq.com&#x2F;msgrd?v&#x3D;3&amp;uin&#x3D;3579685229&amp;site&#x3D;qq&amp;menu&#x3D;yes" rel="noopener" target="_blank"><i class="fab fa-qq fa-fw"></i>QQ</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://atcoder.jp/users/EternityF" title="AtCoder → https:&#x2F;&#x2F;atcoder.jp&#x2F;users&#x2F;EternityF" rel="noopener" target="_blank"><i class="fab fa-atcoder fa-fw"></i>AtCoder</a>
+      </span>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">落幕の残影</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">2.1m</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">31:49</span>
+</div>
+  <div class="running-time">
+    <span id="timeDate"></span>
+    <span id="times"></span>
+    <script>
+        var now = new Date();
+        function createtime() {
+            var grt= new Date("01/25/2022 13:14:20");
+            now.setTime(now.getTime()+250);
+            days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+            hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+            if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+            mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+            document.getElementById("timeDate").innerHTML = "本站已经安全运行 " + dnum + " 天";
+            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+        }
+    setInterval("createtime()",250);
+    </script>
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+<script>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '5668763013a9ee15351a',
+      clientSecret: '829dedf54a52d013b70ae34590fb8d195486025d',
+      repo        : 'lucareternity.github.io',
+      owner       : 'LucarEternity',
+      admin       : ['LucarEternity'],
+      id          : 'c3f6751527272e4bc1b01c394c74d6e2',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>

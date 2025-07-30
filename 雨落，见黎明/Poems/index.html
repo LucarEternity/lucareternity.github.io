@@ -1,0 +1,1989 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/patient.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"violeteternal.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+  <style type="text/css">
+div.content.block.note, details.content.box.note,div.content.block.abstract, details.content.box.abstract,div.content.block.info, details.content.box.info,div.content.block.tip, details.content.box.tip,div.content.block.success, details.content.box.success,div.content.block.question, details.content.box.question,div.content.block.warning, details.content.box.warning,div.content.block.failure, details.content.box.failure,div.content.block.danger, details.content.box.danger,div.content.block.bug, details.content.box.bug,div.content.block.example, details.content.box.example,div.content.block.quote, details.content.box.quote,div.content.block.code, details.content.box.code {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.content.block.note, details.content.box.note {
+  border-color: #448aff;
+}
+div.content.block.abstract, details.content.box.abstract {
+  border-color: #00b0ff;
+}
+div.content.block.info, details.content.box.info {
+  border-color: #00b8d4;
+}
+div.content.block.tip, details.content.box.tip {
+  border-color: #00bfa5;
+}
+div.content.block.success, details.content.box.success {
+  border-color: #00c853;
+}
+div.content.block.question, details.content.box.question {
+  border-color: #64dd17;
+}
+div.content.block.warning, details.content.box.warning {
+  border-color: #ff9100;
+}
+div.content.block.failure, details.content.box.failure {
+  border-color: #ff5252;
+}
+div.content.block.danger, details.content.box.danger {
+  border-color: #ff1744;
+}
+div.content.block.bug, details.content.box.bug {
+  border-color: #f50057;
+}
+div.content.block.example, details.content.box.example {
+  border-color: #651fff;
+}
+div.content.block.quote, details.content.box.quote {
+  border-color: #9e9e9e;
+}
+div.content.block.code, details.content.box.code {
+  border-color: #A0A0A0;
+}
+div.content.block.note:focus-within, details.content.box.note:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.content.block.abstract:focus-within, details.content.box.abstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.content.block.info:focus-within, details.content.box.info:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.content.block.tip:focus-within, details.content.box.tip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.content.block.success:focus-within, details.content.box.success:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.content.block.question:focus-within, details.content.box.question:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.content.block.warning:focus-within, details.content.box.warning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.content.block.failure:focus-within, details.content.box.failure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.content.block.danger:focus-within, details.content.box.danger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.content.block.bug:focus-within, details.content.box.bug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.content.block.example:focus-within, details.content.box.example:focus-within {
+  box-shadow: 0 0 0 .2rem #651fff1a;
+}
+div.content.block.quote:focus-within, details.content.box.quote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.content.block.code:focus-within, details.content.box.code:focus-within {
+  box-shadow: 0 0 0 .2rem #A0A0A01a;
+}
+div.content.block.note *, details.content.box.note *,div.content.block.abstract *, details.content.box.abstract *,div.content.block.info *, details.content.box.info *,div.content.block.tip *, details.content.box.tip *,div.content.block.success *, details.content.box.success *,div.content.block.question *, details.content.box.question *,div.content.block.warning *, details.content.box.warning *,div.content.block.failure *, details.content.box.failure *,div.content.block.danger *, details.content.box.danger *,div.content.block.bug *, details.content.box.bug *,div.content.block.example *, details.content.box.example *,div.content.block.quote *, details.content.box.quote *,div.content.block.code *, details.content.box.code * {
+  box-sizing: border-box;
+}
+div.content.block.note > p.content.block-title, details.content.box.note > summary,div.content.block.abstract > p.content.block-title, details.content.box.abstract > summary,div.content.block.info > p.content.block-title, details.content.box.info > summary,div.content.block.tip > p.content.block-title, details.content.box.tip > summary,div.content.block.success > p.content.block-title, details.content.box.success > summary,div.content.block.question > p.content.block-title, details.content.box.question > summary,div.content.block.warning > p.content.block-title, details.content.box.warning > summary,div.content.block.failure > p.content.block-title, details.content.box.failure > summary,div.content.block.danger > p.content.block-title, details.content.box.danger > summary,div.content.block.bug > p.content.block-title, details.content.box.bug > summary,div.content.block.example > p.content.block-title, details.content.box.example > summary,div.content.block.quote > p.content.block-title, details.content.box.quote > summary,div.content.block.code > p.content.block-title, details.content.box.code > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.content.box.note > summary,details.content.box.abstract > summary,details.content.box.info > summary,details.content.box.tip > summary,details.content.box.success > summary,details.content.box.question > summary,details.content.box.warning > summary,details.content.box.failure > summary,details.content.box.danger > summary,details.content.box.bug > summary,details.content.box.example > summary,details.content.box.quote > summary,details.content.box.code > summary {
+  cursor: pointer;
+}
+details.content.box.note:not([open]) > summary,details.content.box.abstract:not([open]) > summary,details.content.box.info:not([open]) > summary,details.content.box.tip:not([open]) > summary,details.content.box.success:not([open]) > summary,details.content.box.question:not([open]) > summary,details.content.box.warning:not([open]) > summary,details.content.box.failure:not([open]) > summary,details.content.box.danger:not([open]) > summary,details.content.box.bug:not([open]) > summary,details.content.box.example:not([open]) > summary,details.content.box.quote:not([open]) > summary,details.content.box.code:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.content.block.note > p.content.block-title, details.content.box.note > summary {
+  background-color: #448aff1a;
+}
+div.content.block.abstract > p.content.block-title, details.content.box.abstract > summary {
+  background-color: #00b0ff1a;
+}
+div.content.block.info > p.content.block-title, details.content.box.info > summary {
+  background-color: #00b8d41a;
+}
+div.content.block.tip > p.content.block-title, details.content.box.tip > summary {
+  background-color: #00bfa51a;
+}
+div.content.block.success > p.content.block-title, details.content.box.success > summary {
+  background-color: #00c8531a;
+}
+div.content.block.question > p.content.block-title, details.content.box.question > summary {
+  background-color: #64dd171a;
+}
+div.content.block.warning > p.content.block-title, details.content.box.warning > summary {
+  background-color: #ff91001a;
+}
+div.content.block.failure > p.content.block-title, details.content.box.failure > summary {
+  background-color: #ff52521a;
+}
+div.content.block.danger > p.content.block-title, details.content.box.danger > summary {
+  background-color: #ff17441a;
+}
+div.content.block.bug > p.content.block-title, details.content.box.bug > summary {
+  background-color: #f500571a;
+}
+div.content.block.example > p.content.block-title, details.content.box.example > summary {
+  background-color: #651fff1a;
+}
+div.content.block.quote > p.content.block-title, details.content.box.quote > summary {
+  background-color: #9e9e9e1a;
+}
+div.content.block.code > p.content.block-title, details.content.box.code > summary {
+  background-color: #A0A0A01a;
+}
+div.content.block.note > p.content.block-title > i, details.content.box.note > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.content.block.abstract > p.content.block-title > i, details.content.box.abstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.content.block.info > p.content.block-title > i, details.content.box.info > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.content.block.tip > p.content.block-title > i, details.content.box.tip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.content.block.success > p.content.block-title > i, details.content.box.success > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.content.block.question > p.content.block-title > i, details.content.box.question > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.content.block.warning > p.content.block-title > i, details.content.box.warning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.content.block.failure > p.content.block-title > i, details.content.box.failure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.content.block.danger > p.content.block-title > i, details.content.box.danger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.content.block.bug > p.content.block-title > i, details.content.box.bug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.content.block.example > p.content.block-title > i, details.content.box.example > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #651fff;
+}
+div.content.block.quote > p.content.block-title > i, details.content.box.quote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+div.content.block.code > p.content.block-title > i, details.content.box.code > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #A0A0A0;
+}
+details.content.box.note > summary > div.box-open-button,details.content.box.abstract > summary > div.box-open-button,details.content.box.info > summary > div.box-open-button,details.content.box.tip > summary > div.box-open-button,details.content.box.success > summary > div.box-open-button,details.content.box.question > summary > div.box-open-button,details.content.box.warning > summary > div.box-open-button,details.content.box.failure > summary > div.box-open-button,details.content.box.danger > summary > div.box-open-button,details.content.box.bug > summary > div.box-open-button,details.content.box.example > summary > div.box-open-button,details.content.box.quote > summary > div.box-open-button,details.content.box.code > summary > div.box-open-button {
+  float: right;
+}
+details.content.box.note > summary > div.box-open-button > i,details.content.box.abstract > summary > div.box-open-button > i,details.content.box.info > summary > div.box-open-button > i,details.content.box.tip > summary > div.box-open-button > i,details.content.box.success > summary > div.box-open-button > i,details.content.box.question > summary > div.box-open-button > i,details.content.box.warning > summary > div.box-open-button > i,details.content.box.failure > summary > div.box-open-button > i,details.content.box.danger > summary > div.box-open-button > i,details.content.box.bug > summary > div.box-open-button > i,details.content.box.example > summary > div.box-open-button > i,details.content.box.quote > summary > div.box-open-button > i,details.content.box.code > summary > div.box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.content.box.note:not([open]) > summary > div.box-open-button i,details.content.box.abstract:not([open]) > summary > div.box-open-button i,details.content.box.info:not([open]) > summary > div.box-open-button i,details.content.box.tip:not([open]) > summary > div.box-open-button i,details.content.box.success:not([open]) > summary > div.box-open-button i,details.content.box.question:not([open]) > summary > div.box-open-button i,details.content.box.warning:not([open]) > summary > div.box-open-button i,details.content.box.failure:not([open]) > summary > div.box-open-button i,details.content.box.danger:not([open]) > summary > div.box-open-button i,details.content.box.bug:not([open]) > summary > div.box-open-button i,details.content.box.example:not([open]) > summary > div.box-open-button i,details.content.box.quote:not([open]) > summary > div.box-open-button i,details.content.box.code:not([open]) > summary > div.box-open-button i {
+  transform: rotate(270deg);
+}
+details.content.box.note[open] > summary > div.box-open-button i,details.content.box.abstract[open] > summary > div.box-open-button i,details.content.box.info[open] > summary > div.box-open-button i,details.content.box.tip[open] > summary > div.box-open-button i,details.content.box.success[open] > summary > div.box-open-button i,details.content.box.question[open] > summary > div.box-open-button i,details.content.box.warning[open] > summary > div.box-open-button i,details.content.box.failure[open] > summary > div.box-open-button i,details.content.box.danger[open] > summary > div.box-open-button i,details.content.box.bug[open] > summary > div.box-open-button i,details.content.box.example[open] > summary > div.box-open-button i,details.content.box.quote[open] > summary > div.box-open-button i,details.content.box.code[open] > summary > div.box-open-button i {
+  transform: rotate(180deg);
+}
+details.content.box.note summary div.box-open-button i {
+  color: #448aff;
+}
+details.content.box.abstract summary div.box-open-button i {
+  color: #00b0ff;
+}
+details.content.box.info summary div.box-open-button i {
+  color: #00b8d4;
+}
+details.content.box.tip summary div.box-open-button i {
+  color: #00bfa5;
+}
+details.content.box.success summary div.box-open-button i {
+  color: #00c853;
+}
+details.content.box.question summary div.box-open-button i {
+  color: #64dd17;
+}
+details.content.box.warning summary div.box-open-button i {
+  color: #ff9100;
+}
+details.content.box.failure summary div.box-open-button i {
+  color: #ff5252;
+}
+details.content.box.danger summary div.box-open-button i {
+  color: #ff1744;
+}
+details.content.box.bug summary div.box-open-button i {
+  color: #f50057;
+}
+details.content.box.example summary div.box-open-button i {
+  color: #651fff;
+}
+details.content.box.quote summary div.box-open-button i {
+  color: #9e9e9e;
+}
+details.content.box.code summary div.box-open-button i {
+  color: #A0A0A0;
+}
+div.content.cards * {
+  box-sizing: border-box;
+}
+input.content.cards-input {
+  display: none;
+}
+div.content.cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.content.cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.content.cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.content.cards-label.active, label.content.cards-label:hover {
+  color: var(--cards-color);
+}
+div.content.cards-content {
+  display: none;
+}
+div.content.cards-content.active {
+  display: block;
+}
+</style>
+  <meta name="description" content="往昔……最后的记忆。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="残垣，与半截诗篇">
+<meta property="og:url" content="http://violeteternal.github.io/%E9%9B%A8%E8%90%BD%EF%BC%8C%E8%A7%81%E9%BB%8E%E6%98%8E/Poems/index.html">
+<meta property="og:site_name" content="Reincarnation">
+<meta property="og:description" content="往昔……最后的记忆。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-06-20T03:59:37.000Z">
+<meta property="article:modified_time" content="2025-07-30T14:18:04.419Z">
+<meta property="article:author" content="Fallen Shadow">
+<meta property="article:tag" content="校园">
+<meta property="article:tag" content="青春">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://violeteternal.github.io/%E9%9B%A8%E8%90%BD%EF%BC%8C%E8%A7%81%E9%BB%8E%E6%98%8E/Poems/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>残垣，与半截诗篇 | Reincarnation</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Reincarnation</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">正因为梦易碎，才格外美好。</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-road">
+
+    <a href="/road/" rel="section"><i class="fa fa-road fa-fw"></i>归程</a>
+
+  </li>
+        <li class="menu-item menu-item-past">
+
+    <a href="/past/" rel="section"><i class="fab fa-house-chimney-crack fa-fw"></i>旧日残垣</a>
+
+  </li>
+        <li class="menu-item menu-item-friendship">
+
+    <a href="/friendship/" rel="section"><i class="fa fa-users fa-fw"></i>友链</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E9%9B%A8%E8%90%BD%EF%BC%8C%E8%A7%81%E9%BB%8E%E6%98%8E/Poems/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Fallen Shadow">
+      <meta itemprop="description" content="誰も悪くないから、辛いだな。<br>自卑的人，往往只剩下温柔了啊……">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Reincarnation">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          残垣，与半截诗篇
+        </h1>
+
+        <div class="post-meta">
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-06-20 11:59:37" itemprop="dateCreated datePublished" datetime="2025-06-20T11:59:37+08:00">2025-06-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-07-30 22:18:04" itemprop="dateModified" datetime="2025-07-30T22:18:04+08:00">2025-07-30</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%9B%A8%E8%90%BD%EF%BC%8C%E8%A7%81%E9%BB%8E%E6%98%8E/" itemprop="url" rel="index"><span itemprop="name">雨落，见黎明</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>17k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>15 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>往昔……最后的记忆。</p>
+<span id="more"></span>
+<p>我会<del>原封不动</del>地搬录我高中写过的所有诗，并注解上我的写作背景（回忆版）。</p>
+<h1 id="起源诗集"><a href="#起源诗集" class="headerlink" title="起源诗集"></a>起源诗集</h1><p>这些大多是高一高二写的，没有规定的版式，仅能从所剩记忆中读取一些。</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="洛华"><a href="#洛华" class="headerlink" title="洛华"></a>洛华</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>风惊起梦镜的精灵，<br>在某一个晨曦，<br>银月从彼界升起。<br>细点落湖的陨星，<br>浸染天河的鹿鸣。</p>
+<p>陌路诗人的歌吟，<br>吹响周转轮回的潮汐，<br>凛春献给世界的空雨，<br>包裹着梅香四溢的冬礼。</p>
+<p>此刻，繁花落尽，<br>好似伤心，<br>一片芳芽似锦，</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>这是我高中写下的第一首诗，很稚嫩，只有辞藻的堆砌。《洛华》大概是我当时在像《时间与少年与风》的女主名字的时候想的，“凛春”出自《<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.301ex;" xmlns="http://www.w3.org/2000/svg" width="16.279ex" height="1.95ex" role="img" focusable="false" viewBox="0 -729 7195.3 862"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D516" d="M750 276Q750 141 645 57T378 -27Q224 -27 146 67Q66 163 66 307Q66 361 80 412T127 515T217 609T356 676L388 684L420 692L442 681Q545 625 586 608T654 591Q688 591 710 609T737 646L742 665Q742 665 756 654L752 642Q736 594 706 566T621 515L607 510Q580 513 528 542T421 599T335 627Q272 627 214 569Q139 500 139 373Q139 308 159 247T217 136T316 56T455 26Q520 26 566 43T634 90T666 148T676 207Q676 264 649 297T580 338Q574 339 552 339Q516 339 442 325T327 310H324Q303 310 290 312T259 328T232 369Q230 375 230 390Q230 426 259 461Q286 488 338 507Q351 498 351 495L346 492Q342 490 339 488T330 482T320 473T312 462T305 447T303 428Q303 368 366 368Q393 368 487 388T613 409Q656 409 696 385T748 306Q750 294 750 276Z"></path></g><g data-mml-node="mo" transform="translate(829,0)"><path data-c="2E" d="M87 43Q87 69 104 85T142 102Q164 102 182 86T200 44Q200 20 183 3T141 -15Q118 -15 103 2T87 43Z"></path></g><g data-mml-node="mi" transform="translate(1273.7,0)"><path data-c="210C" d="M11 -16L1 0Q7 6 25 27T57 62T91 88T128 101Q159 99 195 66L203 59L211 67Q239 95 239 133Q239 158 210 213T152 330T123 430Q123 477 173 536T269 630T320 666Q376 610 440 606H443Q457 606 466 611T519 647L542 664Q543 664 543 654V643L522 622Q434 537 403 537Q388 537 366 543T329 555T293 570T270 580L261 585L253 574Q206 517 206 475Q206 452 218 416T242 356L255 331Q256 331 270 345T324 391T421 459L437 468H453Q545 463 608 421L618 415L623 392Q644 307 644 233Q644 97 612 9Q604 -10 601 -15T581 -35Q505 -104 467 -124Q446 -133 431 -133Q414 -132 399 -126T376 -115T368 -107Q368 -106 392 -75L415 -43Q432 -67 444 -73T472 -79H474Q479 -79 484 -78T501 -69T521 -50T538 -13T551 46Q558 97 558 180Q558 232 557 245Q553 277 547 300T528 349T488 389T424 404Q344 404 276 295Q272 288 273 285Q300 216 300 168Q300 161 300 156T298 145T297 137T293 129T289 123T283 116T277 107Q212 23 178 -13L166 -26L149 -9Q108 32 81 32Q63 32 21 -7L11 -16Z"></path></g><g data-mml-node="mo" transform="translate(1993.7,0)"><path data-c="2E" d="M87 43Q87 69 104 85T142 102Q164 102 182 86T200 44Q200 20 183 3T141 -15Q118 -15 103 2T87 43Z"></path></g><g data-mml-node="mi" transform="translate(2438.3,0)"><path data-c="1D504" d="M22 505Q22 563 94 624T271 685H280Q416 685 443 560Q447 535 447 504Q444 414 405 330L399 319L229 155Q233 154 241 153T253 150T265 145T281 135T301 119T328 93L357 64L402 92Q438 116 473 137L500 154V339Q500 528 495 593V601L559 649Q621 696 624 696L638 686L629 677Q599 650 593 638Q582 614 581 504Q580 490 580 443Q580 314 584 238Q584 235 584 224T584 210T585 199T586 187T588 176T591 164T595 152T601 137T609 121Q630 77 640 77Q661 77 703 101Q704 95 706 90L707 86V84L636 29Q618 15 601 2T574 -19T564 -25L500 121Q499 121 399 48L299 -26Q298 -26 291 -15T272 11T245 42T209 69T165 80Q120 80 58 43L48 37L40 42L32 48L122 117Q196 173 241 211Q319 280 343 327T368 447Q368 535 317 582Q264 633 199 633Q155 633 122 605T86 542Q86 518 133 467T181 387Q181 348 140 309Q113 281 73 260L64 255L50 265L59 273Q112 307 112 345Q112 363 90 387T45 441T22 505Z"></path></g><g data-mml-node="mo" transform="translate(3156.3,0)"><path data-c="2E" d="M87 43Q87 69 104 85T142 102Q164 102 182 86T200 44Q200 20 183 3T141 -15Q118 -15 103 2T87 43Z"></path></g><g data-mml-node="mi" transform="translate(3601,0)"><path data-c="1D507" d="M346 611Q300 611 261 604T194 584T144 555T107 519T82 481T65 443T55 410T50 383T48 367L37 372L27 378V393Q33 524 115 603Q160 648 230 666T365 685Q423 685 434 684Q745 653 745 405Q745 281 694 151L687 133L657 103Q524 -27 470 -27Q456 -27 331 18T157 64Q122 64 84 28Q67 9 57 -6L50 -16L43 -8L35 0Q35 3 46 22T83 74T141 133H154Q208 136 253 161T299 230Q299 259 277 290T232 348T209 392Q209 434 254 479T358 556L368 561L382 550Q382 549 381 548T377 545T371 541Q353 527 326 496T298 444Q298 430 343 365T389 277Q389 240 353 202T267 136L252 127Q304 118 400 83T513 47Q548 47 582 79T635 145Q671 208 671 323Q671 390 651 441T599 524T523 576T436 603T346 611Z"></path></g><g data-mml-node="mo" transform="translate(4433,0)"><path data-c="2E" d="M87 43Q87 69 104 85T142 102Q164 102 182 86T200 44Q200 20 183 3T141 -15Q118 -15 103 2T87 43Z"></path></g><g data-mml-node="mi" transform="translate(4877.7,0)"><path data-c="1D512" d="M428 596Q412 596 386 595T350 593Q289 593 270 625Q267 632 267 640Q267 656 280 672T312 705T336 729H343Q351 729 351 728Q342 710 342 703Q342 683 382 676T493 662T604 643Q648 627 677 599T720 535T739 466T744 392Q744 317 732 260T696 166T659 116T621 83Q617 80 615 78Q485 -27 377 -27Q320 -25 272 -9T187 21T122 36H116Q65 36 29 -13L27 -15L12 0Q12 1 32 26T76 78T109 109Q145 123 166 150T187 207Q187 244 134 318T80 412Q80 454 112 498T176 566T213 590Q216 590 224 585L234 580L225 573Q216 566 207 557T188 536T172 511T165 484Q165 448 213 368T261 259Q261 241 252 219T228 179T200 146T176 122L167 112Q170 111 174 111Q188 110 233 91T339 55T453 37Q508 37 556 68T626 152Q655 219 655 328Q655 543 532 582Q484 596 428 596Z"></path></g><g data-mml-node="mo" transform="translate(5704.7,0)"><path data-c="2E" d="M87 43Q87 69 104 85T142 102Q164 102 182 86T200 44Q200 20 183 3T141 -15Q118 -15 103 2T87 43Z"></path></g><g data-mml-node="mi" transform="translate(6149.3,0)"><path data-c="1D51A" d="M32 501Q35 564 103 625T264 686Q326 686 365 652Q402 618 420 564L441 585Q486 630 539 670L559 686L572 672Q637 606 665 559L682 576Q787 686 845 686Q877 686 929 656T992 623Q999 621 1016 621Q1041 621 1054 628L1051 617L1047 606Q1042 602 1037 597Q983 557 969 522T954 434Q954 394 961 336T968 221Q968 201 966 184T963 155T956 131T948 113T936 96T923 82T906 66T887 50L816 -2Q815 -3 810 -6T801 -11T791 -16T777 -20T759 -23T735 -25Q691 -25 619 4T505 37H496L463 21Q420 0 389 -20L378 -27H362Q316 -27 275 -9T202 28T150 46H146Q114 46 59 -5L48 -16L41 -6Q40 -4 38 -2T34 2L33 4Q33 8 77 54Q111 87 142 112L154 122H166Q239 127 288 182Q346 244 346 406Q346 489 326 537T259 610Q227 628 195 628Q155 628 128 606T101 549Q101 517 146 465T192 382Q192 348 156 310T85 254L75 250L64 258L55 266Q56 267 74 276T105 301T118 339Q118 362 75 413T32 501ZM952 547Q927 555 877 586T796 617Q744 617 682 525L676 516L677 498Q678 486 678 425Q678 301 652 206Q649 195 613 151T577 102Q577 100 582 100Q618 100 720 51Q761 32 790 32H794Q843 32 869 83Q884 110 884 189Q884 233 879 294T873 400Q874 433 879 451T889 478T915 507T952 547ZM241 105Q249 98 263 88T317 60T393 42Q478 42 547 109Q607 171 607 358Q607 371 607 380T604 417T595 467T577 517T546 566T500 601L479 580Q449 550 433 526L426 516V503Q426 311 357 200L352 191L296 149Q241 107 241 105Z"></path></g></g></g></g></svg></mjx-container>》，“冬礼”是我以前做过的一道 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="2.577ex" height="1.645ex" role="img" focusable="false" viewBox="0 -705 1139 727"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="4F" d="M56 340Q56 423 86 494T164 610T270 680T388 705Q521 705 621 601T722 341Q722 260 693 191T617 75T510 4T388 -22T267 3T160 74T85 189T56 340ZM467 647Q426 665 388 665Q360 665 331 654T269 620T213 549T179 439Q174 411 174 354Q174 144 277 61Q327 20 385 20H389H391Q474 20 537 99Q603 188 603 354Q603 411 598 439Q577 592 467 647Z"></path><path data-c="49" d="M328 0Q307 3 180 3T32 0H21V46H43Q92 46 106 49T126 60Q128 63 128 342Q128 620 126 623Q122 628 118 630T96 635T43 637H21V683H32Q53 680 180 680T328 683H339V637H317Q268 637 254 634T234 623Q232 620 232 342Q232 63 234 60Q238 55 242 53T264 48T317 46H339V0H328Z" transform="translate(778,0)"></path></g></g></g></svg></mjx-container> 题，繁花落尽是 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="23.489ex" height="1.67ex" role="img" focusable="false" viewBox="0 -716 10382 738"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="55" d="M128 622Q121 629 117 631T101 634T58 637H25V683H36Q57 680 180 680Q315 680 324 683H335V637H302Q262 636 251 634T233 622L232 418V291Q232 189 240 145T280 67Q325 24 389 24Q454 24 506 64T571 183Q575 206 575 410V598Q569 608 565 613T541 627T489 637H472V683H481Q496 680 598 680T715 683H724V637H707Q634 633 622 598L621 399Q620 194 617 180Q617 179 615 171Q595 83 531 31T389 -22Q304 -22 226 33T130 192Q129 201 128 412V622Z"></path><path data-c="6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" transform="translate(750,0)"></path><path data-c="64" d="M376 495Q376 511 376 535T377 568Q377 613 367 624T316 637H298V660Q298 683 300 683L310 684Q320 685 339 686T376 688Q393 689 413 690T443 693T454 694H457V390Q457 84 458 81Q461 61 472 55T517 46H535V0Q533 0 459 -5T380 -11H373V44L365 37Q307 -11 235 -11Q158 -11 96 50T34 215Q34 315 97 378T244 442Q319 442 376 393V495ZM373 342Q328 405 260 405Q211 405 173 369Q146 341 139 305T131 211Q131 155 138 120T173 59Q203 26 251 26Q322 26 373 103V342Z" transform="translate(1306,0)"></path><path data-c="65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" transform="translate(1862,0)"></path><path data-c="72" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z" transform="translate(2306,0)"></path><path data-c="74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z" transform="translate(2698,0)"></path><path data-c="61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z" transform="translate(3087,0)"></path><path data-c="6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z" transform="translate(3587,0)"></path><path data-c="65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" transform="translate(3865,0)"></path><path data-c="41" d="M255 0Q240 3 140 3Q48 3 39 0H32V46H47Q119 49 139 88Q140 91 192 245T295 553T348 708Q351 716 366 716H376Q396 715 400 709Q402 707 508 390L617 67Q624 54 636 51T687 46H717V0H708Q699 3 581 3Q458 3 437 0H427V46H440Q510 46 510 64Q510 66 486 138L462 209H229L209 150Q189 91 189 85Q189 72 209 59T259 46H264V0H255ZM447 255L345 557L244 256Q244 255 345 255H447Z" transform="translate(4309,0)"></path><path data-c="55" d="M128 622Q121 629 117 631T101 634T58 637H25V683H36Q57 680 180 680Q315 680 324 683H335V637H302Q262 636 251 634T233 622L232 418V291Q232 189 240 145T280 67Q325 24 389 24Q454 24 506 64T571 183Q575 206 575 410V598Q569 608 565 613T541 627T489 637H472V683H481Q496 680 598 680T715 683H724V637H707Q634 633 622 598L621 399Q620 194 617 180Q617 179 615 171Q595 83 531 31T389 -22Q304 -22 226 33T130 192Q129 201 128 412V622Z" transform="translate(5059,0)"></path><path data-c="3A" d="M78 370Q78 394 95 412T138 430Q162 430 180 414T199 371Q199 346 182 328T139 310T96 327T78 370ZM78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z" transform="translate(5809,0)"></path><path data-c="46" d="M128 619Q121 626 117 628T101 631T58 634H25V680H582V676Q584 670 596 560T610 444V440H570V444Q563 493 561 501Q555 538 543 563T516 601T477 622T431 631T374 633H334H286Q252 633 244 631T233 621Q232 619 232 490V363H284Q287 363 303 363T327 364T349 367T372 373T389 385Q407 403 410 459V480H450V200H410V221Q407 276 389 296Q381 303 371 307T348 313T327 316T303 317T284 317H232V189L233 61Q240 54 245 52T270 48T333 46H360V0H348Q324 3 182 3Q51 3 36 0H25V46H58Q100 47 109 49T128 61V619Z" transform="translate(6087,0)"></path><path data-c="6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z" transform="translate(6740,0)"></path><path data-c="6F" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z" transform="translate(7018,0)"></path><path data-c="77" d="M90 368Q84 378 76 380T40 385H18V431H24L43 430Q62 430 84 429T116 428Q206 428 221 431H229V385H215Q177 383 177 368Q177 367 221 239L265 113L339 328L333 345Q323 374 316 379Q308 384 278 385H258V431H264Q270 428 348 428Q439 428 454 431H461V385H452Q404 385 404 369Q404 366 418 324T449 234T481 143L496 100L537 219Q579 341 579 347Q579 363 564 373T530 385H522V431H529Q541 428 624 428Q692 428 698 431H703V385H697Q696 385 691 385T682 384Q635 377 619 334L559 161Q546 124 528 71Q508 12 503 1T487 -11H479Q460 -11 456 -4Q455 -3 407 133L361 267Q359 263 266 -4Q261 -11 243 -11H238Q225 -11 220 -3L90 368Z" transform="translate(7518,0)"></path><path data-c="65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" transform="translate(8240,0)"></path><path data-c="72" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z" transform="translate(8684,0)"></path><path data-c="66" d="M273 0Q255 3 146 3Q43 3 34 0H26V46H42Q70 46 91 49Q99 52 103 60Q104 62 104 224V385H33V431H104V497L105 564L107 574Q126 639 171 668T266 704Q267 704 275 704T289 705Q330 702 351 679T372 627Q372 604 358 590T321 576T284 590T270 627Q270 647 288 667H284Q280 668 273 668Q245 668 223 647T189 592Q183 572 182 497V431H293V385H185V225Q185 63 186 61T189 57T194 54T199 51T206 49T213 48T222 47T231 47T241 46T251 46H282V0H273Z" transform="translate(9076,0)"></path><path data-c="65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" transform="translate(9382,0)"></path><path data-c="6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z" transform="translate(9826,0)"></path><path data-c="6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z" transform="translate(10104,0)"></path></g></g></g></svg></mjx-container>。最后一句非常抽象好像是我发现“繁花”重复了想不出来了。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="少年的歌行"><a href="#少年的歌行" class="headerlink" title="少年的歌行"></a>少年的歌行</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>春风奏响笙笛，<br>少年的步伐荡漾涟漪，<br>无论何处风起，<br>陌路之旅。</p>
+<p>再见了！天光的远岸。<br>候至启程的黎明，<br>多少繁花流水，<br>也冲释不仅，<br>随汐泛起的回忆。</p>
+<p>风雪与炽焰阻隔了远方，<br>我便踏破冰霜，余烬；<br>就算是百年孤独，千年悲怆，<br>也不过，雨中，梦一场。</p>
+<p>盛雷即将平息，<br>野火并非无尽，<br>待吾归来之时，<br>As my Eternity</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>容易发现，这篇诗写于我搭建博客后不久，里面出现了两个很熟悉的分类。那时的我大概还在玩原神，玩过的应该会发现有很多比较类似的元素。那个时候的写作大多忠于押韵，对氛围和情节的塑造尚浅，意象也就一直是那几个，追求华丽的辞藻而不胜情感。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="长夜"><a href="#长夜" class="headerlink" title="长夜"></a>长夜</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>我踏入小巷中的黑暗，<br>趁着无人的夜晚，<br>就地处决内心的傲慢。</p>
+<p>此番，有人就此堕入神魔，<br>此景，有人亵渎所为所作。<br>生活在崩塌，在瓦解，<br>而无人对此愧怍。</p>
+<p>春来秋去，冬过夏临，<br>我不再见过那时的日暮，<br>照耀在风暴之上，点缀黄昏。</p>
+<p>此后便是长夜，<br>与那永不到来的黎明。</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>我不是很记得了，但那时心情肯定不好。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="归来"><a href="#归来" class="headerlink" title="归来"></a>归来</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>旧日的潮汐唤醒了我的鼻腔，<br>往昔的灯塔引航归渡的船，<br>时日已近，<br>风暴之眼不应再成为我的栖身之地。</p>
+<p>于是船桨被我折断，枯腐的双手将重新垒起钢铁心脏，<br>于是桅杆被我吹下，凋零的残躯将再次唤醒沉眠灵魂。<br>我曾远去，<br>漫步的访客教会生命如何记忆，文明如何前进。</p>
+<p>沙盘将倾倒，鼓楼将敲响，<br>你是庸人的容器？还是时代的傀儡？<br>感受瞬息万变吧，在这所剩无几的现在，<br>因为我已归来。<br>而时间不曾为谁驻留，我已落后他们太多。</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>这是我退役后写的第一首诗，代表了我作为高中生的生活正式开始。“庸人的容器”化用自《崩坏：星穹铁道》的 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="2.891ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 1278 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path data-c="2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z" transform="translate(500,0)"></path><path data-c="36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z" transform="translate(778,0)"></path></g></g></g></svg></mjx-container> 主线剧情。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="沉眠"><a href="#沉眠" class="headerlink" title="沉眠"></a>沉眠</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>生命因何而沉睡？<br>为那焚毁的双眼不容许我窥见它方异乡，<br>为那毒蚀的灵魂不再愿想起故土的昨天。<br>金银无声，罪恶无形，苦难无处不在。</p>
+<p>生命因何而沉睡？<br>为那山谷之下坠落的枯骸不曾被铭记，<br>为那大地之上新生的未来不应被他人定义。<br>倘若历史能被修改，所有的经历都是一场无瑕的戏剧，<br>倘若命运能够重来，所有的笑与泪不过一场空欢。</p>
+<p>何物为真？</p>
+<p>生命因何而沉睡？<br>为总有一天会睁开的双眼；<br>生命因醒来而沉睡，<br>为夜晚后会再次到来的白昼；<br>一杯「梦中之梦」，<br>敬不完美的明天。</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>很显然了，主体是星铁 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="3.054ex" height="1.532ex" role="img" focusable="false" viewBox="0 -666 1350 677"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path data-c="2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z" transform="translate(500,0)"></path></g><g data-mml-node="mi" transform="translate(778,0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g></g></g></svg></mjx-container> 大版本的匹诺康尼剧情，其中“焚毁”一句是 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.466ex;" xmlns="http://www.w3.org/2000/svg" width="5.699ex" height="2.011ex" role="img" focusable="false" viewBox="0 -683 2519 889"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="4C" d="M128 622Q121 629 117 631T101 634T58 637H25V683H36Q48 680 182 680Q324 680 348 683H360V637H333Q273 637 258 635T233 622L232 342V129Q232 57 237 52Q243 47 313 47Q384 47 410 53Q470 70 498 110T536 221Q536 226 537 238T540 261T542 272T562 273H582V268Q580 265 568 137T554 5V0H25V46H58Q100 47 109 49T128 61V622Z"></path><path data-c="6F" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z" transform="translate(625,0)"></path><path data-c="67" d="M329 409Q373 453 429 453Q459 453 472 434T485 396Q485 382 476 371T449 360Q416 360 412 390Q410 404 415 411Q415 412 416 414V415Q388 412 363 393Q355 388 355 386Q355 385 359 381T368 369T379 351T388 325T392 292Q392 230 343 187T222 143Q172 143 123 171Q112 153 112 133Q112 98 138 81Q147 75 155 75T227 73Q311 72 335 67Q396 58 431 26Q470 -13 470 -72Q470 -139 392 -175Q332 -206 250 -206Q167 -206 107 -175Q29 -140 29 -75Q29 -39 50 -15T92 18L103 24Q67 55 67 108Q67 155 96 193Q52 237 52 292Q52 355 102 398T223 442Q274 442 318 416L329 409ZM299 343Q294 371 273 387T221 404Q192 404 171 388T145 343Q142 326 142 292Q142 248 149 227T179 192Q196 182 222 182Q244 182 260 189T283 207T294 227T299 242Q302 258 302 292T299 343ZM403 -75Q403 -50 389 -34T348 -11T299 -2T245 0H218Q151 0 138 -6Q118 -15 107 -34T95 -74Q95 -84 101 -97T122 -127T170 -155T250 -167Q319 -167 361 -139T403 -75Z" transform="translate(1125,0)"></path><path data-c="6F" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z" transform="translate(1625,0)"></path><path data-c="73" d="M295 316Q295 356 268 385T190 414Q154 414 128 401Q98 382 98 349Q97 344 98 336T114 312T157 287Q175 282 201 278T245 269T277 256Q294 248 310 236T342 195T359 133Q359 71 321 31T198 -10H190Q138 -10 94 26L86 19L77 10Q71 4 65 -1L54 -11H46H42Q39 -11 33 -5V74V132Q33 153 35 157T45 162H54Q66 162 70 158T75 146T82 119T101 77Q136 26 198 26Q295 26 295 104Q295 133 277 151Q257 175 194 187T111 210Q75 227 54 256T33 318Q33 357 50 384T93 424T143 442T187 447H198Q238 447 268 432L283 424L292 431Q302 440 314 448H322H326Q329 448 335 442V310L329 304H301Q295 310 295 316Z" transform="translate(2125,0)"></path></g></g></g></svg></mjx-container> 父亲的遭遇，“苦难”“大地”等词是方舟的主旋律。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="杀死我的遗书"><a href="#杀死我的遗书" class="headerlink" title="杀死我的遗书"></a>杀死我的遗书</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>苍风吹响逐蚀残垣与遗殇，<br>寒雷划破冰笔无为之终章；<br>钟声逆行忏悟永恒与混沌，<br>孤冢落雨猎捕俗者之狂妄。<br>谁质问过去，送别遗恨的魔王，<br>谁驻留未来，俯瞰大地于高塔之上。</p>
+<p>我看见血红的舰船沐浴金黄，<br>我听见死者的怒吼胜过咆哮，<br>利刃切碎我的身躯，却斩不断我的血！<br>杀死大海！用天地作坟墓，赐予时间。</p>
+<p>献上龙的血肉，饮尽蜘蛛的毒酒，<br>蘸料为腐朽，以骨骸作釜，<br>无尽的眼，看着，<br>无数的手，指着，<br>无穷的脸，笑着。<br>于是故事被风浪淹没，<br>书翻回了页尾。</p>
+<p>杀死我吧！在死亡到来之前，<br>喘息的时间何止浪费。<br>只有死亡能胜过死亡，<br>唯有时间能打败时间！<br>无名的坟墓，无名的骸骨，<br>这咒语，<br>便是杀死我的遗书。</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>很神经的一首诗，尝试了抽象的写作方式。原因是我初中在这本子上写了前四句，结果后面发现的时候又不想那几行独立出来，就补全了整首诗。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="剪影"><a href="#剪影" class="headerlink" title="剪影"></a>剪影</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>我在人间落下一把剪刀，<br>它剪去城市的背影，城市正年轻，飞驰而过；<br>它剪去乡村的背影，乡村已迟暮，不再言语。<br>我剪下日落的倒影，缝上时光，<br>织起山河，穿上一衣世界。</p>
+<p>可那造物主的尸体由谁拾起？<br>谁去修补苍穹的幕布？<br>谁去着色文明的蓝图？<br>我们切断了过去的头颅，<br>又该怎样装饰新生的长路？</p>
+<p>让影子替我前行，<br>触及那令人震怵的黑暗，<br>我将长眠于背后，<br>享受太阳照不到的沐浴。</p>
+<p>于是梦醒，<br>飘落着投映现实的剪影，<br>那人生如揽镜，<br>烛火的另一面，不曾有过光明。<br>我将剪刀丢入小巷，<br>埋葬恐惧，<br>迎接天明。</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>这是我意识流创作的尝试部分，剪影的概念源自于哆啦A梦中我记得有一集有一个剪刀把影子剪下来帮他们干活，但久而久之他们就会被影子代替。这让我想起了 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="9.781ex" height="1.595ex" role="img" focusable="false" viewBox="0 -694 4323 705"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="44" d="M130 622Q123 629 119 631T103 634T60 637H27V683H228Q399 682 419 682T461 676Q504 667 546 641T626 573T685 470T708 336Q708 210 634 116T442 3Q429 1 228 0H27V46H60Q102 47 111 49T130 61V622ZM593 338Q593 439 571 501T493 602Q439 637 355 637H322H294Q238 637 234 628Q231 624 231 344Q231 62 232 59Q233 49 248 48T339 46H350Q456 46 515 95Q561 133 577 191T593 338Z"></path><path data-c="65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" transform="translate(764,0)"></path><path data-c="6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z" transform="translate(1208,0)"></path><path data-c="74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z" transform="translate(1486,0)"></path><path data-c="61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z" transform="translate(1875,0)"></path><path data-c="72" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z" transform="translate(2375,0)"></path><path data-c="75" d="M383 58Q327 -10 256 -10H249Q124 -10 105 89Q104 96 103 226Q102 335 102 348T96 369Q86 385 36 385H25V408Q25 431 27 431L38 432Q48 433 67 434T105 436Q122 437 142 438T172 441T184 442H187V261Q188 77 190 64Q193 49 204 40Q224 26 264 26Q290 26 311 35T343 58T363 90T375 120T379 144Q379 145 379 161T380 201T380 248V315Q380 361 370 372T320 385H302V431Q304 431 378 436T457 442H464V264Q464 84 465 81Q468 61 479 55T524 46H542V0Q540 0 467 -5T390 -11H383V58Z" transform="translate(2767,0)"></path><path data-c="6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" transform="translate(3323,0)"></path><path data-c="65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" transform="translate(3879,0)"></path></g></g></g></svg></mjx-container> 里的光与暗世界。这是一个很有意思的设定。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="地狱之歌"><a href="#地狱之歌" class="headerlink" title="地狱之歌"></a>地狱之歌</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>那些恶魔在人间浇筑苦难，<br>那些天使在地狱背负罪罚，<br>鲜血打造囚笼，骨肉制为刑具。<br>上帝已死，<br>唯余人民歌颂丧曲。</p>
+<p>回答我！沉没的黄金舰队，<br>质问我！已死黄泉下的冤魂，<br>为何慈悲灯塔矗立在天堂的另一端？<br>为何苦难摇篮不曾活过长夜后的黎明？<br>大海因沉痛而静谧，<br>天空因伤痕而哭泣，<br>为何歌颂苦难的人面对苦难无所作为？</p>
+<p>于是雨水打湿面具，<br>梦镜的倒影荡漾着破碎，<br>这霓虹都市原来是业罪之城，<br>这钢铁汽车原来是焰火血马，<br>这上帝原是撒旦，这地狱原是人间①。<br>凝望水镜，<br>倒映出绝望着丑恶的脸。</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>①：原句为“这人间原是地狱”，但是是笔者写错了。<br>这是我人生的第一次“祛魅”，我认识了社会的真实，却仍然稚嫩，只是意识到自己的无能为力与为虎作伥。当时是方舟五周年主线「慈悲灯塔」，虽然方舟刻画的苦难太过科幻与惨重，但现实何尝不是一场悲剧，那些为生计奔波的人们，和那些浸泡在黄金中的人们，所融汇而出的，便是默声的戏剧。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="飞萤"><a href="#飞萤" class="headerlink" title="飞萤"></a>飞萤</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>我梦见一片焦土，而绿芽在此焕发新生，<br>我听见一声呐喊，他们挥着手告别昨天。<br>而飞萤时日不多，如此弱小，如此短暂。<br>她们带着命运的镣铐舞蹈，<br>吟唱仲夏的歌谣。</p>
+<p>我走进一片天地，时间也在此静谧，<br>我造访一座梦镜，上帝仍于此狂欢。<br>那金钱的壁垒如此巨大，如此辉煌。<br>他们端着酒水疯狂，<br>令我惶恐不安。</p>
+<p>飞萤扑火，<br>向死而生。<br>生命不曾因奢华而低头，<br>生命为绚丽而夺彩。<br>流逝，梦醒，明日，现实。<br>我不为逝者哀哭，<br>我为自己流泪。<br>我并不背负苦难，<br>我肩任未来。</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>算算时间，大概是生物竞赛退役的那段时间，也就是我即将离开 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 500 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path></g></g></g></svg></mjx-container> 班回到 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.507ex" role="img" focusable="false" viewBox="0 -666 500 666"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g></g></svg></mjx-container> 班的时候。我曾经是一个讨好型人格重度患者，我从取悦别人那里得到情绪价值，我并不知道自己活着的意义，我不敢为了自己的喜乐而争取，这让我之前很多年都活得很累。但还好我改变了，我从过去中走出来了，那时生竞的回归让我重新有了同学的概念，也算是一个新的开始了。</p>
+<hr>
+<h1 id="青春颂集"><a href="#青春颂集" class="headerlink" title="青春颂集"></a>青春颂集</h1><blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="在破碎的天空下"><a href="#在破碎的天空下" class="headerlink" title="在破碎的天空下"></a>在破碎的天空下</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>破碎的心应如何跳动？<br>它已无力鼓动微尘。<br>未有访客拾起它的碎片，<br>过往的人们无视着，将它踩在脚下。<br>可无情的命运从未放手一刻，<br>直至生命令人窒息。</p>
+<p>破碎的人应如何活着？<br>费解的难题不曾得到思索。<br>他任幻想与同寻欢作乐，<br>他灌醉了现实，让绝望沐浴全身。<br>可愚蠢的小丑从未得到满足，与幸福。<br>只有伤痛，抚不平的伤痛。</p>
+<p>破碎的灵魂应如何重塑？<br>在眼泪也成为奢侈后，<br>那些我们无能为力的却总是残忍，<br>那些引我至绝路的却总是诱人。<br>不能忘却，不愿回忆，<br>只有在失去之后，才懂得如何珍稀。<br>如今，<br>我们送别一些人，<br>正如我们之前也送别过一些人，<br>为了之后我们将送别我们，<br>不会显得那么沉重。</p>
+<p>写于 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="8.045ex" height="1.581ex" role="img" focusable="false" viewBox="0 -677 3556 699"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(1000,0)"></path><path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" transform="translate(1500,0)"></path><path data-c="2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z" transform="translate(2000,0)"></path><path data-c="36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z" transform="translate(2278,0)"></path></g><g data-mml-node="mn" transform="translate(2778,0)"><path data-c="2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path><path data-c="36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z" transform="translate(278,0)"></path></g></g></g></svg></mjx-container> 高考前夕</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>这是我在张朝等人的指导下尝试构建的逻辑链条诗句，当然这个高考前夕指的是我的上一届的高考，那八位 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="4.468ex" height="1.645ex" role="img" focusable="false" viewBox="0 -705 1975 727"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="4F" d="M56 340Q56 423 86 494T164 610T270 680T388 705Q521 705 621 601T722 341Q722 260 693 191T617 75T510 4T388 -22T267 3T160 74T85 189T56 340ZM467 647Q426 665 388 665Q360 665 331 654T269 620T213 549T179 439Q174 411 174 354Q174 144 277 61Q327 20 385 20H389H391Q474 20 537 99Q603 188 603 354Q603 411 598 439Q577 592 467 647Z"></path><path data-c="49" d="M328 0Q307 3 180 3T32 0H21V46H43Q92 46 106 49T126 60Q128 63 128 342Q128 620 126 623Q122 628 118 630T96 635T43 637H21V683H32Q53 680 180 680T328 683H339V637H317Q268 637 254 634T234 623Q232 620 232 342Q232 63 234 60Q238 55 242 53T264 48T317 46H339V0H328Z" transform="translate(778,0)"></path><path data-c="65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" transform="translate(1139,0)"></path><path data-c="72" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z" transform="translate(1583,0)"></path></g></g></g></svg></mjx-container> 都是我的朋友。这也是我第一首有完整记述（指写作日期）的诗，标志着我高中写诗的开始。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="昨日的欢欣"><a href="#昨日的欢欣" class="headerlink" title="昨日的欢欣"></a>昨日的欢欣</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>我偶然间遇到一片黄昏，<br>见过夏季迟到的宁夜。<br>于教室的一隅仰望天空，<br>课间的幻想短暂却荏苒。</p>
+<p>黎明总快我一步，<br>像婴儿在朦胧中睁眼，<br>本已与过去挥手告别，<br>转过身仍忍不住流泪。</p>
+<p>他们已攀上天梯，他们已迎取功名，<br>我于人群中喝彩，不值一提。<br>仍于泥沼中挣扎，仍于囚笼中困顿。<br>为尚未到来的一切怀疑，<br>恐惧深不见底。</p>
+<p>但四季终始周转，<br>日复一日，年复一年，<br>我为我书写明天。<br>今日，你的天空可晴朗？<br>明日，我临破晓入怀。<br>而我的离去，<br>也将有人为我流泪，<br>也将有人为我欣欢。</p>
+<p>写于 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="9.176ex" height="1.581ex" role="img" focusable="false" viewBox="0 -677 4056 699"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(1000,0)"></path><path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" transform="translate(1500,0)"></path><path data-c="2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z" transform="translate(2000,0)"></path><path data-c="36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z" transform="translate(2278,0)"></path></g><g data-mml-node="mn" transform="translate(2778,0)"><path data-c="2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(278,0)"></path><path data-c="35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z" transform="translate(778,0)"></path></g></g></g></svg></mjx-container> 高考出分后<br>“宜谈论天气”</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>其实当时很震撼，<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.462ex;" xmlns="http://www.w3.org/2000/svg" width="3.301ex" height="2.032ex" role="img" focusable="false" viewBox="0 -694 1459 898"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="46" d="M128 619Q121 626 117 628T101 631T58 634H25V680H582V676Q584 670 596 560T610 444V440H570V444Q563 493 561 501Q555 538 543 563T516 601T477 622T431 631T374 633H334H286Q252 633 244 631T233 621Q232 619 232 490V363H284Q287 363 303 363T327 364T349 367T372 373T389 385Q407 403 410 459V480H450V200H410V221Q407 276 389 296Q381 303 371 307T348 313T327 316T303 317T284 317H232V189L233 61Q240 54 245 52T270 48T333 46H360V0H348Q324 3 182 3Q51 3 36 0H25V46H58Q100 47 109 49T128 61V619Z"></path><path data-c="6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z" transform="translate(653,0)"></path><path data-c="79" d="M69 -66Q91 -66 104 -80T118 -116Q118 -134 109 -145T91 -160Q84 -163 97 -166Q104 -168 111 -168Q131 -168 148 -159T175 -138T197 -106T213 -75T225 -43L242 0L170 183Q150 233 125 297Q101 358 96 368T80 381Q79 382 78 382Q66 385 34 385H19V431H26L46 430Q65 430 88 429T122 428Q129 428 142 428T171 429T200 430T224 430L233 431H241V385H232Q183 385 185 366L286 112Q286 113 332 227L376 341V350Q376 365 366 373T348 383T334 385H331V431H337H344Q351 431 361 431T382 430T405 429T422 429Q477 429 503 431H508V385H497Q441 380 422 345Q420 343 378 235T289 9T227 -131Q180 -204 113 -204Q69 -204 44 -177T19 -116Q19 -89 35 -78T69 -66Z" transform="translate(931,0)"></path></g></g></g></svg></mjx-container> 考了 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="3.394ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 1500 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path><path data-c="39" d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z" transform="translate(500,0)"></path><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" transform="translate(1000,0)"></path></g></g></g></svg></mjx-container>，其他人也都 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="11.314ex" height="1.968ex" role="img" focusable="false" viewBox="0 -676 5000.7 870"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path><path data-c="37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z" transform="translate(500,0)"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(1000,0)"></path></g><g data-mml-node="mo" transform="translate(1500,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mo" transform="translate(2278,0)"><path data-c="2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path></g><g data-mml-node="mn" transform="translate(2722.7,0)"><path data-c="36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path><path data-c="38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z" transform="translate(500,0)"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(1000,0)"></path></g><g data-mml-node="mo" transform="translate(4222.7,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container>，让我意识到竞赛生好像都很厉害，但我与他们格格不入。但那段时间很轻松，自习是快乐的，加上那晚的黄昏确实很好看。</p>
+<p>最后那个是唐超送我的日历上面的，虽然当时我们已经闹崩了（至今其实都没想明白原因），其实我发现和很多人的不欢而散都是时间种下的因果，有些人昨天还在欢笑交谈，第二天走廊上便避让目光。</p>
+<font style="color:white">虽然很离谱的是我当时对练巨产生了一定感情，可能是渴望太久了，不过这都是往事了，就别笑话我了。</font>
+
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="倒计时"><a href="#倒计时" class="headerlink" title="倒计时"></a>倒计时</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>有关那一切的悲伤正在远去<br>而我只身陷入新的泥沼<br>未来正临近，无声无息<br>但我仍未看到某种可能的结局</p>
+<p>非我不可吗？这从容的日常<br>非她不可吗？还是虚拟与幻想<br>人人都苦苦追寻生活的意义<br>踏入现实的陷阱</p>
+<p>抱歉……我在为谁而活？<br>我爱你，真心的话该对谁说？<br>那回忆如潮水般涌来，<br>原来我才是沉沦过去的那个人</p>
+<p>时针滴答，正如今天远去<br>倒计时悬于每个人的头顶<br>“死亡不是生命的对立面，<br>而是作为生的一部分永生”</p>
+<p>于是我踽踽独行，<br>与寂寞相伴，相遇时间终点<br>在人生画廊见证落幕<br>以及落幕后的永恒</p>
+<p>2024.7.6 晚<br>在生物竞赛教室</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>如你所见，这首诗写于高二期末考试期间，由于抽象的复习规则，我们班那七个人被流放到此时并没有人的生物竞赛教室，由于超级牛的地理方位，所以我无伤看完了整本《挪威的森林》，陷入了半炫压抑状态，正巧碰见某人生日，虽然我对她并没有太大感觉，但至少还是成为一段时间朋友吧，不过早已形同陌路了。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="笑话"><a href="#笑话" class="headerlink" title="笑话"></a>笑话</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>生活是一场悲剧<br>每一步都走在我的意料之外<br>那里有悲痛与幻灭<br>但没有奇迹</p>
+<p>生活是航行的单程票<br>说不准下一秒大家就集体坠机<br>曼，What can I say?<br>死者躺平，死者为大</p>
+<p>生活是永不歇息的大风<br>吹啊吹，吹到谁谁就倒霉<br>一样地哭着，一样地掉眼泪<br>怪罪给时间，它不曾给过现在</p>
+<p>生活是一场酣畅淋漓的洛必达<br>导完再求二阶导，洛不出来继续洛<br>洛到尽头是题目的错<br>洛出答案才是我的结果</p>
+<p>生活是一场喜剧<br>每个人都戴着丑的面具<br>欢笑与阳光伴随左右<br>引我自己就是个乐子</p>
+<p>2024.7.12晚<br>期末成绩公布，精神失常前</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>如果我没有记错的话，高二期末我离 A0 线都差了 7 分，没有柯比考得好。简直要炸了，背晚回来半年的生物竞赛薄纱，非常绝望和压抑。加上开始听草东，有点“文艺青年”那味了。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="如此漫长"><a href="#如此漫长" class="headerlink" title="如此漫长"></a>如此漫长</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>行人一次又一次走过<br>而我因获得而欣喜，因失去而悲哀<br>倘若天空忽然破碎<br>是否仍有勇气去拾起碎片</p>
+<p>孤独是无畏者的赞歌<br>胸腔的烈火使恐惧无处遁形<br>影藏于角落的潜伏客<br>是否是下一场梦的结局</p>
+<p>要如何定义「我」的诞生<br>禁锢于条律，噤声于秩序<br>朦胧的记忆终究是幻想<br>渴望的旅程依旧是空谈<br>我诉说，我倾诉，我沉默，我行将<br>诗和未来的远方</p>
+<p>如此漫长！<br>“屏幕在深夜发亮，我心在考场”<br>可我已别过往昔，造以沧笙踏歌<br>而眼前却是过去，岁月流不尽的河<br>而我竟愚笨如此，辨不得农夫与蛇<br>刹那忘却了希望——<br>与我眼中的光</p>
+<p>2024.7.19<br>在平安无事之后</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>在那段时间以及之后的很长一段时间，我都得了一种后来我在《少有人走的路》中得知名叫“存在性焦虑”的病，我害怕一切的意外，即使困顿于如同循环的生活里渴望变数，却又对变数感到无比的恐惧，很矛盾，甚至对我的生活产生了一定的影响。“如此漫长”的英语为 So Long，也就是2023年方舟夏活小羊活动 SL 的含义。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="一无所有"><a href="#一无所有" class="headerlink" title="一无所有"></a><font style="color:violet">一无所有</font></h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>曾有黄昏掠过我的夏天<br>我也曾尝试抓住黎明的刹那<br>成长为聆听蝉鸣的少年<br>可梦已做尽，泪已流干<br>四方教室的白墙黑板<br>是否余留她的心田……</p>
+<p>我偶然见过秋悄然离去<br>也触动于初春悸动的告白<br>在唯我一人停步的天外<br>而繁花已落，芯蕊已凋<br>萤火照亮的黑夜有星光闪烁<br>远方是否有人为我秉烛驻留</p>
+<p>我可否呐喊——为无人应答的愁闷<br>我可否流泪——在众人嗤笑中明智<br>于遍寻苦难的大地上漫步<br>在夜色温柔的寰宇中开拓</p>
+<p>生活荒诞却有意义<br>幻象遥远却无比美丽<br>我为一切不存在之物干杯<br>倾听玻璃碰撞再打碎<br>酒醒破晓看晨曦</p>
+<p>于是我爱上了写诗<br>无处归隐，便逃离喧嚣于尘世<br>暂别暮春之辞，静观海风与时<br>并不是生命与青春的“落幕”<br>也放下决绝与未来的“永恒”<br>我只“听风”<br>置风雨身外，摆渡时代</p>
+<p>不知痛苦的暗恋何时已目送我远去<br>而我如今行于将来，手执现在<br>那悲伤仅有一瞬<br>回忆却漫长，余韵却悠扬<br>纵身仕外，深知花香蝶自来</p>
+<p>爱情从来不是人生的全部<br>她只做眼前的调味品，我也赴汤蹈火<br>我便只化作飞萤之火亮<br>守护那绝无背弃的契约与誓言</p>
+<p>现实潦倒而富足<br>过去一无所有<br>葬送彼岸的星光之花<br>流转希望的无限未来<br>铸冶新魂于现在</p>
+<p>2024.7.22<br>告别过去，赏味夏天，迎接未来</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>……现在想想真是可笑，做了一个长达六年的荒诞的梦。这首诗是我高中写过最长的一首，我拼尽了想要避开重复的词汇和叠加的意象，显然有很多失败的点。当然，其中不乏有《明日方舟》《重返未来1999》《崩坏：星穹铁道》的片段，不就不多阐述了。《暮春之辞》是我初中四部曲的第一部，草草收尾，“海风与时”当然指的是《少年与时间与风》，“听风”“落幕”“永恒”当然指的是我互联网的三个阶段。其他的都差不多了。算了吧，也就是一片不值得想起的回忆了。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="长歌当哭"><a href="#长歌当哭" class="headerlink" title="长歌当哭"></a>长歌当哭</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>总觉得应该说写什么<br>总感觉必须做点什么<br>那些付出最多的人<br>往往无名留在身后</p>
+<p>可群星已至终末<br>往昔别辞永恒于暴雨之中<br>残愿混沌唱吟沧笙踏歌<br>诗篇已写到末尾，传说迎来结局<br>看罢流星，繁花落尽</p>
+<p>但孤星仍在行尽<br>大地的醒转终不停歇<br>方舟的骑士永不后退<br>有人离去，有人哭泣，有人站起<br>高塔仍在此，我始终如一</p>
+<p>于是天星永恒<br>人生之始，漫步晨昏<br>拂晓幻梦，刻印现实<br>我在此处遥望，从往昔来，到未来去<br>长路有光，决心所向<br>唯有青春值得铭记<br>唯有现在值得厚望。</p>
+<p>2024.8.15<br>“我已高三”</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>写于暑假结束回来的第一个晚上。</p>
+<p>第一段是指江姐当时在 B 站上随便放的一个热门视频，我记得好像是关于打铁花非遗传承，那位年迈的传承人教给年轻人技巧，而他们将技艺带到远方表演，而老人家却因为身体原因不能前去。是一个很无奈的现实。</p>
+<p>后三段其实很明了，那个时候我已经开始规划有关“献予落幕的赞美诗”这一项目，但当时只有三个项目，而第四个迟迟未定，甚至当时还叫“天星”，关于第二段，其实是当时正值 UT 老 UP 主退坑盛期，以前很多的曲师和 PV 师相继离开，即将九周年的 UT 似乎正式走向结束。（然而事实证明并非如此，我相信十周年之际，UT 或许会迎来一次重生）</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="唯愿"><a href="#唯愿" class="headerlink" title="唯愿"></a>唯愿</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>生活的枷锁令人难以喘息<br>日常的幽默忘却一时伤怀<br>我聆听他们的谎言<br>可没人听见真心的呐喊</p>
+<p>每个人都在背后藏着一把真刀<br>每一天日出都在拼命追逐日落<br>我一指一指数着明天<br>幻想着那年的夏日重现</p>
+<p>长夜哄睡了烛光<br>我许下唯一的愿望<br>所幸没有生在战场<br>却死在了考场<br>前人的命运如此狂妄<br>后者的人生多么坦荡</p>
+<p>唯愿，我拥有明天<br>而爱人终会见面；<br>唯愿，幸运如以前<br>幸福在家人身边；<br>唯愿，唯愿<br>山花烂漫，生活平淡</p>
+<p>2024.8.20<br>永远的平安 &amp; 生物竞赛落幕</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>是的，这就是二十一世纪，一个每个人都心怀鬼胎的世界，一个以“卷”为核心的社会。真诚成为了人与人之间的破绽，即使是单纯如学校也会有斤斤计较。或许高中我也许真的就和化竞，生竞走的更近，一个是因为寝室，一个是因为教室。而如今，这细微的联系终将慢慢被时间切断。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="伤"><a href="#伤" class="headerlink" title="伤"></a>伤</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>纵使寒风刺骨划破皮肤<br>纵使炽热灼烧溃烂血肉<br>道路堆砌镣铐与枷锁<br>我沐浴森红的湖泊</p>
+<p>规则束人于傀儡<br>道德缚人为机器<br>不止休的乐章<br>凌乱的舞蹈<br>人们将希望带入坟墓<br>刻下罪行的十字</p>
+<p>稍有放纵<br>拨动未来的弦<br>你与我此刻侧耳倾听<br>偶尔自由<br>折断天命的咒<br>神佛不可阻挡覆水东流</p>
+<p>身上的伤已结疤<br>心头的痛已聊化<br>我跨过荆棘于刀枪之间<br>刻印的伤便是勋章</p>
+<p>2024.8.23<br>在日落之后的个人漫游</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>我的身体很虚弱，了解我的人都是知道的。所以平时如果有冷风对着后脑勺吹就会偏头痛，整个后脑勺痛到无法思考。所以那天下午上完课我就给华请假回家了。而更厉害的是我的偏头痛只要吃一颗布洛芬不出三十分钟就会完全好。所以我索性在家里面耍了一个多小时手机，八点过卡时间下课漫悠漫悠回了学校，也算是打破规则的一次享受了。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="三人的晨昏"><a href="#三人的晨昏" class="headerlink" title="三人的晨昏"></a>三人的晨昏</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>偶尔逍遥，也好<br>日夜不再限制我的灵魂<br>生活不可扼住我的呼吸<br>忘却未来，去他妈的天命<br>末日前吃饱睡觉<br>谈生计为时尚早</p>
+<p>偶有苦痛，也罢<br>人人都有八十一难<br>苦果之后未必明天<br>迎风而去，凝视血的流淌<br>凡赐我于渊谷者<br>必成就我以后生</p>
+<p>哪有比亲重的情<br>哪有比血浓的缘<br>无言自有心相通<br>距远自有月同时<br>同笑同悲同怒同怜<br>在晨曦时起舞<br>在黄昏时齐歌</p>
+<p>我们一同看过日落<br>便还会再一起看千千万万日出日落</p>
+<p>2024.8.26<br>意外的奇遇</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>如果我没记错的话，那时我的“存在性焦虑”无限制地加重，我不害怕自己遭遇意外，但我非常害怕身边的人遭遇意外。所以那时我身体不舒服想去看看，但我爸始终觉得没啥大不了的，我赌气说了句“说不定就要死了呢”，在父母的说教下，我的情绪陷入了崩溃，随即释放。我开始意识到我把一切看得太重，成为了一个盲目无知的“杞人”。</p>
+<hr>
+<h1 id="终幕赞集"><a href="#终幕赞集" class="headerlink" title="终幕赞集"></a>终幕赞集</h1><blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="时光凯旋"><a href="#时光凯旋" class="headerlink" title="时光凯旋"></a>时光凯旋</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>曾有梦泡跌落深渊<br>谱写残垣，盛夏有半截诗篇<br>曾有恍惚见过一面<br>错过时间，寒冬仍扣歌以弦</p>
+<p>在生活的浑水中摇摆<br>闭目再睁眼，秋风扫过落叶潭<br>在未来的岔路中驻足<br>兜兜又转转，春日再照昔别天</p>
+<p>唯有过往的永恒<br>亦可礼赞彼时的落幕</p>
+<p>仰望寰宇，俯瞰大地；<br>巡旅世界，漫步时间<br>上帝已执笔<br>赞美诗正书写<br>时光凯旋，仿佛那年那天</p>
+<p>曾我讴歌<br>今我誓言<br>还我青春<br>筑我未来</p>
+<p>2024.9.9<br>开学典礼，献予落幕的赞美诗（2/3）</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>“时光凯旋”是方舟萨卡兹肉鸽里的一个关卡名，在里面我们通过谱写历史再次相遇霜星和爱国者，于我这个剧情党而言是十分惊喜的，我也很喜欢这段的设计。</p>
+<p>将这首诗视作第三部分的起始，是因为这是高三正式开学之后的第一首诗。也是我十八年以来最伟大的作品——献予落幕的赞美诗完成了第二项的时候。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="唯有苦难与诗"><a href="#唯有苦难与诗" class="headerlink" title="唯有苦难与诗"></a>唯有苦难与诗</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>昨日，我们赋诗以歌<br>今朝，我们忍苦予生<br>思绪播种而长为树苗<br>现实沉默仍化有悲伤</p>
+<p>我们欢笑，因为活着<br>我们恸哭，因为痛苦<br>我们歌舞，因为仍在<br>我们跪悼，因为不再<br>苦难之沉重，不予歌颂<br>诗醉之晨昏，不计回顾</p>
+<p>夙愿化茧，残念流丹<br>命系一线，风雨共舟<br>不存在的预兆，与余留的誓言<br>半截诗篇今日续笔<br>一世光暗明天重现</p>
+<p>业罪，因果，背叛，召唤<br>凝视深渊的渴望<br>穿越时空的幻想<br>因世间烟火隐匿太多苦难<br>因岁月已逝写不完那些诗篇</p>
+<p>2024.9.16(15)<br>We’re walkers of void.</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>本应在 9.15 写的诗因为某些原因推迟了一天。往后余生，9.15 这一天对我的意义永远都是非凡的。Undertale 这个游戏对我的影响还是太大了，没个几年十几年我大概是忘不掉，至少可能等 Deltarune 完结吧。</p>
+<p>诗中引用的都是 UTAU 里的东西，今天手臂有伤就不多赘述了。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="报以和平与歌"><a href="#报以和平与歌" class="headerlink" title="报以和平与歌"></a>报以和平与歌</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>屏息，沉吟，默哀<br>昨日的惨淡叩响回忆<br>闲谈，高歌，欢笑<br>今日的盛景与我同行</p>
+<p>和平不能让我们想象战争<br>战争却已勾勒未来的和平<br>我们曾开枪，为如今没人因痛苦而牺牲<br>我们曾进军，为如今你与我握手即和平</p>
+<p>自山水而起，我是自然的子民<br>穿枪林，过弹雨<br>为百姓而行，我们是炎黄的子孙<br>越高山，游大海</p>
+<p>历史可以淡忘于烟尘<br>盛衰不过饭后的随性<br>可帐得算清<br>欠债之血以血来还</p>
+<p>立正，敬礼<br>昨日的英魂仍会被铭记<br>坐直，读书<br>未来的宏图由我们书写</p>
+<p>2024/9/18<br>铭刻于心的铃</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>我不算一个很正直的人，但我分的清轻重缓急，我不会随时随地将沉重挂在嘴边，但当现实降临，我不会退缩。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="未来如雨朦胧"><a href="#未来如雨朦胧" class="headerlink" title="未来如雨朦胧"></a>未来如雨朦胧</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>阴云已至，空气扼住城市之喉<br>沉默在人群中传播<br>业罪因果催生于心口<br>失败已注定存在<br>即使曾破釜沉舟</p>
+<p>暴雨上膛，生活刺穿行人之躯<br>痛苦在泪水中成熟<br>负债之偿看着像死亡<br>我已被击落于渊谷<br>苟延残喘释然结束</p>
+<p>暮色已殇，朝阳燃尽我的尸骨<br>雨之纷乱，落尽繁花<br>雨仍迷蒙，破碎自我<br>钟已被敲响，一切变数正搅动晨昏<br>山海却模糊，天命的幻想止步星霜</p>
+<p>时代周转，未来与我博弈存亡<br>雨不再下了，可心仍在跳动<br>过去不会有了，眼中也没有希望<br>空门敲无应，独坐寂声亭<br>雨过天又晴，人去不留音</p>
+<p>2024.9.28<br>天势与人事共无常</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>下了一场大雨，正如我高三第一学月考得一塌糊涂。</p>
+<p>最后四句 neta 了贾岛最著名的那首《题李凝幽居》。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="坠于黄昏"><a href="#坠于黄昏" class="headerlink" title="坠于黄昏"></a>坠于黄昏</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>浑浑噩噩必有报应<br>勤勤恳恳终有结果<br>时代的歌谣，生活的哀歌<br>荡漾成写不尽的长诗</p>
+<p>我为业罪遍体鳞伤<br>我因福禄鬼迷心窍<br>初覆昏镜，又辙回音<br>崩殂过后便有新星之誓</p>
+<p>不矜细行，终累大德<br>不就极过，败于始末<br>日落仍有所追迹，花庭前仍有繁星<br>岁月周转酝酿酒醒的晨光</p>
+<p>我们划过的银河<br>我们击破的苍穹<br>我们坠落的星座<br>潮汐吻别黑夜，死于日月<br>幻觉沉眠冬天，贯穿时间</p>
+<p>生命坠于黄昏的世界<br>大地醒转<br>孕育未来的长空</p>
+<p>2024.10.4<br>新的生活</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>国庆之后，我开始了为期 9 个月的走读生活。“我们……”三句取自 Fallen Stars。<del>你会发现到这个时候献予落幕的赞美诗的第四个企划仍叫“新星”。</del></p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="亦终亦始"><a href="#亦终亦始" class="headerlink" title="亦终亦始"></a>亦终亦始</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>我将自己放逐于城市<br>聆听钢铁熔炼的心跳<br>生活接受社会的斥骂<br>玫瑰见证日月的凋零<br>何以为我？何以为世界？</p>
+<p>潮汐追赶荒野的日落<br>枯萎在浪离灯熄的夜晚<br>岁月叩问时代的碑林<br>生者造访死亡的故居<br>何以为终？何以为起源？</p>
+<p>泪雨洒尽，沉入永恒<br>行者呼唤虚无，渴求救赎<br>离经叛道，返视日出<br>因果吞食业罪，复坠谬误<br>开启者，落幕者，先驱者，后继者</p>
+<p>静叹时序更迭，钟针已近<br>坐观春过冬临，终始周转<br>我于晨曦摘下瓣片月光<br>任其搅动血液，浸染风的颜色<br>亦是开始，也成结束</p>
+<p>2024.10.17<br>放不下的放下</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="无"><a href="#无" class="headerlink" title="无"></a>无</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>绝望正蔓延，无际无边<br>痛苦正咆哮，无法无天<br>时间也已倒戈<br>失败命绝一线</p>
+<p>过去，现在，未来<br>往昔，今日，将至<br>城市已成荒野，文明浸入岁月<br>迫在眉睫，我将绞时以加冕</p>
+<p>尘埃落定，我见现实破碎<br>混沌永续，我听潮汐酒醉<br>停摆的时钟被拉扯着前进<br>沉谧的往事被耻笑着翻阅<br>为了明天还能苦笑<br>今日先放下枪刀</p>
+<p>我予我以天囚<br>我赐我之荒芜<br>我歌我此缄默<br>我坠我彼沧笙<br>半截残垣续写诗篇<br>迷诸前尘复堕舛谬。</p>
+<p>2024.10.27<br>未来已至？</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>大概是一诊前复习的时候。你会发现其实我很多诗都会有前后呼应，<del>其实是素材服用</del>。《天囚》（《Heaven Prison》）是我很喜欢的一首 AU 曲，尤其喜欢其 lead 和曲绘。荒芜和缄默是方舟的异格名。最后一句是 CTT Phase3 D.I.E 的官方中译。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="生命的狂风"><a href="#生命的狂风" class="headerlink" title="生命的狂风"></a>生命的狂风</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>生命的狂风席卷大地<br>死亡的沉寂静默如初<br>欲望击碎天空<br>挡住自由的窗</p>
+<p>时间迟缓正老去<br>宇宙咆哮正蔓延<br>扁舟过水浪花尽<br>酒盏一轮风雨停</p>
+<p>我见飞萤扑火，身躯燃烧殆尽<br>我见蜂鸟坠空，血羽染浸黄昏<br>而死亡凝视着深渊<br>却默许沙漏最后的挣扎<br>钟摆将停，日月同新<br>愚者将自己放逐于晨曦<br>夜色铭记</p>
+<p>死亡并非生命的对立<br>而作为生的部分永生<br>森林沉重的呼吸<br>不会记住一次考试的失利<br>但会记住一位蜜蜂的死去</p>
+<p>2024.10.30<br>一诊（2/6）</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>一诊时我坐在床边，在考数学的时候，有一只蜜蜂停在了窗沿，起初我很害怕它乱窜影响我。但它只是在那里缓慢地行动，慢慢地，慢慢地，它的行动越来越迟缓。我忽然觉着，这是一只行将就暮的蜜蜂，但它一直在挣扎，它在扇动翅膀，它仍有一个高空遨游的梦。</p>
+<p>而我呢，当时的我看不清未来，出来一不小心就听到了对答案然后发现自己数学第 16 题三角函数犯了个很低级的错误，两个答案只写了一个。就有点小寄。</p>
+<p>但不知为什么，当时我并不算很悲伤，我只感受到了生命。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="生性之疑"><a href="#生性之疑" class="headerlink" title="生性之疑"></a>生性之疑</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>迟愚之鸟三度返巢，失时亡于丛阴<br>犹疑之花欲绽再闭，含苞凋于醒春<br>命运既定，掌舵人却回首着过去<br>绞心成棘，远旅者仍踌躇未向前</p>
+<p>群星已末，孤星已明，生命的初戏即将落幕<br>逐星已抵，盛星已至，灵魂的悸动瞬刻永恒<br>我向深空许愿，而唯有我回应了我<br>赞美诗篇起于盛夏，悠古回响拍浪前潮</p>
+<p>黎明时点灯，扑展未来的忧郁<br>日照时高歌，延申往昔的渴望<br>黄昏时噤声，沉思当下的求索<br>礁岩的书页随浮光流动<br>蕊心的子嗣盛金黄花海<br>幻在此刻破灭，梦在此刻重启</p>
+<p>愚者奔途陌域，放逐黄昏<br>回想周转亘古，宿仇既已<br>意志传递时空，决心鸣响<br>残影苟延混沌，命运舛谬<br>乐章再起新篇，深渊再起<br>终章又至，起点亦临。</p>
+<p>2024.11.8<br>“人生苦难重重”</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>我直视了自己的问题，当然，这个时候我的心情其实特别好。毕竟一诊，知道我的都知道，那是我高中考得最好的一次。而且当时还有三天我就成年了。所以一下子感觉人生又有希望了。<del>结果后面就生病回家了</del>。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="天囚"><a href="#天囚" class="headerlink" title="天囚"></a>天囚</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>幻想者在雨幕中呓语<br>逐梦者在虚空中呐喊<br>焰火迸射光芒万丈<br>熔岩敲击雷鸣闪电</p>
+<p>囚徒为自由高歌，而生命落幕<br>罪人以岁月问审，而时光终结<br>欲望的禁果愈发诱人<br>悬垂的利剑令人惊惧<br>何时迎来旅途的结局？<br>何时再有故事的新篇？</p>
+<p>回音花枯萎的那个日落<br>绝望者仍与暴风一同高歌<br>眼泪凝结为冰晶的那个冬天<br>清醒者自甘沉湎于酒精之海</p>
+<p>谁也走不出，谁也逃不掉<br>自出生便镣铐上的天之囚<br>祂将撕扯肉体，祂将搅碎灵魂<br>沉眠何时得以宁静？<br>生活何日得以安平？</p>
+<p>2024.11.18<br>倒计时</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="小人之志"><a href="#小人之志" class="headerlink" title="小人之志"></a>小人之志</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>你何以面对过去？<br>他们斥责你，痛恨你，迁怒于你<br>无尽的愧怍将你溺于苦海<br>一切的离去都因你哀歌</p>
+<p>你何以面对未来？<br>他们嘲弄你，蔑视你，取乐于你<br>徘徊的忧虑将你焚于炼狱<br>一切的失败都拜你所赐</p>
+<p>我祈望末日的到来，万物沉寂<br>理智尽数破碎，生命再起新篇<br>唯有血泪受教的世界，你将凭何存续？<br>梦想本触不可及，那便让它们一同消散<br>于另一个冬天，寒冷的心正呼吸<br>寻求灵魂的飘荡</p>
+<p>我咒以他们的惨败，众声静默<br>感情随风而散，孤独如约而至<br>唯有利益驱使的人生，我又因何活着？<br>历史本与我无关，那便让它们抛之云外<br>于另一个盛夏，炽热的眼未流泪<br>追思灵魄的安息</p>
+<p>2024.12.15<br>思索</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>“妒”者，人之性；“私”者，人之理。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="沉默"><a href="#沉默" class="headerlink" title="沉默"></a>沉默</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>总想着说什么，却什么也说不出口<br>言语翻倒在心中腐朽不堪<br>总想着做些什么，却什么也做不到<br>只有时间作看客观我不学无术</p>
+<p>人们从不在乎日升月落，潮涌汐褪<br>人们从不赞美春秋更迭，世界周转<br>傲慢使他们失去了过去<br>我们又该以什么迎接未来？</p>
+<p>珍奇之物，万世唯一<br>它们的价值在于失去<br>活在记忆中，胜于活在尘埃里</p>
+<p>新生之岁，刻刻未停<br>它们的意义在于未知<br>生路在前，毁灭置后，或为浴火，或为柱盐</p>
+<p>我于高空坠入大地<br>荡漾出玫瑰色的黑白记忆<br>胶片在古老中漫步，走过今晚<br>晨昏之线织起天幕，灵魂落下审判：<br>我已失去过去</p>
+<p>2024.12.24 平安夜<br>失去过去</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>“盐柱”通常指的是《圣经》中罗得的妻子因回头观看所多玛而变成的盐柱，这一事件象征着对过去的留恋和对变化的无能为力。</p>
+<p>神必 XWP 没通知我把我书全部扔了，索性没有重要的东西</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="此时此刻"><a href="#此时此刻" class="headerlink" title="此时此刻"></a>此时此刻</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>我在梦里做了个美梦<br>梦见城市的雨洗净人们的傲慢<br>梦见岸边的歌唱出人们的心愿<br>生命属于无止境的创造<br>故事在黑暗悠然呼吸</p>
+<p>我们仍活在此刻的循环中<br>由心而生的那份微弱光芒<br>极限渴望于不同的结局<br>生命的艺术源于疯狂<br>人们在黄昏中走向泯灭</p>
+<p>钟声已响，午夜未至<br>我们沉湎于过去的不可变<br>绝望于未来的不可见<br>现实潦倒于堕落之后<br>富足于决心共鸣时</p>
+<p>此时此刻，彼刻彼时<br>在我陷入无垠黑暗之时<br>我听到了一个声音：<br>“你只是厌倦了失败，<br>而我能让你战无不胜”</p>
+<p>2025.1.3<br>八省联考（2/6）</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>第三句最后两个字原为“灵魂”，我仍未颇有不妥。</p>
+<p>最后两句出自《La jupo》，被用于形容“精神错乱”（insanity）。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="无终奇语"><a href="#无终奇语" class="headerlink" title="无终奇语"></a>无终奇语</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>寒冬将近，待放的花苞已成<br>尾声即临，故事已走向落幕<br>可我仍困于徘徊之中<br>生活拼凑了一圈圈循环<br>我们为自己套上枷锁</p>
+<p>可最终<br>我究竟配得上怎样的结局？<br>还是说这世界本无尽头<br>我们在星空中漂泊<br>待灵魂最终归散天际</p>
+<p>不，这里仍有转机<br>奴仆会用利斧劈碎锁链<br>囚徒会用火焰焚尽禁锢<br>败于浪逐与被虚无吞噬的游子<br>亦有杀死大海的决心</p>
+<p>永燃的炉薪会照亮我的长路<br>风雨与雷鸣与我一同谱曲<br>我用半颗心脏于此共鸣<br>让全世界在此刻与我侧耳倾听<br>用生命奏响的我的终曲</p>
+<p>2025.1.11<br>于此刻</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>标题取自明日方舟，构思于几个肉鸽。</p>
+<p>最后几句化用自《至云雀》：“教给我一半，你的心/必是熟知欢欣/和谐、炽热的激情/就会流出我的双唇/全世界就会像此刻的我——侧耳倾听”</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="逐火"><a href="#逐火" class="headerlink" title="逐火"></a>逐火</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>纷繁之雨于午夜降临大地<br>花随之落尽，伴以寒风褪去<br>有一颗水晶刺穿了我的心骨<br>它用风筑起一柄利剑，它说</p>
+<p>伤痕正野蛮生长<br>在血肉下刻上不死的咒文<br>寒冬带着行李拜访盛夏<br>他用雨画出一道霓虹，她说</p>
+<p>伊特诺尔蒂！<br>你的终幕剧我已写好<br>只管张开双腿迈向海的尽头<br>那里自有通向未来的门<br>你眼前的黄昏终会崩塌，我说<br>而我会成为新的太阳，你说</p>
+<p>台上台下各在唱演各自的戏<br>身前身后同在滴落无色的酒<br>我见一片落叶，它将远行<br>追随深秋寻找最深邃的火<br>正如我，我说<br>终于堕入了厌倦失败的魔</p>
+<p>2025.1.15<br>二诊（2/6）</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>二诊数学爆了这事儿大家都知道，所以这首诗有点神经质</p>
+<p>伊特诺尔蒂是 Eternity 的英译，也就是我的网名。逐火取自星铁 3.0 大版本主题。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="黑血"><a href="#黑血" class="headerlink" title="黑血"></a>黑血</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>是的，黑夜有它独自无白的世界<br>那里的落日斩断了余晖，挂上了<br>黯淡的旗</p>
+<p>诚然，天空依然挂念着她的飞鸟<br>那些金色的羽毛飘落大地，染指上<br>一片深秋</p>
+<p>所以，我需要背负三世的万劫与罪<br>用双手洗净时间之尘，擦拭星空<br>让一切存在或虚无的歌咏的坟冢<br>让一切活着或焚烧的咆哮的绝望<br>尚未发生的所有，但我已看到<br>山川，河流，它们无不都沐浴着<br>我黑色的血液</p>
+<p>请伸手，请抓住我，请一定抓紧我<br>在我将跌入悲伤吞噬的深渊之时<br>当我将被引力撕扯，浮沉太空之时<br>那一切的伤痕，那万物唯生的解药<br>在意识消散之前，将我的灵魂打碎<br>以这世界最温柔的耳语，告诉我：<br>惟爱永恒</p>
+<p>2025.1.21<br>何以为我</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>读《二十首情诗和一首绝望的歌》有感。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="罪"><a href="#罪" class="headerlink" title="罪"></a>罪</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>我为自己戴上镣铐<br>我吮吸着自己的鲜血<br>我判读自己的罪行<br>我等候着审判的临将</p>
+<p>生命正攀登岁月的高山<br>利刃与风暴无法洗净恶罪<br>在一切沉思中，我质问未来：<br>如今，我又值得怎样的结局</p>
+<p>悬垂胸膛的剑早已刺穿那颗虚假的心<br>醒于晨晓微光之前，眠于星宿流转之末<br>一切的绝望与悲恸在游荡<br>它们在狩猎我的灵魂</p>
+<p>傲慢将我引至渊囚<br>我将在此习得蔑视的勇气<br>怯懦让我禁锢自我<br>我将借此看透人生的本迹<br>懈惰腐朽着我的身躯<br>我将亲手站短这可笑的谎言<br>生命惟有一息<br>吹过百年人间</p>
+<p>2025.2.13<br>正月十六</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>明日方舟·净罪作战，让我回想起那寰宇中的孤星和漫步慈悲的灯塔，以及困顿于现实的我。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="Time-Goes-By-Chaos"><a href="#Time-Goes-By-Chaos" class="headerlink" title="Time Goes By Chaos"></a>Time Goes By Chaos</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>想象一片圣土<br>时间也在此碾作尘埃<br>城市化作乌黑的结晶<br>暴雨凝下天堂的阶梯</p>
+<p>在死亡面前<br>生命催发出新的欲望<br>那“决心”愈发强烈<br>在进退中打破轮回</p>
+<p>灵魂的自焚惟寂静相伴<br>生命的崩塌仅孤独自酌<br>正如深渊中一瞬之阳<br>黑夜中仅存的微冷烛光<br>它会成为点燃绝望的第一炬火</p>
+<p>终结，混沌，虚空<br>故事就此结尾，封书合页<br>时过而熵增<br>落幕或永恒<br>于是世间一切就此明了：<br>一切价值将由我赋予<br>一切意义将由我定义</p>
+<p>2025.2.18<br>联考（3/6）</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>Time goes by chaos，一个这两年突然爆火的 UT 二创格式，官方译名为时亡狂澜，而结合其诞生形式，可以理解为：在时间的积淀下形成的混乱。</p>
+<p>联考算是我高三考得最差的一次，不过那时我已经理解了自己活着的意义。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="岁月奔流"><a href="#岁月奔流" class="headerlink" title="岁月奔流"></a>岁月奔流</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>暗夜无声，失眠者于枕间望穿星辰<br>未来无形，奋进者于晨暮未曾置笔<br>我在太多失望中读出无奈<br>我见万千梦想里隐瞒失败</p>
+<p>那些成功之人，他们杀死我一遍又一遍<br>怯懦，懒惰，虚伪，傲慢，无能<br>枷锁将我扼制在时代之后<br>过去在阻挠我，它试图教会我因果</p>
+<p>我曾倾听过狂欢之舞的落幕，热闹终归于沉寂<br>我曾见证星绽在一瞬间灿烂，而后匿迹失声<br>我是否会成为那样的人？<br>览过一世界，记住什么，又忘记什么<br>思绪同躯体消散，无人悼念，无人问津<br>还是，如瓶中萤火见一刻寰宇<br>即使梦醒之后我会死去</p>
+<p>时代的眼泪流进历史<br>汇为岁月，终始奔流<br>只此百日一盛夏<br>那些悔恨与屈辱，嘲笑与批评<br>就由我借这迟来的光焚尽吧</p>
+<p>2025.2.21<br>Day -106</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="何者"><a href="#何者" class="headerlink" title="何者"></a>何者</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>惨败的日昼，寂寥无声<br>无人的阶亭，空有回音<br>唯有沉默漫步在城市一隅<br>他们都消散在尘埃中，无处寻迹</p>
+<p>生活的钟摆悄然静滞<br>没人怪罪齿轮的懈怠<br>正如时间纵容历史的奔流<br>岁月不在乎瞬息的蜉蝣<br>灵魂游荡天空，惟欲望而生</p>
+<p>而规则召他们回归<br>奔逐于一息不停的命<br>初心被驱至境外，蒙尘<br>压迫催生，复而重行<br>从此朝夕不过一片背景<br>我见晨夜而醒，见暮昏而眠</p>
+<p>何日再聊起“未来”一词<br>何者又踏上明日之途<br>我无需驾驭世界<br>我只定义自我<br>在未定的，仍有希望的此刻</p>
+<p>2025.2.27<br>百日</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="恍惚"><a href="#恍惚" class="headerlink" title="恍惚"></a>恍惚</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>只是思绪偶尔不在生活中游走<br>忘记了烦恼的一切与忧愁<br>即使迫在眉睫，时间<br>岁月也拽不动我的懒惰<br>在无所事事的年代</p>
+<p>不赞美秋冬，不享受春夏<br>不珍惜白昼，不放过黑夜<br>写尽骗过自己的谎言<br>才发现一直在梦里</p>
+<p>一切停步都算作奢侈<br>唯有创造能让我安心<br>抑制的欲望趋引至癫狂<br>偶尔的放纵让人想歌唱</p>
+<p>那<br>一瞬<br>在人间<br>醉过山川<br>愰惚仍少年<br>雨中何见自我<br>听便花落一片片</p>
+<p>2025.3.10<br>成都二诊（2/6）</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>炫压抑了，此事在错题本上亦有记载。两次二诊都是颠覆级的爆炸，有点情绪正常。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="逃离"><a href="#逃离" class="headerlink" title="逃离"></a>逃离</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>我何以见得日出？<br>唯有将暗的星月作伴起程<br>我何以看过日落？<br>黄昏仅一瞬甚至不足以喘息</p>
+<p>初春已临<br>岁月殆尽<br>命运的终点向我靠近<br>风云再现<br>时亡狂澜<br>初心正呼唤一场改变</p>
+<p>可我只愿享受阳光<br>宁静的午后与温暖的床<br>放肆的青春与仍在的梦想<br>涌动的热血与跳动的心脏</p>
+<p>不再去念叨什么会永恒的过去<br>不再去担忧如何是落幕的未来<br>正如现在有每分每秒<br>片刻纵容<br>不要为背离规则而愧于苦恼<br>因那才是生命赐予活着的本色</p>
+<p>2025.3.21<br>高考体检</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>阎迪骨折，我摆条的时候把他推过去，就直接误入 VIP 通道了，打破规则的享受，还有一瞬沐浴阳光。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="昼与夜"><a href="#昼与夜" class="headerlink" title="昼与夜"></a>昼与夜</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>从何时漫游也成为一种奢侈<br>生命的气息简化为狂奔不止<br>凛冬弃我于冰雪之后，怎我甘于错过春风？<br>花飞有声柳作歌，水融鱼跃复生萌</p>
+<p>时日无多，思绪却错杂不堪<br>劳苦倦怠，罪恶也昼夜无眠<br>怎么欲望总会胜过理性<br>为何谎言依然骗过信任</p>
+<p>求索，启锁，止步为思考过错<br>长廊，孤妄，我记起还有一个梦想<br>洪流奔涌中偶有一次喘息<br>沉湎过去的名誉，亦或羡慕他们的崛起</p>
+<p>不！我绝不允许<br>属于我的胜利<br>便筑在踏碎灵魂尸骨，杀死万千人的决心<br>让昼光洗净万物的惰气<br>让夜琴拨响再起的弦音<br>虽前路一片荒野<br>一望无尽<br>我，即我的千军</p>
+<p>2025.3.24<br>Day -75</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>我并不认可“卷”的性质，虽我深知这是文明前进的唯一方式，也深陷其中。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="唯余其一"><a href="#唯余其一" class="headerlink" title="唯余其一"></a>唯余其一</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>时间的扭曲周旋令现实倒转<br>裂分的思绪纷杂让精神癫狂<br>我看见往日呼唤，逝者如斯<br>我看见未来奔赴，奇迹再现</p>
+<p>我曾以为一切尚可及<br>冰雪未融，花仍含苞欲放<br>可何时我仍未走出失败的折磨<br>沐浴黄昏片刻便被锢于绝境生活</p>
+<p>试问：<br>我应以何种代价去换取未来<br>我要成为谁，才能配上这无尽幸福<br>安乐屋从不永恒<br>梦与想依旧虚无<br>你是否承认<br>一事无成</p>
+<p>……<br>今晚的黑夜并不灿烂，仿佛从来如此<br>与其隐匿，为何不燃成一瞬火焰，触摸天空<br>我想，我仍能做些什么，成为谁<br>即使自余烬诞生，我唯余其一</p>
+<p>2025.4.8<br>Day -60</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>自两次二诊之后我一直处于很失落的状态，起起落落落落落。</p>
+<p>标题取自《Undertale: Call of the Void》的 3A 结局曲目名《One left.》。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="沉沦"><a href="#沉沦" class="headerlink" title="沉沦"></a>沉沦</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>曾几何时<br>心中荡起一片悸动<br>那些世界，那些……<br>何以岁月，而且……</p>
+<p>虚空所见过往<br>而寰宇如有人者拾荒<br>混沌重叠时间<br>妄无尽终苦见深渊<br>诗篇难抵华年<br>末终永恒之后的明天</p>
+<p>传说未尽<br>时代将续<br>未来迭起<br>青春赋予<br>我已厌倦，故事终局<br>风来雨去，陌路羁旅</p>
+<p>百日半尽<br>火簇燃至芯炎之刻<br>冰雪封尽极寒之时<br>夙愿将破茧，残愿终流丹</p>
+<p>2025.4.18<br>Day -50</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>我想起了一个很遥远的梦，来自地底的梦。在这个不恰当的时候我突然下定决心去完成它。</p>
+<p>第二段其实说的就是我即将开始的三个企划：《传说之下：拾荒者》《无序凝刻》《恒永末世》。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="繁花落尽"><a href="#繁花落尽" class="headerlink" title="繁花落尽"></a>繁花落尽</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>你是否记得，想起<br>回忆里曾有一段繁荣的时代<br>在一切开始之前<br>混沌未起，终结未现</p>
+<p>一切起源的金色长廊<br>救赎灵魂的金色花海<br>那时彼岸花开，机难轻失<br>余烬重燃追忆，终焉追逐绿茵<br>星辰陨坠于黯紫天空<br>泪水浸干，尽落繁花</p>
+<p>往昔，当下，未来<br>我们早已困于天囚之下<br>晚风吹拂，何时飞向天空？<br>思绪最终只能在虚空回荡<br>成为绝望轮回的迷失者</p>
+<p>此刻风云莫测<br>而我们已达终焉之时<br>在那永恒的传说落幕之前<br>地域的诗篇响遍寰宇<br>与我一切的记忆</p>
+<p>2025.4.19<br>三诊（2/6）</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>虽然三诊满脑子 UT，但是意外地考得很好。</p>
+<p>从第一段最后一句开始，均取自 UT/UTAU，分别是：</p>
+<blockquote>
+<p>Chaotic Time Trio 与 Ending Time Octet<br>Undertale 种族灭绝线<br>Undertale 完美和平线<br>DecayMyth IMMORTALITY V3 和 Chancetale<br>Dusttrust 和 Overlawn<br>Fallen Stars 曲目 Our Broken Constellations<br>Undertale: Conceptualized Neutral Run 和 Flowerfell<br>Undertale: Past, Present, Future<br>No AU 曲目 Heaven Prison<br>Wind<br>Undertale: Call of the Void<br>UTCOTV 曲目 The Hopelessness and the Hopelessly Lost<br>Undertale: Last Breath UST Unpredictable<br>Chancetale 曲目 Eternal Time: Silent Star<br>Eternaltale<br>Underverse</p>
+</blockquote>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="有关那一切的"><a href="#有关那一切的" class="headerlink" title="有关那一切的"></a>有关那一切的</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>时间在我躯行上铭刻伤疤<br>灵魂的燃烧已接近枯槁<br>我见可悲的结局：<br>众生行于漠不在意<br>惟我孑然独步风雨烂漫</p>
+<p>社会的轮盘滴着血<br>现实会抹杀你我的泪<br>容不下片刻自由的伊甸之园<br>囚徒建起一瞬黑暗下<br>罪人的乌托邦</p>
+<p>见不得黑暗与残酷之眼<br>容下遍地黄金璀璨耀闪<br>真理败倒在公堂<br>真相需先经审判<br>惟有此夜，只有悲剧享有乐趣</p>
+<p>诡谲信息海与方尖无字碑<br>无尽长路与舍我其谁<br>星怵日耀与阴云火花与狂雨骤歇<br>一瞬千变之息与永恒枯朽的世界<br>我的一生与一生的我</p>
+<p>2025.4.27<br>成都三诊（2/6）</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p><del>并不</del>怀念躲在教室里用墨水屏电子书看方舟前瞻的日子。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="劣者"><a href="#劣者" class="headerlink" title="劣者"></a>劣者</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>残次品注定与阴沟为伴<br>星河终究付与一瞬念想<br>繁花会落尽<br>干戈洞穿苍穹，石陨击破星座</p>
+<p>我们是执行者<br>燃尽狱火也抵不住命运的戏弄<br>我们是落幕者<br>揭示潘多拉的魔盒而无望反驳<br>迷失，疯执，叛离，假笑<br>劣者<br>我们亦是行于虚空的前驱者</p>
+<p>我不想被认为是一个“垃圾”<br>可笑故事中无生的“玩物”<br>失败者，绝望于轮回<br>亦或许你与我早已死在了那场重置之中</p>
+<p>亘古断界，轰鸣交响<br>妄者穷途，行终至暮<br>自坠入深渊起，我已认定：<br>好吧……<br>但你还没有赢</p>
+<p>2025.5.7<br>Day -31</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>第二段讲述的是 Ending Time Octet，在所有 ETO 即其二创中，Phase4 Part2 我最喜欢的就是 KO（劣者）这一版，将反抗演绎得淋漓尽致。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="绞时加冕"><a href="#绞时加冕" class="headerlink" title="绞时加冕"></a>绞时加冕</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>真相已水落石出，结局亦昏血待凝<br>你是否已合格？<br>为即将到来者刻骨铭心<br>身处迫在眉睫的现在</p>
+<p>Determination<br>I’m waiting for my Reincarnation<br>And now it’s time<br>Hangin’ Time Coronation</p>
+<p>去毁灭些什么<br>才能筑出通天的再创世之阶<br>变熵的余韵<br>让我们得以修正永恒的玄冥</p>
+<p>星河，瀑布，长廊，花海，雪町<br>“时间将以四倍速倒退”<br>吾得意见：<br>往昔，当下，未来<br>岁月，生命，人间<br>这意义由我亲自呈现，传说<br>由我书写，而后的我将<br>绞时加冕</p>
+<p>2025.5.11<br>Last 27 Days</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>整首诗都取自 Undertale: Last 27 Hours（传说之下：迫在眉睫），前两句是三首曲目名。</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="直至"><a href="#直至" class="headerlink" title="直至"></a>直至</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>此刻你不得不相信<br>神祗所见碑铭间降下的光缕<br>便是来迎接你的，等候多时的<br>奇迹</p>
+<p>黄昏落入岸滨的影<br>忘记随汐落泛泛而平的记忆<br>风唤醒梦镜倒映的精灵<br>聆听山音与亘古无绝的鹿鸣</p>
+<p>总算能脱下这伪饰<br>见见我生着的喧闹着的凡世<br>打破天穹沙漏的倒计时<br>补上因我而存在的未发生的历史</p>
+<p>如今与终点仍有一悬之距<br>如行百里路者半程于九十<br>有人会倒下，但绝不能是我<br>因谎言正等着被揭幕</p>
+<p>是以因果为生的孤独<br>是以怯懦为掩的自负<br>是以欲望而存的奔逐<br>是以成功为终的结束</p>
+<p>2025.5.18<br>自主复习之始</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p><del>走马灯</del></p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="踏浪而行"><a href="#踏浪而行" class="headerlink" title="踏浪而行"></a>踏浪而行</h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>他们都已看清来去的路<br>而我仍未见我灵魂的觉悟<br>困扰着一切真实的问题<br>与永世无解的谜语<br>或将予以直面</p>
+<p>我梦见潮汐，日落，繁星<br>那一切的一切结束后的愿景<br>骇浪赐予我清醒<br>此刻我仍是掌舵的水手<br>驶向风暴后唯一平静的陆地</p>
+<p>祈望与烟火共鸣<br>夏风与北斗同行<br>萤火与霞光点亮仲夜<br>影子与我共酌明天<br>等待晨曦降临</p>
+<p>琴与弦声殆尽<br>岁月与青春道别<br>辞昔而今，球欲行<br>在此之前，倾听蝉语<br>与好戏开场的压轴之曲</p>
+<p>2025.5.26<br>压轴终曲（2/6）</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>最后一次模拟考</p>
+<hr>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <h2 id="勿-忘"><a href="#勿-忘" class="headerlink" title="勿 忘"></a><font style="color:violet">勿 忘</font></h2>
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>盛夏蝉鸣，却令我心静<br>风吹纸笔，日月照书卷<br>时序周转，恍惚已三年<br>挥洒汗泪，终曲近眼前<br>余息追忆，吾生须臾见潮汐<br>沧笙别昔，未来可叹赴明今<br>不可视之结局，与自诞未泯的决意</p>
+<p>静谧着，等待一瞬躁动<br>狂想着，渴望一次奇迹<br>曾记否，千日怎度如浮舟飘摇<br>又怕什？迫于眉睫便直冲云霄<br>人生，便是去验证名为“意义”的命题<br>即使是沌入虚无的挫败<br>亦或是沐浴永恒的凯旋</p>
+<p>亦是起始，亦为终焉<br>我是我传说的开启人，我是我青春的落幕者<br>我是我未来的继承之人<br>“寰宇星沉奏黎明<br>人间岁越待青春<br>春秋一打盼金榜<br>盛夏千古迎凯旋”</p>
+<p>琴停弦静，圣堂悬回音<br>耀阳起落，波光漾新生<br>仿佛昨日，时光染心田<br>飘摇苦乐，皆化作逍遥<br>玄冥不再，未来与现实共饮<br>拂拭往昔，平凡已成为奇迹<br>不存在的梦想，亦化作眼前的路途</p>
+<p>伸展着，俯瞰一片山川<br>享受着，拥抱一次自由<br>这值得，人生之春畅想盛夏游<br>再前进，整装待发而后新篇章<br>勿忘，青春应去证明此“梦想”的真伪<br>既有那一切于此的结束<br>也含有万物从此的开始</p>
+<p>写尽华章，再看春秋<br>我为我授予荣誉勋章，我为我致敬少年风尚<br>我是我自传的执笔之人<br>“传说落幕而心永存<br>现实潦倒而梦富足<br>青春开篇至此<br>于是我迈步而行，步履风轻”</p>
+<p>2025.6.4 / 2025.7.30</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<hr>
+<h1 id="后者补集"><a href="#后者补集" class="headerlink" title="后者补集"></a>后者补集</h1><p>合计 51 首诗，其中出现了“未来”39次，“绝望”12次，“过去”21次……</p>
+<p>你会发现其实高中时期我写的诗都有一个隐含的共同的主题，我不好描述它是什么，关于未来的遐想与恐惧，对过去的留恋，对现实的绝望等等。这些都是一体的。</p>
+<p>虽然文笔有过进步，但我认为仍然处于一个很稚嫩的阶段。在之后写文的时候或许会得到一些改进。下一步是完成几个 UT 企划以及将文章搬录进博客。</p>
+<hr>
+
+    </div>
+
+    
+    
+    
+      
+
+  <div class="popular-posts-header">相关文章</div>
+  <ul class="related-posts">
+  
+      <li class="related-posts-item"><a href="/Until-The-End/My-Senior-High-School-Life/">E.N.D</a></li>
+  
+      <li class="related-posts-item"><a href="/%E9%9B%A8%E8%90%BD%EF%BC%8C%E8%A7%81%E9%BB%8E%E6%98%8E/Summer-the-2025/">盛夏之风</a></li>
+  
+      <li class="related-posts-item"><a href="/Until-The-End/My-Promise/">T.I.M.E</a></li>
+  
+      <li class="related-posts-item"><a href="/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4%E9%9B%86/%E9%9A%8F%E6%B1%90%E6%B3%9B%E5%B9%B3%E7%9A%84%E8%AE%B0%E5%BF%86/Walk-After-the-Rainfall/">行至雨落之后</a></li>
+  
+      <li class="related-posts-item"><a href="/%E9%9B%A8%E4%B8%AD%EF%BC%8C%E6%A2%A6%E4%B8%80%E5%9C%BA/Stay-Always-Together/">风雨执舟，紫罗兰之梦</a></li>
+  
+  </ul>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%A0%A1%E5%9B%AD/" rel="tag"># 校园</a>
+              <a href="/tags/%E9%9D%92%E6%98%A5/" rel="tag"># 青春</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/%E9%9B%A8%E8%90%BD%EF%BC%8C%E8%A7%81%E9%BB%8E%E6%98%8E/Summer-the-2025/" rel="prev" title="盛夏之风">
+      <i class="fa fa-chevron-left"></i> 盛夏之风
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/Until-The-End/My-University-Life/" rel="next" title="U.N.I">
+      U.N.I <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B5%B7%E6%BA%90%E8%AF%97%E9%9B%86"><span class="nav-text">起源诗集</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B4%9B%E5%8D%8E"><span class="nav-text">洛华</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%91%E5%B9%B4%E7%9A%84%E6%AD%8C%E8%A1%8C"><span class="nav-text">少年的歌行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%95%BF%E5%A4%9C"><span class="nav-text">长夜</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BD%92%E6%9D%A5"><span class="nav-text">归来</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B2%89%E7%9C%A0"><span class="nav-text">沉眠</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9D%80%E6%AD%BB%E6%88%91%E7%9A%84%E9%81%97%E4%B9%A6"><span class="nav-text">杀死我的遗书</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%AA%E5%BD%B1"><span class="nav-text">剪影</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%B0%E7%8B%B1%E4%B9%8B%E6%AD%8C"><span class="nav-text">地狱之歌</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A3%9E%E8%90%A4"><span class="nav-text">飞萤</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9D%92%E6%98%A5%E9%A2%82%E9%9B%86"><span class="nav-text">青春颂集</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8%E7%A0%B4%E7%A2%8E%E7%9A%84%E5%A4%A9%E7%A9%BA%E4%B8%8B"><span class="nav-text">在破碎的天空下</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%98%A8%E6%97%A5%E7%9A%84%E6%AC%A2%E6%AC%A3"><span class="nav-text">昨日的欢欣</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%80%92%E8%AE%A1%E6%97%B6"><span class="nav-text">倒计时</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%91%E8%AF%9D"><span class="nav-text">笑话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A6%82%E6%AD%A4%E6%BC%AB%E9%95%BF"><span class="nav-text">如此漫长</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E6%97%A0%E6%89%80%E6%9C%89"><span class="nav-text">一无所有</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%95%BF%E6%AD%8C%E5%BD%93%E5%93%AD"><span class="nav-text">长歌当哭</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%94%AF%E6%84%BF"><span class="nav-text">唯愿</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%A4"><span class="nav-text">伤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E4%BA%BA%E7%9A%84%E6%99%A8%E6%98%8F"><span class="nav-text">三人的晨昏</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%88%E5%B9%95%E8%B5%9E%E9%9B%86"><span class="nav-text">终幕赞集</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%97%B6%E5%85%89%E5%87%AF%E6%97%8B"><span class="nav-text">时光凯旋</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%94%AF%E6%9C%89%E8%8B%A6%E9%9A%BE%E4%B8%8E%E8%AF%97"><span class="nav-text">唯有苦难与诗</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8A%A5%E4%BB%A5%E5%92%8C%E5%B9%B3%E4%B8%8E%E6%AD%8C"><span class="nav-text">报以和平与歌</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AA%E6%9D%A5%E5%A6%82%E9%9B%A8%E6%9C%A6%E8%83%A7"><span class="nav-text">未来如雨朦胧</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9D%A0%E4%BA%8E%E9%BB%84%E6%98%8F"><span class="nav-text">坠于黄昏</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%A6%E7%BB%88%E4%BA%A6%E5%A7%8B"><span class="nav-text">亦终亦始</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%97%A0"><span class="nav-text">无</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E5%91%BD%E7%9A%84%E7%8B%82%E9%A3%8E"><span class="nav-text">生命的狂风</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E6%80%A7%E4%B9%8B%E7%96%91"><span class="nav-text">生性之疑</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%A9%E5%9B%9A"><span class="nav-text">天囚</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%8F%E4%BA%BA%E4%B9%8B%E5%BF%97"><span class="nav-text">小人之志</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B2%89%E9%BB%98"><span class="nav-text">沉默</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A4%E6%97%B6%E6%AD%A4%E5%88%BB"><span class="nav-text">此时此刻</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%97%A0%E7%BB%88%E5%A5%87%E8%AF%AD"><span class="nav-text">无终奇语</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%90%E7%81%AB"><span class="nav-text">逐火</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%BB%91%E8%A1%80"><span class="nav-text">黑血</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%AA"><span class="nav-text">罪</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Time-Goes-By-Chaos"><span class="nav-text">Time Goes By Chaos</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B2%81%E6%9C%88%E5%A5%94%E6%B5%81"><span class="nav-text">岁月奔流</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%95%E8%80%85"><span class="nav-text">何者</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%81%8D%E6%83%9A"><span class="nav-text">恍惚</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%83%E7%A6%BB"><span class="nav-text">逃离</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%98%BC%E4%B8%8E%E5%A4%9C"><span class="nav-text">昼与夜</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%94%AF%E4%BD%99%E5%85%B6%E4%B8%80"><span class="nav-text">唯余其一</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B2%89%E6%B2%A6"><span class="nav-text">沉沦</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B9%81%E8%8A%B1%E8%90%BD%E5%B0%BD"><span class="nav-text">繁花落尽</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%89%E5%85%B3%E9%82%A3%E4%B8%80%E5%88%87%E7%9A%84"><span class="nav-text">有关那一切的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%A3%E8%80%85"><span class="nav-text">劣者</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%9E%E6%97%B6%E5%8A%A0%E5%86%95"><span class="nav-text">绞时加冕</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%B4%E8%87%B3"><span class="nav-text">直至</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B8%8F%E6%B5%AA%E8%80%8C%E8%A1%8C"><span class="nav-text">踏浪而行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8B%BF-%E5%BF%98"><span class="nav-text">勿 忘</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%90%8E%E8%80%85%E8%A1%A5%E9%9B%86"><span class="nav-text">后者补集</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Fallen Shadow"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Fallen Shadow</p>
+  <div class="site-description" itemprop="description">誰も悪くないから、辛いだな。<br>自卑的人，往往只剩下温柔了啊……</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">216</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">28</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">299</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/LucarEternity" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;LucarEternity" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="skype:live:.cid.7ca038c9215763f1?call|chat" title="Skype → skype:live:.cid.7ca038c9215763f1?call|chat" rel="noopener" target="_blank"><i class="fab fa-skype fa-fw"></i>Skype</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/356159259?spm_id_from=333.1007.0.0" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;356159259?spm_id_from&#x3D;333.1007.0.0" rel="noopener" target="_blank"><i class="fab fa-bilibili fa-fw"></i>Bilibili</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://music.163.com/#/artist?id=52150816" title="CloudMusic → https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;artist?id&#x3D;52150816" rel="noopener" target="_blank"><i class="fab fa-cloudmusic fa-fw"></i>CloudMusic</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.luogu.com.cn/user/444040" title="Luogu → https:&#x2F;&#x2F;www.luogu.com.cn&#x2F;user&#x2F;444040" rel="noopener" target="_blank"><i class="fab fa-luogu fa-fw"></i>Luogu</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/eternity-81-90" title="Zhihu → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;eternity-81-90" rel="noopener" target="_blank"><i class="fab fa-zhihu fa-fw"></i>Zhihu</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://codeforces.com/profile/eEternalF" title="CodeForces → https:&#x2F;&#x2F;codeforces.com&#x2F;profile&#x2F;eEternalF" rel="noopener" target="_blank"><i class="fab fa-codeforces fa-fw"></i>CodeForces</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://loj.ac/u/_Eternal_" title="LibreOj → https:&#x2F;&#x2F;loj.ac&#x2F;u&#x2F;_Eternal_" rel="noopener" target="_blank"><i class="fab fa-libreoj fa-fw"></i>LibreOj</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="http://wpa.qq.com/msgrd?v=3&uin=3579685229&site=qq&menu=yes" title="QQ → http:&#x2F;&#x2F;wpa.qq.com&#x2F;msgrd?v&#x3D;3&amp;uin&#x3D;3579685229&amp;site&#x3D;qq&amp;menu&#x3D;yes" rel="noopener" target="_blank"><i class="fab fa-qq fa-fw"></i>QQ</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://atcoder.jp/users/EternityF" title="AtCoder → https:&#x2F;&#x2F;atcoder.jp&#x2F;users&#x2F;EternityF" rel="noopener" target="_blank"><i class="fab fa-atcoder fa-fw"></i>AtCoder</a>
+      </span>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">落幕の残影</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">2.2m</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">32:45</span>
+</div>
+  <div class="running-time">
+    <span id="timeDate"></span>
+    <span id="times"></span>
+    <script>
+        var now = new Date();
+        function createtime() {
+            var grt= new Date("01/25/2022 13:14:20");
+            now.setTime(now.getTime()+250);
+            days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+            hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+            if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+            mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+            document.getElementById("timeDate").innerHTML = "本站已经安全运行 " + dnum + " 天";
+            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+        }
+    setInterval("createtime()",250);
+    </script>
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+<script>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '5668763013a9ee15351a',
+      clientSecret: '829dedf54a52d013b70ae34590fb8d195486025d',
+      repo        : 'lucareternity.github.io',
+      owner       : 'LucarEternity',
+      admin       : ['LucarEternity'],
+      id          : '68671a066715da515347f1a9eb4444c8',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>

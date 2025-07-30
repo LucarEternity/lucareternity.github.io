@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/patient.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"violeteternal.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+  <style type="text/css">
+div.content.block.note, details.content.box.note,div.content.block.abstract, details.content.box.abstract,div.content.block.info, details.content.box.info,div.content.block.tip, details.content.box.tip,div.content.block.success, details.content.box.success,div.content.block.question, details.content.box.question,div.content.block.warning, details.content.box.warning,div.content.block.failure, details.content.box.failure,div.content.block.danger, details.content.box.danger,div.content.block.bug, details.content.box.bug,div.content.block.example, details.content.box.example,div.content.block.quote, details.content.box.quote,div.content.block.code, details.content.box.code {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.content.block.note, details.content.box.note {
+  border-color: #448aff;
+}
+div.content.block.abstract, details.content.box.abstract {
+  border-color: #00b0ff;
+}
+div.content.block.info, details.content.box.info {
+  border-color: #00b8d4;
+}
+div.content.block.tip, details.content.box.tip {
+  border-color: #00bfa5;
+}
+div.content.block.success, details.content.box.success {
+  border-color: #00c853;
+}
+div.content.block.question, details.content.box.question {
+  border-color: #64dd17;
+}
+div.content.block.warning, details.content.box.warning {
+  border-color: #ff9100;
+}
+div.content.block.failure, details.content.box.failure {
+  border-color: #ff5252;
+}
+div.content.block.danger, details.content.box.danger {
+  border-color: #ff1744;
+}
+div.content.block.bug, details.content.box.bug {
+  border-color: #f50057;
+}
+div.content.block.example, details.content.box.example {
+  border-color: #651fff;
+}
+div.content.block.quote, details.content.box.quote {
+  border-color: #9e9e9e;
+}
+div.content.block.code, details.content.box.code {
+  border-color: #A0A0A0;
+}
+div.content.block.note:focus-within, details.content.box.note:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.content.block.abstract:focus-within, details.content.box.abstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.content.block.info:focus-within, details.content.box.info:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.content.block.tip:focus-within, details.content.box.tip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.content.block.success:focus-within, details.content.box.success:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.content.block.question:focus-within, details.content.box.question:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.content.block.warning:focus-within, details.content.box.warning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.content.block.failure:focus-within, details.content.box.failure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.content.block.danger:focus-within, details.content.box.danger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.content.block.bug:focus-within, details.content.box.bug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.content.block.example:focus-within, details.content.box.example:focus-within {
+  box-shadow: 0 0 0 .2rem #651fff1a;
+}
+div.content.block.quote:focus-within, details.content.box.quote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.content.block.code:focus-within, details.content.box.code:focus-within {
+  box-shadow: 0 0 0 .2rem #A0A0A01a;
+}
+div.content.block.note *, details.content.box.note *,div.content.block.abstract *, details.content.box.abstract *,div.content.block.info *, details.content.box.info *,div.content.block.tip *, details.content.box.tip *,div.content.block.success *, details.content.box.success *,div.content.block.question *, details.content.box.question *,div.content.block.warning *, details.content.box.warning *,div.content.block.failure *, details.content.box.failure *,div.content.block.danger *, details.content.box.danger *,div.content.block.bug *, details.content.box.bug *,div.content.block.example *, details.content.box.example *,div.content.block.quote *, details.content.box.quote *,div.content.block.code *, details.content.box.code * {
+  box-sizing: border-box;
+}
+div.content.block.note > p.content.block-title, details.content.box.note > summary,div.content.block.abstract > p.content.block-title, details.content.box.abstract > summary,div.content.block.info > p.content.block-title, details.content.box.info > summary,div.content.block.tip > p.content.block-title, details.content.box.tip > summary,div.content.block.success > p.content.block-title, details.content.box.success > summary,div.content.block.question > p.content.block-title, details.content.box.question > summary,div.content.block.warning > p.content.block-title, details.content.box.warning > summary,div.content.block.failure > p.content.block-title, details.content.box.failure > summary,div.content.block.danger > p.content.block-title, details.content.box.danger > summary,div.content.block.bug > p.content.block-title, details.content.box.bug > summary,div.content.block.example > p.content.block-title, details.content.box.example > summary,div.content.block.quote > p.content.block-title, details.content.box.quote > summary,div.content.block.code > p.content.block-title, details.content.box.code > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.content.box.note > summary,details.content.box.abstract > summary,details.content.box.info > summary,details.content.box.tip > summary,details.content.box.success > summary,details.content.box.question > summary,details.content.box.warning > summary,details.content.box.failure > summary,details.content.box.danger > summary,details.content.box.bug > summary,details.content.box.example > summary,details.content.box.quote > summary,details.content.box.code > summary {
+  cursor: pointer;
+}
+details.content.box.note:not([open]) > summary,details.content.box.abstract:not([open]) > summary,details.content.box.info:not([open]) > summary,details.content.box.tip:not([open]) > summary,details.content.box.success:not([open]) > summary,details.content.box.question:not([open]) > summary,details.content.box.warning:not([open]) > summary,details.content.box.failure:not([open]) > summary,details.content.box.danger:not([open]) > summary,details.content.box.bug:not([open]) > summary,details.content.box.example:not([open]) > summary,details.content.box.quote:not([open]) > summary,details.content.box.code:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.content.block.note > p.content.block-title, details.content.box.note > summary {
+  background-color: #448aff1a;
+}
+div.content.block.abstract > p.content.block-title, details.content.box.abstract > summary {
+  background-color: #00b0ff1a;
+}
+div.content.block.info > p.content.block-title, details.content.box.info > summary {
+  background-color: #00b8d41a;
+}
+div.content.block.tip > p.content.block-title, details.content.box.tip > summary {
+  background-color: #00bfa51a;
+}
+div.content.block.success > p.content.block-title, details.content.box.success > summary {
+  background-color: #00c8531a;
+}
+div.content.block.question > p.content.block-title, details.content.box.question > summary {
+  background-color: #64dd171a;
+}
+div.content.block.warning > p.content.block-title, details.content.box.warning > summary {
+  background-color: #ff91001a;
+}
+div.content.block.failure > p.content.block-title, details.content.box.failure > summary {
+  background-color: #ff52521a;
+}
+div.content.block.danger > p.content.block-title, details.content.box.danger > summary {
+  background-color: #ff17441a;
+}
+div.content.block.bug > p.content.block-title, details.content.box.bug > summary {
+  background-color: #f500571a;
+}
+div.content.block.example > p.content.block-title, details.content.box.example > summary {
+  background-color: #651fff1a;
+}
+div.content.block.quote > p.content.block-title, details.content.box.quote > summary {
+  background-color: #9e9e9e1a;
+}
+div.content.block.code > p.content.block-title, details.content.box.code > summary {
+  background-color: #A0A0A01a;
+}
+div.content.block.note > p.content.block-title > i, details.content.box.note > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.content.block.abstract > p.content.block-title > i, details.content.box.abstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.content.block.info > p.content.block-title > i, details.content.box.info > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.content.block.tip > p.content.block-title > i, details.content.box.tip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.content.block.success > p.content.block-title > i, details.content.box.success > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.content.block.question > p.content.block-title > i, details.content.box.question > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.content.block.warning > p.content.block-title > i, details.content.box.warning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.content.block.failure > p.content.block-title > i, details.content.box.failure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.content.block.danger > p.content.block-title > i, details.content.box.danger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.content.block.bug > p.content.block-title > i, details.content.box.bug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.content.block.example > p.content.block-title > i, details.content.box.example > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #651fff;
+}
+div.content.block.quote > p.content.block-title > i, details.content.box.quote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+div.content.block.code > p.content.block-title > i, details.content.box.code > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #A0A0A0;
+}
+details.content.box.note > summary > div.box-open-button,details.content.box.abstract > summary > div.box-open-button,details.content.box.info > summary > div.box-open-button,details.content.box.tip > summary > div.box-open-button,details.content.box.success > summary > div.box-open-button,details.content.box.question > summary > div.box-open-button,details.content.box.warning > summary > div.box-open-button,details.content.box.failure > summary > div.box-open-button,details.content.box.danger > summary > div.box-open-button,details.content.box.bug > summary > div.box-open-button,details.content.box.example > summary > div.box-open-button,details.content.box.quote > summary > div.box-open-button,details.content.box.code > summary > div.box-open-button {
+  float: right;
+}
+details.content.box.note > summary > div.box-open-button > i,details.content.box.abstract > summary > div.box-open-button > i,details.content.box.info > summary > div.box-open-button > i,details.content.box.tip > summary > div.box-open-button > i,details.content.box.success > summary > div.box-open-button > i,details.content.box.question > summary > div.box-open-button > i,details.content.box.warning > summary > div.box-open-button > i,details.content.box.failure > summary > div.box-open-button > i,details.content.box.danger > summary > div.box-open-button > i,details.content.box.bug > summary > div.box-open-button > i,details.content.box.example > summary > div.box-open-button > i,details.content.box.quote > summary > div.box-open-button > i,details.content.box.code > summary > div.box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.content.box.note:not([open]) > summary > div.box-open-button i,details.content.box.abstract:not([open]) > summary > div.box-open-button i,details.content.box.info:not([open]) > summary > div.box-open-button i,details.content.box.tip:not([open]) > summary > div.box-open-button i,details.content.box.success:not([open]) > summary > div.box-open-button i,details.content.box.question:not([open]) > summary > div.box-open-button i,details.content.box.warning:not([open]) > summary > div.box-open-button i,details.content.box.failure:not([open]) > summary > div.box-open-button i,details.content.box.danger:not([open]) > summary > div.box-open-button i,details.content.box.bug:not([open]) > summary > div.box-open-button i,details.content.box.example:not([open]) > summary > div.box-open-button i,details.content.box.quote:not([open]) > summary > div.box-open-button i,details.content.box.code:not([open]) > summary > div.box-open-button i {
+  transform: rotate(270deg);
+}
+details.content.box.note[open] > summary > div.box-open-button i,details.content.box.abstract[open] > summary > div.box-open-button i,details.content.box.info[open] > summary > div.box-open-button i,details.content.box.tip[open] > summary > div.box-open-button i,details.content.box.success[open] > summary > div.box-open-button i,details.content.box.question[open] > summary > div.box-open-button i,details.content.box.warning[open] > summary > div.box-open-button i,details.content.box.failure[open] > summary > div.box-open-button i,details.content.box.danger[open] > summary > div.box-open-button i,details.content.box.bug[open] > summary > div.box-open-button i,details.content.box.example[open] > summary > div.box-open-button i,details.content.box.quote[open] > summary > div.box-open-button i,details.content.box.code[open] > summary > div.box-open-button i {
+  transform: rotate(180deg);
+}
+details.content.box.note summary div.box-open-button i {
+  color: #448aff;
+}
+details.content.box.abstract summary div.box-open-button i {
+  color: #00b0ff;
+}
+details.content.box.info summary div.box-open-button i {
+  color: #00b8d4;
+}
+details.content.box.tip summary div.box-open-button i {
+  color: #00bfa5;
+}
+details.content.box.success summary div.box-open-button i {
+  color: #00c853;
+}
+details.content.box.question summary div.box-open-button i {
+  color: #64dd17;
+}
+details.content.box.warning summary div.box-open-button i {
+  color: #ff9100;
+}
+details.content.box.failure summary div.box-open-button i {
+  color: #ff5252;
+}
+details.content.box.danger summary div.box-open-button i {
+  color: #ff1744;
+}
+details.content.box.bug summary div.box-open-button i {
+  color: #f50057;
+}
+details.content.box.example summary div.box-open-button i {
+  color: #651fff;
+}
+details.content.box.quote summary div.box-open-button i {
+  color: #9e9e9e;
+}
+details.content.box.code summary div.box-open-button i {
+  color: #A0A0A0;
+}
+div.content.cards * {
+  box-sizing: border-box;
+}
+input.content.cards-input {
+  display: none;
+}
+div.content.cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.content.cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.content.cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.content.cards-label.active, label.content.cards-label:hover {
+  color: var(--cards-color);
+}
+div.content.cards-content {
+  display: none;
+}
+div.content.cards-content.active {
+  display: block;
+}
+</style>
+  <meta name="description" content="青春，才刚刚开始。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="U.N.I">
+<meta property="og:url" content="http://violeteternal.github.io/Until-The-End/My-University-Life/index.html">
+<meta property="og:site_name" content="Reincarnation">
+<meta property="og:description" content="青春，才刚刚开始。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-06-25T10:30:00.000Z">
+<meta property="article:modified_time" content="2025-07-29T15:13:24.982Z">
+<meta property="article:author" content="Fallen Shadow">
+<meta property="article:tag" content="青春">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://violeteternal.github.io/Until-The-End/My-University-Life/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>U.N.I | Reincarnation</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Reincarnation</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">正因为梦易碎，才格外美好。</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-road">
+
+    <a href="/road/" rel="section"><i class="fa fa-road fa-fw"></i>归程</a>
+
+  </li>
+        <li class="menu-item menu-item-past">
+
+    <a href="/past/" rel="section"><i class="fab fa-house-chimney-crack fa-fw"></i>旧日残垣</a>
+
+  </li>
+        <li class="menu-item menu-item-friendship">
+
+    <a href="/friendship/" rel="section"><i class="fa fa-users fa-fw"></i>友链</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/Until-The-End/My-University-Life/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Fallen Shadow">
+      <meta itemprop="description" content="誰も悪くないから、辛いだな。<br>自卑的人，往往只剩下温柔了啊……">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Reincarnation">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          U.N.I
+        </h1>
+
+        <div class="post-meta">
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-06-25 18:30:00" itemprop="dateCreated datePublished" datetime="2025-06-25T18:30:00+08:00">2025-06-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-07-29 23:13:24" itemprop="dateModified" datetime="2025-07-29T23:13:24+08:00">2025-07-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Until-The-End/" itemprop="url" rel="index"><span itemprop="name">Until The End</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>8.6k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>8 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>青春，才刚刚开始。</p>
+<span id="more"></span>
+<h2 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h2><h3 id="2025-6-25-逝者已离，生者仍行"><a href="#2025-6-25-逝者已离，生者仍行" class="headerlink" title="2025.6.25 逝者已离，生者仍行"></a>2025.6.25 逝者已离，生者仍行</h3><p>今天高考出分，也算是真正的句号了。所以我将其视作我大学的开始。而也是在今天凌晨 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="5.28ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 2333.6 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g><g data-mml-node="mo" transform="translate(777.8,0)"><path data-c="3A" d="M78 370Q78 394 95 412T138 430Q162 430 180 414T199 371Q199 346 182 328T139 310T96 327T78 370ZM78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path></g><g data-mml-node="mn" transform="translate(1333.6,0)"><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" transform="translate(500,0)"></path></g></g></g></svg></mjx-container>，我的三爷爷去世了。虽然我和三爷爷交集不多，但他毕竟作为我哥的爷爷，也算与我有不少的血缘关系。其实，从我哥他们家我能学到的，大概就是——倘若世界与我为敌，我也能自食其力。</p>
+<p>当然，这个说法有点夸张了，但或许这也是我高三最后一段时间想着的东西。如果我有机会给学弟学妹们传递一些经验的话，大概就是“这个世界上谁都可以不相信，但你必须相信自己”。自 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="7.416ex" height="1.581ex" role="img" focusable="false" viewBox="0 -677 3278 699"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(1000,0)"></path><path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" transform="translate(1500,0)"></path><path data-c="2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z" transform="translate(2000,0)"></path><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" transform="translate(2278,0)"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(2778,0)"></path></g></g></g></svg></mjx-container> 开始，华就把重心偏向省队生，这是自然的，但对于我一个心思敏感的人而言，打击是很大的。所以我刻意去避免这个事情，导致我在高三的时候和华的交际很少很少，至少我认为这是对的。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="3.394ex" height="1.579ex" role="img" focusable="false" viewBox="0 -676 1500 698"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path><path data-c="37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z" transform="translate(500,0)"></path><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" transform="translate(1000,0)"></path></g></g></g></svg></mjx-container>，这真的是一场轮回，我的一诊是 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="3.394ex" height="1.579ex" role="img" focusable="false" viewBox="0 -676 1500 698"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path><path data-c="37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z" transform="translate(500,0)"></path><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" transform="translate(1000,0)"></path></g></g></g></svg></mjx-container>，奋斗了八个月，最后还是回到了 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="3.394ex" height="1.579ex" role="img" focusable="false" viewBox="0 -676 1500 698"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path><path data-c="37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z" transform="translate(500,0)"></path><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" transform="translate(1000,0)"></path></g></g></g></svg></mjx-container>。这也是我高中以来的最好成绩，虽然可能没有巨游龙他们那么高，到我也算较为满意了。可能此生与 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="3.174ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 1403 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="50" d="M130 622Q123 629 119 631T103 634T60 637H27V683H214Q237 683 276 683T331 684Q419 684 471 671T567 616Q624 563 624 489Q624 421 573 372T451 307Q429 302 328 301H234V181Q234 62 237 58Q245 47 304 46H337V0H326Q305 3 182 3Q47 3 38 0H27V46H60Q102 47 111 49T130 61V622ZM507 488Q507 514 506 528T500 564T483 597T450 620T397 635Q385 637 307 637H286Q237 637 234 628Q231 624 231 483V342H302H339Q390 342 423 349T481 382Q507 411 507 488Z"></path><path data-c="54" d="M36 443Q37 448 46 558T55 671V677H666V671Q667 666 676 556T685 443V437H645V443Q645 445 642 478T631 544T610 593Q593 614 555 625Q534 630 478 630H451H443Q417 630 414 618Q413 616 413 339V63Q420 53 439 50T528 46H558V0H545L361 3Q186 1 177 0H164V46H194Q264 46 283 49T309 63V339V550Q309 620 304 625T271 630H244H224Q154 630 119 601Q101 585 93 554T81 486T76 443V437H36V443Z" transform="translate(681,0)"></path></g></g></g></svg></mjx-container> 无缘，但也至少是个不太坏的结局。</p>
+<hr>
+<h3 id="2025-6-26-前程似锦，故土重芯"><a href="#2025-6-26-前程似锦，故土重芯" class="headerlink" title="2025.6.26 前程似锦，故土重芯"></a>2025.6.26 前程似锦，故土重芯</h3><p>回到 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.048ex;" xmlns="http://www.w3.org/2000/svg" width="3.362ex" height="1.643ex" role="img" focusable="false" viewBox="0 -705 1486 726"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="44" d="M130 622Q123 629 119 631T103 634T60 637H27V683H228Q399 682 419 682T461 676Q504 667 546 641T626 573T685 470T708 336Q708 210 634 116T442 3Q429 1 228 0H27V46H60Q102 47 111 49T130 61V622ZM593 338Q593 439 571 501T493 602Q439 637 355 637H322H294Q238 637 234 628Q231 624 231 344Q231 62 232 59Q233 49 248 48T339 46H350Q456 46 515 95Q561 133 577 191T593 338Z"></path><path data-c="43" d="M56 342Q56 428 89 500T174 615T283 681T391 705Q394 705 400 705T408 704Q499 704 569 636L582 624L612 663Q639 700 643 704Q644 704 647 704T653 705H657Q660 705 666 699V419L660 413H626Q620 419 619 430Q610 512 571 572T476 651Q457 658 426 658Q322 658 252 588Q173 509 173 342Q173 221 211 151Q232 111 263 84T328 45T384 29T428 24Q517 24 571 93T626 244Q626 251 632 257H660L666 251V236Q661 133 590 56T403 -21Q262 -21 159 83T56 342Z" transform="translate(764,0)"></path></g></g></g></svg></mjx-container> 参加高校招生会，发现其实我基础社交能力还是有的，可惜有一点是给 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="5.563ex" height="1.595ex" role="img" focusable="false" viewBox="0 -683 2459 705"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="58" d="M270 0Q252 3 141 3Q46 3 31 0H23V46H40Q129 50 161 88Q165 94 244 216T324 339Q324 341 235 480T143 622Q133 631 119 634T57 637H37V683H46Q64 680 172 680Q297 680 318 683H329V637H324Q307 637 286 632T263 621Q263 618 322 525T384 431Q385 431 437 511T489 593Q490 595 490 599Q490 611 477 622T436 637H428V683H437Q455 680 566 680Q661 680 676 683H684V637H667Q585 634 551 599Q548 596 478 491Q412 388 412 387Q412 385 514 225T620 62Q628 53 642 50T695 46H726V0H717Q699 3 591 3Q466 3 445 0H434V46H440Q454 46 476 51T499 64Q499 67 463 124T390 238L353 295L350 292Q348 290 343 283T331 265T312 236T286 195Q219 88 218 84Q218 70 234 59T272 46H280V0H270Z"></path><path data-c="57" d="M792 683Q810 680 914 680Q991 680 1003 683H1009V637H996Q931 633 915 598Q912 591 863 438T766 135T716 -17Q711 -22 694 -22Q676 -22 673 -15Q671 -13 593 231L514 477L435 234Q416 174 391 92T358 -6T341 -22H331Q314 -21 310 -15Q309 -14 208 302T104 622Q98 632 87 633Q73 637 35 637H18V683H27Q69 681 154 681Q164 681 181 681T216 681T249 682T276 683H287H298V637H285Q213 637 213 620Q213 616 289 381L364 144L427 339Q490 535 492 546Q487 560 482 578T475 602T468 618T461 628T449 633T433 636T408 637H380V683H388Q397 680 508 680Q629 680 650 683H660V637H647Q576 637 576 619L727 146Q869 580 869 600Q869 605 863 612T839 627T794 637H783V683H792Z" transform="translate(750,0)"></path><path data-c="50" d="M130 622Q123 629 119 631T103 634T60 637H27V683H214Q237 683 276 683T331 684Q419 684 471 671T567 616Q624 563 624 489Q624 421 573 372T451 307Q429 302 328 301H234V181Q234 62 237 58Q245 47 304 46H337V0H326Q305 3 182 3Q47 3 38 0H27V46H60Q102 47 111 49T130 61V622ZM507 488Q507 514 506 528T500 564T483 597T450 620T397 635Q385 637 307 637H286Q237 637 234 628Q231 624 231 483V342H302H339Q390 342 423 349T481 382Q507 411 507 488Z" transform="translate(1778,0)"></path></g></g></g></svg></mjx-container> 带东西策略有点失误，其他都还好，初步确定了我会考虑的一些学校，有好消息，也有不好的消息，我们班似乎没来几个，那几个省队生都在看非 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="3.174ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 1403 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="50" d="M130 622Q123 629 119 631T103 634T60 637H27V683H214Q237 683 276 683T331 684Q419 684 471 671T567 616Q624 563 624 489Q624 421 573 372T451 307Q429 302 328 301H234V181Q234 62 237 58Q245 47 304 46H337V0H326Q305 3 182 3Q47 3 38 0H27V46H60Q102 47 111 49T130 61V622ZM507 488Q507 514 506 528T500 564T483 597T450 620T397 635Q385 637 307 637H286Q237 637 234 628Q231 624 231 483V342H302H339Q390 342 423 349T481 382Q507 411 507 488Z"></path><path data-c="54" d="M36 443Q37 448 46 558T55 671V677H666V671Q667 666 676 556T685 443V437H645V443Q645 445 642 478T631 544T610 593Q593 614 555 625Q534 630 478 630H451H443Q417 630 414 618Q413 616 413 339V63Q420 53 439 50T528 46H558V0H545L361 3Q186 1 177 0H164V46H194Q264 46 283 49T309 63V339V550Q309 620 304 625T271 630H244H224Q154 630 119 601Q101 585 93 554T81 486T76 443V437H36V443Z" transform="translate(681,0)"></path></g></g></g></svg></mjx-container>，不知何意。</p>
+<p>后记：<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.048ex;" xmlns="http://www.w3.org/2000/svg" width="3.362ex" height="1.643ex" role="img" focusable="false" viewBox="0 -705 1486 726"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="44" d="M130 622Q123 629 119 631T103 634T60 637H27V683H228Q399 682 419 682T461 676Q504 667 546 641T626 573T685 470T708 336Q708 210 634 116T442 3Q429 1 228 0H27V46H60Q102 47 111 49T130 61V622ZM593 338Q593 439 571 501T493 602Q439 637 355 637H322H294Q238 637 234 628Q231 624 231 344Q231 62 232 59Q233 49 248 48T339 46H350Q456 46 515 95Q561 133 577 191T593 338Z"></path><path data-c="43" d="M56 342Q56 428 89 500T174 615T283 681T391 705Q394 705 400 705T408 704Q499 704 569 636L582 624L612 663Q639 700 643 704Q644 704 647 704T653 705H657Q660 705 666 699V419L660 413H626Q620 419 619 430Q610 512 571 572T476 651Q457 658 426 658Q322 658 252 588Q173 509 173 342Q173 221 211 151Q232 111 263 84T328 45T384 29T428 24Q517 24 571 93T626 244Q626 251 632 257H660L666 251V236Q661 133 590 56T403 -21Q262 -21 159 83T56 342Z" transform="translate(764,0)"></path></g></g></g></svg></mjx-container> 把省队生的成绩都爆出来了，感觉 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.186ex;" xmlns="http://www.w3.org/2000/svg" width="5.154ex" height="1.692ex" role="img" focusable="false" viewBox="0 -666 2278 748"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path><path data-c="36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z" transform="translate(500,0)"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(1000,0)"></path></g><g data-mml-node="mo" transform="translate(1500,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> 那几个都很悬，不过和我也没有什么关系了。</p>
+<hr>
+<h3 id="2025-7-远行"><a href="#2025-7-远行" class="headerlink" title="2025.7 远行"></a>2025.7 远行</h3><h4 id="2025-7-4-南宁游-Day0"><a href="#2025-7-4-南宁游-Day0" class="headerlink" title="2025.7.4 南宁游 Day0"></a>2025.7.4 南宁游 Day0</h4><p>破例的早上 6:50 的起床，到成都东游荡了有一会儿，找人找了半天，然后吃了麦当当早餐，有点小贵，然后就是愉快的坐动车，上午打了王者，中午吃了泡面，下午教阎迪 C++，然后久违地玩了炼狱。没过但是打的很爽。</p>
+<p>四点过到了补了票到南宁东，去找了酒店，有点偏僻，环境还不错，电脑不错，但第一次用公用电脑不太方便。然后六点过去了夜市逛，吃了很多东西，八点过回来去打台球，打得比较唐，但还是有点手感。十点回来洲，手法有点唐，喝了桂花酿酒，不太晕，几把大战场全跪了，最后打到两点过惊险风暴眼终于赢了，已经是载具战神了。</p>
+<p>现在不知道明天怎么醒。</p>
+<hr>
+<h4 id="2025-7-5-南宁游-Day1"><a href="#2025-7-5-南宁游-Day1" class="headerlink" title="2025.7.5 南宁游 Day1"></a>2025.7.5 南宁游 Day1</h4><p>早上八点醒了，只睡了不到六个小时，起床去吃早餐，虽然电竞酒店有电脑，但是居然不包早餐，所以就出去找了家评分似乎很高的店点了一个粉，桂林卤肉粉，味道很浓烈，豆浆是冰的，不过比较好喝。</p>
+<p>然后就前往青秀山，从西门进，然后四个方向随机前进，走了很多的路，拍了很多的照片，中途有个神秘绳索跑酷，直接给我这个高考完之后没怎么运动的人给整哈气了，喘了好久才回复。后面去了各种花园，看了很多的花，走了很多的路，直到走到十一点过发现景区里没有餐厅只能往外走，于是绕过北门准备出东门，没想到景区比想象得大得多。走走歇歇，看到了超级大的王莲，走了接近 1.6w 步最终结束了青秀山的旅行，直到下午一点过才出了景区。</p>
+<p>衣服已经湿完了，所以直奔酒店休息，然后爽洲了一会儿，点了意面吃，已经是四点过了，然后又排了两把洲，五点过出了门，本来想去相思小镇结果太远了就转点南湖公园，逛了逛，拍了拍照，然后就打车去了平西夜市，尝了很多小吃，冰豆花是很好吃的，榴莲是不吃的，烤豆腐是很好吃的，甘蔗汁是很好喝的。</p>
+<p>然后打车去了城中心试了试一家广受好评的奶茶店，确实很好喝，堪比茶颜悦色。然后去民生广场，有一场九点半的打火花，走错路导致迟到了几分钟，但是帅是真的帅，是一场很刺激的表演，很精彩。</p>
+<p>意识到自己的手机可能真的落后了，拍照的时候很多情况下采光和像素都不行（自己摄影水平也很次），晚上录火秀的时候直接烫手了，录着一卡一卡的，真的很热，出去一趟就要回来修整一段时间，效率不高，但是质量是保证的，毕竟还是有专业摄影师和专业护理师的，看着夜景，或许每个城市的城区其实都很像，有一瞬间感觉自己在绵阳涪江的桥上穿行，除了导航里的方言听不懂。天气好的太离谱了，所以太热喽~</p>
+<p>然后又爽完到凌晨了，明天要离开南宁了，虽然很多景区都没玩，很多特色菜都没吃，属于是特种兵旅游，但是只有时间是特种兵了。明天出发去桂林了。</p>
+<p>（突然发现自己好像一点都不上镜来着）</p>
+<hr>
+<h4 id="2025-7-6-南宁游-Day2-桂林游-Day0"><a href="#2025-7-6-南宁游-Day2-桂林游-Day0" class="headerlink" title="2025.7.6 南宁游 Day2 / 桂林游 Day0"></a>2025.7.6 南宁游 Day2 / 桂林游 Day0</h4><p>上午八点过被喊醒，但是实在起不来就只好继续睡，睡到九点半觉得这样太不划算了还是出门了，去补吃了昨天没吃成的老友粉，感觉味道和米粉差不多，但是多了点广西特有的酸香味。</p>
+<p>然后回酒店已经十点过开了把大战场被速通，然后收拾东西退房，就去了南宁网上最推荐的一家餐厅——柠檬鸭，十一点过去已经几乎满了，不知道广西人是吃饭习惯早还是这家店真的很火爆，点了个四人餐两百多还是比较便宜了，柠檬鸭很有特色，不过肉质有点老，可能是唯一的缺点了。</p>
+<p>一点过就结束了战斗，吃撑了也不知道往哪里走就直接去打台球了（版本答案了属于是），打了一会儿手感时有时无，被薄纱，休息会儿看了手机四点过去了车站。（不过发现现在不管在哪里都离不开打台球，喝奶茶，玩电脑这几个选项了，这一个月已经把大脑皮层磨平了，退化有些严重）</p>
+<p>等车尝了一家奶茶店，味道朴素，不差。上了车，没想到南宁到桂林还是要三个小时多，先是看完了《不存在的骑士》，个人感觉讨论的主要话题是“存在”，有人没有形躯，有人没有心智，有人将自己的存在依托于别人，语言很朴素，剧情很魔幻。</p>
+<p>高考完之后除了打游戏之外别有的精神集中，然后和航下了象棋，第一把极限翻盘，第二把两个双架炮三步带走，最后一把打的很犯罪，送了一车一马一炮，然后毫无悬念地输了，很久没有思考过了，意料之外的清醒。</p>
+<p>到桂林已经接近九点就直接入住了，点了些烧烤，阎迪点的鸡也很不错，喝了点桂花酿，看了会儿视频，没有电脑的话肯定就早点睡觉了zzz。</p>
+<hr>
+<h4 id="2025-7-7-桂林游-Day1"><a href="#2025-7-7-桂林游-Day1" class="headerlink" title="2025.7.7 桂林游 Day1"></a>2025.7.7 桂林游 Day1</h4><p>早上七点过醒了，回笼了一会儿八点过醒，帮阎迪跑了把刀，苟到最后摸了个砖，结果阎迪大人自己手操的时候不带耳机被两枪头送走。</p>
+<p>然后自己跑了把普坝，灭三队到处爽吃，出了一个小红，还是我这个号第一次自己出红。然后九点过发现隔壁房两个人一个没醒就出去吃早饭了，桂林粉味道不错。爱上喝豆浆了。</p>
+<p>然后去了象鼻山，还是和前几天一样超级热，结果象鼻山走了半天不知道山在哪里，全都是摆摊的。然后绕了半圈终于找到一条超级陡而窄的上山路，结果没几步就登顶了，属于是连丘陵都算不上，没有想象的那么有意思，和青秀山比起来差远了。</p>
+<p>然后热爆了，中午回来点了个桂林当地餐厅的外卖，是真出不去了太热了，索性下午就在酒店里了，打了会儿洲，用航的板下了个 Phigros 发现自己已经老骥伏枥没有志气了，打个新章节直接 A 过去，没有 B 也没有 S，打个新 13 都要四遍才蓝 V，手速跟不上了。回去重挫第八张两个魔王（从 AT16 升阶到 17了）分数也没有之前高了。</p>
+<p>音游是很久没有碰过的东西，说不定会和 OI 一起复健（前提是重新买个板）。</p>
+<p>然后晚上去吃了家阿甘，本地人和旅客都很推荐，味道的确不错，价格也很实惠，发现广西的物价都很低，四人餐只要 200+，放在四川人均都快 100 了。</p>
+<p>然后去了日月双塔，老实说我对宗教并不感兴趣，但日月双塔这个建筑着实让我着迷，夜景下很美观，拍出来的照片也很不错（除了航和行人卡 timing 给我人胡绿了），还有外国人，逛到九点过十点回了酒店。</p>
+<p>反正很热，点了杯奶茶又开始爽耍了。</p>
+<hr>
+<h4 id="2025-7-8-桂林阳朔游-Day2-「梦」"><a href="#2025-7-8-桂林阳朔游-Day2-「梦」" class="headerlink" title="2025.7.8 桂林阳朔游 Day2 「梦」"></a>2025.7.8 桂林阳朔游 Day2 「梦」</h4><p>俗话说“桂林山水甲天下，阳朔风光甲桂林”。</p>
+<p>早上实在起不来，但想到还要赶船就还是起了，磨磨蹭蹭了一会儿八点过出了门，打车司机说我们恐怕赶不上船，这个时候才知道我们那一趟船是九点半一点就要发，那只好全速前进了。</p>
+<p>没想到码头离酒店那么远，几乎开了四十多分钟才到，九点三十五准时到达，然后检票口一路狂奔，上船后也确实一船人都在等我们。</p>
+<p>构造很传统，观景位倒是不错，坐了一会儿吃了带来的零食当早餐就跑去三楼观景了，风真的很大，戴着眼镜都刮的眼睛疼，待一会儿就要下去休息一会儿，那三个人忙着开农，感觉挺无趣的。</p>
+<p>过了很多著名景点，也拍了不少的照，中午在船上吃的，说是现捞现做的，味道也不错，就是有点小贵。发现我小的时候好像是来过桂林的，不过那个时候才三岁没有任何印象。</p>
+<p>然后下午一点过到了阳朔，经典一杯当地奶茶，发现实在热的离谱，有种中暑的迹象，就直接去酒店歇息了。下午才酒店里耍，打了把大战场顺风顺水。但是阎迪把电脑摆在一个很抽象的位置导致我后脑勺对着空调然后直接爆炸了，索性睡了一觉，买了盒布洛芬吃了六点过出门。找了家美团上 5.0 的餐厅，选择了全新的交通方式，航骑电瓶车载我。十里画廊其实很偏僻，在阳朔县城外围很远一个地方，发现桂林这个地方可能真的就是以奇山异水而闻名，因为经济似乎真的不算太发达。</p>
+<p>晚餐那个餐厅味道也很不错，点了个 5/6 人餐居然被我们四个人吃完了，可惜才吃了药不敢吃啤酒鱼，明天可以去补偿下。还有当地风俗“高山流水”，很祝福了。</p>
+<p>然后就骑电瓶车去兜风了，沿着路进了县城，感觉其实没什么太大的意思，沿路要么是餐厅要么是酒店，或许这个县城的诞生真的就是为了旅游吧。然后反方向走了一段发现是国道，毕竟有些晚了（八九点过）怕和某些庞然大物扯上关系就调头了。（伏笔）</p>
+<p>中途看到一个岔路远处有些灯光以为是另一个小县城就继续往前走了。然后开的很随意，路上也没啥车。结果突然闯进了一个 T 型路口，一辆大运以不慢的速度闯过来，幸好航反应够快在路口刹住了，看那个司机多半也没看到我们，差点就 cos 减速带了，晚上骑车真的太危险了！不建议模仿。</p>
+<p>然后光速回民宿了，挺惊心动魄的。</p>
+<p>但是我怎么长得这么不入镜啊QAQ。</p>
+<font style="color:white">我今天做了两个梦：在船上时，我看到了一个很青春的女孩子，扎着一个不短不长的马尾，和似乎是她母亲的妇人在观景台上拍照。无袖连衣裙，粉色与红色的格子图案，袖口有花边。那个身型，那个服饰，那个性格，无不让我想到了另一个人，我尝试去重合，唤起了一段应该被尘封的记忆。其实在高考后，我就在写那封表白信了，但我如今仍然没有决心将它送出，因为命运早在两三年前就已落定，我们的缘分来的太早，我无法用我的青春去捧起她。她属于阳光与山巅，我生活于黑暗。说回当下，当我一个人站在观景舱上吹风的时候，我的思绪很混乱，我对一个或许我一生只会如此相遇三四个小时的人一见钟情，而究其原因是她让我回忆起我最初喜欢的那个人（虽然是一场彻头彻底的单相思）。我太失败了，沉醉在自己的世界里，丑陋不堪而又想要引人注目，这不就是小丑吗？也就只能躲在灯光的远处，偷偷地拍下几张照，一个人在家里看着的时候用某些令人厌恶的方式释放自己的苦情，麻木于一时，最终只能感动自己。</font><br>
+
+<font style="color:white">第二个梦：晚饭时因为六人餐摆不下小桌子就换了圆桌，那时我忽然注意到隔壁桌有一个很熟悉的背影，仍然是一个稍短的马尾，贫弱的身躯，圆框眼镜。我不知道，或许真的是压抑太久了，我想起了那个和我度过了初中较为愉快的一段时间的她。我们早已成为了陌生人，这一切都是因为我的自负，我的自私，我的愚蠢，我的幼稚。像，太像了，我不敢去看她的正颜，既害怕认出，可我无法装作熟视无睹，又害怕不是，因为这印证了我仍未放下。于是我开始幻想在社交平台上收到消息，让装作的惊讶成为重逢的开始。可并没有，这仍然是我的幻想，是啊，和一个人在世界上遇到的概率太小太小了。</font><br>
+
+<font style="color:white">初中和高中的竞赛和高阶班级让我错过了我几乎整个青春，但这样定义或许过于片面，因为我收获了一个大多数家庭都渴望自己孩子得到的成绩，但我仍然不甘心，我看到平日里那些装模作样的人，那些虚伪自负的人，他们比我走得更远，我很不甘心，但我必须承认他们确实比我更强。诶，算了吧，或许正因如此，成绩出来之后，似乎省队生们便有了自己新的群体。成功的人不会回头去看那些失败者，即使有，那也满是嘲讽，伪装而成的同情。</font><br>
+
+<font style="color:white">大概真的就是在电子科大了，我的青春也就禁锢于四川这个地方了，也许工科女真的很少，但我认为我应该在大学拥有一份主动出击的勇气，即使一败涂地。“我只会喜欢喜欢我的人”，这句谎言早已失效，我喜欢过很多人，但只有我知道我喜欢她们，这些秘密最终随我一同化作烟尘，不被世人知晓。这样的结局与我的人生观背道而驰，我希望有人记住我，我希望我能证明我自己。而在此之前，我应该拥有改变的勇气。</font>
+
+<hr>
+<h4 id="2025-7-9-桂林阳朔游-Day3"><a href="#2025-7-9-桂林阳朔游-Day3" class="headerlink" title="2025.7.9 桂林阳朔游 Day3"></a>2025.7.9 桂林阳朔游 Day3</h4><p>由于阎迪在洲，明天要早起，只好用手机写了。</p>
+<p>早上七八点过起了不知道干啥，呆到九点过民宿老板娘带我们去体验了山地车，想起以前有过弯道不刹车结果栽田里的经历，所以开得很稳，但是山地是真难开，坡度很大，路非常不平而且窄。反正惊心动魄开了近一个小时，总算是把小命保住得开了全程。</p>
+<p>十一点过回来，外面实在太热就休息了一会儿出去吃午饭，本来想进城结果走了一半阎迪走不动就就地在一家披萨店解决了。味道一般，价格偏贵，反正没之前我们家的好吃。</p>
+<p>下午激情跑刀，三个人各出了个红。</p>
+<p>四点过往码头赶，到了发现排队要很久，身份证没带又只好折返。回来过后两个洲批在无效排队。</p>
+<p>排了一会儿还是抢到筏了。</p>
+<p>漓江水很青，可惜垃圾很多，大多都是塑料瓶，还有就是枯竹叶。</p>
+<p>风景是好看的，竹筏有下流那一下是爽的。手脚伸入水里是清爽的，泼旁边人水是快乐的。很悠闲，很惬意。虽然景色有些重复，但心情是好的，所以一切都是美丽的。</p>
+<p>然后打车去了县城，吃了家本地人推荐的中餐厅，味道确实不错，水牛乳茶真的很纯，这家店的回锅肉也是我这辈子吃过最纯正的之一。吃完晚饭就回酒店了，小耍一会儿还是准备睡觉了。</p>
+<p>明早要看日出的话得三点过起床，收拾东西，阳朔之行也就结束了。</p>
+<hr>
+<h4 id="2025-7-10-桂林阳朔游-Day4-贵阳游-Day0"><a href="#2025-7-10-桂林阳朔游-Day4-贵阳游-Day0" class="headerlink" title="2025.7.10 桂林阳朔游 Day4 / 贵阳游 Day0"></a>2025.7.10 桂林阳朔游 Day4 / 贵阳游 Day0</h4><p>你见过阳朔凌晨三点的太阳吗？我反正没见过，毕竟日出是六点。</p>
+<p>与睡魔的抗争最终取胜，在困意与颠簸中到达了相公山——的山腰。所谓“云端咖啡”，一家为所有祈望目见黎明的人提供栖息之地（但是不消费不让坐）。所以随机地浅尝了人生第二杯正式的咖啡。是不算很苦的类型，算是还能接受。人群在聚集，所幸我们算很早的一批，所以有一个较为舒服的位置。</p>
+<p>直到五点四十多左右。在远处高耸绵延的山脉间化有一道火红，随后那火红被撕裂，弥散。直到有一团云尝试挡住那光——在世界东侧，自然的巨人睁开了祂散发光明的眼睛。</p>
+<p>而后那光尝试透过云层，天边变为紫红色，又有时化作鲜红，黑夜之中如同熔岩海翻涌而至。又如紫罗兰的花瓣飘摇风中。</p>
+<p>于是黎明如约而至，虽然山脉曾遮挡祂的来路，但祂带来了祂所承诺的那片光明。那是黎明是曙光，那是晨曦是朝霞。刺破了沉睡大地的黑暗，象征新生，是万亿年星球孤独地自转，是万亿年恒星永恒着燃烧。</p>
+<p>那山上有一片不深的水域，万物倒映于此，此时的光并不滚烫，水也并不冰凉，只是温暖。这就是自然的奇迹，“极天云一线异色，须臾成五采”。</p>
+<p>而后云便按耐不住，薄雾开始散乱地浮游在天空中，它们企图将太阳化作月亮，他们试着遮掩崇山峻岭的痕迹。眼前的一切都若隐若现，“稍见云中白若樗蒲数十立者，山也”。</p>
+<p>于是一天开始，远处有雄鸡高鸣。在阳朔吃了最后一次早餐，我们前往了龙颈河。</p>
+<p>虽然我对这种刺激的活动都有一丝胆怯，但这仍是快乐不得不品尝的一环。</p>
+<p>水很青很凉，要等待所有皮筏艇下水导致紧张感剧增，下坝是不敢反向的，只能委屈姜三了。每一次冲坝都伴随尖叫，激烈地下落，水花四溅，很冰凉，中途都有一段时间在发抖。激流勇进，随波而行。</p>
+<p>所以就湿透了，直接去车站赶车去了，也就告别广西了，踏上回家半行之路。在车上由于贵州多山，时不时都钻隧道信号不好，加上实在困，所以在车上就直接睡觉了。</p>
+<p>到了过后由于在下雨，就直接回酒店了。很神奇的是，阳朔和贵阳都已经连续一周没下雨了，而今天开始之后要连续下一周的雨。</p>
+<p>晚上不想出去就点外卖了，你说得对但是今天是疯狂星期四所以我在贵阳吃了KFC。晚上那三个人都不想出去，我就只好单人夜行了。贵阳晚上人不算很多，喷水池有些远就没去，去了一家当地奶茶店，一杯冰旋很带感，味道不错。</p>
+<hr>
+<h4 id="2025-7-11-贵阳游-Day1-「终点」"><a href="#2025-7-11-贵阳游-Day1-「终点」" class="headerlink" title="2025.7.11 贵阳游 Day1 「终点」"></a>2025.7.11 贵阳游 Day1 「终点」</h4><p>大概是昨天太疲惫了，又是日出又是漂流的，一觉直接睡到了九点过。</p>
+<p>早上起来歇息了一会儿，讨论了一会儿也没啥其他地方可以去，就订了返程的车票了就直接去了黔灵山公园，早饭什么的就直接放弃了。到了过后意料之内的大太阳，所以就一边聊天一边登山，景色倒是很平常，路上有猕猴窜来窜去，个子比较小，尾巴比较短，皮鼓特别红。绕了一圈发现到午饭点了就索性下山了，看到一家礼品店想到好像啥都没买就进去买了盒茶叶，bro在贵阳买了盒云南茶当纪念品也是无敌了。然后三小只看到我买了也就跟着买了。</p>
+<p>然后就去湖边拍了几张，阎迪拿茶叶逗猕猴，包装被撕破了，看来猕猴抢食并非谣言。结果姜三和阎迪两个人聊着聊着又决定还是去黄果山瀑布玩一转，然后就留在贵阳了，只有我和航乘车回家。</p>
+<p>中午去吃了贵阳特色烙锅，确实很好吃，很下饭，当然也很管饱。吃完去点了杯去茶山，确实是很好喝的。告别之后，就回去拿行李去车站了。</p>
+<p>本来时间应该挺充裕，结果没想到下雨加堵车了，盘算着大概赶不上就改签了一趟晚了二十分钟的，也很赶，冲进车的时候气喘吁吁，上了车倒是就完事了。</p>
+<p>听歌，看完了《分成两半的子爵》，不算很套路化的剧情，写的倒是不错，其立意与《不存在的骑士》有重合之处，当然在后记里作者也点出了三部曲都是为同一个主旨服务这一事实。</p>
+<p>这趟车人很少，所以体验了散装商务座。玩了会儿 PVZRH 后基本就到站了，坐地铁到新都，还看到个 Saber，然后和爸妈会合，回来浅浅整理了下，也就基本结束了。</p>
+<p>回到了荒唐的生活里了。<font style="color:white">那我只好独自迈向未来了。</font></p>
+<font style="color:white">当我终于下定决心要坦白时，我才发现她早已把我的QQ删了。呵，真是太好笑了，原来我是个彻头彻尾的小丑。我在小学扮演了一个坏人，在初中扮演了一个蠢人，在高中扮演了一个呆人，一直都是我困于回忆太久，那既然如此，真的就没有什么好顾虑的了。结束，然后重新开始。</font>
+
+<hr>
+<h4 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h4><h5 id="南宁"><a href="#南宁" class="headerlink" title="南宁"></a>南宁</h5><p>个人认为大于桂林，不排除有旅行起点 buff 的加成。</p>
+<p>青秀山很大，有观光车，当然，我觉得像我们这样几个人边走边聊天走一个上午虽然很热但是体验是很好的。风景很多，建议抓一个生物竞赛的还可以科普科普。</p>
+<p>夜市是必须要去的，南宁有很多夜市，每个夜市都大同小异。饮品种类很多，如冰豆腐，龟苓膏，甘蔗汁之类的，都很好喝。桂花酿是神，只不过度数有点高，酌情尝试。</p>
+<p>其他景区犹如相思小镇，南湖公园，都是很经典的自然或者人文景观，没有太多新奇的点，但也是值得一看的风景。奶茶一定要去喝阿嬷手作，无敌的，全国现在喝过最好喝的，价位与茶话弄类似，但是口味无敌，与茶颜悦色匹敌，甚至更优，这才是南京必打卡点。有家宜禾堂也是本土的，味道也不错。</p>
+<p>食这一方面可以尝试老友粉，芒果花，都是地区特色。正餐那就是柠檬鸭，价格实惠，分量足够，特色风味。</p>
+<hr>
+<h5 id="桂林-阳朔"><a href="#桂林-阳朔" class="headerlink" title="桂林 / 阳朔"></a>桂林 / 阳朔</h5><p>桂林粉是特色，建议早上吃，不会吃辣不建议点红油粉，辣度堪比火鸡面。</p>
+<p>象鼻山是打卡点，但是如果本着爬山去会扫兴，最好的游览方式是买票上船远看，进去象鼻山倒是没什么有意思的地方。日月双塔很好看，晚上去是正确的，爬楼小心点就行，顶楼特别窄考验拍照技术。</p>
+<p>正餐建议阿甘酒家，奶茶建议 23 Tea-Lab，卧槽写到这里我才发现我当时好像忘喝这家了，亏麻了。</p>
+<p>去桂林坐船是必备的，可以先玩阳朔坐船去桂林，反之亦然。注意别迟到就行。</p>
+<p>船过漓江跟着导游的看就行，景点在前导游都会提醒怎么拍照的。如果有饭店可以在船上点现捞现做的河鲜，味道不算差，价格不算贵。</p>
+<p>去阳朔，需要注意的是十里画廊实则是一个类似于山村的片区而非景区，离阳朔县城有一定的距离，较为偏僻，阳朔城区里酒店很多，可以选择住城区里或者十里画廊里或者其他地方。</p>
+<p>阳朔奶茶和桂林类似，水牛乳茶是特色，加上甘蔗很好喝。正餐十里画廊有一家美团满分的月圆山庄，里面有民族仪式别被吓到就行。</p>
+<p>阳朔玩可能就是竹筏漂游了，超脱世俗的一刻钟，很享受。或者如果住民宿的话老板会给你推荐其他的东西。可以去骑山地车，虽然有些危险但是有护送。皮筏艇漂流也是一绝，龙颈河漂下来接近一个小时，但是超级爽，中途小心点头就行，有些石头奇形怪状不保证不会撞到。</p>
+<p>日出是很好看，建议的地方可能就是相公山了，接近山顶的地方有一个云端咖啡，花四十多块钱买杯咖啡也就算门票了，观感很好，旁边会提供一个几厘米深的水池用于拍摄倒影。</p>
+<hr>
+<h5 id="贵阳"><a href="#贵阳" class="headerlink" title="贵阳"></a>贵阳</h5><p>没怎么玩不作评价，反正黄果山瀑布是必去的。还有就是温泉很舒服。</p>
+<p>黔灵山公园和其他公园没有太大区别，除了随处可见的猕猴。</p>
+<p>贵阳必点的奶茶是去茶山，主打抹茶和干酪之类的，里面那个冰旋特别适合在夏天喝。</p>
+<hr>
+<h3 id="2025-7-18-科目一"><a href="#2025-7-18-科目一" class="headerlink" title="2025.7.18 科目一"></a>2025.7.18 科目一</h3><p>折腾了一个月终于考了。</p>
+<p>十二点出发，十二点半到，刚开始走错了，进了候考室又刷了几道题就存手机进去了。人还挺多，排了一会儿队。</p>
+<p>上机发现选完之后下一题没有任何提示，我以为要考完才判对错，想着可能要仔细点，结果到五十多道的时候有一道题选错选项我想这回来再改，结果跳下一个题的时候告诉我做错了。那看来之前几道题都蒙对了。最后不慌不忙做完 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 1000 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="39" d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z"></path><path data-c="36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z" transform="translate(500,0)"></path></g></g></g></svg></mjx-container> 分。其中三个题还是把选项看错了。</p>
+<p>下周开始学科二了。</p>
+<hr>
+<h3 id="2025-7-29-一切如此之终，万物于此之始。"><a href="#2025-7-29-一切如此之终，万物于此之始。" class="headerlink" title="2025.7.29 一切如此之终，万物于此之始。"></a>2025.7.29 一切如此之终，万物于此之始。</h3><p>拿到通知书了。健身和学车也在稳步进行。</p>
+<p>看着新生章程都觉得头痛了，看来这个暑假太颓了。八月就要开始行动起来了，不仅为大学做准备，更重要的是完成 UT 十周年曲目和博客搭建这些。</p>
+<p>八月之前争取把诗誊完。</p>
+<hr>
+
+    </div>
+
+    
+    
+    
+      
+
+  <div class="popular-posts-header">相关文章</div>
+  <ul class="related-posts">
+  
+      <li class="related-posts-item"><a href="/Until-The-End/My-Senior-High-School-Life/">E.N.D</a></li>
+  
+      <li class="related-posts-item"><a href="/Until-The-End/My-Lives-Eternity/">M.E</a></li>
+  
+      <li class="related-posts-item"><a href="/Until-The-End/My-OIer-Life/">O.I</a></li>
+  
+      <li class="related-posts-item"><a href="/Until-The-End/My-Promise/">T.I.M.E</a></li>
+  
+      <li class="related-posts-item"><a href="/Until-The-End/My-Junior-High-School-Life/">S.H.A.D.O.W</a></li>
+  
+  </ul>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E9%9D%92%E6%98%A5/" rel="tag"># 青春</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/%E9%9B%A8%E8%90%BD%EF%BC%8C%E8%A7%81%E9%BB%8E%E6%98%8E/Poems/" rel="prev" title="残垣，与半截诗篇">
+      <i class="fa fa-chevron-left"></i> 残垣，与半截诗篇
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/%E9%A2%98%E8%A7%A3/OI-summer-2025/" rel="next" title="暑假2025OI复健">
+      暑假2025OI复健 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%97%A5%E5%BF%97"><span class="nav-text">日志</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2025-6-25-%E9%80%9D%E8%80%85%E5%B7%B2%E7%A6%BB%EF%BC%8C%E7%94%9F%E8%80%85%E4%BB%8D%E8%A1%8C"><span class="nav-text">2025.6.25 逝者已离，生者仍行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2025-6-26-%E5%89%8D%E7%A8%8B%E4%BC%BC%E9%94%A6%EF%BC%8C%E6%95%85%E5%9C%9F%E9%87%8D%E8%8A%AF"><span class="nav-text">2025.6.26 前程似锦，故土重芯</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2025-7-%E8%BF%9C%E8%A1%8C"><span class="nav-text">2025.7 远行</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2025-7-4-%E5%8D%97%E5%AE%81%E6%B8%B8-Day0"><span class="nav-text">2025.7.4 南宁游 Day0</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2025-7-5-%E5%8D%97%E5%AE%81%E6%B8%B8-Day1"><span class="nav-text">2025.7.5 南宁游 Day1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2025-7-6-%E5%8D%97%E5%AE%81%E6%B8%B8-Day2-%E6%A1%82%E6%9E%97%E6%B8%B8-Day0"><span class="nav-text">2025.7.6 南宁游 Day2 &#x2F; 桂林游 Day0</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2025-7-7-%E6%A1%82%E6%9E%97%E6%B8%B8-Day1"><span class="nav-text">2025.7.7 桂林游 Day1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2025-7-8-%E6%A1%82%E6%9E%97%E9%98%B3%E6%9C%94%E6%B8%B8-Day2-%E3%80%8C%E6%A2%A6%E3%80%8D"><span class="nav-text">2025.7.8 桂林阳朔游 Day2 「梦」</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2025-7-9-%E6%A1%82%E6%9E%97%E9%98%B3%E6%9C%94%E6%B8%B8-Day3"><span class="nav-text">2025.7.9 桂林阳朔游 Day3</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2025-7-10-%E6%A1%82%E6%9E%97%E9%98%B3%E6%9C%94%E6%B8%B8-Day4-%E8%B4%B5%E9%98%B3%E6%B8%B8-Day0"><span class="nav-text">2025.7.10 桂林阳朔游 Day4 &#x2F; 贵阳游 Day0</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2025-7-11-%E8%B4%B5%E9%98%B3%E6%B8%B8-Day1-%E3%80%8C%E7%BB%88%E7%82%B9%E3%80%8D"><span class="nav-text">2025.7.11 贵阳游 Day1 「终点」</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Summary"><span class="nav-text">Summary</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%8D%97%E5%AE%81"><span class="nav-text">南宁</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%A1%82%E6%9E%97-%E9%98%B3%E6%9C%94"><span class="nav-text">桂林 &#x2F; 阳朔</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%B4%B5%E9%98%B3"><span class="nav-text">贵阳</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2025-7-18-%E7%A7%91%E7%9B%AE%E4%B8%80"><span class="nav-text">2025.7.18 科目一</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2025-7-29-%E4%B8%80%E5%88%87%E5%A6%82%E6%AD%A4%E4%B9%8B%E7%BB%88%EF%BC%8C%E4%B8%87%E7%89%A9%E4%BA%8E%E6%AD%A4%E4%B9%8B%E5%A7%8B%E3%80%82"><span class="nav-text">2025.7.29 一切如此之终，万物于此之始。</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Fallen Shadow"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Fallen Shadow</p>
+  <div class="site-description" itemprop="description">誰も悪くないから、辛いだな。<br>自卑的人，往往只剩下温柔了啊……</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">216</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">28</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">299</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/LucarEternity" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;LucarEternity" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="skype:live:.cid.7ca038c9215763f1?call|chat" title="Skype → skype:live:.cid.7ca038c9215763f1?call|chat" rel="noopener" target="_blank"><i class="fab fa-skype fa-fw"></i>Skype</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/356159259?spm_id_from=333.1007.0.0" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;356159259?spm_id_from&#x3D;333.1007.0.0" rel="noopener" target="_blank"><i class="fab fa-bilibili fa-fw"></i>Bilibili</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://music.163.com/#/artist?id=52150816" title="CloudMusic → https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;artist?id&#x3D;52150816" rel="noopener" target="_blank"><i class="fab fa-cloudmusic fa-fw"></i>CloudMusic</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.luogu.com.cn/user/444040" title="Luogu → https:&#x2F;&#x2F;www.luogu.com.cn&#x2F;user&#x2F;444040" rel="noopener" target="_blank"><i class="fab fa-luogu fa-fw"></i>Luogu</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/eternity-81-90" title="Zhihu → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;eternity-81-90" rel="noopener" target="_blank"><i class="fab fa-zhihu fa-fw"></i>Zhihu</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://codeforces.com/profile/eEternalF" title="CodeForces → https:&#x2F;&#x2F;codeforces.com&#x2F;profile&#x2F;eEternalF" rel="noopener" target="_blank"><i class="fab fa-codeforces fa-fw"></i>CodeForces</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://loj.ac/u/_Eternal_" title="LibreOj → https:&#x2F;&#x2F;loj.ac&#x2F;u&#x2F;_Eternal_" rel="noopener" target="_blank"><i class="fab fa-libreoj fa-fw"></i>LibreOj</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="http://wpa.qq.com/msgrd?v=3&uin=3579685229&site=qq&menu=yes" title="QQ → http:&#x2F;&#x2F;wpa.qq.com&#x2F;msgrd?v&#x3D;3&amp;uin&#x3D;3579685229&amp;site&#x3D;qq&amp;menu&#x3D;yes" rel="noopener" target="_blank"><i class="fab fa-qq fa-fw"></i>QQ</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://atcoder.jp/users/EternityF" title="AtCoder → https:&#x2F;&#x2F;atcoder.jp&#x2F;users&#x2F;EternityF" rel="noopener" target="_blank"><i class="fab fa-atcoder fa-fw"></i>AtCoder</a>
+      </span>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">落幕の残影</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">2.2m</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">32:45</span>
+</div>
+  <div class="running-time">
+    <span id="timeDate"></span>
+    <span id="times"></span>
+    <script>
+        var now = new Date();
+        function createtime() {
+            var grt= new Date("01/25/2022 13:14:20");
+            now.setTime(now.getTime()+250);
+            days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+            hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+            if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+            mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+            document.getElementById("timeDate").innerHTML = "本站已经安全运行 " + dnum + " 天";
+            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+        }
+    setInterval("createtime()",250);
+    </script>
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+<script>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '5668763013a9ee15351a',
+      clientSecret: '829dedf54a52d013b70ae34590fb8d195486025d',
+      repo        : 'lucareternity.github.io',
+      owner       : 'LucarEternity',
+      admin       : ['LucarEternity'],
+      id          : '9746279e9a34a7c2378327ebac4228fe',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>

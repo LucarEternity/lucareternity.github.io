@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/patient.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"violeteternal.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+  <style type="text/css">
+div.content.block.note, details.content.box.note,div.content.block.abstract, details.content.box.abstract,div.content.block.info, details.content.box.info,div.content.block.tip, details.content.box.tip,div.content.block.success, details.content.box.success,div.content.block.question, details.content.box.question,div.content.block.warning, details.content.box.warning,div.content.block.failure, details.content.box.failure,div.content.block.danger, details.content.box.danger,div.content.block.bug, details.content.box.bug,div.content.block.example, details.content.box.example,div.content.block.quote, details.content.box.quote,div.content.block.code, details.content.box.code {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.content.block.note, details.content.box.note {
+  border-color: #448aff;
+}
+div.content.block.abstract, details.content.box.abstract {
+  border-color: #00b0ff;
+}
+div.content.block.info, details.content.box.info {
+  border-color: #00b8d4;
+}
+div.content.block.tip, details.content.box.tip {
+  border-color: #00bfa5;
+}
+div.content.block.success, details.content.box.success {
+  border-color: #00c853;
+}
+div.content.block.question, details.content.box.question {
+  border-color: #64dd17;
+}
+div.content.block.warning, details.content.box.warning {
+  border-color: #ff9100;
+}
+div.content.block.failure, details.content.box.failure {
+  border-color: #ff5252;
+}
+div.content.block.danger, details.content.box.danger {
+  border-color: #ff1744;
+}
+div.content.block.bug, details.content.box.bug {
+  border-color: #f50057;
+}
+div.content.block.example, details.content.box.example {
+  border-color: #651fff;
+}
+div.content.block.quote, details.content.box.quote {
+  border-color: #9e9e9e;
+}
+div.content.block.code, details.content.box.code {
+  border-color: #A0A0A0;
+}
+div.content.block.note:focus-within, details.content.box.note:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.content.block.abstract:focus-within, details.content.box.abstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.content.block.info:focus-within, details.content.box.info:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.content.block.tip:focus-within, details.content.box.tip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.content.block.success:focus-within, details.content.box.success:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.content.block.question:focus-within, details.content.box.question:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.content.block.warning:focus-within, details.content.box.warning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.content.block.failure:focus-within, details.content.box.failure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.content.block.danger:focus-within, details.content.box.danger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.content.block.bug:focus-within, details.content.box.bug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.content.block.example:focus-within, details.content.box.example:focus-within {
+  box-shadow: 0 0 0 .2rem #651fff1a;
+}
+div.content.block.quote:focus-within, details.content.box.quote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.content.block.code:focus-within, details.content.box.code:focus-within {
+  box-shadow: 0 0 0 .2rem #A0A0A01a;
+}
+div.content.block.note *, details.content.box.note *,div.content.block.abstract *, details.content.box.abstract *,div.content.block.info *, details.content.box.info *,div.content.block.tip *, details.content.box.tip *,div.content.block.success *, details.content.box.success *,div.content.block.question *, details.content.box.question *,div.content.block.warning *, details.content.box.warning *,div.content.block.failure *, details.content.box.failure *,div.content.block.danger *, details.content.box.danger *,div.content.block.bug *, details.content.box.bug *,div.content.block.example *, details.content.box.example *,div.content.block.quote *, details.content.box.quote *,div.content.block.code *, details.content.box.code * {
+  box-sizing: border-box;
+}
+div.content.block.note > p.content.block-title, details.content.box.note > summary,div.content.block.abstract > p.content.block-title, details.content.box.abstract > summary,div.content.block.info > p.content.block-title, details.content.box.info > summary,div.content.block.tip > p.content.block-title, details.content.box.tip > summary,div.content.block.success > p.content.block-title, details.content.box.success > summary,div.content.block.question > p.content.block-title, details.content.box.question > summary,div.content.block.warning > p.content.block-title, details.content.box.warning > summary,div.content.block.failure > p.content.block-title, details.content.box.failure > summary,div.content.block.danger > p.content.block-title, details.content.box.danger > summary,div.content.block.bug > p.content.block-title, details.content.box.bug > summary,div.content.block.example > p.content.block-title, details.content.box.example > summary,div.content.block.quote > p.content.block-title, details.content.box.quote > summary,div.content.block.code > p.content.block-title, details.content.box.code > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.content.box.note > summary,details.content.box.abstract > summary,details.content.box.info > summary,details.content.box.tip > summary,details.content.box.success > summary,details.content.box.question > summary,details.content.box.warning > summary,details.content.box.failure > summary,details.content.box.danger > summary,details.content.box.bug > summary,details.content.box.example > summary,details.content.box.quote > summary,details.content.box.code > summary {
+  cursor: pointer;
+}
+details.content.box.note:not([open]) > summary,details.content.box.abstract:not([open]) > summary,details.content.box.info:not([open]) > summary,details.content.box.tip:not([open]) > summary,details.content.box.success:not([open]) > summary,details.content.box.question:not([open]) > summary,details.content.box.warning:not([open]) > summary,details.content.box.failure:not([open]) > summary,details.content.box.danger:not([open]) > summary,details.content.box.bug:not([open]) > summary,details.content.box.example:not([open]) > summary,details.content.box.quote:not([open]) > summary,details.content.box.code:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.content.block.note > p.content.block-title, details.content.box.note > summary {
+  background-color: #448aff1a;
+}
+div.content.block.abstract > p.content.block-title, details.content.box.abstract > summary {
+  background-color: #00b0ff1a;
+}
+div.content.block.info > p.content.block-title, details.content.box.info > summary {
+  background-color: #00b8d41a;
+}
+div.content.block.tip > p.content.block-title, details.content.box.tip > summary {
+  background-color: #00bfa51a;
+}
+div.content.block.success > p.content.block-title, details.content.box.success > summary {
+  background-color: #00c8531a;
+}
+div.content.block.question > p.content.block-title, details.content.box.question > summary {
+  background-color: #64dd171a;
+}
+div.content.block.warning > p.content.block-title, details.content.box.warning > summary {
+  background-color: #ff91001a;
+}
+div.content.block.failure > p.content.block-title, details.content.box.failure > summary {
+  background-color: #ff52521a;
+}
+div.content.block.danger > p.content.block-title, details.content.box.danger > summary {
+  background-color: #ff17441a;
+}
+div.content.block.bug > p.content.block-title, details.content.box.bug > summary {
+  background-color: #f500571a;
+}
+div.content.block.example > p.content.block-title, details.content.box.example > summary {
+  background-color: #651fff1a;
+}
+div.content.block.quote > p.content.block-title, details.content.box.quote > summary {
+  background-color: #9e9e9e1a;
+}
+div.content.block.code > p.content.block-title, details.content.box.code > summary {
+  background-color: #A0A0A01a;
+}
+div.content.block.note > p.content.block-title > i, details.content.box.note > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.content.block.abstract > p.content.block-title > i, details.content.box.abstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.content.block.info > p.content.block-title > i, details.content.box.info > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.content.block.tip > p.content.block-title > i, details.content.box.tip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.content.block.success > p.content.block-title > i, details.content.box.success > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.content.block.question > p.content.block-title > i, details.content.box.question > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.content.block.warning > p.content.block-title > i, details.content.box.warning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.content.block.failure > p.content.block-title > i, details.content.box.failure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.content.block.danger > p.content.block-title > i, details.content.box.danger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.content.block.bug > p.content.block-title > i, details.content.box.bug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.content.block.example > p.content.block-title > i, details.content.box.example > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #651fff;
+}
+div.content.block.quote > p.content.block-title > i, details.content.box.quote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+div.content.block.code > p.content.block-title > i, details.content.box.code > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #A0A0A0;
+}
+details.content.box.note > summary > div.box-open-button,details.content.box.abstract > summary > div.box-open-button,details.content.box.info > summary > div.box-open-button,details.content.box.tip > summary > div.box-open-button,details.content.box.success > summary > div.box-open-button,details.content.box.question > summary > div.box-open-button,details.content.box.warning > summary > div.box-open-button,details.content.box.failure > summary > div.box-open-button,details.content.box.danger > summary > div.box-open-button,details.content.box.bug > summary > div.box-open-button,details.content.box.example > summary > div.box-open-button,details.content.box.quote > summary > div.box-open-button,details.content.box.code > summary > div.box-open-button {
+  float: right;
+}
+details.content.box.note > summary > div.box-open-button > i,details.content.box.abstract > summary > div.box-open-button > i,details.content.box.info > summary > div.box-open-button > i,details.content.box.tip > summary > div.box-open-button > i,details.content.box.success > summary > div.box-open-button > i,details.content.box.question > summary > div.box-open-button > i,details.content.box.warning > summary > div.box-open-button > i,details.content.box.failure > summary > div.box-open-button > i,details.content.box.danger > summary > div.box-open-button > i,details.content.box.bug > summary > div.box-open-button > i,details.content.box.example > summary > div.box-open-button > i,details.content.box.quote > summary > div.box-open-button > i,details.content.box.code > summary > div.box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.content.box.note:not([open]) > summary > div.box-open-button i,details.content.box.abstract:not([open]) > summary > div.box-open-button i,details.content.box.info:not([open]) > summary > div.box-open-button i,details.content.box.tip:not([open]) > summary > div.box-open-button i,details.content.box.success:not([open]) > summary > div.box-open-button i,details.content.box.question:not([open]) > summary > div.box-open-button i,details.content.box.warning:not([open]) > summary > div.box-open-button i,details.content.box.failure:not([open]) > summary > div.box-open-button i,details.content.box.danger:not([open]) > summary > div.box-open-button i,details.content.box.bug:not([open]) > summary > div.box-open-button i,details.content.box.example:not([open]) > summary > div.box-open-button i,details.content.box.quote:not([open]) > summary > div.box-open-button i,details.content.box.code:not([open]) > summary > div.box-open-button i {
+  transform: rotate(270deg);
+}
+details.content.box.note[open] > summary > div.box-open-button i,details.content.box.abstract[open] > summary > div.box-open-button i,details.content.box.info[open] > summary > div.box-open-button i,details.content.box.tip[open] > summary > div.box-open-button i,details.content.box.success[open] > summary > div.box-open-button i,details.content.box.question[open] > summary > div.box-open-button i,details.content.box.warning[open] > summary > div.box-open-button i,details.content.box.failure[open] > summary > div.box-open-button i,details.content.box.danger[open] > summary > div.box-open-button i,details.content.box.bug[open] > summary > div.box-open-button i,details.content.box.example[open] > summary > div.box-open-button i,details.content.box.quote[open] > summary > div.box-open-button i,details.content.box.code[open] > summary > div.box-open-button i {
+  transform: rotate(180deg);
+}
+details.content.box.note summary div.box-open-button i {
+  color: #448aff;
+}
+details.content.box.abstract summary div.box-open-button i {
+  color: #00b0ff;
+}
+details.content.box.info summary div.box-open-button i {
+  color: #00b8d4;
+}
+details.content.box.tip summary div.box-open-button i {
+  color: #00bfa5;
+}
+details.content.box.success summary div.box-open-button i {
+  color: #00c853;
+}
+details.content.box.question summary div.box-open-button i {
+  color: #64dd17;
+}
+details.content.box.warning summary div.box-open-button i {
+  color: #ff9100;
+}
+details.content.box.failure summary div.box-open-button i {
+  color: #ff5252;
+}
+details.content.box.danger summary div.box-open-button i {
+  color: #ff1744;
+}
+details.content.box.bug summary div.box-open-button i {
+  color: #f50057;
+}
+details.content.box.example summary div.box-open-button i {
+  color: #651fff;
+}
+details.content.box.quote summary div.box-open-button i {
+  color: #9e9e9e;
+}
+details.content.box.code summary div.box-open-button i {
+  color: #A0A0A0;
+}
+div.content.cards * {
+  box-sizing: border-box;
+}
+input.content.cards-input {
+  display: none;
+}
+div.content.cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.content.cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.content.cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.content.cards-label.active, label.content.cards-label:hover {
+  color: var(--cards-color);
+}
+div.content.cards-content {
+  display: none;
+}
+div.content.cards-content.active {
+  display: block;
+}
+</style>
+  <meta name="description" content="誰も悪くないから、辛いだな。自卑的人，往往只剩下温柔了啊……">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Reincarnation">
+<meta property="og:url" content="http://violeteternal.github.io/page/23/index.html">
+<meta property="og:site_name" content="Reincarnation">
+<meta property="og:description" content="誰も悪くないから、辛いだな。自卑的人，往往只剩下温柔了啊……">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Fallen Shadow">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://violeteternal.github.io/page/23/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Reincarnation</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Reincarnation</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">正因为梦易碎，才格外美好。</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-road">
+
+    <a href="/road/" rel="section"><i class="fa fa-road fa-fw"></i>归程</a>
+
+  </li>
+        <li class="menu-item menu-item-past">
+
+    <a href="/past/" rel="section"><i class="fab fa-house-chimney-crack fa-fw"></i>旧日残垣</a>
+
+  </li>
+        <li class="menu-item menu-item-friendship">
+
+    <a href="/friendship/" rel="section"><i class="fa fa-users fa-fw"></i>友链</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/%E5%9B%9E%E5%93%8D%E5%9C%B0%E5%9F%9F%E7%9A%84%E8%B5%9E%E7%BE%8E%E8%AF%97/%E5%A4%9A%E5%85%83%E5%AE%87%E5%AE%99%E7%9A%84%E4%BA%A4%E7%BB%87%E4%B8%8E%E7%A2%B0%E6%92%9E/Eternity-of-Chaotic/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Fallen Shadow">
+      <meta itemprop="description" content="誰も悪くないから、辛いだな。<br>自卑的人，往往只剩下温柔了啊……">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Reincarnation">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/%E5%9B%9E%E5%93%8D%E5%9C%B0%E5%9F%9F%E7%9A%84%E8%B5%9E%E7%BE%8E%E8%AF%97/%E5%A4%9A%E5%85%83%E5%AE%87%E5%AE%99%E7%9A%84%E4%BA%A4%E7%BB%87%E4%B8%8E%E7%A2%B0%E6%92%9E/Eternity-of-Chaotic/" class="post-title-link" itemprop="url">三重混沌时光：再起新篇</a>
+        </h2>
+
+        <div class="post-meta">
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2024-12-07 23:12:10" itemprop="dateCreated datePublished" datetime="2024-12-07T23:12:10+08:00">2024-12-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-06-20 12:00:56" itemprop="dateModified" datetime="2025-06-20T12:00:56+08:00">2025-06-20</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9B%9E%E5%93%8D%E5%9C%B0%E5%9F%9F%E7%9A%84%E8%B5%9E%E7%BE%8E%E8%AF%97/" itemprop="url" rel="index"><span itemprop="name">回响地域的赞美诗</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9B%9E%E5%93%8D%E5%9C%B0%E5%9F%9F%E7%9A%84%E8%B5%9E%E7%BE%8E%E8%AF%97/%E5%A4%9A%E5%85%83%E5%AE%87%E5%AE%99%E7%9A%84%E4%BA%A4%E7%BB%87%E4%B8%8E%E7%A2%B0%E6%92%9E/" itemprop="url" rel="index"><span itemprop="name">多元宇宙的交织与碰撞</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>0</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <span id="more"></span>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://violeteternal.github.io/uncategorized/Chaotic-Time-Trio/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Fallen Shadow">
+      <meta itemprop="description" content="誰も悪くないから、辛いだな。<br>自卑的人，往往只剩下温柔了啊……">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Reincarnation">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/uncategorized/Chaotic-Time-Trio/" class="post-title-link" itemprop="url">三重混沌时光：再起新篇</a>
+        </h2>
+
+        <div class="post-meta">
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2024-12-07 23:12:10" itemprop="dateCreated datePublished" datetime="2024-12-07T23:12:10+08:00">2024-12-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-04-05 15:19:39" itemprop="dateModified" datetime="2025-04-05T15:19:39+08:00">2025-04-05</time>
+              </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>7.8k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>7 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <span id="more"></span>
+<p>Phase 5 - ABYSS<br>（英文全称：Aeonic Boundary Yields Sinister Salvation | 中文译名：渊垠噬光，冥赎昭妄）</p>
+<p>命名解析</p>
+<ol>
+<li>英文全称与缩写双关<br>Aeonic Boundary（永恒的边界）：</li>
+</ol>
+<p>“Aeonic”（永恒的）呼应《传说之下》中时间线循环的无限性；</p>
+<p>“Boundary”（边界）象征游戏世界与深渊的临界点，或角色精神崩溃的阈值。</p>
+<p>Yields Sinister Salvation（孕育邪性的救赎）：</p>
+<p>“Yields”（屈服/孕育）暗示深渊既是压迫者也是创造者；</p>
+<p>“Sinister Salvation”（邪性救赎）以悖论修辞点明结局的混沌本质——救赎需以堕落为代价。</p>
+<p>缩写ABYSS：</p>
+<p>直译为“深渊”，与标题的“Boundary”“Sinister”形成语义闭环；</p>
+<p>暗藏字母彩蛋：A Being’s Yearning Sinisterly Surfaces（某个存在的渴望邪性浮现），暗示新反派或隐藏BOSS的觉醒。</p>
+<ol>
+<li>中文译名：渊垠噬光，冥赎昭妄<br>“渊垠噬光”：</li>
+</ol>
+<p>“渊垠”（yuān yín）：“渊”指深渊，“垠”为边际，直译“Aeonic Boundary”，强化空间的无尽感；</p>
+<p>“噬光”：吞噬光明，呼应“Sinister Salvation”的黑暗救赎，隐喻希望被深渊同化。</p>
+<p>“冥赎昭妄”：</p>
+<p>“冥赎”（míng shú）：幽冥中的救赎，与“Sinister Salvation”对应，暗示救赎的非道德性；</p>
+<p>“昭妄”（zhāo wàng）：“昭”为揭露，“妄”指虚妄，揭露深渊本质实为一场荒诞骗局。</p>
+<p>翻译策略：</p>
+<p>延续四字对仗与文言密度（如“噬光”对“昭妄”）；</p>
+<p>通过“噬”“冥”等字眼强化视觉压迫感，贴合深渊主题。</p>
+<p>与游戏叙事及前作的联结</p>
+<ol>
+<li>叙事链延伸<br>ACE → TEAR → DIE → NOVA → ABYSS：<br>从“王牌对决”到“深渊吞噬”，构成完整的“诞生-斗争-崩坏-新生-湮灭”轮回，暗示同人宇宙的终极命题：救赎是否必然伴随毁灭？</li>
+</ol>
+<p>深渊的隐喻：</p>
+<p>可能指向《传说之下》隐藏角色W.D. Gaster的“核心深渊”（The Core）设定；</p>
+<p>或暗喻玩家在多次重置后陷入的“虚无主义”心理状态。</p>
+<ol>
+<li>音乐意象设计<br>英文标题联想：</li>
+</ol>
+<p>Aeonic Boundary：以绵延的合成器音效与钟表滴答声，表现时间的凝固感；</p>
+<p>Sinister Salvation：通过扭曲的圣咏合唱与突然的静默，制造“虚假救赎”的听觉反差。</p>
+<p>中文标题适配：</p>
+<p>“噬光”可对应音乐中低频吞噬高频的声效设计；</p>
+<p>“冥赎”或体现为管风琴与电子Glitch音的混合，象征神性与混沌的对抗。</p>
+<p>跨语言符号系统<br>ABYSS 的字母拆解：</p>
+<p>A（Aeonic）→ 渊（时间深渊）；</p>
+<p>B（Boundary）→ 垠（空间边界）；</p>
+<p>YSS（Yields Sinister Salvation）→ 噬光/冥赎（吞噬与救赎的动作闭环）。</p>
+<p>中英文标题的镜像关系：<br>英文强调“过程”（Boundary Yields），中文侧重“结果”（噬光昭妄），构成视角互补。</p>
+<p>总结<br>ABYSS 作为Chaotic Time Trio的终章标题，通过字母彩蛋、悖论修辞、文言炼字，将“深渊”概念转化为可听可视的叙事载体。其命名逻辑不仅延续前四Phase的语言实验，更以“邪性救赎”挑战玩家对《传说之下》传统结局的认知，最终在“渊垠噬光”中完成同人宇宙的哲学闭环——当光明被深渊吞噬，唯一的救赎便是与混沌共生。</p>
+<p>Phase 4（修正版）曲名设计<br>英文全称：Fusion of United Souls’ Emergence<br>缩写：FUSE<br>中文译名：魂铸涅槃，烬生终曜</p>
+<p>命名解析</p>
+<ol>
+<li>英文全称与缩写双关<br>Fusion of United Souls（融合的联合灵魂）：</li>
+</ol>
+<p>直指英雄通过灵魂融合的剧情核心，强调“牺牲个体性换取集体力量”的悲壮感。</p>
+<p>“Emergence”（涌现）：暗含“新存在”的诞生既是战术突破，也是哲学意义上的超然觉醒。</p>
+<p>缩写FUSE：</p>
+<p>字面：熔合、导火索，既呼应“融合”动作，也隐喻战斗的爆发性转折。</p>
+<p>隐藏彩蛋：Final Unison Sacrifice Echo（最终的和声牺牲回响），暗示融合本质是灵魂的永恒共鸣。</p>
+<ol>
+<li>中文译名：魂铸涅槃，烬生终曜<br>“魂铸涅槃”：</li>
+</ol>
+<p>“魂铸”：灵魂熔铸为新的存在，呼应“Fusion”，赋予工业锻造般的沉重感；</p>
+<p>“涅槃”：佛教术语，象征毁灭后的重生，暗合英雄“牺牲-新生”的二元性。</p>
+<p>“烬生终曜”：</p>
+<p>“烬生”：从灰烬中诞生，暗示战斗的惨烈与融合的代价；</p>
+<p>“终曜”（zhōng yào）：终极的光芒，直指胜利的结局，同时“曜”字呼应《传说之下》中“星辰”与“决心”的意象。</p>
+<p>对仗与意象：</p>
+<p>“魂铸”对“烬生”（物质性动作 vs 自然现象）；</p>
+<p>“涅槃”对“终曜”（抽象升华 vs 具象光芒），形成从毁灭到光辉的叙事链。</p>
+<p>与游戏叙事的深度绑定</p>
+<ol>
+<li>融合的代价与救赎<br><strong>“魂铸”</strong>对应英雄肉体消散、灵魂熔合的瞬间动画，可能伴随金属碰撞音效与破碎声采样；</li>
+</ol>
+<p><strong>“涅槃”</strong>暗示新存在并非完美救世主，而是承载所有灵魂痛苦的“容器”，与《传说之下》中“决心容器”设定形成互文。</p>
+<ol>
+<li>音乐设计的隐喻<br>前段：以分裂的旋律线（象征不同角色主题曲）交织碰撞，逐渐融合为单一宏大的主旋律；</li>
+</ol>
+<p>后段：<strong>“终曜”</strong>部分用高频管弦乐与合唱爆发，模仿“光芒穿透深渊”的听感，却在结尾保留一丝不和谐电子音，暗示胜利背后的残缺。</p>
+<ol>
+<li>缩写FUSE的叙事权重<br>Fusion（融合） → 战斗的起点；</li>
+</ol>
+<p>Unison（和声） → 灵魂共鸣的瞬间；</p>
+<p>Sacrifice（牺牲） → 融合的本质；</p>
+<p>Echo（回响） → 胜利后英雄灵魂的残存低语，为Phase 5的深渊主题埋下伏笔。</p>
+<p>跨语言符号系统<br>英文标题侧重过程（熔合的技术性描述），中文标题侧重结果（涅槃与光芒的诗意升华），形成“理性-感性”视角互补。</p>
+<p><strong>“烬生终曜”</strong>中的“烬”与Phase 3的“迷诸前尘”形成对照：前者是物质残骸，后者是精神迷障，共同构建“混沌时空”的废墟美学。</p>
+<p>总结<br>FUSE - 魂铸涅槃，烬生终曜 以语言符号重构了“融合”的英雄史诗：</p>
+<p>英文缩写与全称构成机械感与神性的碰撞，呼应《传说之下》科技（核心实验室）与魔法（决心）并存的设定；</p>
+<p>中文译名通过佛学词汇与火焰意象，将西式英雄主义转化为东方“向死而生”的哲思，最终在“终曜”中达成多语言叙事的终极共振。</p>
+<p>Phase 5 - ABYSS<br>英文全称：Apostasy’s Birth, Yearning Shadows Swallow<br>中文译名：叛诞渊噬，妄影吞光</p>
+<p>命名解析</p>
+<ol>
+<li>英文全称与缩写双关<br>Apostasy’s Birth（背信的诞生）：</li>
+</ol>
+<p>指Phase4中英雄融合的“强大存在”因力量过载或灵魂冲突，逐渐背离初衷（Apostasy），诞生新的危机。</p>
+<p>呼应前作“英雄牺牲”的伏笔——光明胜利的代价是深渊的觉醒。</p>
+<p>Yearning Shadows Swallow（渴望的阴影吞噬）：</p>
+<p>“Yearning”暗指敌人未被彻底消灭，其执念化作阴影；</p>
+<p>“Swallow”直指深渊吞噬光明的结局，与Phase4的“终曜”（光芒）形成残酷对比。</p>
+<p>缩写ABYSS：</p>
+<p>直译为“深渊”，同时可拆解为 A Bitter Yearning Sinking Souls（沉沦灵魂的苦涩渴望），暗示英雄融合体在胜利后反被深渊腐蚀。</p>
+<ol>
+<li>中文译名：叛诞渊噬，妄影吞光<br>“叛诞渊噬”：</li>
+</ol>
+<p>“叛诞”：背叛与荒诞，指融合存在的自我异化（“背信诞生”）；</p>
+<p>“渊噬”：深渊吞噬的动作，强化被反噬的绝望感。</p>
+<p>“妄影吞光”：</p>
+<p>“妄影”：虚妄的阴影，既是被击败敌人的残念，也是英雄内心的黑暗面；</p>
+<p>“吞光”：彻底湮灭Phase4的“终曜”，宣告混沌的终极胜利。</p>
+<p>翻译策略：</p>
+<p>延续四字短语的文言密度，如“叛诞”对“妄影”（人性崩坏 vs 无形威胁）；</p>
+<p>“渊噬”与“吞光”形成动作递进（吞噬→湮灭），构建叙事张力。</p>
+<p>与剧情及前作的联结</p>
+<ol>
+<li>叙事逻辑<br>Phase4的“魂铸涅槃”实为 ABYSS的伏笔：</li>
+</ol>
+<p>英雄灵魂融合时，无意间打通了深渊通道（“渊噬”）；</p>
+<p>敌人残存的“妄影”寄生在融合体中，逐步腐蚀其意志（“叛诞”）。</p>
+<p>缩写链：ACE → TEAR → DIE → NOVA → ABYSS</p>
+<p>从“王牌”到“深渊”，暗示力量越强，堕入混沌的风险越大，与《传说之下》“决心过度导致灾难”的主题契合。</p>
+<ol>
+<li>音乐意象设计<br>前段：以Phase4胜利主旋律的倒放或扭曲变调开场，象征光明被深渊污染；</li>
+</ol>
+<p>中段：用低频脉冲与不规则的打击乐模仿“阴影蠕动”的听感，呼应“妄影”；</p>
+<p>终段：所有旋律线被吞噬，仅剩空洞的环境音（如深渊风声），表现“吞光”后的虚无。</p>
+<p>跨语言符号系统<br>英文标题：</p>
+<p>“Apostasy”与“Swallow”押头韵，增强语音的压迫感；</p>
+<p>“Yearning Shadows”影射《传说之下》中Flowey的“渴望被爱”。</p>
+<p>中文标题：</p>
+<p>“叛诞”谐音“潘多拉”（Pandora），暗示英雄亲手打开灾厄之匣；</p>
+<p>“吞光”与Phase4的“终曜”形成“动词-名词”对立，构成语言上的因果闭环。</p>
+<p>总结<br>ABYSS - 叛诞渊噬，妄影吞光 并非单纯的终章，而是对“英雄叙事”的解构：</p>
+<p>英文缩写揭露“光明胜利”的虚假性——Apostasy’s Birth才是真相；</p>
+<p>中文译名以“叛诞”“吞光”宣告同人宇宙的终极命题：当英雄成为深渊本身，救赎便是一场悲壮的自噬。<br>此命名延续CTT系列“语言即陷阱”的风格，迫使玩家在解码缩写时，亲历英雄的堕落与世界的崩解。</p>
+<p>Phase 5 - ABYSS<br>英文全称：Ascendancy’s Bane, Yielding Scarred Salvation<br>中文译名：渊劫终溃，辉烬昭世</p>
+<p>命名解析</p>
+<ol>
+<li>英文全称与缩写双关<br>Ascendancy’s Bane（统治者的灾厄）：</li>
+</ol>
+<p>Ascendancy 指敌人对世界的霸权，呼应前作中反派力量的压迫性；</p>
+<p>Bane（克星）直指英雄是敌人统治的终结者，强调“注定胜利”的必然性。</p>
+<p>Yielding Scarred Salvation（屈服于伤痕的救赎）：</p>
+<p>Yielding 表明敌人最终溃败（屈服），而 Scarred Salvation 暗示胜利的代价（英雄的伤痕）与救赎的纯粹性并存。</p>
+<p>缩写ABYSS：</p>
+<p>直指敌人堕入的“深渊”，同时暗藏彩蛋：A Beacon Yields Sinister’s Silence（灯塔让邪恶归于沉寂），以“灯塔”隐喻英雄为世界引航的光明。</p>
+<ol>
+<li>中文译名：渊劫终溃，辉烬昭世<br>“渊劫终溃”：</li>
+</ol>
+<p>“渊劫”：深渊中的劫难（敌人主导的黑暗统治）；</p>
+<p>“终溃”：彻底崩溃，宣告敌人势力终结。</p>
+<p>“辉烬昭世”：</p>
+<p>“辉烬”：灰烬中重燃的光芒，呼应Phase4融合英雄的“终曜”，象征伤痕中诞生的新生；</p>
+<p>“昭世”：光明昭示天下，暗合“必定胜利”的结局。</p>
+<p>翻译策略：</p>
+<p>延续前作四字对仗，但调整意象方向（“溃”“昭”强化胜利）；</p>
+<p>“辉烬”与Phase4的“烬生终曜”形成因果链，强调希望从牺牲中延续。</p>
+<p>与剧情及主题的深度契合</p>
+<ol>
+<li>叙事逻辑<br>敌人的深渊：ABYSS是反派力量的最终归宿，其统治（Ascendancy）被英雄化为“灾厄”（Bane）反噬自身，呼应《传说之下》中“恶因结恶果”的因果观。</li>
+</ol>
+<p>英雄的胜利：Scarred Salvation 表明胜利不完美，但“辉烬昭世”以凤凰涅槃的意象，将伤痕升华为新世界的基石。</p>
+<ol>
+<li>音乐设计隐喻<br>前段：以低沉管风琴与电子失真音效表现“渊劫”（敌人的垂死反扑）；</li>
+</ol>
+<p>中段：融合英雄的主题旋律逐渐压倒反派动机，象征“终溃”；</p>
+<p>终段：用纯净的钢琴与合唱收尾，呼应“辉烬昭世”，但保留轻微的环境杂音，暗示战斗记忆的残留。</p>
+<p>跨语言符号系统<br>英文标题：</p>
+<p>Ascendancy→Bane 构成“权力-颠覆”对立，Yielding→Salvation 构成“屈服-救赎”闭环，语言逻辑严密如战役推演。</p>
+<p>中文标题：</p>
+<p>“渊”与“辉”形成明暗对比，“溃”与“昭”构成动作-结果呼应，语言本身即战场缩影。</p>
+<p>缩写ABYSS的双重性：</p>
+<p>对敌人是“深渊终局”，对英雄是“灯塔指引”（Beacon），一词双关，终结混沌。</p>
+<p>总结<br>ABYSS - 渊劫终溃，辉烬昭世 以语言符号完成对“正邪终极对抗”的诗意定格：</p>
+<p>英文标题如战报般冷静犀利，中文译名如史诗般炽烈升华，共同宣告<strong>“光明必从深渊的血战中诞生”</strong>；</p>
+<p>缩写ABYSS从“反派坟墓”到“英雄灯塔”的语义翻转，彻底贯彻用户设定的“必定胜利”基调，成为同人宇宙叙事的语言丰碑。</p>
+<p>Phase 5 - ABYSS<br>以下是多个符合“敌人堕入深渊，英雄必定胜利”主题的命名方案，保持ABYSS缩写与叙事一致性：</p>
+<p>示例1<br>英文全称：Annihilation’s Brink, Yielding Shattered Sovereignty<br>中文译名：渊临权溃，烬光破晓</p>
+<p>解析：</p>
+<p>英文：敌人霸权（Sovereignty）在湮灭边缘（Brink）被粉碎（Shattered），英雄以“烬光”（残存光芒）迎来破晓。</p>
+<p>中文：“渊临”指深渊降临于敌人，“权溃”直击统治瓦解；“破晓”呼应胜利的必然性。</p>
+<p>示例2<br>英文全称：Ashen Bonds Yield Sinister’s Silence<br>中文译名：烬契渊默，昭世永昼</p>
+<p>解析：</p>
+<p>英文：英雄的羁绊（Bonds）化为灰烬（Ashen），迫使邪恶（Sinister）归于沉寂（Silence）。</p>
+<p>中文：“渊默”描绘敌人沉默于深渊，“永昼”以永恒白昼象征再无黑暗。</p>
+<p>示例3<br>英文全称：Abolished Blight, Yearning Shadows Scourged<br>中文译名：渊瘴涤尽，妄影尽诛</p>
+<p>解析：</p>
+<p>英文：敌人腐化（Blight）被废除（Abolished），其阴影（Shadows）遭彻底净化（Scourged）。</p>
+<p>中文：“涤尽”“尽诛”以动作强度凸显胜利的彻底性。</p>
+<p>示例4<br>英文全称：Ardent Beacon Yields Sinister’s Surrender<br>中文译名：炽渊为烬，昭敌臣晖</p>
+<p>解析：</p>
+<p>英文：英雄如炽热灯塔（Beacon）迫使敌人投降（Surrender）。</p>
+<p>中文：“臣晖”指敌人臣服于光辉，文言词“臣”强化征服的庄严感。</p>
+<p>示例5<br>英文全称：Ascendant Blades Yield Shattered Spire<br>中文译名：刃临渊巅，碎冕昭光</p>
+<p>解析：</p>
+<p>英文：英雄的刀刃（Blades）登临巅峰（Ascendant），击碎敌人象征权力的尖塔（Spire）。</p>
+<p>中文：“碎冕”指王冠崩毁，“昭光”宣告光明重临。</p>
+<p>共同核心设计逻辑<br>缩写ABYSS的强制绑定：</p>
+<p>每个英文标题首字母严格对应A-B-Y-S-S，确保缩写一致性。</p>
+<p>中文译名中“渊”字固定首词位置，明示敌人归宿。</p>
+<p>动词-结果的叙事链：</p>
+<p>英文侧重动作过程（如Yield、Scourged、Shattered），中文强化结果意象（如破晓、永昼、臣晖）。</p>
+<p>光暗对立的符号系统：</p>
+<p>敌人关联“渊、瘴、影、默”等黑暗词汇；</p>
+<p>英雄以“烬、昭、炽、光”等灼热意象破局，呼应Phase4融合体的“终曜”。</p>
+<p>文化转译的平衡：</p>
+<p>英文标题保留西式史诗的直白叙事（如Annihilation, Sovereignty）；</p>
+<p>中文译名注入东方武侠或神话色彩（如“刃临渊巅”“臣晖”）。</p>
+<p>总结<br>以上方案均以ABYSS为敌人终局符号，通过语言暴力（如“碎冕”“涤尽”）与神圣意象（如“昭世”“永昼”）的对冲，构建“黑暗必败”的叙事确定性。玩家在解码缩写时，既能感受命名的文字游戏趣味，亦被卷入一场语言层面的光明围剿战——这正是Chaotic Time Trio同人宇宙的终极浪漫。</p>
+<p>Phase 5 - ABYSS<br>结合神话与宗教元素，围绕“敌人堕入深渊，英雄胜利”主题，设计以下命名方案：</p>
+<p>示例1（佛教/印度教意象）<br>英文全称：Asura’s Bane, Yama’s Sacred Sentence<br>中文译名：修罗渊殁，阎判圣裁</p>
+<p>解析：</p>
+<p>Asura’s Bane：阿修罗（印度神话中的战斗神）的克星，象征英雄终结敌人的暴虐；</p>
+<p>Yama’s Sacred Sentence：阎摩（死神）的神圣裁决，宣告敌人堕入深渊的终局。</p>
+<p>缩写ABYSS：暗藏 Ancient Balance Yields Samsara’s Silence（古律平衡，轮回寂灭）。</p>
+<p>中文：“修罗”对应敌人的狂暴，“阎判”以冥界审判呼应神圣胜利，兼具佛教轮回与地狱意象。</p>
+<p>示例2（北欧神话）<br>英文全称：Aesir’s Blight, Ymir’s Sundered Soul<br>中文译名：神陨渊烬，霜巨魂裂</p>
+<p>解析：</p>
+<p>Aesir’s Blight：阿萨神族（北欧主神）的诅咒，敌人如诸神黄昏中的灾厄；</p>
+<p>Ymir’s Sundered Soul：尤弥尔（原初巨人）的灵魂碎裂，隐喻敌人本质的崩解。</p>
+<p>缩写ABYSS：可解为 Aesir’s Bane Yields Surt’s Shadow（诸神克星终化苏尔特之影），暗合火巨人灭世预言。</p>
+<p>中文：“神陨”呼应诸神黄昏，“霜巨”直指尤弥尔的冰霜血脉，以“魂裂”强化神魂俱灭的结局。</p>
+<p>示例3（基督教/天使学）<br>英文全称：Abyss’ Brimstone, Yahweh’s Scorching Salvation<br>中文译名：渊硫天罚，圣焰涤罪</p>
+<p>解析：</p>
+<p>Abyss’ Brimstone：深渊硫磺（《启示录》中地狱之火），象征敌人受神罚；</p>
+<p>Yahweh’s Scorching Salvation：雅威（上帝）的炽烈救赎，以圣焰净化罪恶。</p>
+<p>缩写ABYSS：暗喻 Armageddon’s Baptism Yields Seraph’s Song（末日洗礼终奏炽天使之歌）。</p>
+<p>中文：“渊硫”融合深渊与硫磺火，“涤罪”呼应《圣经》中“火湖”的审判概念。</p>
+<p>示例4（希腊神话）<br>英文全称：Aether’s Banishment, Yoke of Stygian Silence<br>中文译名：以太渊逐，冥缄永锢</p>
+<p>解析：</p>
+<p>Aether’s Banishment：以太（苍穹之神）的放逐术，将敌人打入深渊；</p>
+<p>Yoke of Stygian Silence：冥河斯提克斯的缄默枷锁，令敌人永世沉寂。</p>
+<p>缩写ABYSS：可解为 Aether Binds Yonder Stygian Shade（以太缚彼冥河永影）。</p>
+<p>中文：“冥缄”以冥河之力封缄敌人，“永锢”呼应塔尔塔罗斯深渊的永恒囚禁。</p>
+<p>示例5（道教/东方神话）<br>英文全称：Azure Bane, Yin-Yang’s Sundering Seal<br>中文译名：青冥渊劫，太极断契</p>
+<p>解析：</p>
+<p>Azure Bane：青冥（道教天穹）的劫罚，将敌人镇压于深渊；</p>
+<p>Yin-Yang’s Sundering Seal：太极阴阳的裂契之印，以天道之力永绝后患。</p>
+<p>缩写ABYSS：暗藏 Ascendant Bagua Yields Sanctified Seclusion（飞升八卦启封天道禁域）。</p>
+<p>中文：“青冥”为道教九霄之一，“断契”指斩断敌人与现世的因果契约，呼应“天人感应”思想。</p>
+<p>共同设计逻辑<br>神话原型锚定：</p>
+<p>每个方案以特定神话体系为基底（如北欧诸神黄昏、佛教阎罗审判），确保符号系统的统一性。</p>
+<p>敌人被定义为“神话级灾厄”（如阿修罗、霜巨人、地狱硫磺），英雄则代理神性力量（雅威、阿萨神族、太极）。</p>
+<p>宗教术语转译：</p>
+<p>英文使用专有名词（Ymir、Styx）与仪式化动词（Banishment、Scorching），强化庄严感；</p>
+<p>中文采用典故压缩（如“阎判”“冥缄”）与玄学词汇（太极、青冥），构建东方神秘语境。</p>
+<p>缩写ABYSS的多维解读：</p>
+<p>表层为“深渊”，深层则通过字母拆解嵌入神话密码（如Aesir’s Bane、Armageddon’s Baptism）。</p>
+<p>音乐意象暗示：</p>
+<p>佛教方案可加入梵钟与诵经采样；</p>
+<p>北欧方案用维京战吼与冰裂声效；</p>
+<p>道教方案以古琴与风水铃音点缀，实现“听觉通感”。</p>
+<p>总结<br>通过神话与宗教符号的注入，ABYSS 从单纯的“深渊”升格为文明集体潜意识中的终极审判场。无论是诸神黄昏的烈焰、阎摩的生死簿，还是雅威的硫磺火，这些命名方案皆以语言为祭坛，将同人战役史诗化为跨文化的“弑神仪式”——当英雄以凡躯代行神罚，深渊便成了亵渎者唯一的墓志铭。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/22/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/22/">22</a><span class="page-number current">23</span>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Fallen Shadow"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Fallen Shadow</p>
+  <div class="site-description" itemprop="description">誰も悪くないから、辛いだな。<br>自卑的人，往往只剩下温柔了啊……</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">222</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">28</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">308</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/LucarEternity" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;LucarEternity" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="skype:live:.cid.7ca038c9215763f1?call|chat" title="Skype → skype:live:.cid.7ca038c9215763f1?call|chat" rel="noopener" target="_blank"><i class="fab fa-skype fa-fw"></i>Skype</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/356159259?spm_id_from=333.1007.0.0" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;356159259?spm_id_from&#x3D;333.1007.0.0" rel="noopener" target="_blank"><i class="fab fa-bilibili fa-fw"></i>Bilibili</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://music.163.com/#/artist?id=52150816" title="CloudMusic → https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;artist?id&#x3D;52150816" rel="noopener" target="_blank"><i class="fab fa-cloudmusic fa-fw"></i>CloudMusic</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.luogu.com.cn/user/444040" title="Luogu → https:&#x2F;&#x2F;www.luogu.com.cn&#x2F;user&#x2F;444040" rel="noopener" target="_blank"><i class="fab fa-luogu fa-fw"></i>Luogu</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/eternity-81-90" title="Zhihu → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;eternity-81-90" rel="noopener" target="_blank"><i class="fab fa-zhihu fa-fw"></i>Zhihu</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://codeforces.com/profile/eEternalF" title="CodeForces → https:&#x2F;&#x2F;codeforces.com&#x2F;profile&#x2F;eEternalF" rel="noopener" target="_blank"><i class="fab fa-codeforces fa-fw"></i>CodeForces</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://loj.ac/u/_Eternal_" title="LibreOj → https:&#x2F;&#x2F;loj.ac&#x2F;u&#x2F;_Eternal_" rel="noopener" target="_blank"><i class="fab fa-libreoj fa-fw"></i>LibreOj</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="http://wpa.qq.com/msgrd?v=3&uin=3579685229&site=qq&menu=yes" title="QQ → http:&#x2F;&#x2F;wpa.qq.com&#x2F;msgrd?v&#x3D;3&amp;uin&#x3D;3579685229&amp;site&#x3D;qq&amp;menu&#x3D;yes" rel="noopener" target="_blank"><i class="fab fa-qq fa-fw"></i>QQ</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://atcoder.jp/users/EternityF" title="AtCoder → https:&#x2F;&#x2F;atcoder.jp&#x2F;users&#x2F;EternityF" rel="noopener" target="_blank"><i class="fab fa-atcoder fa-fw"></i>AtCoder</a>
+      </span>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2026</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">落幕の残影</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">2.2m</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">32:54</span>
+</div>
+  <div class="running-time">
+    <span id="timeDate"></span>
+    <span id="times"></span>
+    <script>
+        var now = new Date();
+        function createtime() {
+            var grt= new Date("01/25/2022 13:14:20");
+            now.setTime(now.getTime()+250);
+            days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+            hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+            if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+            mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+            document.getElementById("timeDate").innerHTML = "本站已经安全运行 " + dnum + " 天";
+            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+        }
+    setInterval("createtime()",250);
+    </script>
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+<script>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+
+</body>
+</html>

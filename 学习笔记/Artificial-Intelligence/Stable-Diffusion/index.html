@@ -327,7 +327,7 @@ div.content.cards-content.active {
 <meta property="og:image" content="https://i-blog.csdnimg.cn/blog_migrate/00d3f2a0540b8439374bb1a3333aa62f.png">
 <meta property="og:image" content="http://violeteternal.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Artificial-Intelligence/Stable-Diffusion/Pho1.png">
 <meta property="article:published_time" content="2025-06-17T14:04:12.000Z">
-<meta property="article:modified_time" content="2025-09-07T14:24:44.247Z">
+<meta property="article:modified_time" content="2026-01-14T12:14:04.482Z">
 <meta property="article:author" content="Fallen Shadow">
 <meta property="article:tag" content="Stable Diffusion">
 <meta name="twitter:card" content="summary">
@@ -650,7 +650,7 @@ mjx-container[display="true"] + br {
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2025-09-07 22:24:44" itemprop="dateModified" datetime="2025-09-07T22:24:44+08:00">2025-09-07</time>
+                <time title="修改时间：2026-01-14 20:14:04" itemprop="dateModified" datetime="2026-01-14T20:14:04+08:00">2026-01-14</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -679,7 +679,7 @@ mjx-container[display="true"] + br {
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>4k</span>
+              <span>4.6k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -762,14 +762,13 @@ mjx-container[display="true"] + br {
 <details class="content box note">
   <summary><i class="fa fa-pen fa-fw"></i>提示词语法须知<div class="box-open-button"><i class="fa fa-chevron-down fa-fw"></i></div></summary>
   <p><code>{}</code> 虽是这么说，但是实际效果其实非常随机，不建议使用，一般在风格提示词里作为随机风格使用，而提示词还有两个用法是：</p>
-<p>比如说你要画的人物头发是多色的，你可以这样写：</p>
-<p><code>white hair|golden hair</code>，在两个提示词之间加上 <code>|</code>，同样可以调整权重 <code>(white hair:0.9)|(golden hair:1.2)</code> 都是可行的。</p>
-<p>或者写成：</p>
-<p><code>white hair:golden hair:0.4:0.6</code>，需要注意的是，后面的权重数值之和必须为 1，否则会出现拟合错误或者过拟合。</p>
-<p>但经过我的试验，发现 <code>|</code> 和 <code>x:x:x:x</code> 这种写法并不常见，效果也不甚明显。所以不建议使用。</p>
-<p>一般可以直接写为：</p>
-<p><code>white hair, golden hair, multicolored hair</code>，至于其出现的方式可以约束为 <code>streaked hair</code>（挑染），<code>gradient</code>（渐变）等等。</p>
-
+  <p>比如说你要画的人物头发是多色的，你可以这样写：</p>
+  <p><code>white hair|golden hair</code>，在两个提示词之间加上 <code>|</code>，同样可以调整权重 <code>(white hair:0.9)|(golden hair:1.2)</code> 都是可行的。</p>
+  <p>或者写成：</p>
+  <p><code>white hair:golden hair:0.4:0.6</code>，需要注意的是，后面的权重数值之和必须为 1，否则会出现拟合错误或者过拟合。</p>
+  <p>但经过我的试验，发现 <code>|</code> 和 <code>x:x:x:x</code> 这种写法并不常见，效果也不甚明显。所以不建议使用。</p>
+  <p>一般可以直接写为：</p>
+  <p><code>white hair, golden hair, multicolored hair</code>，至于其出现的方式可以约束为 <code>streaked hair</code>（挑染），<code>gradient</code>（渐变）等等。</p>
 </details>
 
 <hr>
@@ -783,7 +782,17 @@ mjx-container[display="true"] + br {
 </blockquote>
 <p>一般来讲，如果你不想要出一些风格如 <code>disney movie</code>，也可以加上。</p>
 <hr>
-<h2 id="Forge"><a href="#Forge" class="headerlink" title="Forge"></a>Forge</h2><hr>
+<p>总而言之，提示词的书写是 AIGC 中最重要的部分，清晰地表达出你的想法，能让生成的图的细节更多。</p>
+<hr>
+<h5 id="生成参数"><a href="#生成参数" class="headerlink" title="生成参数"></a>生成参数</h5><h6 id="采样方法（Sampler）"><a href="#采样方法（Sampler）" class="headerlink" title="采样方法（Sampler）"></a>采样方法（Sampler）</h6><p>在之前我们已经提到过，Stable Diffusion 的基本原理是去噪，具体来讲：Stable Diffusion 在生成图像前，会先生成一张完全随机的图像，然后噪声预测器会在图像中减去预测的噪声，随着这个步骤的不断重复最终会生成一张清晰的图像。整个去噪过程叫做采样，使用到的方法叫做采样方法或采样器。</p>
+<p>采样过程中噪声计划控制每个采样步骤的噪声水平。第一步噪声最高，最后一步逐渐降低到零。更高的采样步数导致每个步骤之间的降噪幅较小。这有助于减少采样的截断误差。</p>
+<p>事实上，虽然 SD 初始给我们配备了若干采样方法，但经过多年测试，我们已经得出了基本结论：</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/690319301">推荐表格</a></p>
+<p>在 SDXL，NAI 等中，一般推荐使用 Euler a 采样。</p>
+<h6 id="调度类型（Schedule-type）"><a href="#调度类型（Schedule-type）" class="headerlink" title="调度类型（Schedule type）"></a>调度类型（Schedule type）</h6><p>可以无脑选 Automatic。</p>
+<p>调度器通常与采样器的概念紧密相关，它负责控制采样过程中每一步的噪声水平，也就是所谓的噪声计划（Noise Schedule）。调度器决定了在生成图像的每一步中减少多少噪声，从而影响采样过程的速度和最终图像的清晰度。在某些文献中，调度器和采样器这两个术语有时被交替使用，因为它们都涉及到控制生成过程中的噪声减少。事实上对图像成果影响不大，而且很多采样器是自选过调度器的，所以直接自动往往效果最好。</p>
+<h6 id="迭代步数（Steps）"><a href="#迭代步数（Steps）" class="headerlink" title="迭代步数（Steps）"></a>迭代步数（Steps）</h6><p>字面意思，在一定范围内，步数越高，效果越好，生成越慢。一般不会超过 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="7.542ex" height="1.581ex" role="img" focusable="false" viewBox="0 -677 3333.6 699"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path></g><g data-mml-node="mo" transform="translate(1277.8,0)"><path data-c="223C" d="M55 166Q55 241 101 304T222 367Q260 367 296 349T362 304T421 252T484 208T554 189Q616 189 655 236T694 338Q694 350 698 358T708 367Q722 367 722 334Q722 260 677 197T562 134H554Q517 134 481 152T414 196T355 248T292 293T223 311Q179 311 145 286Q109 257 96 218T80 156T69 133Q55 133 55 166Z"></path></g><g data-mml-node="mn" transform="translate(2333.6,0)"><path data-c="35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path></g></g></g></svg></mjx-container> 步，后面噪声降完了就没什么实质性效果了。</p>
+<h6 id="提示词引导系数（CFG-Scale）"><a href="#提示词引导系数（CFG-Scale）" class="headerlink" title="提示词引导系数（CFG Scale）"></a>提示词引导系数（CFG Scale）</h6><h2 id="Forge"><a href="#Forge" class="headerlink" title="Forge"></a>Forge</h2><hr>
 <h2 id="Comfy"><a href="#Comfy" class="headerlink" title="Comfy"></a>Comfy</h2><hr>
 <h2 id="Lora训练"><a href="#Lora训练" class="headerlink" title="Lora训练"></a>Lora训练</h2><hr>
 
@@ -797,15 +806,15 @@ mjx-container[display="true"] + br {
   <div class="popular-posts-header">相关文章</div>
   <ul class="related-posts">
   
+      <li class="related-posts-item"><a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Artificial-Intelligence/Fusion-SwinIR/">SwinIR: Image Restoration Using Swin Transformer</a></li>
+  
+      <li class="related-posts-item"><a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Artificial-Intelligence/AI-Intro/">神经网络入门</a></li>
+  
       <li class="related-posts-item"><a href="/%E9%9B%A8%E8%90%BD%EF%BC%8C%E8%A7%81%E9%BB%8E%E6%98%8E/Learn-to-Dream/">伊甸园外·学会想象</a></li>
   
-      <li class="related-posts-item"><a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Suffix-Automaton/">后缀自动机</a></li>
-  
-      <li class="related-posts-item"><a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Suffix-Array/">后缀数组</a></li>
+      <li class="related-posts-item"><a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Zkw-Segment-Tree/">非递归式线段树（zkw线段树）</a></li>
   
       <li class="related-posts-item"><a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Virtual-Tree/">虚树</a></li>
-  
-      <li class="related-posts-item"><a href="/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Olympiad-Informatics/Note-Zkw-Segment-Tree/">非递归式线段树（zkw线段树）</a></li>
   
   </ul>
 
@@ -821,7 +830,7 @@ mjx-container[display="true"] + br {
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/%E5%9B%9E%E5%93%8D%E5%9C%B0%E5%9F%9F%E7%9A%84%E8%B5%9E%E7%BE%8E%E8%AF%97/%E5%A4%9A%E5%85%83%E5%AE%87%E5%AE%99%E7%9A%84%E4%BA%A4%E7%BB%87%E4%B8%8E%E7%A2%B0%E6%92%9E/Eternity-of-Chaotic/" rel="prev" title="三重混沌时光：再起新篇">
+    <a href="/uncategorized/Chaotic-Time-Trio/" rel="prev" title="三重混沌时光：再起新篇">
       <i class="fa fa-chevron-left"></i> 三重混沌时光：再起新篇
     </a></div>
       <div class="post-nav-item">
@@ -887,7 +896,7 @@ mjx-container[display="true"] + br {
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFAIGC%EF%BC%9F"><span class="nav-text">什么是AIGC？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#WebUI-%E4%BB%A5%E5%8F%8A%E5%9F%BA%E6%9C%AC%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B"><span class="nav-text">WebUI 以及基本运行流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E5%85%B7"><span class="nav-text">准备工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="nav-text">基本操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8"><span class="nav-text">启动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%87%E7%94%9F%E5%9B%BE"><span class="nav-text">文生图</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%AD%A3%E9%9D%A2%E6%8F%90%E7%A4%BA%E8%AF%8D"><span class="nav-text">正面提示词</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%B4%9F%E9%9D%A2%E6%8F%90%E7%A4%BA%E8%AF%8D"><span class="nav-text">负面提示词</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Forge"><span class="nav-text">Forge</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Comfy"><span class="nav-text">Comfy</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lora%E8%AE%AD%E7%BB%83"><span class="nav-text">Lora训练</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFAIGC%EF%BC%9F"><span class="nav-text">什么是AIGC？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#WebUI-%E4%BB%A5%E5%8F%8A%E5%9F%BA%E6%9C%AC%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B"><span class="nav-text">WebUI 以及基本运行流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E5%85%B7"><span class="nav-text">准备工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="nav-text">基本操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8"><span class="nav-text">启动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%87%E7%94%9F%E5%9B%BE"><span class="nav-text">文生图</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%AD%A3%E9%9D%A2%E6%8F%90%E7%A4%BA%E8%AF%8D"><span class="nav-text">正面提示词</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%B4%9F%E9%9D%A2%E6%8F%90%E7%A4%BA%E8%AF%8D"><span class="nav-text">负面提示词</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E5%8F%82%E6%95%B0"><span class="nav-text">生成参数</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E9%87%87%E6%A0%B7%E6%96%B9%E6%B3%95%EF%BC%88Sampler%EF%BC%89"><span class="nav-text">采样方法（Sampler）</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E8%B0%83%E5%BA%A6%E7%B1%BB%E5%9E%8B%EF%BC%88Schedule-type%EF%BC%89"><span class="nav-text">调度类型（Schedule type）</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E8%BF%AD%E4%BB%A3%E6%AD%A5%E6%95%B0%EF%BC%88Steps%EF%BC%89"><span class="nav-text">迭代步数（Steps）</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%BC%95%E5%AF%BC%E7%B3%BB%E6%95%B0%EF%BC%88CFG-Scale%EF%BC%89"><span class="nav-text">提示词引导系数（CFG Scale）</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Forge"><span class="nav-text">Forge</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Comfy"><span class="nav-text">Comfy</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lora%E8%AE%AD%E7%BB%83"><span class="nav-text">Lora训练</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -903,7 +912,7 @@ mjx-container[display="true"] + br {
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">220</span>
+          <span class="site-state-item-count">222</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -916,7 +925,7 @@ mjx-container[display="true"] + br {
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">300</span>
+        <span class="site-state-item-count">308</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -979,7 +988,7 @@ mjx-container[display="true"] + br {
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2025</span>
+  <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -995,7 +1004,7 @@ mjx-container[display="true"] + br {
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">32:49</span>
+    <span title="站点阅读时长">32:54</span>
 </div>
   <div class="running-time">
     <span id="timeDate"></span>
